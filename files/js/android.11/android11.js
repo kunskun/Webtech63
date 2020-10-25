@@ -1,24 +1,34 @@
 var controller = new ScrollMagic.Controller();
-var controller2 = new ScrollMagic.Controller();
+
 // build tween
-var tween = gsap.to("#animate", {
-    scale: 4,
-    transformOrigin:"center center",
-    ease: Linear.easeNone,
+var tweenCircle = gsap.to("#animate", {
+    top:2000,
+    scale: 6,
+    transformOrigin: "center center",
+    ease: Linear.easeNon,
 })
-var tween2 = gsap.from("#demon", {
+var tweenBg11 = gsap.from("#bg11", {
+    top: 1700,
     opacity: 0,
     ease: Linear.easeNone,
 });
+var tweenPhone2 = gsap.to("#phone2", {
+    top: -70,
+    ease: Linear.easeNone,
+})
+var tweenPhone3 = gsap.from("#phone3", {
+    top: 2000,
+    ease: Linear.easeNone,
+})
 
 
 // build scene
 var scene = new ScrollMagic.Scene({
         triggerElement: "#multiDirect",
-        duration: 900,
+        duration: 2000,
         // offset: 250
     })
-    .setTween(tween)
+    .setTween(tweenCircle)
     .addTo(controller);
 
 var scene2 = new ScrollMagic.Scene({
@@ -26,5 +36,12 @@ var scene2 = new ScrollMagic.Scene({
         duration: 900,
         // offset: 250
     })
-    .setTween(tween2)
-    .addTo(controller2);
+    .setTween([tweenBg11, tweenPhone2])
+    .addTo(controller);
+var scene3 = new ScrollMagic.Scene({
+        triggerElement: "#multiDirect",
+        duration: 1700,
+        // offset: 250
+    })
+    .setTween([tweenPhone3])
+    .addTo(controller);

@@ -1,9 +1,12 @@
 .bg-st1 {
     background-color: #d7effe;
 }
+.bg-st2 {
+    background-color: #eff7cf;
+}
 .setSection {
     width: auto;
-    height: 200rem;
+    height: 180rem;
 }
 
 
@@ -30,9 +33,10 @@
 }
 .bg-circle-content-11{
     z-index: 1;
-    top:1500px;
+    top:1600px;
+    line-height:3500px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1400px;
+    font-size: 1600px;
     opacity: 0.15;
     position: absolute;
     
