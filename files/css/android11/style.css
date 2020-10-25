@@ -28,15 +28,11 @@
     position: absolute;
     background-color: #3ddc84;
 }
-.circle-background-number {
-    /* height: 100%; */
-    left: 0;
-    top: 0;
-    /* width: 100%; */
-}
-.circle-background-number::after{
-    content: '11';
-    top:50%;
-    color:black;
-    font-size: 500px
+.bg-circle-content-11{
+    z-index: 1;
+    top:1500px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1400px;
+    opacity: 0.15;
+    position: absolute;
 }
