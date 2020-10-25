@@ -1,18 +1,30 @@
 var controller = new ScrollMagic.Controller();
-
+var controller2 = new ScrollMagic.Controller();
 // build tween
-var tween = TweenMax.to("#animate", 0.5, {
-    scale:4,
-    ease: Linear.easeNone
+var tween = gsap.to("#animate", {
+    scale: 4,
+    transformOrigin:"center center",
+    ease: Linear.easeNone,
+})
+var tween2 = gsap.from("#demon", {
+    opacity: 0,
+    ease: Linear.easeNone,
 });
 
 
 // build scene
 var scene = new ScrollMagic.Scene({
         triggerElement: "#multiDirect",
-        duration: 700,
+        duration: 900,
         // offset: 250
     })
     .setTween(tween)
-    .setPin("#animate")
     .addTo(controller);
+
+var scene2 = new ScrollMagic.Scene({
+        triggerElement: "#multiDirect",
+        duration: 900,
+        // offset: 250
+    })
+    .setTween(tween2)
+    .addTo(controller2);
