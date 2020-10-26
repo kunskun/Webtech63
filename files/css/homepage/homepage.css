@@ -1,0 +1,41 @@
+.box1{
+    margin: 10rem 10rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: black;
+    margin-left: 17%;
+}
+.part1{
+    background-color: #f86734;
+}
+h1{
+    display: block;
+    font-size: 5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p{
+    display: block;
+    font-size: 1.2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn{
+    align-items: center;
+    background-color: #073042;
+    border-radius: 100px;
+    color: #fff;
+    display: inline-flex;
+    font-size: 0.75rem;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: 0.0625rem;
+    line-height: 0.875rem;
+    padding: 12px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .2s linear;
+}
