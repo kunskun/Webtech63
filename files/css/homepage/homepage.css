@@ -2,21 +2,21 @@
     margin: 10rem 10rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: black;
-    margin-left: 17%;
+    margin-left: 19%;
 }
 .part1{
     background-color: #f86734;
 }
 h1{
     display: block;
-    font-size: 5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 5rem;
+    line-height: 1em;
     font-weight: bold;
 }
 p{
     display: block;
-    font-size: 1.2em;
+    font-size: 1.15rem;
+    line-height: 1.5em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -38,4 +38,15 @@ p{
     text-align: center;
     text-transform: uppercase;
     transition: color .2s linear;
+}
+img{
+    width: 12rem;
+}
+.txb{
+    margin-right: 1vw;
+}
+.imgb{
+    float: right;
+    justify-content: right;
+    justify-items: right;
 }
