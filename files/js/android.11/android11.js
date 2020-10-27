@@ -30,41 +30,25 @@ var tweenShapeHL = gsap.to("#bg-shape-hightlight", {
     ease: Linear.easeNone
 })
 
+// build scean
+//section 1
+myScene(tweenCircle, 2000, "#multiDirect")
+myScene([tweenBg11, tweenPhone2], 900, "#multiDirect")
+myScene(tweenPhone3, 1700, "#multiDirect")
+myScene(tweenShapeHL, 500, "#bg-shape-hightlight")
 
-// build scene
-var scene = new ScrollMagic.Scene({
-        triggerElement: "#multiDirect",
-        duration: 2000,
-        // offset: 250
-    })
-    .setTween(tweenCircle)
-    .addTo(controller);
-
-var scene2 = new ScrollMagic.Scene({
-        triggerElement: "#multiDirect",
-        duration: 900,
-        // offset: 250
-    })
-    .setTween([tweenBg11, tweenPhone2])
-    .addTo(controller);
-var scene3 = new ScrollMagic.Scene({
-        triggerElement: "#multiDirect",
-        duration: 1700,
-        // offset: 250
-    })
-    .setTween([tweenPhone3])
-    .addTo(controller);
-var scene4 = new ScrollMagic.Scene({
-        triggerElement: "#bg-shape-hightlight",
-        duration: 500,
-        // offset: 250
-    })
-    .setTween(tweenShapeHL)
-    .addTo(controller);
+// build scean function
+function myScene(tween, time, trigger) { // function scroll down
+    var scene = new ScrollMagic.Scene({
+            triggerElement: trigger,
+            duration: time,
+            // offset: 250
+        })
+        .setTween(tween)
+        .addTo(controller);
+}
 
 //section2
-
-
 gsap.registerEffect({
     name: "boxEnter",
     defaults: {
