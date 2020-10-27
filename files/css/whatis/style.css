@@ -1,0 +1,103 @@
+.bg-st1 {
+    background-color: #d7effe;
+}
+
+.bg-st2 {
+    background-color: #eff7cf;
+}
+
+.setSection {
+    width: auto;
+    height: 180rem;
+}
+
+
+/* set font */
+
+.is1 {
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03125rem;
+}
+
+.is2 {
+    font-weight: 1000;
+    margin-bottom: 16px;
+}
+
+
+/* create shape */
+
+.circle {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-color: blue;
+}
+
+.box {
+    height: 800px;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #3ddc84;
+}
+
+.bg-circle-content-11 {
+    z-index: 2;
+    top: 1600px;
+    line-height: 3500px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1600px;
+    opacity: 0.15;
+    position: absolute;
+}
+
+.bg-shape {
+    top: 0;
+    left: -900px;
+    height: 535px;
+    /* transform: translate(-45%,14%); */
+    width: 1500px;
+    position: relative;
+    border-style: solid;
+    border-color: #f86734;
+    border-radius: 500px;
+    border-width: 20px;
+}
+
+.hightlight-android11 {
+    letter-spacing: -0.125rem;
+    left: 200px;
+    top: 200px;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 500px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hightlight-box {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    word-spacing: 9999rem;
+    letter-spacing: -0.03125rem;
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    z-index: 10;
+    width: 259px;
+    height: 259px;
+    border-radius: 10px;
+    box-shadow: 4px 12px 47px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.topToend {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
