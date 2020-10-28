@@ -1,0 +1,1 @@
+gsap.to(".box", {rotation: 300, x: 100, duration: 5});
