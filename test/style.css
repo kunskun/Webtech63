@@ -1,0 +1,22 @@
+.block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.blue {
+    background-color: skyblue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+body {
+    background-color: gray;
+}
