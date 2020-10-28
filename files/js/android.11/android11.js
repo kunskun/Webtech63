@@ -30,6 +30,24 @@ var tweenShapeHL = gsap.to("#bg-shape-hightlight", {
     ease: Linear.easeNone
 })
 
+gsap.from("#pills1", {
+    delay:5,
+    scrollTrigger:{
+        trigger: "#pills1",
+        toggleActions:"restart"
+    },
+    top:250
+})
+gsap.from("#pills3", {
+    delay:1,
+    scrollTrigger:{
+        markers:true,
+        start:"top center",
+        end: "center center",
+        toggleActions:"restart"
+    },
+    top:250
+})
 // build scean
 //section 1
 myScene(tweenCircle, 2000, "#multiDirect")
