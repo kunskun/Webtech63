@@ -1,19 +1,21 @@
 .box1{
     margin: 10rem 10rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: black;
     margin-left: 19%;
 }
 .part1{
     background-color: #f86734;
 }
+@font-face{font-family: Android Euclid; src: url(files/font/AndroidEuclid-Bold.otf);}
 h1{
+    font-family: Android Euclid;
     display: block;
     font-size: 5rem;
     line-height: 1em;
     font-weight: bold;
 }
-p{
+p{  
+    font-family: 'roboto';
     display: block;
     font-size: 1.15rem;
     line-height: 1.5em;
@@ -23,6 +25,7 @@ p{
     margin-inline-end: 0px;
 }
 .btn{
+    font-family: Android Euclid;
     align-items: center;
     background-color: #073042;
     border-radius: 100px;
