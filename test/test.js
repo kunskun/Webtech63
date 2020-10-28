@@ -1,3 +1,7 @@
-var tl = gsap.timeline();
-var controller = new ScrollMagic.Controller();
-tl.to(".block", { x: 400, duration: 2 });
+var timeline = new TimelineMax({});
+timeline.to(".block", 2, {
+    x: 300,
+    rotation: 30,
+});
+
+console.log("yes it ran");

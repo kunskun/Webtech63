@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: black;
+	}
+</style>
+</head>
+<body>
+	<div class="box" id="box">This is growing box</div>
+	<script type="text/javascript">
+		var timeline = new TimelineMax({paused:true});
+		timeline.to(".box", 2, {color:"#F0F", width:"480px", height:"480px",});
+		timeline.play();		
+		console.log("yes it ran");
+  	</script> 
+</body>
+</html>
