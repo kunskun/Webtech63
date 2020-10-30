@@ -1,0 +1,16 @@
+body {
+  margin: 10px;
+}
+  
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: block; 
+    margin: 1%;
+    overflow: hidden;
+}
+  
+.pink {
+  background-color: pink;
+}
