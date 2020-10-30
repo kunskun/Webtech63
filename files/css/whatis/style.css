@@ -19,6 +19,22 @@
     display: inline;
 }
 
+.tech-text1 {
+    width: 450px;
+    position: relative;
+    left: 66rem;
+    top: -48rem;
+}
+
+.tech-text {
+    width: 450px;
+    position: relative;
+    font-size: 3.8rem;
+    font-weight: 800;
+    left: 27.5rem;
+    top: -60rem;
+}
+
 .is-copy-m {
     width: 400px;
 }
@@ -106,9 +122,13 @@
 }
 
 .photo-box {
-    width: 500px;
-    height: 450px;
+    width: 450px;
+    height: 400px;
     overflow: hidden;
+    z-index: 2;
+    border-radius: 10px;
+    position: relative;
+    top: 20rem;
 }
 
 .is-2 {
@@ -118,7 +138,7 @@
 .head-image {
     position: relative;
     left: 65rem;
-    top: -7rem;
+    top: -12rem;
     opacity: 0;
 }
 
@@ -159,6 +179,20 @@
     display: inline;
     width: 480px;
     font-size: 4.2rem;
+}
+
+.fam-pho {
+    position: relative;
+    left: 24.5rem;
+    z-index: 1;
+}
+
+.dashboard-text {
+    position: relative;
+    left: 27rem;
+    top: 38rem;
+    width: 400px;
+    z-index: 3;
 }
 
 .arc-read {
@@ -230,7 +264,23 @@ body {
     height: auto;
 }
 
+.eiei {
+    background-color: red;
+    width: 100%;
+    height: 400px;
+}
+
 .box {
+    height: 700px;
+    width: 55%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    background-color: #3ddc84;
+    z-index: -1;
+}
+
+.boxx {
     height: 700px;
     width: 55%;
     overflow: hidden;
