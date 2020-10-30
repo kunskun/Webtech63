@@ -144,4 +144,34 @@ h3{
 h3.card-text{
     font-size: 52px;
 }
+.mt-25{
+    margin-top: 30%;
+}
+p.rl{
+    margin-left: 10%;
+    width: 50%;
+}
+.dhov{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    margin: 1.5%;
+    padding: 5% 3%;
+    box-shadow: 4px 20px 47px 0 rgba(0,0,0,0.1);;
+}
+h3.dh{
+    font-size: 52px;
+    line-height: 56px;
+    font-weight: 700;
+}
+.pa{
+    transform: translate(130px, -137px) rotate(315deg);
+}
+.read-l{
+
+}
 
