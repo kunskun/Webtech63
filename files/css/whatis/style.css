@@ -15,40 +15,147 @@
     margin: 0px;
 }
 
+.topmain {
+    display: inline;
+}
+
+.infor {
+    font-size: 1rem;
+    display: inline;
+    width: 420px;
+    position: relative;
+    left: 17rem;
+    top: 9rem;
+}
+
 
 /* set font */
 
-.is1 {
-    font-weight: 500;
+.is-1 {
+    font-weight: 1000;
     margin-bottom: 16px;
     font-weight: 500;
     letter-spacing: -0.03125rem;
 }
 
-.is2 {
-    font-weight: 1000;
-    margin-bottom: 16px;
+.head-image {
+    position: relative;
+    left: 65rem;
+    top: -7rem;
+    opacity: 0;
+}
+
+.text {
+    position: relative;
+    top: 18rem;
+    left: 28rem;
+    opacity: 0;
+}
+
+.icon--svg {
+    border: 1px solid #e7ebec;
+    border-radius: 50%;
+    height: 27px;
+    margin-left: 8px;
+    padding: 8px;
+    pointer-events: none;
+    width: 27px
+}
+
+.is-copy {
+    left: 10rem;
+}
+
+.scrollable-eyebrow__body {
+    width: 350px;
+    position: relative;
+    left: 50rem;
+}
+
+.is-4 {
+    display: inline;
+    width: 480px;
+    font-size: 4.2rem;
+}
+
+.arc-read {
+    display: inline;
+    width: 480px;
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+.content-resizable__content-wrapper,
+.content-slideshow__copy,
+.carousel-slider,
+.carousel__masthead,
+.scrollable-eyebrow__heading,
+.content-resizable__heading {
+    position: relative;
+    left: 8rem;
+}
+
+.is-2 {
+    display: inline-block;
+    width: 450px;
+    font-size: 4.2rem;
+}
+
+.text-box {
+    width: 600px;
+    height: fit-content;
+}
+
+.arc-font {
+    font-size: 1rem;
+}
+
+.second {
+    top: 2rem;
+    position: relative;
 }
 
 
 /* create shape */
 
 .circle {
-    height: 0px;
-    width: 0px;
+    height: 750px;
+    width: 750px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    background-color: #4bbdeb;
+    background-color: #4285f4;
+    z-index: -1;
+    transform: translate(-1000px, -1500px);
+}
+
+@font-face {
+    font-family: Android Euclid;
+    src: url(//test/AndroidEuclid-Bold.otf);
+}
+
+.carousel-slider__front-panel {
+    width: 400px;
+    height: auto;
+}
+
+body {
+    font: "Android Euclid";
+}
+
+.card-img {
+    width: 400px;
+    height: auto;
 }
 
 .box {
     height: 700px;
-    width: 53%;
+    width: 55%;
     overflow: hidden;
     position: absolute;
     opacity: 0;
     background-color: #3ddc84;
+    z-index: -1;
 }
 
 .bg-circle-content-11 {

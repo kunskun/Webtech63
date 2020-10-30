@@ -1,20 +1,32 @@
 var controller = new ScrollMagic.Controller();
 var timeline = new TimelineMax({});
+var timelinebody = new TimelineMax({});
 var timeline1 = new TimelineMax({});
 timeline.to(".box", 1, {
     opacity: 1
 
 });
 timeline1.to(".circle", 1, {
-    width: "800px",
-    height: "800px",
-    x: "27%"
+    width: "750px",
+    height: "750px",
+    x: "17%",
+    y: "-50%"
 
 });
 
+timeline1.to(".text", 0.3, {
+    opacity: 1,
+    top: "12rem",
+    left: "28rem"
 
-
-
+});
+timeline1.to(".head-image", 0.2, {
+    opacity: 1,
+    left: "60rem"
+});
+timelinebody.to(".all", 1, {
+    opacity: 1,
+});
 
 // build tween
 //section1
