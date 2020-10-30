@@ -19,6 +19,57 @@
     display: inline;
 }
 
+.is-copy-m {
+    width: 400px;
+}
+
+.content-resizable__copy-wrapper {
+    position: relative;
+    left: 17rem;
+}
+
+.scrollable-eyebrow__copy {
+    position: relative;
+    left: 5.5rem;
+    top: -9.5rem;
+}
+
+.scrollable-eyebrow__heading {
+    width: 500px;
+    position: relative;
+    left: 33rem;
+    top: -14rem;
+}
+
+.security {
+    position: relative;
+    left: 13.5rem;
+}
+
+.carousel__copy {
+    position: relative;
+    left: -12rem;
+    top: -3.2rem;
+}
+
+.moving-text {
+    font-size: 26rem;
+    font-weight: 750;
+}
+
+.secur {
+    color: #D7EFFE;
+}
+
+.wellbe {
+    color: #EFF7CF;
+}
+
+.is-header {
+    font-weight: 800;
+    font-size: 4.2rem;
+}
+
 .infor {
     font-size: 1rem;
     display: inline;
@@ -26,6 +77,17 @@
     position: relative;
     left: 17rem;
     top: 9rem;
+}
+
+.sercurity-sc {
+    position: relative;
+    left: -20rem;
+    color: red;
+}
+
+.error-but {
+    position: relative;
+    top: -42px;
 }
 
 
@@ -36,6 +98,21 @@
     margin-bottom: 16px;
     font-weight: 500;
     letter-spacing: -0.03125rem;
+}
+
+.diagonal-content__copy-wrapper {
+    position: relative;
+    left: 27.5rem;
+}
+
+.photo-box {
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.is-2 {
+    font-weight: 800;
 }
 
 .head-image {
@@ -66,10 +143,16 @@
     left: 10rem;
 }
 
+.scrollable-eyebrow__wrapper {
+    position: relative;
+    top: -13rem;
+}
+
 .scrollable-eyebrow__body {
     width: 350px;
     position: relative;
-    left: 50rem;
+    left: 39.5rem;
+    top: 6rem;
 }
 
 .is-4 {
@@ -80,16 +163,15 @@
 
 .arc-read {
     display: inline;
-    width: 480px;
-    font-size: 2.7rem;
-    font-weight: 900;
+    width: 400px;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .content-resizable__content-wrapper,
 .content-slideshow__copy,
 .carousel-slider,
 .carousel__masthead,
-.scrollable-eyebrow__heading,
 .content-resizable__heading {
     position: relative;
     left: 8rem;
