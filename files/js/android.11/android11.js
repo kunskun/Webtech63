@@ -26,31 +26,52 @@ var tweenPhone3 = gsap.from("#phone3", {
 });
 //section2
 var tweenShapeHL = gsap.to("#bg-shape-hightlight", {
-    top: -20,
+    top: -50,
     ease: Linear.easeNone
 })
 
 var tl1 = gsap.timeline({
-    scrollTrigger:{
-        trigger: "#pills1",
-        toggleActions:"restart"
+    scrollTrigger: {
+        start: "-500px center",
+        end: "500px top",
+        // start:"-50px 80%",
+        // end:"100px 80%",
+        // end:0,
+        markers: true,
+        trigger: ["#pills1"],
+        toggleActions: "restart restart restart restart"
     }
 })
 var tl2 = gsap.timeline({
-    scrollTrigger:{
-        trigger: "#pills1",
-        toggleActions:"restart"
+    scrollTrigger: {
+        start: "-500px center",
+        end: "500px top",
+        markers: false,
+        trigger: ["#pills1"],
+        toggleActions: "restart restart restart restart"
+    }
+})
+
+var tlBubble = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#area-bubble",
+        toggleActions: "restart restart restart restart"
     }
 })
 
 tl1.from("#pills1", {
-    delay:1,
-    top:250
+    delay: 1,
+    top: 250
 })
 tl2.from("#pills3", {
-    delay:1,
-    top:250
+    delay: 1,
+    top: 250
 });
+
+tlBubble.to("#area-bubble", {
+    delay: 1,
+    xPercent: 125
+})
 // gsap.from("#pills1", {
 //     delay:3,
 //     scrollTrigger:{
@@ -69,7 +90,7 @@ tl2.from("#pills3", {
 //     top:250
 // })
 
-gsap.
+
 // build scean
 //section 1
 myScene(tweenCircle, 2000, "#multiDirect")
