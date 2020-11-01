@@ -177,7 +177,6 @@ p.rl{
     display: inline-block;
     overflow: hidden;
     position: relative;
-    padding: 4% 2%;
     margin: 1%;
     z-index: 2;
     background-color: white;
@@ -187,6 +186,11 @@ h3.dh{
     font-size: 52px;
     line-height: 56px;
     font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+.patx{
+    padding: 6% 8%;
 }
 .pa{
     transform: translate(205px, -140px) rotate(315deg);
@@ -227,8 +231,12 @@ a{
     z-index: -1;
     position: absolute;
 }
-.dhov:hover, .cb:active{
-    background-color: #3ddc84;
-    transition: linear 1s ease-in-out;
+.c3{
+    z-index: -1;
+    position: absolute;
 }
+.svgC3{
+    position: absolute;
+}
+
 
