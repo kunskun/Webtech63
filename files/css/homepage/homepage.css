@@ -208,6 +208,7 @@ h3.dh{
     width: 70%;
     height: 500px;
     overflow-x: scroll;
+    margin-top: 4%;
 }
 a{
     color: black;
@@ -237,6 +238,9 @@ a{
 }
 .svgC3{
     position: absolute;
+}
+.labelp{
+    position: static;
 }
 
 

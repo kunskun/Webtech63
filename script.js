@@ -55,12 +55,20 @@ tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
 tl.to(".pmain", 1, {xPercent: -25}, "label2");
 tl.from(titles[2], 0.5, {opacity:0}, "label2+=0.5");
 
-
-
-
 new ScrollMagic.Scene({
   triggerHook: "onLeave",
   duration: "400%"
 })
   .setTween(tl)
   .addTo(controller);
+
+gsap.utils.toArray(".learn").forEach(vec => {
+    let hover = gsap.to(vec, {
+        duration: 0.5,
+        x: 20, 
+        paused: true, 
+        ease: "easeIn"
+    });
+    vec.addEventListener("mouseenter", () => hover.play());
+    vec.addEventListener("mouseleave", () => hover.reverse());
+});
