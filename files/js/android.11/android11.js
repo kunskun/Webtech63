@@ -10,7 +10,7 @@ var tweenCircle = gsap.to("#animate", {
 });
 
 var tweenBg11 = gsap.from("#bg11", {
-    top: 1700,
+    top: 100,
     opacity: 0,
     ease: Linear.easeNone,
 });
@@ -70,7 +70,7 @@ tl2.from("#pills3", {
 
 tlBubble.to("#area-bubble", {
     delay: 1,
-    xPercent: 125
+    xPercent: 130
 })
 // gsap.from("#pills1", {
 //     delay:3,
@@ -150,3 +150,31 @@ document.querySelectorAll(".hightlight-box").forEach(function (box) {
         gsap.effects.boxOut(this);
     });
 });
+
+//section5
+function changBG(id) {
+    let arrayButton = ["#smartReply", "#appSugges", "#smartFolders"]
+    let arrayStep = ["#bg-section5-step1", "#bg-section5-step2", "#bg-section5-step3"];
+    let arrayCard = ["#card1", "#card2", "#card3"]
+    console.log(typeof id)
+    let index = id;
+    for (let i = 0; i < 3; i++) {
+        if (i !== id) {
+            let step = document.querySelector(arrayStep[i]);
+            step.setAttribute("hidden", "true");
+            let button1 = document.querySelector(arrayButton[i])
+            button1.classList.remove("button-sec6-select")
+            let card = document.querySelector(arrayCard[i]);
+            card.setAttribute("hidden", "true");
+        } else {
+            let step = document.querySelector(arrayStep[i]);
+            step.removeAttribute("hidden")
+            let button1 = document.querySelector(arrayButton[i])
+            button1.classList.add("button-sec6-select")
+            let card = document.querySelector(arrayCard[i]);
+            card.removeAttribute("hidden")
+        }
+    }
+    let step1 = document.querySelector(arrayStep[index]);
+
+}
