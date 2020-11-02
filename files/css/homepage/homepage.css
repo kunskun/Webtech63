@@ -51,7 +51,7 @@
 }
 @font-face{
     font-family: Android Euclid; 
-    src: url(files/font/AndroidEuclid-Bold.otf);
+    src: url(files/fonts/AndroidEuclid-Bold.otf);
 }
 h1{
     font-family: Android Euclid;
@@ -62,7 +62,7 @@ h1{
     z-index: 10;
 }
 p{  
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;;
     display: block;
     font-size: 18px;
     line-height: 28px;
