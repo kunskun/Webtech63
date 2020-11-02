@@ -338,10 +338,12 @@
             </div>
             <div class="row">
                 <div style="display: flex;position: relative;top: 200px;left: 5vw;">
-                    <a href="#test"></a>
-                    <div id="smartReply" class="button-sec6" onclick="changBG(0)" style="cursor: pointer;z-index: 10;" >SMART REPLY</div>
-                    <div id="appSugges" class="button-sec6" onclick="changBG(1)" style="cursor: pointer;z-index: 10;">APP SUGGESTIONS</div>
-                    <div id="smartFolders" class="button-sec6" onclick="changBG(2)" style="cursor: pointer;z-index: 10;">SMART FLODERS </div>
+                    <div id="smartReply" class="button-sec6 button-sec6-select" onclick="changBG(0)"  style="cursor: pointer;z-index: 10;" >SMART REPLY</div>
+                    <div id="appSugges" class="button-sec6" onclick="changBG(1)"  style="cursor: pointer;z-index: 10;">APP SUGGESTIONS</div>
+                    <div id="smartFolders" class="button-sec6" onclick="changBG(2)"  style="cursor: pointer;z-index: 10;">SMART FLODERS </div>
+                    <!-- <div id="smartReply" class="button-sec6 button-sec6-select" onclick="changBG(0)" onmouseover="mouseOver(0)" onmouseout="mouseOut(0)" style="cursor: pointer;z-index: 10;" >SMART REPLY</div>
+                    <div id="appSugges" class="button-sec6" onclick="changBG(1)" onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" style="cursor: pointer;z-index: 10;">APP SUGGESTIONS</div>
+                    <div id="smartFolders" class="button-sec6" onclick="changBG(2)" onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" style="cursor: pointer;z-index: 10;">SMART FLODERS </div> -->
                 </div>
             </div>
             <div class="row">
@@ -367,7 +369,7 @@
                                 words you need and the perfect emoji are always at your fingertips.2</p>
                         </div>
                     </div>
-                    <div id="card2" class="card"
+                    <div hidden id="card2" class="card"
                         style="top:50%; width: 407px;border: 0;padding:0px 10px 10px 10px; border-radius: 10px;box-shadow: 4px 40px 48px rgba(0,0,0,0.1);position: absolute;">
                         <div class="card-body">
                             <h5 class="card-title">App suggestions</h5>
@@ -378,7 +380,7 @@
                                 app you use when it’s time to relax.</p>
                         </div>
                     </div>
-                    <div id="card3" class="card"
+                    <div hidden id="card3" class="card"
                         style="top:50%; width: 407px;border: 0;padding:0px 10px 10px 10px; border-radius: 10px;box-shadow: 4px 40px 48px rgba(0,0,0,0.1);position: absolute;">
                         <div class="card-body">
                             <h5 class="card-title">Smart folders</h5>
@@ -396,17 +398,17 @@
                         <span class="pills-sec6"></span>
                     </div>
                 </div>
-                <div id="bg-section5-step2" style="position:relative">
+                <div hidden id="bg-section5-step2" style="position:relative">
                     <div style="position: absolute; display: flex;top:350px;left: -1350px;  z-index: -1;">
                         <span class="bg-app-circle"></span>
                         <span class="bg-app-circle"></span>
                         <span class="bg-app-circle"></span>
-                        <span class="bg-app-circle"></span>
-                        <span id="app6" class="bg-app-circle"></span>
+                        <span id="app5" class="bg-app-circle"></span>
+                        <span id="app6"></span>
                         <span class="bg-app-circle"></span>
                     </div>
                 </div>
-                <div id="bg-section5-step3" style="position:relative">
+                <div hidden id="bg-section5-step3" style="position:relative">
                     <div
                         style="position: absolute; display: flex;top:350px;left: -1200px;top:240px;  z-index: -1;">
                         <span class="bg-smart-circle"></span>

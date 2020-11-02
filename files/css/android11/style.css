@@ -323,8 +323,11 @@
 	box-shadow: 0 0 0 30px rgba(215,239,254,0.2);
 	margin: 0px 50px;
 }
-.bg-app-circle:nth-child(5) {
-	left:870px;
+#app6 {
+	width: 190px;
+	height:190px;
+	border-radius: 50%;
+	left:920px;
 	position: absolute;
 	background-color: #f86734;
 	box-shadow: 0 0 0 30px rgba(248,103,52,0.2);

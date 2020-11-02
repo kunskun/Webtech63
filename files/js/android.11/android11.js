@@ -72,23 +72,6 @@ tlBubble.to("#area-bubble", {
     delay: 1,
     xPercent: 130
 })
-// gsap.from("#pills1", {
-//     delay:3,
-//     scrollTrigger:{
-//         trigger: "#pills1",
-//         toggleActions:"restart"
-//     },
-//     top:250
-// })
-
-// gsap.from("#pills1", {
-//     delay:3,
-//     scrollTrigger:{
-//         trigger: "#pills1",
-//         toggleActions:"restart"
-//     },
-//     top:250
-// })
 
 
 // build scean
@@ -152,29 +135,144 @@ document.querySelectorAll(".hightlight-box").forEach(function (box) {
 });
 
 //section5
+let currentId = 0;
+let gsapBg1 = gsap.from("#bg-section5-step1", {
+    duration: 2,
+    left: -1700,
+    ease: Power1.easeOut
+})
+
+let gsapBg2 = gsap.timeline().from(".bg-app-circle", {
+    opacity: 0,
+    y: 500,
+    duration: 1,
+    stagger: 0.3,
+    ease: "back"
+}).to("#app5", {
+    delay: 0,
+    y: 800,
+    opacity: 0,
+    duration: 2,
+    ease: "back"
+})
+
+let gsapBg2_1 = gsap.timeline().from("#app6", {
+    opacity: 0,
+    delay: 2,
+    y: -500,
+    duration: 1,
+    ease: "back"
+})
+let gsapBg3 = gsap.from(".bg-smart-ring", {
+    scale: 3,
+    duration: 1,
+    ease: Power1.easeOut
+})
+
+
+
 function changBG(id) {
     let arrayButton = ["#smartReply", "#appSugges", "#smartFolders"]
     let arrayStep = ["#bg-section5-step1", "#bg-section5-step2", "#bg-section5-step3"];
     let arrayCard = ["#card1", "#card2", "#card3"]
     console.log(typeof id)
-    let index = id;
-    for (let i = 0; i < 3; i++) {
-        if (i !== id) {
-            let step = document.querySelector(arrayStep[i]);
-            step.setAttribute("hidden", "true");
-            let button1 = document.querySelector(arrayButton[i])
-            button1.classList.remove("button-sec6-select")
-            let card = document.querySelector(arrayCard[i]);
-            card.setAttribute("hidden", "true");
-        } else {
-            let step = document.querySelector(arrayStep[i]);
-            step.removeAttribute("hidden")
-            let button1 = document.querySelector(arrayButton[i])
-            button1.classList.add("button-sec6-select")
-            let card = document.querySelector(arrayCard[i]);
-            card.removeAttribute("hidden")
+
+    if (id === currentId) {
+        console.log('pass')
+    } else {
+        if (id == 0) {
+            gsapBg1.restart();
+        } else if (id == 1) {
+
+            gsapBg2.restart()
+            gsapBg2_1.restart()
+
+        } else if (id == 2) {
+            gsapBg3.restart()
+        }
+        currentId = id;
+
+        for (let i = 0; i < 3; i++) {
+            if (i !== id) {
+                let step = document.querySelector(arrayStep[i]);
+                step.setAttribute("hidden", "true");
+                let button1 = document.querySelector(arrayButton[i])
+                button1.classList.remove("button-sec6-select")
+                button1.style.backgroundColor = "White"
+                button1.style.color = "#073042"
+                let card = document.querySelector(arrayCard[i]);
+                card.setAttribute("hidden", "true");
+
+                gsap.from(arrayCard[i], { //การ์ด
+                    top: 0,
+                    ease: Linear.easeNone
+                })
+
+            } else {
+                let step = document.querySelector(arrayStep[i]);
+                step.removeAttribute("hidden")
+                let button1 = document.querySelector(arrayButton[i])
+                button1.classList.add("button-sec6-select")
+                let card = document.querySelector(arrayCard[i]);
+                card.removeAttribute("hidden")
+
+                gsap.from(arrayCard[i], {
+                    duration: 1,
+                    opacity: 0,
+                    top: 500,
+                    ease: Linear.easeNone
+                })
+            }
         }
     }
-    let step1 = document.querySelector(arrayStep[index]);
 
 }
+
+
+
+gsap.registerEffect({
+    name: "buttonEnter",
+    defaults: {
+        duration: 0.3,
+        ease: Linear.easeNone,
+    }, //defaults get applied to the "config" object passed to the effect below
+    effect: (targets, config) => {
+        return gsap.to(targets, {
+            duration: config.duration,
+            backgroundColor: "#073042",
+            color: "white",
+            ease: Linear.easeNone,
+        });
+    }
+});
+gsap.registerEffect({
+    name: "buttonOut",
+    defaults: {
+        duration: 0.3,
+        ease: Linear.easeNone
+    }, //defaults get applied to the "config" object passed to the effect below
+    effect: (targets, config) => {
+        return gsap.to(targets, {
+            duration: config.duration,
+            backgroundColor: "white",
+            color: "#073042",
+            ease: Linear.easeNone,
+        });
+    }
+})
+
+document.querySelectorAll(".button-sec6").forEach(function (box) {
+    box.addEventListener("mouseover", function () {
+        gsap.effects.buttonEnter(this);
+    });
+});
+
+document.querySelectorAll(".button-sec6").forEach(function (box) {
+    let arrayButton = ["smartReply", "appSugges", "smartFolders"]
+    box.addEventListener("mouseout", function () {
+        console.log(box.id)
+        if (box.id != arrayButton[currentId]) {
+            gsap.effects.buttonOut(this);
+        }
+    });
+});
