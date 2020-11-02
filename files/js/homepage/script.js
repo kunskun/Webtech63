@@ -73,30 +73,17 @@ gsap.utils.toArray(".learn").forEach(vec => {
     vec.addEventListener("mouseleave", () => hover.reverse());
 });
 
-let count = 0;
 
-function prevSlide() {
-    if (count > 0) {
-        if (count == 1) {
-            count--;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: 10%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 80%; transition-duration: 0.5s;')
-        } else if (count == 2) {
-            count--;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
-        }
-    }
+function nextSlide(){
+    document.getElementById('hovf').style = 'margin-left:6.5%; transition-duration: 0.5s;'
+    document.getElementById('progress-bar').style = 'width: 100%; transition-duration: 0.5s;'
+    document.getElementById('vbar1').style = 'fill: black; transition-duration: 0.5s;'
+    document.getElementById('vbar2').style = 'fill: #EAECEE; transition-duration: 0.5s;'
 }
 
-function nextSlide() {
-    if (count == 0) {
-        count++;
-        document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-        document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
-    } else if (count == 1) {
-        count++;
-        document.getElementById('slide ').setAttribute('style', 'margin-left: -10%; transition-duration: 0.5s;')
-        document.getElementById('bar').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
-    }
+function prevSlide(){
+    document.getElementById('hovf').style = 'margin-left:20%; transition-duration: 0.5s;'
+    document.getElementById('progress-bar').style = 'width: 90%; transition-duration: 0.5s;'
+    document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+    document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
 }
