@@ -24,33 +24,46 @@ function showBar() {
 
 
 let count = 0;
+let newNum = 0;
 
-function prevSlide() {
-    if (count > 0) {
-        if (count == 1) {
-            count--;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: 10%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 80%; transition-duration: 0.5s;')
-        } else if (count == 2) {
-            count--;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+function prevSlide(obj) {
+    if(obj.value.localeCompare("1") == '-1' ){
+        if (count > 0) {
+            if (count == 1) {
+                count--;
+                document.getElementById('slide ').setAttribute('style', 'margin-left: 10%; transition-duration: 0.5s;')
+                document.getElementById('bar').setAttribute('style', 'width: 80%; transition-duration: 0.5s;')
+            } else if (count == 2) {
+                count--;
+                document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
+                document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+            }
+        }
+    } else {
+        if (newNum == 1) {
+            newNum--;
+            document.getElementById('slide2').setAttribute('style', 'margin-left: 20%; transition-duration: 0.5s;')
+            document.getElementById('bar2').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
         }
     }
 }
 
-function nextSlide() {
-    if (count == 0) {
-        count++;
-        document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-        document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
-    } else if (count == 1) {
-        count++;
-        document.getElementById('slide ').setAttribute('style', 'margin-left: -10%; transition-duration: 0.5s;')
-        document.getElementById('bar').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
+function nextSlide(obj) {
+    if(obj.value.localeCompare("1") == '-1' ){
+        if (count == 0) {
+            count++;
+            document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
+            document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+        } else if (count == 1) {
+            count++;
+            document.getElementById('slide ').setAttribute('style', 'margin-left: -10%; transition-duration: 0.5s;')
+            document.getElementById('bar').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
+        }
+    } else {
+        if(newNum == 0){
+            newNum++;
+            document.getElementById('slide2').setAttribute('style', 'margin-left: 13%; transition-duration: 0.5s;')
+            document.getElementById('bar2').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
+        }
     }
 }
-
-// function circleSizeUp(obj) {
-//     obj.setAttribute('class', 'around')
-// }
