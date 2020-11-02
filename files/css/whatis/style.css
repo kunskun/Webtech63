@@ -245,6 +245,67 @@
     transform: translate(-1000px, -1500px);
 }
 
+.bot-box-all {
+    position: relative;
+    left: 28rem;
+    overflow: hidden;
+    width: 1008px;
+    height: 560px;
+    border-radius: 30px;
+}
+
+.next-to {
+    position: relative;
+    left: 5.4rem;
+    top: 6rem;
+    width: 400px;
+}
+
+.bot-circle {
+    height: 750px;
+    width: 750px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-color: #3ddc84;
+    z-index: -1;
+    transform: translate(-1000px, -1500px);
+}
+
+.text-head {
+    position: relative;
+    top: 5rem;
+    left: 5.4rem;
+}
+
+.heading {
+    position: relative;
+    left: 5.5rem;
+    top: 5rem;
+}
+
+.bot-img {
+    position: relative;
+    top: -46rem;
+    width: 850px;
+    left: 27rem;
+}
+
+.bot-box {
+    width: 1008px;
+    overflow: hidden;
+    height: 400px;
+    background-color: #4285f4;
+    position: relative;
+}
+
+.botbot-box {
+    border-radius: 60px;
+    position: relative;
+    top: -15rem;
+    z-index: -1;
+}
+
 @font-face {
     font-family: Android Euclid;
     src: url(//test/AndroidEuclid-Bold.otf);
@@ -253,10 +314,6 @@
 .carousel-slider__front-panel {
     width: 400px;
     height: auto;
-}
-
-body {
-    font: "Android Euclid";
 }
 
 .card-img {
@@ -271,16 +328,6 @@ body {
 }
 
 .box {
-    height: 700px;
-    width: 55%;
-    overflow: hidden;
-    position: absolute;
-    opacity: 0;
-    background-color: #3ddc84;
-    z-index: -1;
-}
-
-.boxx {
     height: 700px;
     width: 55%;
     overflow: hidden;
