@@ -1,0 +1,275 @@
+body{
+    overflow-x: hidden;
+}
+.box1{
+    margin: 9% 0% 0% 20%; 
+    color: black;
+    position: relative; 
+    z-index: 10;
+}
+.hid{
+    transform: translateY(120px);
+    opacity: 0;
+}
+.part1{
+    background-color: #f86734;
+    width: 100%;
+    height: 730px;
+    overflow: hidden;
+}
+.part2{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+.part3{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.z2{
+    z-index: 2;
+}
+.ir{
+    position: absolute;
+    padding-left: 25%;
+    background-color: white;
+    border-radius: 500px;
+    width: 1000px;
+    height: 550px;
+    transform: translateX(-60px);
+    border: 20px solid #4285f4;
+    z-index: -1;
+    opacity: 0.2;
+}
+.het{
+    z-index: 2;
+    transform: translate(500px, 130px);
+}
+.tx{
+    width: 70%;
+    transform: translateY(130px);
+}
+@font-face{
+    font-family: Android Euclid; 
+    src: url(files/fonts/AndroidEuclid-Bold.otf);
+}
+h1{
+    font-family: Android Euclid;
+    display: block;
+    font-size: 76px;
+    line-height: 80px;
+    font-weight: 700;
+    z-index: 10;
+}
+p{  
+    font-family: 'Roboto', sans-serif;;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 10;
+}
+.bu{
+    font-family: Android Euclid;
+    align-items: center;
+    background-color: #073042;
+    border-radius: 100px;
+    color: #fff;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 14px;
+    padding: 12px 24px;
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .2s linear;
+}
+.bu:hover{
+    color:#3ddc84;
+}
+.img1{
+    width: 200px;
+    transform: translate(-460px, 500px) rotate(45deg);
+    z-index: 1;
+}
+.img2{
+    width: 200px;
+    transform: translate(760px, 440px) rotate(315deg);
+    z-index: 1;
+}
+.img3{
+    width: 200px;
+    transform: translate(440px, 670px) rotate(315deg);
+    z-index: 1;
+}
+.img4{
+    width: 200px;
+    transform: translate(-450px, 490px) rotate(45deg);
+    z-index: 1;
+}
+.android11_img{
+    width: 570px;
+    float: right;
+    transform: translate(-50px, -180px);
+}
+
+.txb{
+    width: 70%;
+}
+.imgb{
+    float: right;
+    justify-content: right;
+    justify-items: right;
+    z-index: -2;
+}
+.svg1{
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+.svg2{
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+h6{
+    font-family: Android Euclid;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+h3{
+    font-family: Android Euclid;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.box2{
+    margin-left: 1%;
+}
+.learn{
+    font-family: Android Euclid;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    transform: translateY(-50px);
+}
+h3.card-text{
+    font-size: 52px;
+}
+.mt-20{
+    margin-top: 20%;
+}
+p.rl{
+    margin-left: 10%;
+    width: 50%;
+}
+.dhov{
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 1%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 4px 20px 47px 0 rgba(0,0,0,0.1);;
+}
+h3.dh{
+    font-size: 52px;
+    line-height: 56px;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+.patx{
+    padding: 6% 8%;
+}
+.pa{
+    transform: translate(205px, -140px) rotate(315deg);
+}
+.read-l{
+    position: relative;
+    top: 190px;
+}
+.read-ln{
+    position: relative;
+    top: 80px;
+}
+.hovf{
+    float: left;
+    width: 100%;
+    height: 500px;
+    /* overflow-x: scroll; */
+    margin-top: 4%;
+}
+a{
+    color: black;
+}
+.plat{
+    background-color: #3ddc84;
+    border-radius: 500px;
+    height: 320px;
+    transform: translateY(150px);
+    margin-left: 4%;
+}
+.mt-6{
+    margin-top: 15%;
+}
+.bl{
+    background-color: #eff7cf;
+    width: 1500px;
+    height: 700px;
+    border-radius: 700px;
+    transform: translate(-450px, -180px);
+    z-index: -1;
+    position: absolute;
+}
+.c3{
+    z-index: -1;
+    position: absolute;
+}
+.svgC3{
+    position: absolute;
+}
+.labelp{
+    position: static;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 60%;
+    height: 5px;
+    margin-left: 21%;
+}
+.progress-bar{
+    background-color: black;
+    width: 90%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.vbar2{
+    fill: black;
+}
+.button-group{
+    transform: translate(-90px, 40px);
+}
+
+

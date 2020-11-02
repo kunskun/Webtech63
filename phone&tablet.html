@@ -52,23 +52,17 @@
         <div class="circle2"></div>
             <div class="row" style="padding: 12% 0% 0% 18%;">
                 <div class="col-6">
-                    <h1 class="">Phones & Tablets</h1>
-                    <h2 style="--headings-count: 3" class="row-heading__heading is-2 is-2--scale">
-                        <span  class="">If you want it,</span><br>
-                        <span  class="">Android</span><br>
-                        <span  class="">powers it.</span>
+                    <h1>Phones & Tablets</h1>
+                    <h2>
+                        <span  class="lineUp" >If you want it,</span><br>
+                        <span  class="lineUp" style="animation-delay: 200ms;">Android</span><br>
+                        <span  class="lineUp" style="animation-delay: 400ms;">powers it.</span>
                     </h2>
                 </div>
                 <div class="col-6 " style="z-index: 0;" id="test">
                     <!--รูปนี้ภาพแตก--><img class='pic1' src="https://lh3.googleusercontent.com/-EyymqCcsQbXlbRkwE9OrIcHkhdvH14a1xxVpPtmbpbHV71fDSlPgm-KxlGRNhZjbS2e6cU4j0ENRvk4VeXAMIdQUnnlPtd3J5VSqP8=w320-e365" style="float: right;width: 1300px;padding-left: 250px;" id="eiei33">
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class=""></div>
-            <div class="">
-            </div>
-        </div>
         </div>
     </section>
     <!--End Section 1 ยังไม่เสร็จ ภาพแตก + font-->
@@ -250,8 +244,8 @@
             <div class="progress " style="height: 5px; ">
                 <div class="progress-bar bg-dark " role="progressbar " style="width: 80% "  aria-valuemin="0 " aria-valuemax="100 " id='bar'></div>
               </div><br>
-              <button style="float: right;background-color:#ffffff00;border: 0px; " type='submit' onclick='nextSlide()'><i class="fa fa-arrow-right " aria-hidden="true "></i></button>
-              <button style="float: right;background-color:#ffffff00; border: 0px; " type='submit' onclick='prevSlide()'><i class="fa fa-arrow-left " aria-hidden="true "></i></button>
+              <button style="float: right;background-color:#ffffff00;border: 0px; " type='submit' onclick='nextSlide(this)'><i class="fa fa-arrow-right " aria-hidden="true "></i></button>
+              <button style="float: right;background-color:#ffffff00; border: 0px; " type='submit' onclick='prevSlide(this)'><i class="fa fa-arrow-left " aria-hidden="true "></i></button>
         </div>
         </div>
         <br><br><br><br>
@@ -260,8 +254,10 @@
     <!--End Section3 เหลือ css animation กะ font-->
 
     <!--Section 4-->
-    <section>
-        <div class="container ">
+    <section style="overflow: hidden;margin-top: 10%;" >
+        <div class='box-radius '></div>
+        <div class='circle3'></div>
+        <div class="container" >
             <div class="row ">
                 <div class="col-7 ">
                     <h6>FOLDABLE PHONES</h6>
@@ -273,27 +269,175 @@
                     <p>Unfold your screen to play a game and stream a movie. At the same time. With Android, you can multitask like a pro on phones that flex to fit so many possibilities.</p>
                 </div>
             </div>
-            <div class="row " style="margin-top: 10%; ">
-                <div class="col ">
+        </div>
+        <div class="container-fluid" id="slide2" style='margin-left:20%;'>
+            <div class="row " style="margin-top: 5%; display: inline-box;">
+                <div class="col-2 ">
                         <div class=" " align=" center ">
                             <a href=" # ">
                                 <cloud-image src="https://lh3.googleusercontent.com/HMB9uWkVEjlCG_-o8h98dkczpSP1W1Dqmro4v10nQkXs0LCmwKCbdo1Cnbjl-mzfZgexVpdqRPsdqonjXiaJPCid26xycSv0rZpAjA ">
-                                    <img src="https://lh3.googleusercontent.com/HMB9uWkVEjlCG_-o8h98dkczpSP1W1Dqmro4v10nQkXs0LCmwKCbdo1Cnbjl-mzfZgexVpdqRPsdqonjXiaJPCid26xycSv0rZpAjA=w320-e365 " style="height: 45vh; transform: rotate(90deg); ">
-                                <br><div id='circle'>
-                                    <h4>Microsoft</h4>
-                                    <span>Surface Duo</span>
-                                </div>
+                                    <img src="https://lh3.googleusercontent.com/HMB9uWkVEjlCG_-o8h98dkczpSP1W1Dqmro4v10nQkXs0LCmwKCbdo1Cnbjl-mzfZgexVpdqRPsdqonjXiaJPCid26xycSv0rZpAjA=w320-e365 " style="height: 50vh; transform: rotate(90deg); ">
                                 <!-- <svg aria-hidden=" true ">
                                 <use xlink:href=" #ico-arrow-external "></use>
                               </svg> -->
                             </cloud-image>
+                            <div id='circle' style="margin-top: -20px;">
+                                <h4>Microsoft</h4>
+                                <span>Surface Duo</span>
+                            </div>
                             </a>
                         </div>
                 </div>
+
+                <div class="col-2 " style="margin-left: 200px;">
+                    <div class=" " align=" center " style="margin-top: 50px;">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/OYEyQTcSe1zqUhhS9AtiQsqiW8eU1Czs1jJXiwNdCNr0SoCuAcpqV5lWp7GAjrR7OmdSA3JmAzqNgKgkOr1-1Dt2SG6S_zQsGYNygA" >
+                                <img src="https://lh3.googleusercontent.com/OYEyQTcSe1zqUhhS9AtiQsqiW8eU1Czs1jJXiwNdCNr0SoCuAcpqV5lWp7GAjrR7OmdSA3JmAzqNgKgkOr1-1Dt2SG6S_zQsGYNygA=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Samsung</h4>
+                            <span>Galaxy Z Fold2</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-2 ">
+                    <div class=" " align=" center " style="margin-top: 50px;">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/khFT04tRnfGq0wN6svSZuUYmUrzkUdFZVy23GqeEC3f7QCdZcuyYswJieKJTPGkTNsa7MImwjT5Np_EWDgUeRjFhtUjfC4XRmjG2uw" >
+                                <img src="https://lh3.googleusercontent.com/khFT04tRnfGq0wN6svSZuUYmUrzkUdFZVy23GqeEC3f7QCdZcuyYswJieKJTPGkTNsa7MImwjT5Np_EWDgUeRjFhtUjfC4XRmjG2uw=w320-e365" style="height: 40vh;">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg>
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Samsung</h4>
+                            <span>Galaxy Z Flip</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-2 " >
+                    <div class=" " align=" center " style="margin-top: 50px; ">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/CO-3rKqSXxJr4WBPOKa35RbAN9fkTEqUZs00rjhg-3poKsM6hS1xmedV2W5pLqbp877T-w2-ABsegfl1Gdwf-RxusOa3jt4kla1c">
+                                <img src="https://lh3.googleusercontent.com/CO-3rKqSXxJr4WBPOKa35RbAN9fkTEqUZs00rjhg-3poKsM6hS1xmedV2W5pLqbp877T-w2-ABsegfl1Gdwf-RxusOa3jt4kla1c=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Motorola</h4>
+                            <span>Razr</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="container " style="padding-top:50px; ">
+            <div class="progress " style="height: 5px; ">
+                <div class="progress-bar bg-dark " role="progressbar " style="width: 90% "  aria-valuemin="0 " aria-valuemax="100 " id='bar2'></div>
+              </div><br>
+              <button style="float: right;background-color:#ffffff00;border: 0px; " type='submit' onclick='nextSlide(this)' value="1"><i class="fa fa-arrow-right " aria-hidden="true "></i></button>
+              <button style="float: right;background-color:#ffffff00; border: 0px; " type='submit' onclick='prevSlide(this)' value="1"><i class="fa fa-arrow-left " aria-hidden="true "></i></button>
+        </div>
+    </section>
+    <!--End Section4  ยังไม่ได้ทำ Font-->
+
+    <!--Section 5-->
+    <section style="margin-top: 20%;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>POPULAR PICKS</h6>
+                    <h1>Cameras that</h1><br>
+                    <h1>catch any shot.</h1>
+                </div>
+                <div class="col" style="padding-top: 5%;">
+                    <p>Android powers some of the world’s top cameras. So when the action speeds up or the lights go down low, you always get that perfect shot.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%;">
+                <div class="col-3 " >
+                    <div class=" " align=" center " style="margin-top: 50px;margin-left: -200px; ">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/agX3_IQhw23OzjcQ_kNfTaxl30PanbKXQIzonFiCpu7NfMNIpKP77S0_LkQSSjOjUMONtpwkRA5M8tvNnoUYhROvl6HVWaZTXAHjAA" >
+                                <img src="https://lh3.googleusercontent.com/agX3_IQhw23OzjcQ_kNfTaxl30PanbKXQIzonFiCpu7NfMNIpKP77S0_LkQSSjOjUMONtpwkRA5M8tvNnoUYhROvl6HVWaZTXAHjAA=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Samsung</h4>
+                            <span>Galaxy S20</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 " >
+                    <div class=" " align=" center " style="margin-top: 50px;margin-left: -120px;  ">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/jd-2aDmdDnzDoy5-oNB7V0Tl5PWxp-RpBfH9x9lxGC1TLxgfJH49qf5etAa8CmmfdkwYHTNl9Z7oZCX20NyhdXMpWnxur_Im1L1A" >
+                                <img src="https://lh3.googleusercontent.com/jd-2aDmdDnzDoy5-oNB7V0Tl5PWxp-RpBfH9x9lxGC1TLxgfJH49qf5etAa8CmmfdkwYHTNl9Z7oZCX20NyhdXMpWnxur_Im1L1A=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Xiaomi</h4>
+                            <span>Mi 10 Pro</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 " >
+                    <div class=" " align=" center " style="margin-top: 50px; ">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/t9yVEW5RYKs58cN486VyKCbuhGEyl7m4uKQbtjZdiTCnwp4Th0ZtB9QGSESnagGUKBOK5oWRKZ_kklzBREsNTufp2Wfj3ociQH3GBA">
+                                <img src="https://lh3.googleusercontent.com/t9yVEW5RYKs58cN486VyKCbuhGEyl7m4uKQbtjZdiTCnwp4Th0ZtB9QGSESnagGUKBOK5oWRKZ_kklzBREsNTufp2Wfj3ociQH3GBA=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Vivo</h4>
+                            <span>V17 Pro</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3 " >
+                    <div class=" " align=" center " style="margin-top: 50px;margin-left: 100px;  ">
+                        <a href=" # ">
+                            <cloud-image src="https://lh3.googleusercontent.com/GILRulOhaUQ1liJnaNdIkzCE7c6G-DZBLt8yXarjaEKRpg-a0bvzE_60Tm-RfBzjXccxoHnADhI4tbSZ3Qibk283oW5sRaG3b8dnbek" >
+                                <img src="https://lh3.googleusercontent.com/GILRulOhaUQ1liJnaNdIkzCE7c6G-DZBLt8yXarjaEKRpg-a0bvzE_60Tm-RfBzjXccxoHnADhI4tbSZ3Qibk283oW5sRaG3b8dnbek=w320-e365" style="height: 40vh;">
+                            <!-- <svg aria-hidden=" true ">
+                            <use xlink:href=" #ico-arrow-external "></use>
+                          </svg> -->
+                        </cloud-image>
+                        <div id='circle' style="margin-top: 20px;">
+                            <h4>Sony</h4>
+                            <span>Xperia 1 ii</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </section>
-
 
 </body>
 <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js "
