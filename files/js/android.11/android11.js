@@ -26,9 +26,22 @@ var tweenPhone3 = gsap.from("#phone3", {
 });
 //section2
 var tweenShapeHL = gsap.to("#bg-shape-hightlight", {
-    top: -50,
+    top: -500,
     ease: Linear.easeNone
 })
+
+//section5
+var tweenShapeBg5 = gsap.to("#bg-shape-sec5", {
+    top: -150,
+    ease: Linear.easeNone
+})
+
+//section8-3
+var tweenShapeBg8_3 = gsap.to(".bg-shape-sec8", {
+    top: -150,
+    ease: Linear.easeNone
+})
+
 
 var tl1 = gsap.timeline({
     scrollTrigger: {
@@ -37,7 +50,7 @@ var tl1 = gsap.timeline({
         // start:"-50px 80%",
         // end:"100px 80%",
         // end:0,
-        markers: true,
+        markers: false,
         trigger: ["#pills1"],
         toggleActions: "restart restart restart restart"
     }
@@ -80,6 +93,10 @@ myScene(tweenCircle, 2000, "#multiDirect")
 myScene([tweenBg11, tweenPhone2], 900, "#multiDirect")
 myScene(tweenPhone3, 1700, "#multiDirect")
 myScene(tweenShapeHL, 500, "#bg-shape-hightlight")
+myScene(tweenShapeBg5, 500, "#bg-shape-sec5")
+myScene(tweenShapeBg8_3, 500, ".bg-shape-sec8")
+
+
 
 // build scean function
 function myScene(tween, time, trigger) { // function scroll down
@@ -136,10 +153,23 @@ document.querySelectorAll(".hightlight-box").forEach(function (box) {
 
 //section5
 let currentId = 0;
-let gsapBg1 = gsap.from("#bg-section5-step1", {
+
+let gsapBg1 = gsap.timeline({
+    scrollTrigger: {
+        start: "-350px center",
+        end: "700px top",
+        markers: false,
+        trigger: "#smartReply",
+        toggleActions: "restart restart restart restart"
+    }
+})
+
+
+gsapBg1.from("#bg-section5-step1", {
     duration: 2,
     left: -1700,
     ease: Power1.easeOut
+
 })
 
 let gsapBg2 = gsap.timeline().from(".bg-app-circle", {
@@ -276,3 +306,57 @@ document.querySelectorAll(".button-sec6").forEach(function (box) {
         }
     });
 });
+
+// section8-2
+
+let scrollSec8_2 = gsap.timeline({
+    scrollTrigger: {
+        start: "-350px center",
+        end: "700px top",
+        markers: true,
+        trigger: "#bg-bubble-sec8-2",
+        toggleActions: "restart restart restart restart"
+    }
+})
+
+scrollSec8_2.from(".internal-circle-layer2", {
+    duration: 2,
+    strokeDashoffset:220,
+    ease: Power1.easeOut,
+    strokeDasharray: 100
+    
+})
+
+//section8-3
+let scrollSec8_3 = gsap.timeline({
+    scrollTrigger: {
+        start: "-350px center",
+        end: "700px top",
+        markers: true,
+        trigger: ".bg-st8-2",
+        toggleActions: "restart restart restart restart"
+    }
+})
+
+scrollSec8_3.from(["#popup-auto", "#popup-onetime"], {
+    duration: 0.5,
+    scale:0,
+    ease: Power1.easeOut,
+})
+
+//section9 
+let gsapBgWave = gsap.timeline().from(".bg-wave", {
+    repeat:-1,
+    opacity: 1,
+    scale:0,
+    duration: 5,
+    onRepeat: () => {console.log(1)},
+    stagger: {
+        each:0.6,
+        opacity:0,
+        from:"center",
+        yoyo:true,
+    },
+    
+    ease: Power1.easeOut,
+})

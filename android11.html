@@ -83,7 +83,7 @@
 
     </section>
     <section class="setSection bg-st2" style="position: relative; z-index: 1;">
-        <div class="container " style="padding-top: 100px;position: relative;">
+        <div class="container " style="position: relative;">
 
             <div class="row justify-content-center" style="position: relative;top:400px">
                 <div class="row">
@@ -188,7 +188,7 @@
             </div>
             <div style="position: relative;height: 10px;width: 100vw;">
                 <h2 class="hightlight-android11">Android 11<br>Highlights</h2>
-                <div id="bg-sh-ape-hightlight" class="bg-shape">
+                <div id="bg-shape-hightlight" class="bg-shape">
                 </div>
             </div>
         </div>
@@ -283,7 +283,7 @@
                             </svg>
                         </div>
                         <h2 class="hightlight-header">Capture and share content.</h2>
-                        <div style="z-index: 10;" class="bg-shape-sec4">
+                        <div style="z-index: 10;" id="bg-shape-sec5" class="bg-shape-sec4">
                         </div>
                     </div>
                 </div>
@@ -317,7 +317,7 @@
 
         </div>
     </section>
-    <section class="setSection bg-st5 " style="padding-top: 200px;">
+    <section class="setSection bg-st5 " style="padding-top: 100px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6">
@@ -338,9 +338,12 @@
             </div>
             <div class="row">
                 <div style="display: flex;position: relative;top: 200px;left: 5vw;">
-                    <div id="smartReply" class="button-sec6 button-sec6-select" onclick="changBG(0)"  style="cursor: pointer;z-index: 10;" >SMART REPLY</div>
-                    <div id="appSugges" class="button-sec6" onclick="changBG(1)"  style="cursor: pointer;z-index: 10;">APP SUGGESTIONS</div>
-                    <div id="smartFolders" class="button-sec6" onclick="changBG(2)"  style="cursor: pointer;z-index: 10;">SMART FLODERS </div>
+                    <div id="smartReply" class="button-sec6 button-sec6-select" onclick="changBG(0)"
+                        style="cursor: pointer;z-index: 10;">SMART REPLY</div>
+                    <div id="appSugges" class="button-sec6" onclick="changBG(1)" style="cursor: pointer;z-index: 10;">
+                        APP SUGGESTIONS</div>
+                    <div id="smartFolders" class="button-sec6" onclick="changBG(2)"
+                        style="cursor: pointer;z-index: 10;">SMART FLODERS </div>
                     <!-- <div id="smartReply" class="button-sec6 button-sec6-select" onclick="changBG(0)" onmouseover="mouseOver(0)" onmouseout="mouseOut(0)" style="cursor: pointer;z-index: 10;" >SMART REPLY</div>
                     <div id="appSugges" class="button-sec6" onclick="changBG(1)" onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" style="cursor: pointer;z-index: 10;">APP SUGGESTIONS</div>
                     <div id="smartFolders" class="button-sec6" onclick="changBG(2)" onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" style="cursor: pointer;z-index: 10;">SMART FLODERS </div> -->
@@ -409,8 +412,7 @@
                     </div>
                 </div>
                 <div hidden id="bg-section5-step3" style="position:relative">
-                    <div
-                        style="position: absolute; display: flex;top:350px;left: -1200px;top:240px;  z-index: -1;">
+                    <div style="position: absolute; display: flex;top:350px;left: -1200px;top:240px;  z-index: -1;">
                         <span class="bg-smart-circle"></span>
                         <span class="bg-smart-circle"></span>
                         <span class="bg-smart-ring"></span>
@@ -496,12 +498,14 @@
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
-                            <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;"
+                            <div style="z-index: 1;position: relative; padding-left:45%; padding-top: 7%;"
                                 class="d-flex justify-content-center">
                                 <img src="/static/images/frames/frame-default.svg" width="296" height="618"
                                     style="z-index: 3;">
                             </div>
-                            <img style="position: absolute; top:-100px;width: 744px; height: 437px;"
+                            <div id="bg-sec8" style="position: absolute; top:-100px;width: 744px; height: 437px;"
+                                alt=""> </div>
+                            <img hidden style="position: absolute; top:-100px;width: 744px; height: 437px;"
                                 src="https://lh3.googleusercontent.com/KnHPBdPPbwCLYpnpto2o_my-AgcQa4y84dRqxJ-zaPr8X5w3JgdiaJKCXPguOpy83q8kY2QA313OcCmN7jMQdDWjlZbsdUtpYlJQ=w937-rw-e365-v1"
                                 alt="">
                         </div>
@@ -511,7 +515,7 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st8 " style="padding-top: 200px;">
+    <section class="setSection bg-st8 " style="padding-top: 100px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6">
@@ -522,9 +526,17 @@
                                 <img src="/static/images/frames/frame-default.svg" width="296" height="618"
                                     style="z-index: 3;">
                             </div>
-                            <div id="area-bbble" class="d-flex ">
-                                <span id="" class="bubble-1"></span>
-                            </div>
+
+
+                            <svg id="bg-bubble-sec8-2" class="loader" viewBox="0 0 120 120">
+                                <circle style="z-index: 100;" class="internal-circle-layer1" cx="60" cy="60" r="35">
+                                </circle>
+                                <circle style="z-index: 100;" class="internal-circle-layer2" cx="60" cy="60" r="35">
+                                </circle>
+                            </svg>
+                            <!-- <span id="bg-bubble-sec8" class=""></span> -->
+
+
                         </div>
 
                     </div>
@@ -544,7 +556,7 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st8 " style="padding-top: 200px;">
+    <section class="setSection bg-st8 " style="padding-top: 100px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6" style="padding-left: 200px;top:150px">
@@ -560,7 +572,7 @@
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
-                            <video autoplay style="width: 802px; height: 802px;"
+                            <video playsinline preload="true" autoplay style="width: 802px; height: 802px;"
                                 src="https://kstatic.googleusercontent.com/files/ee1c86d9b7a6e1808a3489e68c3bd1ad7d6aeb396e2b6bb38de9ae7602c939d0030e3b3fc5368bee71f4a28736ff949bac77c2c608d2c4a385501960ecd5366a"></video>
                         </div>
 
@@ -569,7 +581,7 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st8 " style="padding-top: 200px;">
+    <section class="setSection bg-st8-2 " style="padding-top: 200px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6">
@@ -601,8 +613,12 @@
             <div class="row d-flex justify-content-center" style="position: relative;top:300px;">
                 <div style="display: flex;z-index: 10;">
                     <div class=" card" style="width: 517px;border: 0;">
+                        <img id="popup-onetime"
+                            style="position: absolute; width:300px; height:254px; left:110px; top:25px"
+                            src="https://lh3.googleusercontent.com/flCcv6zDaRchuWWL0tMwsKHMIf5CZmDF-kFIP_2GWpsGVStXGFtpPm5ZH_9bYhNhamM9aP66Vxeshva6yCH6xak5n2YJFYemVBrF=w453-rw-e365-v1 "
+                            alt="">
                         <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/3kKQ0YQDZCqeIQLjnXvIgiP12iHXgWmPaxwuBHBiNbjZR_CHz_FQY7TtpWwIwLXsp85K0MMaI9GfLbaP-j2EHxiwz4jBOdLP86fwrQ=w1378-rw-e365-v1"
+                            src="https://lh3.googleusercontent.com/fcqotHrUktRMP_q8xiFTzzARJy2QgfUrTtGuQpNB4q49sYdTpQbGNx4e8kb-2VNm7LCvCi-gFQ3SE58VEa3TzRWZF790iiTMrRRHCA=w689-rw-e365-v1"
                             alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">One‑time permissions</h5>
@@ -611,8 +627,11 @@
                         </div>
                     </div>
                     <div class="card" style="width: 517px;border: 0;">
+                        <img id="popup-auto" style="position: absolute; width:300px; height:86px; left:110px; top:105px"
+                            src="https://lh3.googleusercontent.com/PO0r54TjhSOxPMd4yE9955g4glmhz8QU8U-dziC_GuUb83xcFtLxDk6x1II6adSniknLsVYiDubyW01W515ltcqnwqMdY7UBgMpZ5LY=w453-rw-e365-v1"
+                            alt="">
                         <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/1uRegoFT5SBnvTgV_tI8rZ8vjlieVOl7W3RIhvzI3OGQQ8R4uVSah7u2g_3EYNP5p50QMIhqTNPylV0NX8AYKkp9G4koMXodVCT1EA=w669-rw-e365-v1"
+                            src="https://lh3.googleusercontent.com/WZqD5F1prrIcuJ-SwUSKKnT9kKHyUWZsPQ8nfdTj1ak88DUTGziG7KgqcsNCDiDcI0CYl-rKhch1u3_UPY-eM-MeKSuiU_wyx9KWQw"
                             alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Permissions auto‑reset</h5>
@@ -627,32 +646,46 @@
     </section>
     <section class="setSection bg-st9 " style="padding-top: 200px;">
         <div class="container container-fluid">
+            <div class="d-flex justify-content-center" style="position: relative;;z-index: 1;">
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+                <div class="bg-wave"></div>
+
+            </div>
             <div class="row" style="color: white;">
                 <div class="col-6">
-                    <h1 class="is2" style="font-size:4rem;">The OS that gets to what’s important.</h1>
+                    <h1 class="is2" style="font-size:4rem;">Security updates, right from Google Play..</h1>
                 </div>
                 <div class="col-3" style="left: 120px;">
-                    <p class="is1" style="font-size: 1.20rem;">Go straight to the stuff that matters most. Because
-                        Android
-                        11 is optimized for how you use your phone. Giving you powerful device controls. And easier ways
-                        to manage conversations, privacy settings and so much more.</p>
+                    <p class="is1" style="font-size: 1.20rem;">With Android 11, you get even more security and privacy
+                        fixes sent to your phone from Google Play. The same way all your other apps update. So you get
+                        peace of mind. And your device stays armed with the most recent defense.</p>
                 </div>
             </div>
-            <div class="row justify-content-center" style="position: relative;top:70px">
-                <img style="width: 438px; height: 285px;" src="https://lh3.googleusercontent.com/z7fFr8WGT6BYwFrbLUythHHm0RMr7Y7KTGCxQRcQx5RuewSunSrcLvnMQS1BkFF-AZ92JNhjRVNpmd9v-qCaH94btaqLtqhwPm85URQ=w381-rw-e365-v1" alt="">
+            <div class="row justify-content-center" style="position: relative;top:70px;left: -50px;">
+                <img style="width: 438px; height: 285px;"
+                    src="https://lh3.googleusercontent.com/z7fFr8WGT6BYwFrbLUythHHm0RMr7Y7KTGCxQRcQx5RuewSunSrcLvnMQS1BkFF-AZ92JNhjRVNpmd9v-qCaH94btaqLtqhwPm85URQ=w381-rw-e365-v1"
+                    alt="">
             </div>
         </div>
     </section>
     <section class="setSection bg-st10 " style="padding-top: 200px;">
         <div class="container">
-            
+
             <div class="bg-shape-st10">
                 <div class="row" style="color: white;">
                     <div class="col-6">
                         <h1 class="is2" style="font-size:4rem;">And there’s so much more.</h1>
                     </div>
                     <div class="col-3" style="left: 120px;">
-                        <p class="is1" style="font-size: 1.20rem;">From security enhancements to easier ways to get work done, Android 11 has something for everyone.</p>
+                        <p class="is1" style="font-size: 1.20rem;">From security enhancements to easier ways to get work
+                            done, Android 11 has something for everyone.</p>
                     </div>
                 </div>
             </div>
