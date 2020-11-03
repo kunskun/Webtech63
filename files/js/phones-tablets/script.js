@@ -27,7 +27,7 @@ let count = 0;
 let newNum = 0;
 
 function prevSlide(obj) {
-    if(obj.value.localeCompare("1") == '-1' ){
+    if (obj.value.localeCompare("1") == '-1') {
         if (count > 0) {
             if (count == 1) {
                 count--;
@@ -49,7 +49,7 @@ function prevSlide(obj) {
 }
 
 function nextSlide(obj) {
-    if(obj.value.localeCompare("1") == '-1' ){
+    if (obj.value.localeCompare("1") == '-1') {
         if (count == 0) {
             count++;
             document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
@@ -60,10 +60,20 @@ function nextSlide(obj) {
             document.getElementById('bar').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
         }
     } else {
-        if(newNum == 0){
+        if (newNum == 0) {
             newNum++;
             document.getElementById('slide2').setAttribute('style', 'margin-left: 13%; transition-duration: 0.5s;')
             document.getElementById('bar2').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
         }
     }
+}
+
+function toLeft(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-left')
+}
+
+function toRight(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-right')
 }
