@@ -137,15 +137,6 @@ h2 {
     }
   }
 
-  .learn{
-    font-family: Android Euclid;
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    transform: translateY(-50px);
-}
-
 .arrow {
     height: 15px;
     width: 15px;
