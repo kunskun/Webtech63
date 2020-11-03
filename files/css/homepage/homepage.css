@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .box1{
     margin: 9% 0% 0% 20%; 
     color: black;
@@ -73,7 +76,7 @@ p{
     margin-inline-end: 0px;
     z-index: 10;
 }
-.btn{
+.bu{
     font-family: Android Euclid;
     align-items: center;
     background-color: #073042;
@@ -90,7 +93,7 @@ p{
     text-transform: uppercase;
     transition: color .2s linear;
 }
-.btn:hover{
+.bu:hover{
     color:#3ddc84;
 }
 .img1{
@@ -207,7 +210,7 @@ h3.dh{
     float: left;
     width: 100%;
     height: 500px;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     margin-top: 4%;
 }
 a{
@@ -241,6 +244,32 @@ a{
 }
 .labelp{
     position: static;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 60%;
+    height: 5px;
+    margin-left: 21%;
+}
+.progress-bar{
+    background-color: black;
+    width: 90%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.vbar2{
+    fill: black;
+}
+.button-group{
+    transform: translate(-90px, 40px);
 }
 
 
