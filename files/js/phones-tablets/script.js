@@ -31,19 +31,19 @@ function prevSlide(obj) {
         if (count > 0) {
             if (count == 1) {
                 count--;
-                document.getElementById('slide ').setAttribute('style', 'margin-left: 10%; transition-duration: 0.5s;')
-                document.getElementById('bar').setAttribute('style', 'width: 80%; transition-duration: 0.5s;')
+                document.getElementById('slide0').setAttribute('style', 'margin-left: 10%; transition-duration: 0.5s;')
+                document.getElementById('bar0').setAttribute('style', 'width: 80%; transition-duration: 0.5s;')
             } else if (count == 2) {
                 count--;
-                document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-                document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+                document.getElementById('slide0').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
+                document.getElementById('bar0').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
             }
         }
     } else {
         if (newNum == 1) {
             newNum--;
-            document.getElementById('slide2').setAttribute('style', 'margin-left: 20%; transition-duration: 0.5s;')
-            document.getElementById('bar2').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+            document.getElementById('slide1').setAttribute('style', 'margin-left: 20%; transition-duration: 0.5s;')
+            document.getElementById('bar1').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
         }
     }
 }
@@ -52,18 +52,18 @@ function nextSlide(obj) {
     if (obj.value.localeCompare("1") == '-1') {
         if (count == 0) {
             count++;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
+            document.getElementById('slide0').setAttribute('style', 'margin-left: 0%; transition-duration: 0.5s;')
+            document.getElementById('bar0').setAttribute('style', 'width: 90%; transition-duration: 0.5s;')
         } else if (count == 1) {
             count++;
-            document.getElementById('slide ').setAttribute('style', 'margin-left: -10%; transition-duration: 0.5s;')
-            document.getElementById('bar').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
+            document.getElementById('slide0').setAttribute('style', 'margin-left: -10%; transition-duration: 0.5s;')
+            document.getElementById('bar0').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
         }
     } else {
         if (newNum == 0) {
             newNum++;
-            document.getElementById('slide2').setAttribute('style', 'margin-left: 13%; transition-duration: 0.5s;')
-            document.getElementById('bar2').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
+            document.getElementById('slide1').setAttribute('style', 'margin-left: 13%; transition-duration: 0.5s;')
+            document.getElementById('bar1').setAttribute('style', 'width: 100%; transition-duration: 0.5s;')
         }
     }
 }
@@ -77,3 +77,19 @@ function toRight(obj){
     let x = obj.id
     document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-right')
 }
+
+function reScale(){
+    document.getElementById('eiei').setAttribute('style', 'animation: 2s to-Big;animation-fill-mode: forwards;')
+}
+
+function reScale2(){
+    document.getElementById('eiei').setAttribute('style', 'animation: 2s to-Small;animation-fill-mode: forwards;')
+}
+
+
+//ภาพไม่ขึ้นไม่รู้ไปซ่อนอยู่ตรงไหน
+// function toCircleB(obj){
+//     let x = obj.id
+//     // alert(x)
+//     document.getElementById(`p${x}`).setAttribute('class', 'toCircleB')
+// }
