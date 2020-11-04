@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Android Euclid;
+    src: url(/files/fonts/AndroidEuclid-Bold.otf);
+}
+
+@font-face {
+    font-family: Android Euclid Med;
+    src: url(/files/fonts/AndroidEuclid-Medium.otf);
+}
+
+.all {
+    font-family: Android Euclid;
+}
+
+.bold {
+    font-family: Android Euclid;
+}
+
+.med {
+    font-family: Android Euclid Med;
+}
+
+
+/* section 1 */
+
+.top-img {
+    z-index: 3;
+    position: absolute;
+    left: 60.5rem;
+    top: 10rem;
+}
+
+.first-sec-box {
+    width: 53.5%;
+    height: 55rem;
+    background-color: #3ddc84;
+    z-index: 0;
+}
+
+.first-text-box {
+    z-index: 2;
+    position: absolute;
+    top: 18rem;
+    width: 700px;
+    font-weight: 700;
+}
+
+.first-sec-circle {
+    height: 920px;
+    width: 920px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    z-index: 2;
+    position: absolute;
+    top: -28.5rem;
+    left: -3.5rem;
+    z-index: 1;
+}
+
+.what-is {
+    z-index: 2;
+    position: absolute;
+    top: 14.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    width: 700px;
+}
+
+.sec-two {
+    transform: translateY(165px);
+}
+
+
+/* section 2 */
+
+.sec-tree-heading {
+    position: absolute;
+}
+
+.sec-sec-circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #3ddc84;
+    z-index: 2;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Adjustment */
+
+.info-text {
+    width: 400px;
+    font-family: Android Euclid Med;
+}
+
+.left-text {
+    position: absolute;
+    left: 19.5rem;
+}
+
+.right-text {
+    position: absolute;
+    left: 67.2rem;
+}
+
+.big-font {
+    font-size: 88px;
+    line-height: 88px;
+    width: 600px;
+}
+
+section {
+    margin-bottom: 130px;
+}
