@@ -61,11 +61,23 @@ new ScrollMagic.Scene({
 })
   .setTween(tl)
   .addTo(controller);
-
-gsap.utils.toArray(".learn").forEach(vec => {
+// move learn more vector right
+gsap.utils.toArray(".pr").forEach(vec => {
     let hover = gsap.to(vec, {
         duration: 0.5,
-        x: 20, 
+        x: 10,
+        paused: true, 
+        ease: "easeIn"
+    });
+    vec.addEventListener("mouseenter", () => hover.play());
+    vec.addEventListener("mouseleave", () => hover.reverse());
+});
+// move learn more vector top-right
+gsap.utils.toArray(".pa").forEach(vec => {
+    let hover = gsap.to(vec, {
+        duration: 0.5,
+        x: 210,
+        y: -145, 
         paused: true, 
         ease: "easeIn"
     });
