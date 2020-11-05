@@ -54,7 +54,7 @@ body{
 }
 @font-face{
     font-family: Android Euclid; 
-    src: url(files/fonts/AndroidEuclid-Bold.otf);
+    src: url(../../fonts/AndroidEuclid-Bold.otf);
 }
 h1{
     font-family: Android Euclid;
