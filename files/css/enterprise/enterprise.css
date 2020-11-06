@@ -143,10 +143,18 @@ h2{
 .het{
     transform: translate(350px, 130px);
 }
-a,.learn{
+a{
     font-family: Android Euclid;
-    color: black;
+    color: #073042;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+}
+.s-img{
+    width: 80%;
+    float: right;
+}
+.learn{
+    position: relative;
+    top: -50px;
 }

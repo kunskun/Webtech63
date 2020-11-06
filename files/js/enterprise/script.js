@@ -35,7 +35,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#p-botright", duration: 1200
 gsap.utils.toArray(".pr").forEach(vec => {
     let hover = gsap.to(vec, {
         duration: 0.5,
-        x: 170,
+        x: 10,
         paused: true, 
         ease: "easeIn"
     });
@@ -71,7 +71,7 @@ new ScrollMagic.Scene({
     box.addEventListener("mouseleave", () => hover.reverse());
 });
 
-var scene = new ScrollMagic.Scene({triggerElement: ".pmain", duration: 1200})
+var scene = new ScrollMagic.Scene({triggerElement: ".pmain", duration: 1500})
 // animate color and top border in relation to scroll position
 .setTween(".pmove", {xPercent:-10, delay:0.2}) // the tween durtion can be omitted and defaults to 1
 .addTo(controller);

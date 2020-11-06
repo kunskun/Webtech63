@@ -158,7 +158,7 @@ h3{
 }
 .learn{
     font-family: Android Euclid;
-    color: black;
+    color:#073042;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -214,7 +214,7 @@ h3.dh{
     margin-top: 4%;
 }
 a{
-    color: black;
+    color:#073042;
 }
 .plat{
     background-color: #3ddc84;
