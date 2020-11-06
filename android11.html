@@ -8,27 +8,26 @@
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="files/images/fav/favicon.ico" rel="shortcut icon">
-    <link href="files/images/fav/touch-icon-iphone.png" rel="apple-touch-icon">
-    <link href="files/images/fav/touch-icon-ipad.png" rel="apple-touch-icon" sizes="76x76">
-    <link href="files/images/fav/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120">
-    <link href="files/images/fav/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152">
-    <link rel="stylesheet" href="files/css/home/v2/test.css">
-    <link rel="preload" href="files/css/home/v2/main.min.css" as="style">
-    <link rel="stylesheet" href="files/css/home/v2/main.min.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="files/css/home/v2/main.min.css"></noscript>
-    <link rel="stylesheet" href="files/css/home/v2/testtt.css">
-    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-300.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-500.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-700.woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js">
     <meta name="title" content="Android | The platform pushing what’s possible">
     <meta name="description"
         content="Find the latest and greatest on the world’s most powerful mobile platform. Browse devices, explore resources and learn about the latest updates.">
-    <link rel="stylesheet" href="/files/css/android11/style.css">
+    <link rel="stylesheet" href="files/css/android11/style.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" type="application/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" type="application/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+        type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+        type="application/javascript"></script>
+
 </head>
 
 <body style="color:black;overflow-x: hidden;">
@@ -215,13 +214,19 @@
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;"
                                 class="d-flex justify-content-center">
-                                <img src="/static/images/frames/frame-default.svg" width="296" height="618"
-                                    style="z-index: 3;">
+                                <img src="https://www.android.com/static/images/frames/frame-default.svg" width="296"
+                                    height="618" style="z-index: 5;position: absolute;">
+                                <div style="top:10px;position: relative;width: 275px;height: 590px; overflow:hidden;">
+                                    <video id="gifPhone1" autoplay
+                                        style="position: absolute; left: -660px; width: 1100px;"
+                                        src="gifst3.mp4"></video>
+                                </div>
+
                             </div>
                             <div class="d-flex align-items-end flex-column">
-                                <span id="pills1" class="pills-1"></span>
-                                <span class="pills-2"></span>
-                                <span id="pills3" class="pills-3"></span>
+                                <span style="left: 50px;" id="pills1" class="pills-1"></span>
+                                <span style="left: 50px;" class="pills-2"></span>
+                                <span style="left: 50px;" id="pills3" class="pills-3"></span>
                             </div>
                         </div>
 
@@ -238,8 +243,14 @@
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;"
                                 class="d-flex justify-content-center">
-                                <img src="/static/images/frames/frame-default.svg" width="296" height="618"
-                                    style="z-index: 3;">
+                                <img src="/static/images/frames/frame-default.svg"
+                                    style="z-index: 5;width:500px;height:618px;">
+                                <div
+                                    style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
+                                    <video id="gifPhone2" autoplay
+                                        style="position: absolute;left: -235px; width: 1200px;"
+                                        src="gifst4.mp4"></video>
+                                </div>
                             </div>
                             <div id="area-bubble" class="d-flex ">
                                 <span id="" class="bubble-1"></span>
@@ -353,10 +364,31 @@
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
+
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;top:180px;"
                                 class="d-flex justify-content-center">
                                 <img src="/static/images/frames/frame-default.svg" width="296" height="618"
                                     style="z-index: 3;">
+                                <div id="phone-1"
+                                    style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
+                                    <video id="gifPhone3" autoplay
+                                        style="position: absolute;left: -435px; width: 1200px;"
+                                        src="gifst5.mp4"></video>
+                                </div>
+
+                                <div hidden id="phone-2"
+                                    style="left:174px;top:50px;position: absolute;width: 293px;height: 570px; overflow:hidden;">
+                                    <img style="position: absolute; left: 0px;width: 280px;"
+                                        src="https://lh3.googleusercontent.com/Cx0_mFLg86EJsB2y3mn21viAZJeCVq3eQSF0TOEFp4tuFeeBdPjYaWk1GRlO5L8uufHll0NtcOfspC18_o2PT8U7OKGs6AEaLngO6-8=w339-rw-e365-v1"
+                                        alt="">
+                                </div>
+                                <div hidden id="phone-3"
+                                    style="left:174px;top:50px;position: absolute;width: 293px;height: 570px; overflow:hidden;">
+                                    <img style="position: absolute; left: 0px;width: 280px;"
+                                        src="https://lh3.googleusercontent.com/GaZeASiKNrurvC7jJmC9BDlaRACnY0PPF4aIlJhzciRXLW8qxLx1DOimwm4BOdLknPA-RQF0inE2131023rEr3RstYAR_1-QrZ0BUQ=w339-rw-e365-v1"
+                                        alt="">
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -442,7 +474,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="cursor: pointer;" onclick="openVideo()">
                 <div class="col-6">
                     <div style="position: relative;">
                         <div style="position: absolute;top:450px;left: 600px; z-index: 1;">
@@ -463,6 +495,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="card" style="left: 70px;top: 820px; width: 550px;border: 0;background-color: #3ddc84;">
                     <div class="card-body">
@@ -471,7 +504,19 @@
                             and navigate your phone, all by speaking out loud. Even use Voice Access offline, for more
                             support
                             whenever you need it.</p>
-                        <p class="card-text" style="color: #073042;font-size: 1.25rem;"><b>Learn more</b></p>
+                        <div class="row learnMore" style="width: 140px;height: 100px;">
+                            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                <b>Learn more</b>
+                            </p>
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-35px"
+                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                            </svg>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -480,6 +525,21 @@
         </div>
         </div>
     </section>
+    <button hidden onclick="closeVideo()" style="outline: none;" type="button" class="closeButton">
+        <span class="icon-x"></span>
+    </button>
+    <div class="d-flex justify-content-center">
+
+        <div hidden class="stageBg">
+
+        </div>
+        <iframe hidden class="video-content" width="560" height="315" src="https://www.youtube.com/embed/tXMcDitp3WQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
     <section class="setSection bg-st8 " style="padding-top: 200px;">
         <div class="container container-fluid">
             <div class="row">
@@ -502,11 +562,19 @@
                                 class="d-flex justify-content-center">
                                 <img src="/static/images/frames/frame-default.svg" width="296" height="618"
                                     style="z-index: 3;">
+                                <div
+                                    style="top:60px;position: absolute;left:254px;width: 274px;height: 575px; overflow:hidden;">
+                                    <video id="gifPhone4" autoplay
+                                        style="position: absolute; left: -455px; width: 1200px;"
+                                        src="gifst6.mp4"></video>
+                                </div>
+
                             </div>
+
                             <div id="bg-sec8" style="position: absolute; top:-100px;width: 744px; height: 437px;"
                                 alt=""> </div>
-                            <img hidden style="position: absolute; top:-100px;width: 744px; height: 437px;"
-                                src="https://lh3.googleusercontent.com/KnHPBdPPbwCLYpnpto2o_my-AgcQa4y84dRqxJ-zaPr8X5w3JgdiaJKCXPguOpy83q8kY2QA313OcCmN7jMQdDWjlZbsdUtpYlJQ=w937-rw-e365-v1"
+                            <img id="bg-sec8-2" style="position: absolute; top:-100px;width: 744px; height: 437px;"
+                                src="https://lh3.googleusercontent.com/KnHPBdPPbwCLYpnpto2o_my-AgcQa4y84dRqxJ-zaPr8X5w3JgdiaJKCXPguOpy83q8kY2QA313OcCmN7jMQdDWjlZbsdUtpYlJQ=w852-rw-e365-v1"
                                 alt="">
                         </div>
 
@@ -525,9 +593,13 @@
                                 class="d-flex justify-content-center">
                                 <img src="/static/images/frames/frame-default.svg" width="296" height="618"
                                     style="z-index: 3;">
+                                <div
+                                    style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
+                                    <video id="gifPhone5" autoplay
+                                        style="position: absolute;left: -370px; width: 1100px;"
+                                        src="gifst7.mp4"></video>
+                                </div>
                             </div>
-
-
                             <svg id="bg-bubble-sec8-2" class="loader" viewBox="0 0 120 120">
                                 <circle style="z-index: 100;" class="internal-circle-layer1" cx="60" cy="60" r="35">
                                 </circle>
@@ -535,8 +607,6 @@
                                 </circle>
                             </svg>
                             <!-- <span id="bg-bubble-sec8" class=""></span> -->
-
-
                         </div>
 
                     </div>
@@ -556,7 +626,7 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st8 " style="padding-top: 100px;">
+    <section class="setSection bg-st8 " style="padding-top: 0px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6" style="padding-left: 200px;top:150px">
@@ -566,13 +636,26 @@
                         <div style="padding: 17px 0 32px;padding-right: 100px;">
                             <p class="font-sub">Hit the road without plugging in. Android Auto now works wirelessly with
                                 devices running Android 11—so you can bring the best of your phone on every drive.4</p>
+                            <div class="row learnMore2" style="width: 140px;height: 100px;">
+                                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                    <b>Learn more</b>
+                                </p>
+                                <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-35px"
+                                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                </svg>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
-                            <video playsinline preload="true" autoplay style="width: 802px; height: 802px;"
+                            <video id="video-sec8" playsinline preload="true" autoplay
+                                style="width: 802px; height: 802px;"
                                 src="https://kstatic.googleusercontent.com/files/ee1c86d9b7a6e1808a3489e68c3bd1ad7d6aeb396e2b6bb38de9ae7602c939d0030e3b3fc5368bee71f4a28736ff949bac77c2c608d2c4a385501960ecd5366a"></video>
                         </div>
 
@@ -646,7 +729,7 @@
     </section>
     <section class="setSection bg-st9 " style="padding-top: 200px;">
         <div class="container container-fluid">
-            <div class="d-flex justify-content-center" style="position: relative;;z-index: 1;">
+            <div class="d-flex justify-content-center" style="position: relative;;z-index: -1;">
                 <div class="bg-wave"></div>
                 <div class="bg-wave"></div>
                 <div class="bg-wave"></div>
@@ -666,7 +749,21 @@
                     <p class="is1" style="font-size: 1.20rem;">With Android 11, you get even more security and privacy
                         fixes sent to your phone from Google Play. The same way all your other apps update. So you get
                         peace of mind. And your device stays armed with the most recent defense.</p>
+                        <div class="row learnMore2" style="width: 140px;height: 100px;z-index: 1;position: relative;left: 15px;">
+                            <p class=" d-flex" class="card-text" style="color: white;font-size: 1.25rem;">
+                                <b>Learn more</b>
+                            </p>
+                            <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-35px" width="30px"
+                                viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="white"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                            </svg>
+                        </div>
+
                 </div>
+                
+
             </div>
             <div class="row justify-content-center" style="position: relative;top:70px;left: -50px;">
                 <img style="width: 438px; height: 285px;"
@@ -675,45 +772,374 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st10 " style="padding-top: 200px;">
+    <section class="setSection bg-st10 " style="padding-top: 100px;">
         <div class="container">
 
             <div class="bg-shape-st10">
                 <div class="row" style="color: white;">
                     <div class="col-6">
-                        <h1 class="is2" style="font-size:4rem;">And there’s so much more.</h1>
+                        <h1 class="is2" style="font-size:4rem;position: absolute;top: 200px;left: 100px; width: 400px;">
+                            And there’s so much more.</h1>
                     </div>
-                    <div class="col-3" style="left: 120px;">
-                        <p class="is1" style="font-size: 1.20rem;">From security enhancements to easier ways to get work
+                    <div class="col-3">
+                        <p class="is1"
+                            style="font-size: 1.20rem;position: absolute;top: 350px;left: 100px; width: 400px;">From
+                            security enhancements to easier ways to get work
                             done, Android 11 has something for everyone.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="setSection bg-st11 " style="padding-top: 50px;">
+        <div class="container">
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage1">
+                    <div class="col-6">Accessibility</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+                </div>
+                <div id="st11-stage1" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Voice Access</div>
+                        <div class="col-8">Intuitive labels on apps help you control and navigate your phone, all by
+                            speaking out loud. Even use Voice Access offline, for more support whenever you need it.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Talkback braille keyboard</div>
+                        <div class="col-8">Type braille using just your Android device. No additional hardware needed.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Lookout</div>
+                        <div class="col-8">Lookout now has two new modes. Scan Document and Food Label help people with
+                            low
+                            vision or blindness get things done faster and more easily. Opening Lookout also turns on
+                            your
+                            flashlight, helping users read in low light. And Lookout is now available on all 2GB+
+                            devices
+                            running Android 6.0 or later.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage2">
+                    <div class="col-6">Camera</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage2" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">3P performance optimizations</div>
+                        <div class="col-8">Your camera works even better on photo sharing platforms like Snapchat.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Mute during camera capture</div>
+                        <div class="col-8">Developers can use new APIs for apps to mute vibration from ringtones, alarms
+                            or notifications.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Bokeh modes</div>
+                        <div class="col-8">Developers can now request a bokeh picture via the Android camera2 APIs.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Camera support in Emulator</div>
+                        <div class="col-8">Now supports a fully functional camera HAL. Making it easier for developers
+                            to test apps using the latest Android camera2 APIs.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage3">
+                    <div class="col-6">Digital Wellbeing</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage3" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Bedtime Mode</div>
+                        <div class="col-8">Bedtime Mode quiets your phone when it’s time to go to sleep. Schedule it to
+                            run automatically or while your phone charges as you rest. Your screen switches to grayscale
+                            and your notifications go silent with Do Not Disturb.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Clock</div>
+                        <div class="col-8">The new bedtime feature in Clock helps you set a healthy sleep schedule.
+                            Track screen time at night and fall asleep to calming sounds. Then wake up to your favorite
+                            song. Or use the Sunrise Alarm that slowly brightens your screen to start the day.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage4">
+                    <div class="col-6">Enterprise</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage4" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Work profile enhancements</div>
+                        <div class="col-8">Get full privacy from IT on your work profile on company-owned devices. Plus
+                            new asset management features for IT to ensure security without visibility into personal
+                            usage.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Connected work and personal apps</div>
+                        <div class="col-8">Connect work and personal apps to get a combined view of your information in
+                            places like your calendar or your reminders.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Schedule work profile</div>
+                        <div class="col-8">Easily disconnect from work. With Android 11, you can now set a schedule to
+                            automatically turn your work profile on and off.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Work tab in more places</div>
+                        <div class="col-8">Use the work tab in more places to share and take actions across work and
+                            personal profiles. See work tabs when sharing, opening apps and in settings.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Location access notifications</div>
+                        <div class="col-8">Get a new notification if your IT admin has turned on location services on
+                            your managed device.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage5">
+                    <div class="col-6">Media</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage5" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Device controls</div>
+                        <div class="col-8">Easily manage your connected devices all from one spot on your phone.3.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Media controls</div>
+                        <div class="col-8">With Android 11, you can quickly change the device that your media plays on.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Android Auto</div>
+                        <div class="col-8">Android Auto now works wirelessly4 with devices running Android 11.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Context-aware Bluetooth airplane mode</div>
+                        <div class="col-8">If you have headphones or hearing aids connected to your phone, bluetooth
+                            will stay on if you enable Airplane mode.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage6">
+                    <div class="col-6">Messaging & Sharing</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage6" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Conversations</div>
+                        <div class="col-8">See, respond to and control your conversations across multiple messaging
+                            apps. All in the same spot. Choose priority conversations that will show up on your lock
+                            screen.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Bubbles</div>
+                        <div class="col-8">Pin conversations so they always appear on top of other apps and screens. So
+                            you can access the chat anytime or anywhere.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Smart reply</div>
+                        <div class="col-8">On Pixel devices1, replies are intelligently suggested based on what’s been
+                            said in the conversation.2</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Keyboard autofill</div>
+                        <div class="col-8">GBoard gives you suggestions to help fill in forms with the info you use
+                            most. Like passwords or your home address.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Overview actions</div>
+                        <div class="col-8">On Pixel devices
+                            1
+                            , you can easily copy, save and share info between many apps.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Nearby Share</div>
+                        <div class="col-8">Quickly and securely send files, videos, map locations and more to devices
+                            nearby. Works with Android devices, Chromebooks or devices running Chrome browser.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" style="z-index: 13;" value="#st11-stage7">
+                    <div class="col-6">Security & Privacy</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage7" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">One-time permissions</div>
+                        <div class="col-8">Give one-time permissions to apps that need your mic, camera or location. The
+                            next time the app needs access, it must ask for permission again.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Permissions auto-reset</div>
+                        <div class="col-8">TIf you haven't used an app in a while, you may not want it to keep accessing
+                            your data. So Android will reset permissions for your unused apps. You can always turn
+                            permissions back on.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Google Play system updates</div>
+                        <div class="col-8"> updates
+                            With Android 11, you get even more security and privacy fixes sent to your phone, right from
+                            Google Play. So your device stays armed with the most recent defense.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Scoped storage</div>
+                        <div class="col-8">Android limits broad access to shared storage for all apps running Android
+                            11, so your info stays better protected.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Resume on reboot</div>
+                        <div class="col-8">Pick up right where you started. Apps run immediately after an update is
+                            installed. So you don’t miss any notifications after your phone has rebooted.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Blocked permissions</div>
+                        <div class="col-8">If a user denies an app permission multiple times, the app will be blocked
+                            from requesting the permission again.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Soft restart</div>
+                        <div class="col-8"> Get Google Play system updates when your phone is idle, with no full reboot
+                            required.</div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Background location</div>
+                        <div class="col-8">Get more control over location sharing with apps that are not in use. So apps
+                            don’t get access to more data than they need.</div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+            <div class="row" style="padding: 0px 150px;">
+                <div class="row drop-head" value="#st11-stage8">
+                    <div class="col-6">Usability Enhancements</div>
+                    <div class="col-6" style="position: relative;">
+                        <div class="arrow"></div>
+                    </div>
+
+                </div>
+                <div id="st11-stage8" class="drop-body " style="height: 0px;">
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Screen recorder</div>
+                        <div class="col-8">Screen recording is now built in, so you don’t need an extra app. Record with
+                            sound from your mic, your device or both.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">App suggestions</div>
+                        <div class="col-8">Pixel devices1 now make app suggestions based on your daily routines. These
+                            apps show up on the bottom row of your home screen. So you can get the apps you need when
+                            you need them.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Smart folders</div>
+                        <div class="col-8">See intelligent suggestions for folder names on your Pixel device1. For a
+                            home screen that stays organized.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Call screening</div>
+                        <div class="col-8">New APIs to help screening apps better identify spam calls.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Schedule Dark mode</div>
+                        <div class="col-8">Schedule when you want your phone to turn to Dark mode. And when you want it
+                            to go back to a standard display.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Picture-in-picture</div>
+                        <div class="col-8">Picture-in-picture windows can be adjusted to fit the size you need.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">5G detection API</div>
+                        <div class="col-8">With new APIs, apps know if you’re on a 5G connection. So you get better
+                            performance.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Hinge angle sensor support</div>
+                        <div class="col-8">So apps can better support all kinds of foldable configurations.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Ethernet tethering</div>
+                        <div class="col-8">Share a tethered internet connection with a USB ethernet dongle.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Gesture sensitivity</div>
+                        <div class="col-8">When using gesture nav, you can now fine-tune both Back gestures on the left
+                            and right edge independently of one another.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Notification history</div>
+                        <div class="col-8">Your notification history is now available in settings.
+                        </div>
+                    </div>
+                    <div class="row drop-body-sub">
+                        <div class="col-4 font-weight-bold">Sharesheet</div>
+                        <div class="col-8">Pin the apps you use most in the Sharesheet.
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr1" width="100%">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
 
-    <script defer src="files/js/common.min.js"></script>
-    <script defer src="files/js/home/v2/main.min.js"></script>
+
     <script src="files/js/android.11/android11.js"></script>
-    <script>
-        // var obj = {
-        //     prop: 10
-        // };
-        // gsap.to(obj, {
-        //     duration: 1,
-        //     prop: 200,
-        //     //onUpdate fires each time the tween updates; we'll explain callbacks later.
-        //     onUpdate: function () { 
-        //         console.log(obj.prop); //logs the value on each update.
-        //     }
-        // });
-    </script>
 </body>
 
 </html>
