@@ -48,10 +48,8 @@ var tl = new TimelineMax();
 
 tl.to(".visually-hidden", 1, {xPercent: 35}, "label1");
 tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
-tl.to(".visually-hidden", 1, {xPercent: 10}, "label2");
+tl.to(".visually-hidden", 1, {xPercent: -25}, "label2");
 tl.from(titles[2], 0.5, {opacity:0}, "label2+=0.5");
-tl.to(".visually-hidden", 1, {xPercent: -25}, "label3");
-tl.from(titles[3], 0.5, {opacity:0}, "label3+=0.5");
 
 new ScrollMagic.Scene({
   triggerHook: "onLeave",
@@ -76,3 +74,13 @@ var scene = new ScrollMagic.Scene({triggerElement: ".pmain", duration: 1500})
 .setTween(".pmove", {xPercent:-10, delay:0.2}) // the tween durtion can be omitted and defaults to 1
 .addTo(controller);
 
+var scene = new ScrollMagic.Scene({triggerElement: ".main-vh", duration: 1200})
+// animate color and top border in relation to scroll position
+.setTween(".visually-hidden2", {xPercent:-60}) // the tween durtion can be omitted and defaults to 1
+.addIndicators() // add indicators (requires plugin)
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".p-botright2", duration: 1200})
+// animate color and top border in relation to scroll position
+.setTween(".full-img", {scale: 0.6, x:370, y:450, delay: 0.9}) 
+.addTo(controller);
