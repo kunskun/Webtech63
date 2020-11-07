@@ -11,6 +11,7 @@
 .all {
     font-family: Android Euclid;
     opacity: 0;
+    overflow-x: hidden;
 }
 
 .bold {
@@ -78,31 +79,6 @@
     transform: translateY(-12rem);
 }
 
-.hovf {
-    float: left;
-    width: 100%;
-    height: 500px;
-    overflow-x: scroll;
-    margin-top: 4%;
-}
-
-.dhov {
-    width: 450px;
-    height: 450px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    margin: 1%;
-    z-index: 2;
-    background-color: white;
-    box-shadow: 4px 20px 47px 0 rgba(0, 0, 0, 0.1);
-    ;
-}
-
-.patx {
-    padding: 6% 8%;
-}
-
 
 /* section 3 */
 
@@ -129,6 +105,22 @@
 .move-se {
     position: relative;
     top: -12rem;
+}
+
+.secur-move {
+    position: relative;
+    top: -10rem;
+    left: 70.5rem;
+}
+
+
+/* section control */
+
+.move-control {
+    z-index: -2;
+    left: 22.7rem;
+    top: 2rem;
+    position: relative;
 }
 
 
@@ -165,6 +157,48 @@
     position: relative;
     left: 60rem;
     top: -13.5rem;
+}
+
+.learn-button {
+    border: none;
+    background-color: white;
+}
+
+.move-balance {
+    position: relative;
+    left: 59.6rem;
+    top: -13rem;
+}
+
+.learn-arrow {
+    position: relative;
+    left: 1rem;
+    top: 4rem;
+}
+
+
+/* section always pushing */
+
+.info-card {
+    width: 520px;
+    height: 665px;
+    border: none;
+}
+
+.card-warpper {
+    display: inline;
+}
+
+.card-text {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    height: 300px;
+}
+
+.card-imgg {
+    width: 520px;
+    height: auto;
 }
 
 
@@ -215,8 +249,8 @@
 .bot-img {
     position: relative;
     width: 1100px;
-    left: 32rem;
-    top: 4rem;
+    left: -17.5rem;
+    top: 27.5rem;
 }
 
 .bot-circle {
@@ -293,4 +327,124 @@ section {
     border-radius: 120px;
     background-color: black;
     color: white;
+}
+
+.nav-bar {
+    width: 63%;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    left: 23rem;
+    background-color: gray;
+    z-index: 1;
+    opacity: 1;
+}
+
+.first-nav {
+    width: 25%;
+    height: 5px;
+    background-color: black;
+    z-index: 2;
+}
+
+.warp-button {
+    position: relative;
+}
+
+.move {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    position: relative;
+    left: 93.5rem;
+    top: 2rem;
+}
+
+.vbar1 {
+    transform: translate(-260px, -126.5px) rotate(180deg);
+}
+
+.narv-img {
+    width: 550px;
+    height: 550px;
+    margin-right: 28%;
+}
+
+.narv-box {
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    top: -5rem;
+    left: 45rem;
+}
+
+.img-text {
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 35rem;
+    left: 20rem;
+    box-shadow: 17px 18px 28px -1px rgba(0, 0, 0, 0.39);
+    margin-bottom: 10px;
+}
+
+.moving-box-text {
+    font-size: 2rem;
+    position: relative;
+    top: 2.5rem;
+    left: 2rem;
+}
+
+.button1 {
+    width: 100px;
+    height: 15px;
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    position: relative;
+    left: 21.3rem;
+    top: 14.2rem;
+}
+
+.read-more1 {
+    width: 100px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.read-more {
+    width: 100px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+#last-but:hover {
+    width: 100%;
+    transition: 1s;
+}
+
+#container {
+    width: 200px;
+    height: 30px;
+}
+
+#cube {
+    width: 30px;
+    height: 100%;
+    background-color: red;
+}
+
+#container:hover>#cube {
+    width: 30px;
+    height: 100%;
+    background-color: blue;
 }

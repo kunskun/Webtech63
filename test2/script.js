@@ -17,34 +17,59 @@ timeline3.to(".top-img", 1, {
     opacity: 1,
     left: "63.5rem"
 });
-var tl = new TimelineMax();
+var number = 0
+const but1_left = document.querySelector("#left-always")
+const but1_right = document.querySelector("#right-always")
+    // read more read less
+function go_left(n) {
 
-// create timeline
-// this could also be created in a loop
-tl.to(".back-font", 1, { xPercent: 2 }, "label1");
-tl.from(titles[1], 0.5, { opacity: 0 }, "label1+=0.5");
-tl.to(".back-font", 1, { xPercent: -25 }, "label2");
-tl.from(titles[2], 0.5, { opacity: 0 }, "label2+=0.5");
 
-new ScrollMagic.Scene({
-        triggerHook: "onLeave",
-        duration: "400%"
-    })
-    .setTween(tl)
-    .addTo(controller);
-
-// read more read less
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
+    switch (number + n) {
+        case 0:
+            var wid = "25%";
+            break;
+        case 1:
+            var wid = "50%";
+            number = number + n;
+            break;
+        case 2:
+            var wid = "75%";
+            number = number + n;
+            break;
+        case 3:
+            var wid = "100%";
+            number = number + n;
+            break;
     }
+    gsap.to(".first-nav", 0.5, {
+        width: wid
+    });
+    gsap.to(".narv-box", 0.5, {
+
+    });
+}
+
+function go_right(n) {
+    switch (number + n) {
+        case 0:
+            var wid = "25%";
+            number = number + n;
+            break;
+        case 1:
+            var wid = "50%";
+            number = number + n;
+            break;
+        case 2:
+            var wid = "75%";
+            number = number + n;
+            break;
+        case 3:
+            var wid = "100%";
+            number = number + n;
+            break;
+    }
+    gsap.to(".first-nav", 0.5, {
+        width: wid
+    });
+
 }
