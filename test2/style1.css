@@ -202,6 +202,15 @@
 }
 
 
+/* stay control sectino */
+
+#wheel {}
+
+.warpper-trans {
+    position: relative;
+}
+
+
 /* section techno */
 
 .era {
@@ -313,6 +322,8 @@ section {
 .back-font {
     font-size: 25rem;
     opacity: 0.5;
+    position: relative;
+    left: 20rem;
 }
 
 .med-len {
@@ -430,21 +441,4 @@ section {
 #last-but:hover {
     width: 100%;
     transition: 1s;
-}
-
-#container {
-    width: 200px;
-    height: 30px;
-}
-
-#cube {
-    width: 30px;
-    height: 100%;
-    background-color: red;
-}
-
-#container:hover>#cube {
-    width: 30px;
-    height: 100%;
-    background-color: blue;
 }

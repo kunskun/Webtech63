@@ -73,3 +73,40 @@ function go_right(n) {
     });
 
 }
+var controller = new ScrollMagic.Controller();
+
+var tweenSecur = gsap.to("#secur", {
+    x: -1200
+});
+var tweenWellbe = gsap.to("#wellbe", {
+    x: -1200
+});
+var tweenMovetech = gsap.to("#tech-move", {
+    top: 100,
+    ease: Linear.easeNone,
+    // transformOrigin: "center center"
+});
+var tweenFirstBoxScale = gsap.to("#first-box", {
+    width: "87.5%"
+})
+var tweenWheel = gsap.to("#wheel", {
+    x: "55%",
+    width: "65%",
+    y: 40
+})
+
+
+animate("#secur", 2000, tweenSecur);
+animate("#wellbe", 2000, tweenWellbe);
+animate("#tech-move", 1000, tweenMovetech);
+animate("#first-box", 1000, tweenFirstBoxScale);
+animate("#wheel", 1000, tweenWheel);
+
+function animate(tag, dur, tween) {
+    var sceen1 = new ScrollMagic.Scene({
+            triggerElement: tag,
+            duration: dur,
+        })
+        .setTween(tween)
+        .addTo(controller)
+}
