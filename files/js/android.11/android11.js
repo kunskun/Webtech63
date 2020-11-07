@@ -146,13 +146,13 @@ gsap.registerEffect({
 })
 
 document.querySelectorAll(".hightlight-box").forEach(function (box) {
-    box.addEventListener("mouseover", function () {
+    box.addEventListener("mouseenter", function () {
         gsap.effects.boxEnter(this);
     });
 });
 
 document.querySelectorAll(".hightlight-box").forEach(function (box) {
-    box.addEventListener("mouseout", function () {
+    box.addEventListener("mouseleave", function () {
         gsap.effects.boxOut(this);
     });
 });
@@ -580,7 +580,7 @@ document.querySelectorAll(".learnMore").forEach(function (box) {
 });
 document.querySelectorAll(".learnMore").forEach(function (box) {
     box.addEventListener("mouseleave", function () {
-        gsap.effects.arrowMoveOut2(this.children[1]);
+        gsap.effects.arrowMoveOut(this.children[1]);
     });
 });
 document.querySelectorAll(".learnMore2").forEach(function (box) {

@@ -373,6 +373,7 @@
 	font-family: "Montserrat", sans-serif;
 }
 .stageBg {
+
 	position: fixed;
 	top: 0px;
 	z-index: 10;
@@ -388,7 +389,6 @@
 	height: 80vh;
 }
 .closeButton {
-	over
 	position: fixed;
 	top: 2vh;
 	float: right;
