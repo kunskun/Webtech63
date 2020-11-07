@@ -35,7 +35,7 @@
 	position: relative;
 	background-color: white;
 	z-index: 1;
-	height: 60rem;
+	height: 65rem;
 }
 .bg-st8-2 {
 	position: relative;
@@ -53,7 +53,12 @@
 	position: relative;
 	background-color: white;
 	z-index: 1;
-	height: 80rem;
+	height: 45rem;
+}
+.bg-st11 {
+	position: relative;
+	background-color: white;
+	z-index: 1;
 }
 .setSection {
 	width: auto;
@@ -367,6 +372,43 @@
 	font-weight: 500px;
 	font-family: "Montserrat", sans-serif;
 }
+.stageBg {
+
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+}
+.video-content {
+	position: fixed;
+	top: 10vh;
+	z-index: 11;
+	width: 90vw;
+	height: 80vh;
+}
+.closeButton {
+	position: fixed;
+	top: 2vh;
+	float: right;
+	width: 10vw;
+	z-index: 12;
+	border: none;
+	outline: none;
+	background: none;
+}
+.icon-x {
+	position: fixed;
+	top: 2vh;
+	right: 0vw;
+	float: right;
+	width: 100px;
+	height: 100px;
+	z-index: 12;
+	background-repeat: no-repeat;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI4N3B4IiBoZWlnaHQ9Ijg3cHgiIHZpZXdCb3g9IjAgMCA4NyA4NyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzLjc3MDI5NSwgNDMuNjA1NzE1KSByb3RhdGUoNDUuMDAwMDAwKSB0cmFuc2xhdGUoLTQzLjc3MDI5NSwgLTQzLjYwNTcxNSkgdHJhbnNsYXRlKC0xNy4yMjk3MDUsIC0xNy4zOTQyODUpIiBzdHJva2U9IiNGRkZGRkYiPiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjU3OTEyOCwgMC45Njg1NDApIj4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTYwLjY3NjkyMzEsNDUgTDYwLjY3NjkyMzEsNzYuMTkyNjE1NCIgaWQ9IlBhdGgtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuNjc2OTIzLCA2MC41OTYzMDgpIHJvdGF0ZSgtOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTYwLjY3NjkyMywgLTYwLjU5NjMwOCkgIj48L3BhdGg+ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik02MC42NzY5MjMxLDQ1LjAyNzA3NjkgTDYwLjY3NjkyMzEsNzYuMTY1NTM4NSIgaWQ9IlBhdGgtMiI+PC9wYXRoPiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MC4xNTQ5OTQsIDYwLjE0NzgzNSkgcm90YXRlKC00NS4wMDAwMDApIHRyYW5zbGF0ZSgtNjAuMTU0OTk0LCAtNjAuMTQ3ODM1KSAiIGN4PSI2MC4xNTQ5OTM3IiBjeT0iNjAuMTQ3ODM1MiIgcj0iNDIuNSI+PC9jaXJjbGU+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+)
+}
 
 /* section8 */
 .bg-shape-sec8 {
@@ -393,15 +435,14 @@
 	display: flex;
 	justify-items: center;
 	left: -190px;
-	top:-150px;
+	top: -150px;
 	position: absolute;
 	width: 1000px;
-	height:1000px;
+	height: 1000px;
 	stroke-linecap: round;
 	stroke-width: 2.5;
 	fill: none;
 }
-
 
 .internal-circle-layer1 {
 	stroke: black;
@@ -413,17 +454,14 @@
 }
 
 .internal-circle-layer2 {
-	
 	width: 200px;
 	height: 200px;
 	transform-origin: center;
 	transform: rotate(110deg);
-	stroke:#4285f4;
-	stroke-dashoffset:90;
+	stroke: #4285f4;
+	stroke-dashoffset: 90;
 	stroke-dasharray: 220;
-
 }
-
 
 #bg-bubble-sec8 {
 	top: 100px;
@@ -442,14 +480,20 @@
 
 /* section9 */
 .bg-wave {
+	z-index: 10;
 	opacity: 0;
-	top:-1000px;
+	top: -1000px;
 	width: 1500px;
 	height: 1500px;
 	border-radius: 50%;
-	border: 1px solid #3ddc84;
+	border: 3px solid #3ddc84;
 	position: absolute;
 }
+/* .bg-wave:nth-child(5){
+	width: 1200px;
+	height: 1200px;
+	top:-900px;
+} */
 
 /* sec10 */
 .bg-shape-st10 {
@@ -458,5 +502,44 @@
 	background-color: #4285f4;
 	width: 100%;
 	border-radius: 0 0 80px 80px;
+}
+
+/* section11 */
+.drop-head {
+	width: 100%;
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.01rem;
+	cursor: pointer;
+	padding-bottom: 30px;
+}
+.drop-body-sub {
+	width: 100%;
+	font-size: 15px;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.01rem;
+	margin-bottom: 30px;
+}
+.drop-body {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0px;
+	display: inline-block;
+}
+.arrow {
+	top: 50%;
+	float: right;
+	transform: rotate(45deg);
+	position: relative;
+	border-radius: 3px 3px 3px 3px;
+	border: solid black;
+	border-width: 0 5px 5px 0;
+	display: inline-block;
+	padding: 5px;
+}
+.learnMore {
+	cursor: pointer;
 }
 
