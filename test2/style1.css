@@ -78,6 +78,31 @@
     transform: translateY(-12rem);
 }
 
+.hovf {
+    float: left;
+    width: 100%;
+    height: 500px;
+    overflow-x: scroll;
+    margin-top: 4%;
+}
+
+.dhov {
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 1%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 4px 20px 47px 0 rgba(0, 0, 0, 0.1);
+    ;
+}
+
+.patx {
+    padding: 6% 8%;
+}
+
 
 /* section 3 */
 
@@ -143,7 +168,49 @@
 }
 
 
+/* section techno */
+
+.era {
+    position: relative;
+    top: -60rem;
+    transform: translateX(-3rem);
+}
+
+.era-bot {
+    position: relative;
+    top: -15rem;
+}
+
+
 /* last section */
+
+.error-last {
+    position: relative;
+    top: -35rem;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    width: 430px;
+    left: 27rem;
+}
+
+.head-last {
+    position: relative;
+    top: -37rem;
+    font-weight: 400;
+    font-size: 16px;
+    width: 430px;
+    left: 27rem;
+}
+
+.info-last {
+    position: relative;
+    top: -32rem;
+    font-weight: 400;
+    font-size: 16px;
+    width: 430px;
+    left: 27rem;
+}
 
 .bot-img {
     position: relative;
@@ -169,6 +236,12 @@
     background-color: #4285f4;
     transform: translateX(319px);
     overflow: hidden;
+}
+
+.last-but {
+    position: relative;
+    left: 27rem;
+    top: -30rem;
 }
 
 
@@ -212,4 +285,12 @@ section {
     font-size: 88px;
     line-height: 88px;
     width: 550px;
+}
+
+.see-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 120px;
+    background-color: black;
+    color: white;
 }
