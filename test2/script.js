@@ -21,7 +21,7 @@ var number = 0
 const but1_left = document.querySelector("#left-always")
 const but1_right = document.querySelector("#right-always")
     // read more read less
-function go_left(n) {
+function go_lefttop(n) {
 
 
     switch (number + n) {
@@ -30,36 +30,42 @@ function go_left(n) {
             break;
         case 1:
             var wid = "50%";
+            var left1 = "-70rem";
             number = number + n;
             break;
         case 2:
             var wid = "75%";
+            var left1 = "-140rem";
             number = number + n;
             break;
         case 3:
             var wid = "100%";
+            var left1 = "-210rem"
             number = number + n;
             break;
     }
     gsap.to(".first-nav", 0.5, {
         width: wid
     });
-    gsap.to(".narv-box", 0.5, {
-
+    gsap.to(".warpper-box", 0.5, {
+        x: left1
     });
 }
 
-function go_right(n) {
+function go_righttop(n) {
     switch (number + n) {
         case 0:
+            var left1 = "210rem"
             var wid = "25%";
             number = number + n;
             break;
         case 1:
+            var left1 = "140rem";
             var wid = "50%";
             number = number + n;
             break;
         case 2:
+            var left1 = "140rem";
             var wid = "75%";
             number = number + n;
             break;
@@ -70,6 +76,9 @@ function go_right(n) {
     }
     gsap.to(".first-nav", 0.5, {
         width: wid
+    });
+    gsap.to(".warpper-box", 0.5, {
+        left: left1
     });
 
 }
@@ -82,7 +91,7 @@ var tweenWellbe = gsap.to("#wellbe", {
     x: -1200
 });
 var tweenMovetech = gsap.to("#tech-move", {
-    top: 100,
+    top: 50,
     ease: Linear.easeNone,
     // transformOrigin: "center center"
 });
@@ -98,7 +107,7 @@ var tweenWheel = gsap.to("#wheel", {
 
 animate("#secur", 2000, tweenSecur);
 animate("#wellbe", 2000, tweenWellbe);
-animate("#tech-move", 1000, tweenMovetech);
+animate("#tech-move", 3000, tweenMovetech);
 animate("#first-box", 3000, tweenFirstBoxScale);
 animate("#wheel", 1000, tweenWheel);
 

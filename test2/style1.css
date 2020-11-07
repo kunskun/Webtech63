@@ -172,6 +172,12 @@
 
 .learn-arrow {
     position: relative;
+    left: 6rem;
+    top: -1.7rem;
+}
+
+.learn-arrow {
+    position: relative;
     left: 1rem;
     top: 4rem;
 }
@@ -183,10 +189,16 @@
     width: 520px;
     height: 665px;
     border: none;
+    margin-right: 20px;
 }
 
 .card-warpper {
-    display: inline;
+    display: flex;
+    position: relative;
+    width: 5000px;
+    height: 1000px;
+    position: relative;
+    left: 22.5rem;
 }
 
 .card-text {
@@ -345,6 +357,7 @@ section {
     border-radius: 20px;
     position: relative;
     left: 23rem;
+    top: -20rem;
     background-color: gray;
     z-index: 1;
     opacity: 1;
@@ -359,6 +372,17 @@ section {
 
 .warp-button {
     position: relative;
+    top: -50rem;
+}
+
+.move1 {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    position: relative;
+    left: 86.5rem;
+    top: -18rem;
 }
 
 .move {
@@ -367,8 +391,8 @@ section {
     border: none;
     background-color: white;
     position: relative;
-    left: 93.5rem;
-    top: 2rem;
+    left: 86.5rem;
+    top: -18rem;
 }
 
 .vbar1 {
@@ -382,15 +406,25 @@ section {
 }
 
 .narv-box {
-    overflow-x: hidden;
-    white-space: nowrap;
-    position: relative;
+    height: fit-content;
+    float: left;
     top: -5rem;
-    left: 45rem;
+    left: 40rem;
+    margin-right: 500px;
+}
+
+.warpper-box {
+    display: flex;
+    position: relative;
+    width: 5000px;
+    height: 1000px;
+    position: relative;
+    left: 40rem;
+    top: -10rem;
 }
 
 .img-text {
-    width: 500px;
+    width: 400px;
     height: 150px;
     background-color: white;
     border: none;
@@ -398,7 +432,7 @@ section {
     position: relative;
     top: 35rem;
     left: 20rem;
-    box-shadow: 17px 18px 28px -1px rgba(0, 0, 0, 0.39);
+    box-shadow: 10px 9px 19px 0px rgba(0, 0, 0, 0.75);
     margin-bottom: 10px;
 }
 
@@ -417,7 +451,7 @@ section {
     font-size: 1.5rem;
     position: relative;
     left: 21.3rem;
-    top: 14.2rem;
+    top: 30rem;
 }
 
 .read-more1 {
