@@ -182,8 +182,79 @@ function prevSlide(){
       count--;
       break;
   }
-  // document.getElementById('img-slide').style = 'margin-left:20%; transition-duration: 0.5s;'
-  // document.getElementById('progress-bar').style = 'width: 90%; transition-duration: 0.5s;'
-  // document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
-  // document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
 }
+
+function nextSlide2(){
+  document.getElementById('hovf2').style = 'margin-left:0%; transition-duration: 0.5s;'
+  document.getElementById('progress-bar-2').style = 'width: 100%; transition-duration: 0.5s;'
+  document.getElementById('vbar3').style = 'fill: black; transition-duration: 0.5s;'
+  document.getElementById('vbar4').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+}
+
+function prevSlide2(){
+  document.getElementById('hovf2').style = 'margin-left:16%; transition-duration: 0.5s;'
+  document.getElementById('progress-bar-2').style = 'width: 90%; transition-duration: 0.5s;'
+  document.getElementById('vbar3').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+  document.getElementById('vbar4').style = 'fill: black; transition-duration: 0.5s;'
+}
+
+gsap.utils.toArray(".d1").forEach(dhov => {
+  const c = document.querySelector(".c3");
+  let hover = gsap.to(c, {
+      scale: 5, 
+      duration: 0.5,
+      y: -600, 
+      paused: true, 
+      ease: "power1.inOut"
+  });
+  dhov.addEventListener("mouseenter", () => hover.play());
+  dhov.addEventListener("mouseleave", () => hover.reverse());
+});
+gsap.utils.toArray(".d2").forEach(dhov => {
+  const c = document.querySelector(".c4");
+  let hover = gsap.to(c, {
+      scale: 5, 
+      duration: 0.5,
+      y: -600, 
+      paused: true, 
+      ease: "power1.inOut"
+  });
+  dhov.addEventListener("mouseenter", () => hover.play());
+  dhov.addEventListener("mouseleave", () => hover.reverse());
+});
+gsap.utils.toArray(".d3").forEach(dhov => {
+  const c = document.querySelector(".c5");
+  let hover = gsap.to(c, {
+      scale: 5, 
+      duration: 0.5,
+      y: -600, 
+      paused: true, 
+      ease: "power1.inOut"
+  });
+  dhov.addEventListener("mouseenter", () => hover.play());
+  dhov.addEventListener("mouseleave", () => hover.reverse());
+});
+
+gsap.utils.toArray(".pa").forEach(vec => {
+  let hover = gsap.to(vec, {
+      duration: 0.5,
+      x: 210,
+      y: -155, 
+      paused: true, 
+      ease: "easeIn"
+  });
+  vec.addEventListener("mouseenter", () => hover.play());
+  vec.addEventListener("mouseleave", () => hover.reverse());
+});
+
+gsap.utils.toArray(".po").forEach(vec => {
+  let hover = gsap.to(vec, {
+      duration: 0.5,
+      x: 15,
+      y: -60, 
+      paused: true, 
+      ease: "easeIn"
+  });
+  vec.addEventListener("mouseenter", () => hover.play());
+  vec.addEventListener("mouseleave", () => hover.reverse());
+});
