@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Android Euclid;
+    src: url(/files/fonts/AndroidEuclid-Bold.otf);
+}
+
+@font-face {
+    font-family: Android Euclid Med;
+    src: url(/files/fonts/AndroidEuclid-Medium.otf);
+}
+
+.all {
+    font-family: Android Euclid;
+    opacity: 0;
+}
+
+.bold {
+    font-family: Android Euclid;
+}
+
+.med {
+    font-family: Android Euclid Med;
+}
+
+
+/* section 1 */
+
+.first-sec-box {
+    width: 53.5%;
+    opacity: 0;
+    height: 55rem;
+    background-color: #3ddc84;
+    z-index: 0;
+}
+
+.first-text-box {
+    position: relative;
+    top: 18rem;
+    width: 700px;
+    font-weight: 700;
+}
+
+.transf {
+    transform: translateY(30rem);
+}
+
+.top-img {
+    z-index: 3;
+    position: relative;
+    left: 83.5rem;
+    top: -10rem;
+    opacity: 0;
+}
+
+.what-is {
+    position: relative;
+    top: 14.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    width: 700px;
+}
+
+.first-sec-circle {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    z-index: 2;
+    position: relative;
+    top: -28.5rem;
+    left: -3.5rem;
+    z-index: 1;
+}
+
+
+/* section 2 */
+
+.sec-two {
+    transform: translateY(-12rem);
+}
+
+
+/* section 3 */
+
+.erre {
+    transform: translateY(-6rem);
+}
+
+
+/* section control */
+
+.control-error {
+    position: relative;
+    top: 4rem;
+}
+
+
+/* section security */
+
+.sec-error {
+    position: relative;
+    top: -10rem;
+}
+
+.move-se {
+    position: relative;
+    top: -12rem;
+}
+
+
+/* section wellbeing */
+
+.more-well {
+    position: relative;
+    top: -12rem;
+}
+
+.fam-pho {
+    position: relative;
+    left: 45rem;
+    z-index: 1;
+}
+
+.photo-box {
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 10px;
+    position: relative;
+    top: -7.5rem;
+    left: 27rem;
+}
+
+.error {
+    position: relative;
+    top: -8rem;
+}
+
+.fam-text {
+    position: relative;
+    left: 60rem;
+    top: -13.5rem;
+}
+
+
+/* last section */
+
+.bot-img {
+    position: relative;
+    width: 1100px;
+    left: 32rem;
+    top: 4rem;
+}
+
+.bot-circle {
+    height: 720px;
+    width: 800px;
+    border-radius: 50%;
+    background-color: #3ddc84;
+    position: relative;
+    top: -23rem;
+    left: 50rem;
+}
+
+.bot-box {
+    width: 1260px;
+    height: 730px;
+    border-radius: 50px;
+    background-color: #4285f4;
+    transform: translateX(319px);
+    overflow: hidden;
+}
+
+
+/* adjustment */
+
+.info-text {
+    width: 400px;
+    font-family: Android Euclid Med;
+}
+
+.left-text {
+    position: relative;
+    left: 23rem;
+}
+
+.right-text {
+    position: relative;
+    left: 70.7rem;
+}
+
+.text {
+    z-index: 3;
+}
+
+.big-font {
+    font-size: 88px;
+    line-height: 88px;
+    width: 650px;
+}
+
+section {
+    margin-bottom: 10rem;
+}
+
+.back-font {
+    font-size: 25rem;
+    opacity: 0.5;
+}
+
+.med-len {
+    font-size: 88px;
+    line-height: 88px;
+    width: 550px;
+}
