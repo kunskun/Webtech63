@@ -12,6 +12,7 @@ section{
 }
 h1{
     font-family: Android Euclid;
+    color: black;
     display: block;
     font-size: 88px;
     line-height: 88px;
@@ -196,4 +197,65 @@ a{
     display: flex;
     z-index: 0;
     transform: translate(800px, -100px);
+}
+.bl{
+    background-color:#3ddc84;
+    width: 1500px;
+    height: 800px;
+    border-radius: 700px;
+    transform: translate(-450px, -180px);
+    z-index: -1;
+    position: absolute;
+}
+.detail{
+    margin-left: 15%;
+    transform: translateY(120px);
+}
+.video-col{
+    width: 50%;
+    position: relative;
+}
+.text-col{
+    width: 50%;
+    position: relative;
+    margin-left: 47%;
+    transform: translateY(-40px);
+}
+h4{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.box-video{
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 64%;
+    height: 5px;
+    margin-left: 20%;
+    transform: translateY(550px);
+    position: static;
+}
+.progress-bar{
+    background-color: black;
+    width: 20%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.vbar2{
+    fill: black;
+}
+.button-group{
+    transform: translate(1505px, 550px);
 }

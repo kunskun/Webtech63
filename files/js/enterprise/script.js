@@ -77,10 +77,113 @@ var scene = new ScrollMagic.Scene({triggerElement: ".pmain", duration: 1500})
 var scene = new ScrollMagic.Scene({triggerElement: ".main-vh", duration: 1200})
 // animate color and top border in relation to scroll position
 .setTween(".visually-hidden2", {xPercent:-60}) // the tween durtion can be omitted and defaults to 1
-.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".p-botright2", duration: 1200})
 // animate color and top border in relation to scroll position
 .setTween(".full-img", {scale: 0.6, x:370, y:450, delay: 0.9}) 
 .addTo(controller);
+
+var count = 0;
+var vbar1 = document.getElementById('vbar1');
+var vbar2 = document.getElementById('vbar2');
+var progs = document.getElementById('progress-bar');
+var imgsl = document.getElementById('img-slide');
+
+function nextSlide(){
+  switch(count){
+    case 0:
+      imgsl.style = 'margin-left:-46%; transition-duration: 0.5s;';
+      progs.style = 'width: 30%; transition-duration: 0.5s;';
+      vbar1.style = 'fill: black; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 1:
+      imgsl.style = 'margin-left:-111%; transition-duration: 0.5s;';
+      progs.style = 'width: 40%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 2:
+      imgsl.style = 'margin-left:-176%; transition-duration: 0.5s;';
+      progs.style = 'width: 50%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 3:
+      imgsl.style = 'margin-left:-241%; transition-duration: 0.5s;';
+      progs.style = 'width: 60%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 4:
+      imgsl.style = 'margin-left:-306%; transition-duration: 0.5s;';
+      progs.style = 'width: 70%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 5:
+      imgsl.style = 'margin-left:-371%; transition-duration: 0.5s;';
+      progs.style = 'width: 80%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 6:
+      imgsl.style = 'margin-left:-436%; transition-duration: 0.5s;';
+      progs.style = 'width: 90%; transition-duration: 0.5s;';
+      count++;
+      break;
+    case 7:
+      imgsl.style = 'margin-left:-501%; transition-duration: 0.5s;';
+      progs.style = 'width: 100%; transition-duration: 0.5s;';
+      vbar2.style = 'fill: #EAECEE; transition-duration: 0.5s;';
+      count++;
+      break;
+  }
+}
+
+function prevSlide(){
+  switch(count){
+    case 1:
+      imgsl.style = 'margin-left:19%; transition-duration: 0.5s;';
+      progs.style = 'width: 20%; transition-duration: 0.5s;';
+      vbar1.style = 'fill: #EAECEE; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 2:
+      imgsl.style = 'margin-left:-46%; transition-duration: 0.5s;';
+      progs.style = 'width: 30%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 3:
+      imgsl.style = 'margin-left:-111%; transition-duration: 0.5s;';
+      progs.style = 'width: 40%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 4:
+      imgsl.style = 'margin-left:-176%; transition-duration: 0.5s;';
+      progs.style = 'width: 50%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 5:
+      imgsl.style = 'margin-left:-241%; transition-duration: 0.5s;';
+      progs.style = 'width: 60%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 6:
+      imgsl.style = 'margin-left:-306%; transition-duration: 0.5s;';
+      progs.style = 'width: 70%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 7:
+      imgsl.style = 'margin-left:-371%; transition-duration: 0.5s;';
+      progs.style = 'width: 80%; transition-duration: 0.5s;';
+      count--;
+      break;
+    case 8:
+      imgsl.style = 'margin-left:-436%; transition-duration: 0.5s;';
+      progs.style = 'width: 90%; transition-duration: 0.5s;';
+      vbar2.style = 'fill: black; transition-duration: 0.5s;';
+      count--;
+      break;
+  }
+  // document.getElementById('img-slide').style = 'margin-left:20%; transition-duration: 0.5s;'
+  // document.getElementById('progress-bar').style = 'width: 90%; transition-duration: 0.5s;'
+  // document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+  // document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
+}
