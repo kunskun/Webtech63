@@ -295,6 +295,7 @@
             </svg>
         </div>
     </section>
+    
     <section>
         <div class="row" style="margin-top: 10%;">
             <div class="bl"></div>
@@ -310,7 +311,7 @@
             <!-- 1 -->
             <div class="box-video">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(0)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -333,7 +334,7 @@
             <!-- 2 -->
             <div class="box-video" style="margin-left: 65%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(1)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -359,7 +360,7 @@
             <!-- 3 -->
             <div class="box-video" style="margin-left: 130%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(2)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -384,7 +385,7 @@
             <!-- 4 -->
             <div class="box-video" style="margin-left: 195%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(3)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -410,7 +411,7 @@
             <!-- 5 -->
             <div class="box-video" style="margin-left: 260%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(4)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -434,7 +435,7 @@
             <!-- 6 -->
             <div class="box-video" style="margin-left: 325%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(5)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -459,7 +460,7 @@
             <!-- 7 -->
             <div class="box-video" style="margin-left: 390%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(6)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -485,7 +486,7 @@
             <!-- 8 -->
             <div class="box-video" style="margin-left: 455%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(7)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -509,7 +510,7 @@
             <!-- 9 -->
             <div class="box-video" style="margin-left: 520%;">
                 <div class="video-col">
-                    <button class="btn">
+                    <button class="btn" onclick="openVideo(8)">
                         <svg width="500" height="500" style="position: absolute;">
                             <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
@@ -559,6 +560,19 @@
                 </button>
             </div>  
     </section>
+    
+    <button hidden onclick="closeVideo()" style="outline: none;" type="button" class="closeButton">
+        <span class="icon-x"></span>
+    </button>
+    <div class="d-flex justify-content-center">
+        <div hidden class="stageBg"></div>
+        
+        <iframe hidden class="video-content" width="560" height="315" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>
     <section style="margin-top: 50%;">
         <div class="row" style="top: -20px;">
             <div class="bl" style="background-color: #eff7cf;"></div>
