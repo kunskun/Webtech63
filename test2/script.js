@@ -87,7 +87,7 @@ var tweenMovetech = gsap.to("#tech-move", {
     // transformOrigin: "center center"
 });
 var tweenFirstBoxScale = gsap.to("#first-box", {
-    width: "87.5%"
+    width: "80.5%"
 })
 var tweenWheel = gsap.to("#wheel", {
     x: "55%",
@@ -99,7 +99,7 @@ var tweenWheel = gsap.to("#wheel", {
 animate("#secur", 2000, tweenSecur);
 animate("#wellbe", 2000, tweenWellbe);
 animate("#tech-move", 1000, tweenMovetech);
-animate("#first-box", 1000, tweenFirstBoxScale);
+animate("#first-box", 3000, tweenFirstBoxScale);
 animate("#wheel", 1000, tweenWheel);
 
 function animate(tag, dur, tween) {
