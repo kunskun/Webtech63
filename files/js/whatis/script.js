@@ -30,42 +30,34 @@ function go_lefttop(n) {
             break;
         case 1:
             var wid = "50%";
-            var left1 = "-70rem";
             number = number + n;
             break;
         case 2:
             var wid = "75%";
-            var left1 = "-140rem";
             number = number + n;
             break;
         case 3:
             var wid = "100%";
-            var left1 = "-210rem"
             number = number + n;
             break;
     }
     gsap.to(".first-nav", 0.5, {
         width: wid
     });
-    gsap.to(".warpper-box", 0.5, {
-        x: left1
-    });
+
 }
 
 function go_righttop(n) {
     switch (number + n) {
         case 0:
-            var left1 = "210rem"
             var wid = "25%";
             number = number + n;
             break;
         case 1:
-            var left1 = "140rem";
             var wid = "50%";
             number = number + n;
             break;
         case 2:
-            var left1 = "140rem";
             var wid = "75%";
             number = number + n;
             break;
@@ -77,9 +69,7 @@ function go_righttop(n) {
     gsap.to(".first-nav", 0.5, {
         width: wid
     });
-    gsap.to(".warpper-box", 0.5, {
-        left: left1
-    });
+
 
 }
 var controller = new ScrollMagic.Controller();
