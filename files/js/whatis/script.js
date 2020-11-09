@@ -17,28 +17,30 @@ timeline3.to(".top-img", 1, {
     opacity: 1,
     left: "63.5rem"
 });
-var number = 0
-const but1_left = document.querySelector("#left-always")
-const but1_right = document.querySelector("#right-always")
-    // read more read less
+var number1 = 0
+
+// read more read less
 function go_lefttop(n) {
 
 
-    switch (number + n) {
+    switch (number1 + n) {
         case 0:
             var wid = "25%";
             break;
         case 1:
             var wid = "50%";
-            number = number + n;
+            document.getElementById('warpper-box').style = 'left:-30rem; transition-duration: 1s;'
+            number1 = number1 + n;
             break;
         case 2:
             var wid = "75%";
-            number = number + n;
+            document.getElementById('warpper-box').style = 'left:-100rem; transition-duration: 1s;'
+            number1 = number1 + n;
             break;
         case 3:
             var wid = "100%";
-            number = number + n;
+            document.getElementById('warpper-box').style = 'left:-170rem; transition-duration: 1s;'
+            number1 = number1 + n;
             break;
     }
     gsap.to(".first-nav", 0.5, {
@@ -48,28 +50,105 @@ function go_lefttop(n) {
 }
 
 function go_righttop(n) {
-    switch (number + n) {
+    switch (number1 + n) {
         case 0:
             var wid = "25%";
-            number = number + n;
+            document.getElementById('warpper-box').style = 'left:40rem; transition-duration: 1s;'
+            number1 = number1 + n;
             break;
         case 1:
+            document.getElementById('warpper-box').style = 'left:-30rem; transition-duration: 1s;'
             var wid = "50%";
-            number = number + n;
+            number1 = number1 + n;
             break;
         case 2:
             var wid = "75%";
-            number = number + n;
+            document.getElementById('warpper-box').style = 'left:-100rem; transition-duration: 1s;'
+            number1 = number1 + n;
             break;
         case 3:
             var wid = "100%";
-            number = number + n;
+            number1 = number1 + n;
             break;
     }
     gsap.to(".first-nav", 0.5, {
         width: wid
     });
 
+
+}
+number2 = 0
+number3 = 0
+
+function go_left1(n) {
+    switch (number2 + n) {
+        case 0:
+            var wid = "85%";
+            break;
+        case 1:
+            var wid = "100%";
+            document.getElementById('wapper-card').style = 'left:-10rem; transition-duration: 1s;'
+            number2 = number2 + n;
+            break;
+    }
+    gsap.to(".sec-nav", 0.5, {
+        width: wid
+    });
+
+}
+
+function go_right1(n) {
+    switch (number2 + n) {
+        case 0:
+            var wid = "85%";
+            document.getElementById('wapper-card').style = 'left:22.5rem; transition-duration: 1s;'
+
+            number2 = number2 + n;
+            break;
+        case 1:
+            var wid = "100%";
+            number2 = number2 + n;
+            break;
+    }
+    gsap.to(".sec-nav", 0.5, {
+        width: wid
+    });
+}
+
+function go_left2(n) {
+
+
+    switch (number3 + n) {
+        case 0:
+            var wid = "85%";
+            break;
+        case 1:
+            var wid = "100%";
+            document.getElementById('warpper-card1').style = 'left:-10rem; transition-duration: 1s;'
+            number3 = number3 + n;
+            break;
+    }
+    gsap.to(".thir-nav", 0.5, {
+        width: wid
+    });
+
+}
+
+function go_right2(n) {
+    switch (number3 + n) {
+        case 0:
+            var wid = "85%";
+            document.getElementById('warpper-card1').style = 'left:22.5rem; transition-duration: 1s;'
+            number3 = number3 + n;
+            break;
+        case 1:
+            var wid = "100%";
+            number3 = number3 + n;
+            break;
+    }
+    gsap.to(".thir-nav", 0.5, {
+        width: wid
+    });
 
 }
 var controller = new ScrollMagic.Controller();
@@ -81,8 +160,7 @@ var tweenWellbe = gsap.to("#wellbe", {
     x: -1200
 });
 var tweenMovetech = gsap.to("#tech-move", {
-    top: 50,
-    ease: Linear.easeNone,
+    top: "10rem",
     // transformOrigin: "center center"
 });
 var tweenFirstBoxScale = gsap.to("#first-box", {
@@ -97,7 +175,7 @@ var tweenWheel = gsap.to("#wheel", {
 
 animate("#secur", 2000, tweenSecur);
 animate("#wellbe", 2000, tweenWellbe);
-animate("#tech-move", 3000, tweenMovetech);
+animate("#tech-move", 2000, tweenMovetech);
 animate("#first-box", 3000, tweenFirstBoxScale);
 animate("#wheel", 1000, tweenWheel);
 

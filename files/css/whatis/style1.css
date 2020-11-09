@@ -482,3 +482,17 @@ section {
 #wellbe {
     color: #eff7cf;
 }
+
+.sec-nav {
+    width: 85%;
+    height: 5px;
+    background-color: black;
+    z-index: 2;
+}
+
+.thir-nav {
+    width: 85%;
+    height: 5px;
+    background-color: black;
+    z-index: 2;
+}

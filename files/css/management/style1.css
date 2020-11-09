@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Android Euclid;
+    src: url(/files/fonts/AndroidEuclid-Bold.otf);
+}
+
+@font-face {
+    font-family: Android Euclid Med;
+    src: url(/files/fonts/AndroidEuclid-Medium.otf);
+}
+
+.all {
+    font-family: Android Euclid;
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+
+/* first section */
+
+.box {
+    width: 100%;
+    height: 820px;
+    background-color: #073042;
+    overflow: hidden;
+}
+
+.circle2 {
+    width: 400px;
+    height: 400px;
+    background-color: #4285f4;
+    border-radius: 70%;
+    position: relative;
+}
+
+.circle3 {
+    width: 360px;
+    height: 360px;
+    background-color: #073042;
+    border-radius: 70%;
+    position: relative;
+    top: 1.25rem;
+    left: 1.25rem;
+}
+
+.warp-circle {
+    position: relative;
+    top: -18rem;
+    left: 10rem;
+}
+
+.img1 {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    left: 60.5rem;
+    top: 5rem;
+    z-index: 2;
+}
+
+.circle {
+    width: 1300px;
+    height: 600px;
+    border-radius: 300px;
+    background-color: #3ddc84;
+    position: relative;
+    left: 45rem;
+    top: 8.5rem;
+    z-index: 1;
+}
+
+.text1 {
+    width: 650px;
+    line-height: 88px;
+    font-size: 88px;
+    color: white;
+    top: -45rem;
+    position: relative;
+    left: 19.5rem;
+}
+
+.text1-1 {
+    width: 600px;
+    line-height: 24px;
+    font-size: 20px;
+    color: white;
+    top: -65rem;
+    position: relative;
+    left: 19.5rem;
+}
+
+
+/* section 2 */
+
+.back-font {
+    font-size: 25rem;
+    opacity: 0.5;
+    position: relative;
+    left: 20rem;
+    color: #4285f4;
+    opacity: 0.2;
+}
+
+.sec2-er {
+    top: -12rem;
+}
+
+.warp-text-sec2 {
+    position: relative;
+    top: -13rem;
+}
+
+
+/* section 3 */
+
+.box-52 {
+    width: 1200px;
+    height: 550px;
+    border-radius: 400px;
+    background-color: #3ddc84;
+}
+
+.box-53 {
+    width: 1150px;
+    height: 500px;
+    border-radius: 350px;
+    background-color: white;
+    position: relative;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.warpbox-5 {
+    position: relative;
+    left: -10rem;
+    z-index: -1;
+}
+
+
+/* section 3 */
+
+.warp {
+    position: relative;
+    top: -28rem;
+}
+
+
+/* adjustment */
+
+.left-text {
+    width: 500px;
+    position: relative;
+    left: 25.8rem;
+}
+
+.right-text {
+    width: 420px;
+    position: relative;
+    left: 67rem;
+}
+
+.small-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.big-font {
+    font-size: 88px;
+    line-height: 88px;
+}
