@@ -87,9 +87,13 @@ function reScale2(){
 }
 
 
-//ภาพไม่ขึ้นไม่รู้ไปซ่อนอยู่ตรงไหน
-// function toCircleB(obj){
-//     let x = obj.id
-//     // alert(x)
-//     document.getElementById(`p${x}`).setAttribute('class', 'toCircleB')
-// }
+gsap.utils.toArray(".hightlight-box").forEach(box => {
+    let hover = gsap.to(box, {
+        duration: 0.2,
+        y: -10,
+        paused: true, 
+        ease: Linear.easeNone
+    });
+    box.addEventListener("mouseenter", () => hover.play());
+    box.addEventListener("mouseleave", () => hover.reverse());
+});
