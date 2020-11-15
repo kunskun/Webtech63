@@ -1,0 +1,473 @@
+@font-face {
+    font-family: Android Euclid;
+    src: url(/files/fonts/AndroidEuclid-Bold.otf);
+}
+
+@font-face {
+    font-family: Android Euclid Med;
+    src: url(/files/fonts/AndroidEuclid-Medium.otf);
+}
+
+.all {
+    font-family: Android Euclid;
+    overflow-x: hidden;
+    opacity: 0;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+
+/* first section */
+
+.box {
+    width: 100%;
+    height: 820px;
+    background-color: #073042;
+    overflow: hidden;
+}
+
+.circle2 {
+    width: 400px;
+    height: 400px;
+    background-color: #4285f4;
+    border-radius: 70%;
+    position: relative;
+}
+
+.circle3 {
+    width: 360px;
+    height: 360px;
+    background-color: #073042;
+    border-radius: 70%;
+    position: relative;
+    top: 1.25rem;
+    left: 1.25rem;
+}
+
+.warp-circle {
+    position: relative;
+    top: -18rem;
+    left: -10rem;
+}
+
+.img1 {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    left: 62.5rem;
+    top: 5rem;
+    z-index: 2;
+    opacity: 0;
+}
+
+.circle {
+    width: 1300px;
+    height: 600px;
+    border-radius: 300px;
+    background-color: #3ddc84;
+    position: relative;
+    left: 55rem;
+    top: 8.5rem;
+    z-index: 1;
+}
+
+.text1 {
+    width: 600px;
+    line-height: 88px;
+    font-size: 88px;
+    color: white;
+    top: -45rem;
+    position: relative;
+    left: 19.5rem;
+}
+
+.text1-1 {
+    width: 600px;
+    line-height: 24px;
+    font-size: 20px;
+    color: white;
+    top: -65rem;
+    position: relative;
+    left: 19.5rem;
+}
+
+.button1 {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    top: -43rem;
+    left: 19.5rem;
+}
+
+.button2 {
+    height: 50px;
+    border: none;
+    background-color: #073042;
+    border-radius: 25px;
+    position: relative;
+    top: -43rem;
+    left: 21.5rem;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* section  2*/
+
+.text2 {
+    width: 600px;
+    line-height: 72px;
+    font-size: 72px;
+    position: relative;
+}
+
+.text2-2 {
+    width: 550px;
+    line-height: 32px;
+    font-size: 20px;
+    position: relative;
+    top: 3rem;
+    font-family: Android Euclid Med;
+}
+
+.box2 {
+    width: 400px;
+    height: fit-content;
+    font-family: Android Euclid Med;
+    font-size: 20px;
+    line-height: 22px;
+    position: relative;
+    left: 67.5rem;
+    top: -20rem;
+}
+
+.row1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+/* section 3 */
+
+.box3 {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: 700;
+    width: 500px;
+}
+
+.box3-1 {
+    position: relative;
+    top: -8.3rem;
+}
+
+.box3-2 {
+    width: 400px;
+    position: relative;
+    display: inline;
+}
+
+.head-font {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: Android Euclid Med;
+}
+
+.warpper-box-3 {
+    position: relative;
+    top: -13rem;
+    display: inline;
+}
+
+.info-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 420px;
+}
+
+
+/* section 4 */
+
+.warp-circle1 {
+    position: relative;
+    top: -22rem;
+    left: -2rem;
+}
+
+.box1 {
+    width: 100%;
+    height: 900px;
+    background-color: #073042;
+    overflow: hidden;
+}
+
+.circle4-1 {
+    width: 550px;
+    height: 500px;
+    background-color: #3ddc84;
+    border-radius: 70%;
+    position: relative;
+}
+
+.circle4-2 {
+    width: 510px;
+    height: 460px;
+    background-color: #073042;
+    border-radius: 70%;
+    position: relative;
+    top: 1.25rem;
+    left: 1.25rem;
+}
+
+.text4 {
+    font-size: 88px;
+    line-height: 88px;
+    color: white;
+    width: 500px;
+    position: relative;
+    left: 26rem;
+    top: -20rem;
+}
+
+.box-4 {
+    width: 268px;
+    position: relative;
+    margin-right: 8rem;
+}
+
+.step {
+    width: 300px;
+    position: absolute;
+    color: white;
+    top: 3rem;
+}
+
+.head-step {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 5rem;
+    z-index: 2;
+}
+
+.erre {
+    width: 400px;
+}
+
+.number {
+    color: #4285f4;
+    font-size: 17rem;
+    position: relative;
+    top: -7rem;
+    left: 8rem;
+}
+
+.step-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 15rem;
+}
+
+.warp-step {
+    position: relative;
+    top: -15rem;
+    left: 26.5rem;
+    display: flex;
+}
+
+.orange-cir {
+    width: 550px;
+    height: 530px;
+    background-color: #f86734;
+    border-radius: 70%;
+    position: relative;
+    top: -23rem;
+    left: 88rem;
+}
+
+.become-but {
+    background-color: white;
+    color: #073042;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    top: -20rem;
+    left: 26.5rem;
+    font-family: Android Euclid Med;
+    font-size: 14px;
+}
+
+
+/* section 5 */
+
+.text-box-5 {
+    width: 400px;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.text-box-5-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    top: 5rem;
+}
+
+.img5 {
+    width: 600px;
+    position: relative;
+    left: 60rem;
+    top: -20rem;
+}
+
+.box-52 {
+    width: 1200px;
+    height: 550px;
+    border-radius: 400px;
+    background-color: #eff7cf;
+}
+
+.box-53 {
+    width: 1000px;
+    height: 500px;
+    border-radius: 350px;
+    background-color: white;
+    position: relative;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.warpbox-5 {
+    position: relative;
+    left: 75rem;
+    top: -44rem;
+    z-index: -1;
+}
+
+
+/* last section */
+
+.error-last {
+    position: relative;
+    top: -35rem;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    width: 430px;
+    left: 27rem;
+}
+
+.head-last {
+    position: relative;
+    top: -37rem;
+    font-weight: 400;
+    font-size: 16px;
+    width: 430px;
+    left: 27rem;
+}
+
+.info-last {
+    position: relative;
+    top: -32rem;
+    font-weight: 400;
+    font-size: 16px;
+    width: 430px;
+    left: 27rem;
+}
+
+.bot-img {
+    position: relative;
+    width: 1100px;
+    left: -17.5rem;
+    top: 27.5rem;
+}
+
+.bot-circle {
+    height: 720px;
+    width: 800px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    position: relative;
+    top: -23rem;
+    left: 50rem;
+}
+
+.bot-box {
+    width: 1260px;
+    height: 730px;
+    background-color: #3ddc84;
+    border-radius: 50px;
+    transform: translateX(319px);
+    overflow: hidden;
+}
+
+.last-but {
+    position: relative;
+    left: 27rem;
+    top: -30rem;
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: #073042;
+}
+
+.last-but1 {
+    color: #073042;
+    background-color: #3ddc84;
+    border: none;
+    font-size: 1.2rem;
+    position: relative;
+    top: -30rem;
+    left: 28rem;
+}
+
+
+/* adjustment */
+
+.left-text {
+    position: relative;
+    left: 26.4rem;
+}
+
+.big-font {
+    font-size: 25rem;
+    opacity: 0.4;
+    position: relative;
+    left: 80rem;
+    color: #4285f4;
+}
+
+.right-text {
+    width: 450px;
+    font-family: Android Euclid Med;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    left: 67rem;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.check-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
