@@ -6,9 +6,6 @@ gsap.to("#bg-round-anim", {x: 1050,opacity: 1, duration: 0.7, delay: 0.5});
 gsap.to("#fly-text", {y: 0,opacity: 1, duration: 0.5, delay: 0.5});
 gsap.to("#warp-img", {opacity: 1, duration: 0.5, delay: 1});
 
-
-
-
 var scene = new ScrollMagic.Scene({triggerElement: "#p-botright", duration: 1200})
 // animate color and top border in relation to scroll position
 .setTween("#full-img", {scale: 0.61, x:370, y:350, delay: 0.9}) 
@@ -103,3 +100,81 @@ gsap.registerEffect({
     document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
     document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
   }
+
+    // auto play by scroll
+    // var controller = new ScrollMagic.Controller();
+    // var tlBubble = gsap.timeline({
+    //     scrollTrigger: {
+    //         markers:true,
+    //         trigger: "#video-2s",
+    //         onToggle: () => {
+    //             let phone = document.querySelector("#video-2s")
+    //             phone.load()
+    //         },
+    //         toggleActions: "restart",
+    //     }
+    // })
+    var play = true;
+     $(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
+
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+                console.log("t="+scrollTop, "b="+scrollBottom)
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+                    console.log("tm="+yTopMedia, "bm="+yBottomMedia)
+                    if(scrollTop > yBottomMedia || scrollBottom < yTopMedia){ //view explaination in `In brief` section above
+                        play = true;
+                    } else {
+                        if(play){
+                            $(this).get(0).play();
+                        }
+                        play = false;
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
+    
+
+
+    //wave 
+let gsapBgWave = gsap.timeline().from(".bg-wave", {
+    repeat: -1,
+    opacity: 1,
+    scale: 0,
+    duration: 4,
+    stagger: {
+        each: 4,
+        opacity: 0,
+        from: "center",
+        yoyo: true,
+    },
+
+    ease: Power1.easeOut,
+})
+let gsapBgWave2 = gsap.timeline().from(".bg-wave2", {
+    repeat: -1,
+    opacity: 0.5,
+    scale: 0.5,
+    duration: 4,
+    stagger: {
+        each: 4,
+        opacity: 0,
+        from: "center",
+        yoyo: true,
+    },
+
+    ease: Power1.easeOut,
+})
+
+
+                    
