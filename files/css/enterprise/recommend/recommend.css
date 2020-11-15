@@ -7,7 +7,7 @@
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 body{
-    overflow-x: auto;
+    overflow-x: hidden;
     font-family: Android Euclid;
     font-size: 20px;
 }
