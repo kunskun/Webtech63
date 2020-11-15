@@ -1,8 +1,10 @@
 var controller = new ScrollMagic.Controller();
 TweenLite.defaultEase = Linear.easeNone;
 
-gsap.to(".c1", {x: 1000, y: -500,opacity: 1, duration: 0.5});
-gsap.to("#bg-round-anim", {x: 30,opacity: 1, duration: 0.5});
+gsap.to(".c1", {x: 1000, y: -500,opacity: 1, duration: 0.7, delay: 0.5});
+gsap.to("#bg-round-anim", {x: 1050,opacity: 1, duration: 0.7, delay: 0.5});
+gsap.to("#fly-text", {y: 0,opacity: 1, duration: 0.5, delay: 0.5});
+gsap.to("#warp-img", {opacity: 1, duration: 0.5, delay: 1});
 
 
 
