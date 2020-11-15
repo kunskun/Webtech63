@@ -471,3 +471,14 @@ section {
     height: 20px;
     margin-right: 20px;
 }
+
+.aro-box {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+#last-but:hover {
+    background-color: red;
+    transition: 1s;
+}
