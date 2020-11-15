@@ -1,9 +1,15 @@
 var controller = new ScrollMagic.Controller();
+var controller2 = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({triggerElement: "#p-botright", duration: 1200})
 // animate color and top border in relation to scroll position
 .setTween("#full-img", {scale: 0.63, x:370, y:350, delay: 0.9}) 
 .addTo(controller);
+
+var scene2 = new ScrollMagic.Scene({triggerElement: "#p-botright2", duration: 1200})
+// animate color and top border in relation to scroll position
+.setTween("#full-img2", {scale: 0.63, x:370, y:350, delay: 0.9}) 
+.addTo(controller2);
 
 function switchC(obj){
     if(obj.id == "btn2"){
