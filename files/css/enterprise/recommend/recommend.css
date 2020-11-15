@@ -1,0 +1,202 @@
+@font-face{
+    font-family: Android Euclid; 
+    src: url(../../fonts/AndroidEuclid-Bold.otf);
+}
+@font-face{
+    font-family: Android Euclid-M; 
+    src: url(../../fonts/AndroidEuclid-Medium.otf);
+}
+body{
+    overflow-x: auto;
+    font-family: Android Euclid;
+    font-size: 20px;
+}
+section{
+    margin-bottom: 15%;
+}
+h1{
+    font-family: Android Euclid-M;
+    color: black;
+    display: block;
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: 700;
+    z-index: 10;
+}
+h3{
+    font-family: Android Euclid-M;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    z-index: 10;
+}
+p{  
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 10;
+}
+.w-80{
+    width: 80%;
+    margin-left: 10%;
+}
+.part1{
+    color: white;
+    background-color: #073042;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    transform: translateY(140px);
+    justify-content: center;
+}
+.cp1{
+    margin-left: 7%;
+    margin-right: 1%; 
+    padding-top: 15%;
+}
+.svg1{
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+.bg-round {
+    border:solid #3ddc84 20px;
+    border-radius: 500px;
+    width: 1300px;
+    height: 600px;
+    position: absolute;
+    transform: translate(1100px, -1150px);
+    z-index: -2;
+}
+h2{
+    font-family: Android Euclid;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.ml{
+    margin-left: 22%;
+}
+h4{
+    font-family: Android Euclid;
+    font-size: 40px;
+    font-weight: 7000;
+    line-height: 40px;
+}
+.learnMore {
+	cursor: pointer;
+}
+b{
+    font-family: Android Euclid;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 64%;
+    height: 2px;
+    margin-left: 18%;
+    position: static;
+}
+.progress-bar{
+    background-color: black;
+    width: 90%;
+}
+h5{
+    font-family: Android Euclid;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.card{
+    margin-right: 3%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.button-group{
+    transform: translate(1470px, 20px);
+}
+.data-box{
+    width: 580px;
+    position: absolute;
+    display: inline-block;
+}
+.hovf{
+    position: inline-block;
+}
+.img-col{
+    position: relative;
+}
+.txt-col{
+    position: relative;
+}
+.bg-wave {
+	z-index: 10;
+	opacity: 0;
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	border: 2px solid #4285f4;
+    position: absolute;
+    transform: translate(-694px, -150px);
+}
+.bg-wave2 {
+	z-index: 10;
+	opacity: 0;
+	width: 520px;
+	height: 520px;
+	border-radius: 50%;
+	border: 2px solid #4285f4;
+    position: absolute;
+    transform: translate(-694px, -60px);
+}
+.stageBg {
+
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+}
+.video-content {
+	position: fixed;
+	top: 10vh;
+	z-index: 11;
+	width: 90vw;
+	height: 80vh;
+}
+.closeButton {
+	position: fixed;
+	top: 2vh;
+	float: right;
+	width: 10vw;
+	z-index: 12;
+	border: none;
+	outline: none;
+	background: none;
+}
+.icon-x {
+	position: fixed;
+	top: 2vh;
+	right: 0vw;
+	float: right;
+	width: 100px;
+	height: 100px;
+	z-index: 12;
+	background-repeat: no-repeat;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI4N3B4IiBoZWlnaHQ9Ijg3cHgiIHZpZXdCb3g9IjAgMCA4NyA4NyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzLjc3MDI5NSwgNDMuNjA1NzE1KSByb3RhdGUoNDUuMDAwMDAwKSB0cmFuc2xhdGUoLTQzLjc3MDI5NSwgLTQzLjYwNTcxNSkgdHJhbnNsYXRlKC0xNy4yMjk3MDUsIC0xNy4zOTQyODUpIiBzdHJva2U9IiNGRkZGRkYiPiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjU3OTEyOCwgMC45Njg1NDApIj4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTYwLjY3NjkyMzEsNDUgTDYwLjY3NjkyMzEsNzYuMTkyNjE1NCIgaWQ9IlBhdGgtMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuNjc2OTIzLCA2MC41OTYzMDgpIHJvdGF0ZSgtOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTYwLjY3NjkyMywgLTYwLjU5NjMwOCkgIj48L3BhdGg+ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik02MC42NzY5MjMxLDQ1LjAyNzA3NjkgTDYwLjY3NjkyMzEsNzYuMTY1NTM4NSIgaWQ9IlBhdGgtMiI+PC9wYXRoPiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MC4xNTQ5OTQsIDYwLjE0NzgzNSkgcm90YXRlKC00NS4wMDAwMDApIHRyYW5zbGF0ZSgtNjAuMTU0OTk0LCAtNjAuMTQ3ODM1KSAiIGN4PSI2MC4xNTQ5OTM3IiBjeT0iNjAuMTQ3ODM1MiIgcj0iNDIuNSI+PC9jaXJjbGU+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+)
+}

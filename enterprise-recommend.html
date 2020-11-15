@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Enterprise Recommended | Android</title>
+    <link rel="icon" href="files/images/logos/Android_cut.png" type="image/x-icon">
+
+    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-300.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-500.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="files/fonts/roboto-v20-latin-700.woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/css/enterprise/recommend/recommend.css">
+    <!-- GSAP link-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <section class="part1"> 
+        <svg class="svg1" width="2000" height="2000">
+            <circle class="c1" cx="-700" cy="1620" r="690" fill="#4285f4" />
+        </svg>
+        <div class="row w-80">
+            <div class="col-6 cp1"  id="fly-text" style="opacity: 0; transform: translateY(50px);">
+                <h3>Recommended</h3>
+                <h1 class="mt-4" style="color: white;">Google verified devices and services.</h1>
+            </div>
+            <div class="col-5" >
+                <img src="files/images/recommend/unnamed.jpg" width="117%" id="warp-img"
+                alt="" style="padding-top: 12%; transform: translateX(-100px); opacity: 0;">
+            </div>
+        </div>
+        <div class="bg-round" id="bg-round-anim" style="transform: translate(3000px,-1150px);"></div>
+    </section>
+    <section id="sec2" style="background-color: none;">
+        <div class="row">
+            <div class="col-3 ml">
+                <h2>Business <br>solutions <br>that earn <br>our seal.</h2>
+                <p class="mt-5">Android Enterprise Recommended. It’s not<br>
+                just a seal of approval. It’s a shortlist of <br>
+                devices and service providers that meet <br>
+                Google’s strict enterprise requirements. So <br>
+                you can feel good about setting your business <br>
+                up on mobile.</p>
+            </div>
+            <div class="col-6">
+                <video class="video" id="video-2s" width="100%" height="240" autoplay style="transform: translate(-90px, 150px);" >
+                    <source src="files/images/recommend/AER_badge 5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row" style="margin-left: 5%;">
+            <div class="bg-round" style="
+            border-color: #4285f4;
+            opacity: 0.2;
+            width: 1100px;
+            height: 590px;
+            position: absolute;
+            transform: translateX(-230px);"></div>
+            <div class="col-6">
+                <img src="files/images/recommend/unnamed.webp" alt=""
+                width="70%" class="ml">
+            </div>
+            <div class="col-5 ml-5">
+                <h2>Enterprise-<br>grade <br>features <br>and <br>expertise.</h2>
+                <p class="mt-5">Every device on the list meets strict <br>
+                    requirements for hardware and software. And <br>
+                    every partner we work with are trained and <br>
+                    supported by Google.</p>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 20%;">
+        <div class="row">
+            <div class="col-3 ml">
+                <h2>Consistent <br>ways to <br>manage.</h2>
+                <p class="mt-5">With Android Enterprise Recommended, it’s <br>
+                    easy to scale and support your mobile fleet. <br>
+                    Standardized features let you manage <br>
+                    devices seamlessly. Consistently every time. <br>
+                    No matter how many you deploy.</p>
+            </div>
+            <div class="col-6 ml-5">
+                <img src="files/images/recommend/unnamed (1).webp" alt=""
+                width="30%" style="transform: translate(120px, -80px);">
+            </div>
+            <svg class="svg1" width="2000" height="2000" style="z-index: -1;">
+                <circle class="anim_cir" cx="1230" cy="200" r="200" fill="#4285f4" />
+            </svg>
+            <div class="d-flex justify-content-center" style="position: relative;z-index: -1;">
+                <div class="bg-wave"></div>
+                <div class="bg-wave2"></div>
+            </div>
+    </section>
+    <section>
+        <div class="row" style="margin-left: 7%;">
+            <div class="col-6">
+                <img src="files/images/recommend/unnamed (2).webp" alt=""
+                width="70%" style="float: right;z-index: -1;position: relative;top: 100px;">
+            </div>
+            <div class="col-3 ml-5">
+                <h2>Regular <br>security <br>updates.</h2>
+                <p class="mt-5">Know your company’s devices are up to date. <br>
+                    Android Enterprise Recommended means you <br>
+                    get timely security patches and clear <br>
+                    information about major updates.</p>
+            </div>
+        </div>
+        <div class="bg-round" style="
+            border-color:#eff7cf;
+            width: 800px;
+            height: 450px;
+            position: absolute;
+            transform: translate(50px, -900px) rotate(90deg);"></div>
+    </section>
+    <section style="position: relative; top: -600px">
+        <div class="row p-botright" id="p-botright">
+            <img src="files/images/recommend/big-img1.png" 
+            alt="" class="full-img" id="full-img">
+        </div>
+        <div class="row ml" style="position: relative; top: 101px;">
+            <div style="width: 34%; z-index: 1;">
+                <h1 style="font-family: Android Euclid;">Find the <br>right <br>solution.</h1>
+            </div>
+        </div>
+        <div class="row ml" style="margin-top: 10%;">
+            <div class="col-4">
+                <svg viewBox="0 0 32 47" style="width: 7%; position: relative; left: 10px;">
+                    <g stroke-width="3.93" fill="none" fill-rule="evenodd">
+                        <path d="M6 2C3.8 2 2 3.76 2 5.91v35.18C2 43.24 3.8 45 6 45h20c2.2 0 4-1.76 4-3.91V5.91c0-2.15-1.8-3.89-4-3.89L6 2z" stroke="#4285F4"></path>
+                        <path d="M8.965 36.035h14.07v-24.07H8.965v24.07z" stroke="#3DDC84"></path>
+                    </g>
+                </svg>
+                <h4 class="mt-4">Knowledge worker <br>and rugged devices.</h4>
+                <ul class="mt-4" style="position: relative; left: -20px;">
+                    <li><p>Devices built for work—whether in the office <br>or a construction site.</p></li>
+                    <li><p>No matter what kind, we recommend <br>devices with consistent performance and <br>user experience.</p></li>
+                    <li><p>All come with bulk enrollment options and <br>timely security updates within 90 days.</p></li>
+                </ul>
+                <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
+                    <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                        <b>Find a device</b>
+                    </p>
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
+                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="col-4 ml-5">
+                <svg viewBox="0 0 41 41" style="width: 10%; position: relative; left: 10px;">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M30.748 0L41 10.253V0H30.748zM0 0v10.253L10.25 0H0zm30.748 41H41V30.753L30.748 41zM0 41h10.25L0 30.753V41z" fill="#3DDC84"></path>
+                        <circle stroke="#4285F4" stroke-width="3.93" cx="20.927" cy="20.073" r="15.118"></circle>
+                    </g>
+                </svg>
+                <h4 class="mt-4">Enterprise mobility <br>management.</h4>
+                <ul class="mt-4" style="position: relative; left: -20px;">
+                    <li><p>Find EMM solutions with the most <br>advanced features management.</p></li>
+                    <li><p>Consistent deployment experience, with <br>admin consoles that simplify set-up.</p></li>
+                    <li><p>Plus, get support from EMM providers with <br>the latest Android training.</p></li>
+                </ul>
+                <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
+                    <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                        <b>Find an EMM sulution</b>
+                    </p>
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
+                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="col-4">
+                <svg viewBox="0 0 44 31" style="width: 10%; position: relative; left: 10px;">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M15.4 11a3.296 3.296 0 01-3.3-3.3c0-1.826 1.474-3.3 3.3-3.3 1.826 0 3.3 1.474 3.3 3.3 0 1.826-1.474 3.3-3.3 3.3m0-11c-4.246 0-7.7 3.454-7.7 7.7s3.454 7.7 7.7 7.7 7.7-3.454 7.7-7.7S19.646 0 15.4 0" fill="#4285F4"></path>
+                        <g transform="translate(0 19.8)">
+                            <path d="M15.51 6.6H6.094c2.178-1.1 5.94-2.2 9.306-2.2.242 0 .506.022.748.022.748-1.606 2.046-2.926 3.608-3.982C18.15.154 16.632 0 15.4 0 10.252 0 0 2.574 0 7.7V11h15.4V7.7c0-.374.044-.748.11-1.1" fill="#4285F4" mask="url(#b)"></path>
+                        </g>
+                        <g transform="translate(19.8 6.6)">
+                            <path d="M14.762 10.296C16.434 9.35 17.6 7.568 17.6 5.5c0-3.036-2.464-5.5-5.5-5.5a5.502 5.502 0 00-5.5 5.5c0 2.068 1.166 3.85 2.838 4.796A5.46 5.46 0 0012.1 11a5.46 5.46 0 002.662-.704M12.1 14.3C8.052 14.3 0 16.522 0 20.9v3.3h24.2v-3.3c0-4.378-8.052-6.6-12.1-6.6" fill="#3DDC84" mask="url(#d)"></path>
+                        </g>
+                    </g>
+                </svg>
+                <h4 class="mt-4">Managed service <br>providers.</h4>
+                <ul class="mt-4" style="position: relative; left: -20px;">
+                    <li><p>Work with expert providers for all your <br>mobile needs.</p></li>
+                    <li><p>Recommended MSPs are trained by Google <br>on the latest Android architecture, <br>implementation and tech support.</p></li>
+                </ul>
+                <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
+                    <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                        <b>Find an MSP partner</b>
+                    </p>
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
+                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress mt-4"></div>
+        <center>
+            <div class="row learnMore2" style="width: 240px;height: 100px;left: 15px;position: relative;">
+                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                    <b>See all requirements</b>
+                </p>
+                <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 5px;"
+                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                </svg>
+            </div>
+        </center>
+    </section>
+    <section  style="position: relative; top: -600px">
+        <div class="row" style="top: -20px;">
+            <div class="bg-round" style="transform: translate(-250px, -120px); height: 700px;"></div>
+            <div class="col-6" >
+                <h1 style="text-align:left; float:right; font-family: Android Euclid;">Learn more <br>about Android <br>Enterprise.</h1>
+            </div>
+            <div class="col-6">
+                <p style="transform:translate(100px,30px)">Find everything you need to know about Android <br>Enterprise. From datasheets about Android Enterprise <br>Recommended to videos on security updates.</p>
+                <div class="row learnMore2" style="width: 240px;height: 100px;left: 116px;position: relative;">
+                    <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                        <b>See all resources </b>
+                    </p>
+                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
+                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row hovf2" style="margin-left: 18%; margin-top: 5%;" id="hovf2">
+            <div class="data-box">
+                <div class="img-col">
+                    <img class="card-img-top" src="files/images/recommend/unnamed (3).webp" width="100%">
+                </div>
+                <div class="txt-col">
+                    <h5>Android Enterprise <br>Recommended <br>datasheet</h5>
+                    <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: 40px;">
+                        <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Read the datasheet</b>
+                        </p>
+                        <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
+                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="data-box" style="margin-left: 33%;">
+                <div class="img-col">
+                    <button class="btn" onclick="openVideo(0)">
+                        <svg width="500" height="500" style="position: absolute;">
+                            <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
+                                <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+                                <path class="play-icon" d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z" fill="#073042" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                        <img class="card-img-top" src="files/images/recommend/unnamed (4).webp" width="100%">
+                    </button>
+                </div>
+                <div class="txt-col">
+                    <h5>Android Enterprise: <br>management <br>overview</h5>
+                    <div class="row learnMore2" style="width: 240px;height: 100px;left: 15px;position: relative; top: 40px;">
+                        <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Watch the video</b>
+                        </p>
+                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
+                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="data-box" style="margin-left: 66%;">
+                <div class="img-col">
+                    <button class="btn" onclick="openVideo(1)">
+                        <svg width="500" height="500" style="position: absolute;">
+                            <g transform="translate(250 120)" fill="none" fill-rule="evenodd">
+                                <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+                                <path class="play-icon" d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z" fill="#073042" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                        <img class="card-img-top" src="files/images/recommend/unnamed (5).webp" width="100%">
+                    </button>
+                </div>
+                <div class="txt-col">
+                    <h5>Android Enterprise: <br>security overview</h5>
+                    <div class="row learnMore2" style="width: 240px;height: 100px;left: 15px;position: relative; top: 95px;">
+                        <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Watch the video</b>
+                        </p>
+                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
+                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="transform: translateY(690px);">
+            <div class="progress mt-4" style="height: 4px;">
+                <div class="progress-bar progress-bar" 
+                id="progress-bar"
+                role="progressbar"  
+                aria-valuenow="80"
+                aria-valuemin="0" 
+                aria-valuemax="100"></div>
+            </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-outline-light bs" onclick='prevSlide2()'>
+                        <svg class="vbar1" id="vbar1">
+                            <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
+                            1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
+                            0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
+                            11H5c-.55 0-1 .45-1 1s.45 1 1 1z">
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-outline-light bs" onclick='nextSlide2()'>
+                        <svg class="vbar2" id="vbar2">
+                            <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
+                            1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
+                            0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
+                            11H5c-.55 0-1 .45-1 1s.45 1 1 1z">
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button hidden onclick="closeVideo()" style="outline: none;" type="button" class="closeButton">
+        <span class="icon-x"></span>
+    </button>
+    <div class="d-flex justify-content-center">
+        <div hidden class="stageBg"></div>
+        
+        <iframe hidden class="video-content" width="560" height="315" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>
+    
+    
+</body>
+<script src="files/js/enterprise/recommend/recommend-script.js"></script>
+
+</html>
