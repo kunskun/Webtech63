@@ -101,19 +101,6 @@ gsap.registerEffect({
     document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
   }
 
-    // auto play by scroll
-    // var controller = new ScrollMagic.Controller();
-    // var tlBubble = gsap.timeline({
-    //     scrollTrigger: {
-    //         markers:true,
-    //         trigger: "#video-2s",
-    //         onToggle: () => {
-    //             let phone = document.querySelector("#video-2s")
-    //             phone.load()
-    //         },
-    //         toggleActions: "restart",
-    //     }
-    // })
     var play = true;
      $(document).ready(function() {
             // Get media - with autoplay disabled (audio or video)
@@ -176,5 +163,31 @@ let gsapBgWave2 = gsap.timeline().from(".bg-wave2", {
     ease: Power1.easeOut,
 })
 
+//open video
+let isVideo = ["https://www.youtube.com/embed/Vd2iUYm8PuY", "https://www.youtube.com/embed/Cb3yx070mRc"]
+
+function openVideo(index){
+  let body = document.querySelector("body")
+  body.style.overflowY = "hidden"
+  let stageBg = document.querySelector(".stageBg")
+  let video = document.querySelector(".video-content")
+  let button = document.querySelector(".closeButton")
+  video.setAttribute("src", isVideo[index])
+  button.removeAttribute("hidden")
+  video.removeAttribute("hidden")
+  stageBg.removeAttribute("hidden")
+}
+
+function closeVideo() {
+  let body = document.querySelector("body")
+  body.style.overflowY = "scroll"
+  let stageBg = document.querySelector(".stageBg")
+  let video = document.querySelector(".video-content")
+  let button = document.querySelector(".closeButton")
+  
+  video.setAttribute("hidden", true)
+  stageBg.setAttribute("hidden", true)
+  button.setAttribute("hidden", true)
+}
 
                     
