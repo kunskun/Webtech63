@@ -11,6 +11,7 @@
 .all {
     font-family: Android Euclid;
     overflow-x: hidden;
+    opacity: 0;
 }
 
 section {
@@ -48,16 +49,17 @@ section {
 .warp-circle {
     position: relative;
     top: -18rem;
-    left: 10rem;
+    left: -10rem;
 }
 
 .img1 {
     position: absolute;
     width: 700px;
     height: auto;
-    left: 60.5rem;
+    left: 62.5rem;
     top: 5rem;
     z-index: 2;
+    opacity: 0;
 }
 
 .circle {
@@ -66,7 +68,7 @@ section {
     border-radius: 300px;
     background-color: #3ddc84;
     position: relative;
-    left: 45rem;
+    left: 55rem;
     top: 8.5rem;
     z-index: 1;
 }

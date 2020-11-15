@@ -22,6 +22,23 @@
     font-family: Android Euclid Med;
 }
 
+.svg-button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 10rem;
+    top: -1.5rem;
+}
+
+.aro-box {
+    width: 20px;
+    height: 20px;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
 
 /* section 1 */
 
@@ -370,6 +387,11 @@ section {
     z-index: 2;
 }
 
+.warp-cicle {
+    position: relative;
+    left: -10rem;
+}
+
 .warp-button {
     position: relative;
     top: -50rem;
@@ -393,6 +415,10 @@ section {
     position: relative;
     left: 86.5rem;
     top: -18rem;
+}
+
+button {
+    outline: none;
 }
 
 .vbar1 {

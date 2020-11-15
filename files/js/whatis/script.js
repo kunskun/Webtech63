@@ -160,8 +160,8 @@ var tweenWellbe = gsap.to("#wellbe", {
     x: -1200
 });
 var tweenMovetech = gsap.to("#tech-move", {
-    top: "10rem",
-    // transformOrigin: "center center"
+    y: 900
+        // transformOrigin: "center center"
 });
 var tweenFirstBoxScale = gsap.to("#first-box", {
     width: "80.5%"
@@ -173,10 +173,10 @@ var tweenWheel = gsap.to("#wheel", {
 })
 
 
-animate("#secur", 2000, tweenSecur);
-animate("#wellbe", 2000, tweenWellbe);
-animate("#tech-move", 2000, tweenMovetech);
-animate("#first-box", 3000, tweenFirstBoxScale);
+animate("#secur", 1000, tweenSecur);
+animate("#wellbe", 1000, tweenWellbe);
+animate(".trigger", 1000, tweenMovetech);
+animate("#first-box", 1500, tweenFirstBoxScale);
 animate("#wheel", 1000, tweenWheel);
 
 function animate(tag, dur, tween) {
@@ -186,4 +186,5 @@ function animate(tag, dur, tween) {
         })
         .setTween(tween)
         .addTo(controller)
+        .addIndicators()
 }

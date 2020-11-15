@@ -24,3 +24,24 @@ function animate(tag, dur, tween) {
         .setTween(tween)
         .addTo(controller)
 }
+
+var timeline = new TimelineMax({});
+var timeline1 = new TimelineMax({});
+var timeline2 = new TimelineMax({});
+var timeline3 = new TimelineMax({});
+timeline.to(".all", 1, {
+    opacity: 1
+});
+timeline1.to("#warp-circle", 1, {
+    left: "10rem"
+});
+timeline1.to("#warp-circle", 1, {
+    left: "10rem"
+});
+timeline3.to(".img1", 1, {
+    opacity: 1,
+    left: "60.5rem"
+});
+timeline2.to("#cir", 1, {
+    left: "45rem"
+});
