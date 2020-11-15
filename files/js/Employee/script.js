@@ -11,6 +11,8 @@ var scene2 = new ScrollMagic.Scene({triggerElement: "#p-botright2", duration: 12
 .setTween("#full-img2", {scale: 0.63, x:370, y:350, delay: 0.9}) 
 .addTo(controller2);
 
+let count = 0;
+
 function switchC(obj){
     if(obj.id == "btn2"){
         document.getElementById('color').setAttribute('class', 'anim-1 circle4')
@@ -27,3 +29,29 @@ function switchC(obj){
     }
 }
 
+function prevSlide(obj) {
+    if(count > 0){
+        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-left: 20%;transition-duration: 0.5s;')
+        document.getElementById('bar5').setAttribute('style', 'width: 90%;transition-duration: 0.5s;')
+        count--;
+    }
+    
+}
+
+function nextSlide(obj) {
+    if(count == 0){
+        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-left: 5%;transition-duration: 0.5s;')
+        document.getElementById('bar5').setAttribute('style', 'width: 100%;transition-duration: 0.5s;')
+        count++;
+    }
+}
+
+function toLeft(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-left')
+}
+
+function toRight(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-right')
+}
