@@ -1,0 +1,165 @@
+@font-face{
+    font-family: Android Euclid; 
+    src: url(../../fonts/AndroidEuclid-Bold.otf);
+}
+@font-face{
+    font-family: Android Euclid-M; 
+    src: url(../../fonts/AndroidEuclid-Medium.otf);
+}
+body{
+    overflow-x: hidden;
+    font-family: Android Euclid;
+    font-size: 20px;
+}
+section{
+    margin-bottom: 15%;
+}
+h1{
+    font-family: Android Euclid-M;
+    color: black;
+    display: block;
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: 700;
+    z-index: 10;
+}
+h3{
+    font-family: Android Euclid-M;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    z-index: 10;
+}
+p{  
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 10;
+}
+.w-80{
+    width: 80%;
+    margin-left: 10%;
+}
+.part1{
+    color: white;
+    background-color: #073042;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    transform: translateY(140px);
+    justify-content: center;
+}
+.cp1{
+    margin-left: 7%;
+    margin-right: 1%; 
+    padding-top: 15%;
+}
+.svg1{
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+.bg-round {
+    border:solid #3ddc84 20px;
+    border-radius: 500px;
+    width: 1300px;
+    height: 600px;
+    position: absolute;
+    transform: translate(1100px, -1150px);
+    z-index: -2;
+}
+h2{
+    font-family: Android Euclid;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.ml{
+    margin-left: 22%;
+}
+h4{
+    font-family: Android Euclid;
+    font-size: 40px;
+    font-weight: 7000;
+    line-height: 40px;
+}
+.learnMore {
+	cursor: pointer;
+}
+b{
+    font-family: Android Euclid;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 64%;
+    height: 2px;
+    margin-left: 18%;
+    position: static;
+}
+.progress-bar{
+    background-color: black;
+    width: 90%;
+}
+h5{
+    font-family: Android Euclid;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.card{
+    margin-right: 3%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.button-group{
+    transform: translate(1470px, 20px);
+}
+.data-box{
+    width: 580px;
+    position: absolute;
+    display: inline-block;
+}
+.hovf{
+    position: inline-block;
+}
+.img-col{
+    position: relative;
+}
+.txt-col{
+    position: relative;
+}
+.bg-wave {
+	z-index: 10;
+	opacity: 0;
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	border: 2px solid #4285f4;
+    position: absolute;
+    transform: translate(-694px, -150px);
+}
+.bg-wave2 {
+	z-index: 10;
+	opacity: 0;
+	width: 520px;
+	height: 520px;
+	border-radius: 50%;
+	border: 2px solid #4285f4;
+    position: absolute;
+    transform: translate(-694px, -60px);
+}
