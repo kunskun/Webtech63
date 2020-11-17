@@ -283,6 +283,7 @@ function closeVideo() {
   video.setAttribute("hidden", true)
   stageBg.setAttribute("hidden", true)
   button.setAttribute("hidden", true)
+  video.removeAttribute("src")
 }
 
 //learn more
