@@ -1,3 +1,7 @@
+@font-face{
+    font-family: Android Euclid;
+    src: url(../../fonts/AndroidEuclid-Medium.otf);
+}
 nav,a{
     font-family: Android Euclid;
     font-size: 14px;
@@ -7,7 +11,7 @@ nav,a{
 }
 .navbar-brand{
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     color: black;
 }
@@ -15,3 +19,51 @@ nav,a{
     width: 140px;
     margin: 1px;
 }
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    font-family: Android Euclid;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    background-color: #073042;
+    border-radius: 800px;
+    color: #fff;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 14px;
+    padding: 12px 24px;
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .2s linear;
+}
+.btn:hover{
+    color:#3ddc84;
+}
+#nav-animate {
+    position: relative; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the nav-animate links */
+  #nav-animate a {
+    display: block;
+    text-decoration: none;
+  }
+  #subnav {
+    position: relative; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+  
+  /* Style the subnav links */
+  #subnav a {
+    display: block;
+    text-decoration: none;
+  }
