@@ -45,3 +45,7 @@ timeline3.to(".img1", 1, {
 timeline2.to("#cir", 1, {
     left: "45rem"
 });
+
+function reScale() {
+    document.getElementById("#bot-box").style
+}
