@@ -48,17 +48,17 @@ function switchC(obj){
 }
 
 function prevSlide(obj) {
-    if(count > 0){
-        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-left: 20%;transition-duration: 0.5s;')
+    if (count > 0) {
+        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-top: 5%;margin-left: 15%;transition-duration: 0.5s;')
         document.getElementById('bar5').setAttribute('style', 'width: 90%;transition-duration: 0.5s;')
         count--;
     }
-    
+
 }
 
 function nextSlide(obj) {
-    if(count == 0){
-        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-left: 5%;transition-duration: 0.5s;')
+    if (count == 0) {
+        document.getElementById('slide5').setAttribute('style', 'position: absolute;margin-top: 5%;margin-left: 0%;transition-duration: 0.5s;')
         document.getElementById('bar5').setAttribute('style', 'width: 100%;transition-duration: 0.5s;')
         count++;
     }
