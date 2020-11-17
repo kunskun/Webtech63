@@ -1,10 +1,10 @@
 @font-face{
     font-family: Android Euclid; 
-    src: url(../../fonts/AndroidEuclid-Bold.otf);
+    src: url(../../../fonts/AndroidEuclid-Bold.otf);
 }
 @font-face{
     font-family: Android Euclid-M; 
-    src: url(../../fonts/AndroidEuclid-Medium.otf);
+    src: url(../../../fonts/AndroidEuclid-Medium.otf);
 }
 body{
     overflow-x: hidden;
