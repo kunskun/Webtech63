@@ -97,3 +97,11 @@ gsap.utils.toArray(".hightlight-box").forEach(box => {
     box.addEventListener("mouseenter", () => hover.play());
     box.addEventListener("mouseleave", () => hover.reverse());
 });
+
+function test(obj) {
+    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-1')
+}
+
+function test2(obj) {
+    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-2')
+}
