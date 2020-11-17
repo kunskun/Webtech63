@@ -188,3 +188,13 @@ function animate(tag, dur, tween) {
         .addTo(controller)
         .addIndicators()
 }
+
+function res() {
+    document.getElementById("bot-box").style = 'animation: 2s to-Big;animation-fill-mode: forwards;';
+
+}
+
+function res1() {
+    document.getElementById("bot-box").style = 'animation: 2s to-Small;animation-fill-mode: forwards;';
+
+}

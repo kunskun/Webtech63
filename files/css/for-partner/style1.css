@@ -1,11 +1,11 @@
 @font-face {
     font-family: Android Euclid;
-    src: url(/files/fonts/AndroidEuclid-Bold.otf);
+    src: url(../../fonts/AndroidEuclid-Bold.otf);
 }
 
 @font-face {
     font-family: Android Euclid Med;
-    src: url(/files/fonts/AndroidEuclid-Medium.otf);
+    src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 
 .all {
