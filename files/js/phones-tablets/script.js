@@ -105,3 +105,21 @@ function test(obj) {
 function test2(obj) {
     document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-2')
 }
+
+var controller = new ScrollMagic.Controller();
+TweenLite.defaultEase = Linear.easeNone;
+
+titles = document.querySelectorAll(".visually-hidden");
+var tl = new TimelineMax();
+
+tl.to(".visually-hidden", 1, {yPercent: -200}, "label1");
+tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
+tl.to(".visually-hidden", 1, {yPercent: 1500}, "label2");
+tl.from(titles[2], 0.5, {opacity:0}, "label2+=0.5");
+
+new ScrollMagic.Scene({
+  triggerHook: "onLeave",
+  duration: "400%"
+})
+  .setTween(tl)
+  .addTo(controller);
