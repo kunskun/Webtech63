@@ -11,6 +11,24 @@ var scene2 = new ScrollMagic.Scene({triggerElement: "#p-botright2", duration: 12
 .setTween("#full-img2", {scale: 0.63, x:370, y:350, delay: 0.9}) 
 .addTo(controller2);
 
+var controller = new ScrollMagic.Controller();
+TweenLite.defaultEase = Linear.easeNone;
+
+titles = document.querySelectorAll(".visually-hidden");
+var tl = new TimelineMax();
+
+tl.to(".visually-hidden", 1, {xPercent: 10}, "label1");
+tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
+tl.to(".visually-hidden", 1, {xPercent: 0}, "label2");
+tl.from(titles[2], 0.5, {opacity:0}, "label2+=0.5");
+
+new ScrollMagic.Scene({
+  triggerHook: "onLeave",
+  duration: "400%"
+})
+  .setTween(tl)
+  .addTo(controller);
+
 let count = 0;
 
 function switchC(obj){
