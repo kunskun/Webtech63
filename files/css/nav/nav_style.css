@@ -67,3 +67,29 @@ a:hover {
     display: block;
     text-decoration: none;
   }
+  .progress{
+    background-color: #D6DBDF;
+    width: 63%;
+    height: 2px;
+    margin-left: 18.5%;
+    position: relative;
+    transition: top 0.3s;
+}
+.progress-bar{
+    background-color: black;
+    width: 4.5%;
+    height: 4px;
+    top: -10px;
+    left: 1310px;
+    position: relative;
+    transition: top 0.3s;
+}
+.progress-bar-2{
+    background-color: black;
+    width: 0%;
+    height: 4px;
+    top: -10px;
+    left: 1025px;
+    position: relative;
+    transition: top 0.3s;
+}
