@@ -78,15 +78,15 @@
                 document.getElementById("nav-animate").style = 'background-color :transparent; transition: 0.5s;';
             } 
             else if (prevScrollpos > currentScrollPos) {
-                document.getElementById("nav-animate").style.top = "0";    
-                document.getElementById("progress-bar-2").style.top = "4px";
+                document.getElementById("nav-animate").style.top = "4";    
+                document.getElementById("progress-bar-2").style.top = "0px";
                 document.getElementById("mProgress2").style.top = "0px";
                 document.getElementById("nav-animate").style.backgroundColor = "white";
             }
             else {
                 document.getElementById("nav-animate").style.top = "-74px";
-                document.getElementById("progress-bar-2").style.top = "-84px";
-                document.getElementById("mProgress2").style.top = "-74px";
+                document.getElementById("progress-bar-2").style.top = "2px";
+                document.getElementById("mProgress2").style.top = "2px";
                 
             }
             prevScrollpos = currentScrollPos;

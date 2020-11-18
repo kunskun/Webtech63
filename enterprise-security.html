@@ -25,6 +25,107 @@
 </head>
 
 <body>
+    <!-- start nav -->
+    <link rel="stylesheet" href="files/css/nav/nav.css">
+    <div class="pos-f-t sticky-top" id="a" style="transform: translateY(-6px); background-color: #D6DBDF;">
+        <div class="progress" style="height: 1px; top: -545px; position: relative;" id="mProgress2"></div>
+        <div class="progress-bar-2" id="progress-bar-2" style="width: 4.2%; left: 1425px;"></div>
+        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate">
+            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%;" onclick="bar4()">
+                <!-- logo homepage -->
+                <b>android</b>
+                <img src="files/images/nav/Android_symbol_green_RGB.png" alt=""
+                width="3%" style="position: relative;top: -9px;left: -9px;">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="what-is-final.html" style="position: relative;left: -155px;" onclick="bar4(1)">What is Android</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="android11.html" style="position: relative;left: -155px;" onclick="bar4(2)">Android 11</a>
+                </li>
+                <li class="nav-item" style="position: relative;left: -190px;"> 
+                    <a class="nav-link" href="phone&tablet.html" onclick="bar4(3)">Phones & Tablets</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -180px;">
+                    <a class="nav-link" href="enterprise-overview.html"  onclick="bar4(4)">Enterprise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#">
+                        <svg id="ico-search" viewBox="0 0 24 24" width="18%" style="position:relative; left: -225px; top: 5px">
+                            <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="progress mt-1 mb-2" style="height: 1px; top: -547px; position: relative; left: -40px;" id="mProgress"></div>
+        <div class="progress-bar" id="progress-bar" style="width: 4%; left: 780px;"></div>
+        
+        <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
+            <ul class="navbar-nav" style="margin-left: 39%;">
+                <li class="nav-item" style="position: relative;left: 30px;">
+                    <a class="nav-link" href="enterprise-overview.html" onclick="bar_en(0)">Overview</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Solution
+                    </a>
+                    <div class="dropdown-menu" onclick="bar_en(1)" aria-labelledby="navbarDropdown1" style="position: absolute; left: -15px; border: none; transition-timing-function: ease;">
+                        <a class="dropdown-item" href="enterprise-security.html">Security</a>
+                        <a class="dropdown-item" href="managment.html">Management</a>
+                        <a class="dropdown-item" href="enterprise-enrollment.html">Enrollment</a>
+                        <a class="dropdown-item" href="Enterprise-solution-Employee.html">Employees</a>
+                    </div>
+                </li>
+                <li class="nav-item" style="position: relative;left: -45px;"> 
+                    <a class="nav-link" href="#" onclick="bar_en(2)">Recommended</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -50px;">
+                    <a class="nav-link" href="#" onclick="bar_en(3)">Devices</a>
+                </li>
+                <li class="nav-item dropdown2" style="position: relative;left: -100px;">
+                    <a class="nav-link" href="#" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                    <div class="dropdown-menu" id="certdropdown" onclick="bar_en(4)" aria-labelledby="navbarDropdown2" style="position: absolute; left: -15px; border: none;">
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">Help Center</a>
+                        <a class="dropdown-item" href="#">Solutions Directory</a>
+                        <a class="dropdown-item" href="#">Help Community</a>
+                    </div>
+                </li>
+                <li class="nav-item " style="position: relative;left: -150px;">
+                    <a class="nav-link" href="#" onclick="bar_en(5)">For Partners</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -170px;">
+                    <button class="btn nav-link nav-but" href="#"  onclick="bar_en()">GET STARTED</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("a").style = "top:0; transition: 0.5s;";
+            document.getElementById("progress-bar").style.top = "-5px";
+            document.getElementById("mProgress").style.top = "-547px";
+            document.getElementById("progress-bar-2").style.top = "-2px";
+            document.getElementById("mProgress2").style.top = "-550px";
+        } else {
+            document.getElementById("a").style = "top:-78px; transition: 0.2s;";
+            document.getElementById("progress-bar").style.top = "2px";
+            document.getElementById("mProgress").style.top = "-625px";
+            document.getElementById("progress-bar-2").style.top = "2px";
+            document.getElementById("mProgress2").style.top = "-627px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!-- end nav -->
     <section class="section stage1">
         <div class="row font-android">
             <div class="col-4 pl-7" style="margin-top: 200px;">
@@ -577,6 +678,7 @@
     </div>
 
     <script src="files/js/enterprise/security.js"></script>
+    <script src="files/js/nav/nav.js"></script>
 </body>
 
 </html>

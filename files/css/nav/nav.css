@@ -1,9 +1,9 @@
 @font-face{
-    font-family: Android Euclid;
+    font-family: Android Euclid nav;
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
-nav,a{
-    font-family: Android Euclid;
+nav, .nav-link, a{
+    font-family: Android Euclid nav;
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
@@ -30,7 +30,7 @@ a:hover {
     text-decoration: none;
     color: #000;
 }
-/* .btn{
+.nav-but{
     font-family: Android Euclid;
     align-items: center;
     width: 120px;
@@ -49,9 +49,9 @@ a:hover {
     text-transform: uppercase;
     transition: color .2s linear;
 }
-.btn:hover{
+.nav-but:hover{
     color:#3ddc84;
-} */
+}
 #nav-animate {
     position: relative; /* Make it stick/fixed */
     top: 0; /* Stay on top */
@@ -59,22 +59,21 @@ a:hover {
   }
   
   /* Style the nav-animate links */
-  /* #nav-animate a {
+#nav-animate a {
     display: block;
     text-decoration: none;
-  }
-  #subnav {
+}
+#subnav {
     position: relative;
     top: 0; 
     transition: top 0.3s; 
 }
   
- 
-  #subnav a {
+#subnav a {
     display: block;
     text-decoration: none;
-  }
-  .progress{
+}
+#mProgress2{
     background-color: #D6DBDF;
     width: 63%;
     height: 2px;
@@ -82,21 +81,21 @@ a:hover {
     position: relative;
     transition: top 0.3s;
 }
-.progress-bar{
+#progress-bar{
     background-color: black;
     width: 0%;
     height: 4px;
-    top: -10px;
+    top: -6px;
     left: 2000px;
     position: relative;
     transition: top 0.3s;
-} */
-.progress-bar-2{
+}
+#progress-bar-2{
     background-color: black;
     width: 0%;
+    left: 2000px;
     height: 4px;
     top: 4px;
-    left: 2000px;
     position: relative;
     transition: top 0.3s;
 }

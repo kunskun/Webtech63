@@ -4,11 +4,11 @@ function bar4(num){
         case 1: document.getElementById("progress-bar-2").style.width = "6.3%";
                 document.getElementById("progress-bar-2").style.left = "1025px";
                 break;
-        case 2: document.getElementById("progress-bar-2").style.width = "4.2%";
-                document.getElementById("progress-bar-2").style.left = "1165px";
+        case 2: document.getElementById("progress-bar-2").style.width = "4.3%";
+                document.getElementById("progress-bar-2").style.left = "1167px";
                 break;
         case 3: document.getElementById("progress-bar-2").style.width = "6.4%";
-                document.getElementById("progress-bar-2").style.left = "1275px";
+                document.getElementById("progress-bar-2").style.left = "1277px";
                 break;
         case 4: document.getElementById("progress-bar-2").style.width = "4.2%";
                 document.getElementById("progress-bar-2").style.left = "1425px";
