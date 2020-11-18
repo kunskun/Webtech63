@@ -20,7 +20,7 @@ nav, .nav-link, a{
     margin: 1px;
 }
 
-#a ul{
+#a ul,#b ul{
     margin-left: 0px!important;
     position: relative;
     left: 732px;
@@ -73,11 +73,11 @@ a:hover {
     display: block;
     text-decoration: none;
 }
-#mProgress2{
+#mProgress{
     background-color: #D6DBDF;
     width: 63%;
     height: 2px;
-    margin-left: 18.5%;
+    margin-left: 20.5%;
     position: relative;
     transition: top 0.3s;
 }
@@ -98,4 +98,7 @@ a:hover {
     top: 4px;
     position: relative;
     transition: top 0.3s;
+}
+#b{
+    background-color: white;
 }

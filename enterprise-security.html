@@ -27,8 +27,8 @@
 <body>
     <!-- start nav -->
     <link rel="stylesheet" href="files/css/nav/nav.css">
-    <div class="pos-f-t sticky-top" id="a" style="transform: translateY(-6px); background-color: #D6DBDF;">
-        <div class="progress" style="height: 1px; top: -545px; position: relative;" id="mProgress2"></div>
+    <div class="pos-f-t sticky-top" id="b" style="transform: translateY(-6px);">
+        <div class="progress" style="height: 1px; top: -5px; position: relative;" id="mProgress2"></div>
         <div class="progress-bar-2" id="progress-bar-2" style="width: 4.2%; left: 1425px;"></div>
         <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate">
             <a class="navbar-brand" href="homepage.html" style="margin-left: 18%;" onclick="bar4()">
@@ -62,8 +62,8 @@
                 </li>
             </ul>
         </nav>
-        <div class="progress mt-1 mb-2" style="height: 1px; top: -547px; position: relative; left: -40px;" id="mProgress"></div>
-        <div class="progress-bar" id="progress-bar" style="width: 4%; left: 780px;"></div>
+        <div class="progress mt-1 mb-2" style="height: 1px; top: 3px; position: relative; left: -40px;" id="mProgress"></div>
+        <div class="progress-bar" id="progress-bar" style="width: 3.7%; left: 890px;"></div>
         
         <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
             <ul class="navbar-nav" style="margin-left: 39%;">
@@ -82,10 +82,10 @@
                     </div>
                 </li>
                 <li class="nav-item" style="position: relative;left: -45px;"> 
-                    <a class="nav-link" href="#" onclick="bar_en(2)">Recommended</a>
+                    <a class="nav-link" href="enterprise-recommend.html" onclick="bar_en(2)">Recommended</a>
                 </li>
                 <li class="nav-item " style="position: relative;left: -50px;">
-                    <a class="nav-link" href="#" onclick="bar_en(3)">Devices</a>
+                    <a class="nav-link" href="Enterprise-device.html" onclick="bar_en(3)">Devices</a>
                 </li>
                 <li class="nav-item dropdown2" style="position: relative;left: -100px;">
                     <a class="nav-link" href="#" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -97,7 +97,7 @@
                     </div>
                 </li>
                 <li class="nav-item " style="position: relative;left: -150px;">
-                    <a class="nav-link" href="#" onclick="bar_en(5)">For Partners</a>
+                    <a class="nav-link" href="for-partner.html" onclick="bar_en(5)">For Partners</a>
                 </li>
                 <li class="nav-item " style="position: relative;left: -170px;">
                     <button class="btn nav-link nav-but" href="#"  onclick="bar_en()">GET STARTED</button>
@@ -110,17 +110,17 @@
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("a").style = "top:0; transition: 0.5s;";
-            document.getElementById("progress-bar").style.top = "-5px";
-            document.getElementById("mProgress").style.top = "-547px";
-            document.getElementById("progress-bar-2").style.top = "-2px";
-            document.getElementById("mProgress2").style.top = "-550px";
+            document.getElementById("b").style = "transform: translateY(-6px); transition: 0.5s;";
+            // document.getElementById("progress-bar").style.top = "-5px";
+            // document.getElementById("mProgress").style.top = "-7px";
+            // document.getElementById("progress-bar-2").style.top = "-2px";
+            // document.getElementById("mProgress2").style.top = "-5px";
         } else {
-            document.getElementById("a").style = "top:-78px; transition: 0.2s;";
-            document.getElementById("progress-bar").style.top = "2px";
-            document.getElementById("mProgress").style.top = "-625px";
-            document.getElementById("progress-bar-2").style.top = "2px";
-            document.getElementById("mProgress2").style.top = "-627px";
+            document.getElementById("b").style = "top:-70px; transition: 0.2s;";
+            // document.getElementById("progress-bar").style.top = "2px";
+            // document.getElementById("mProgress").style.top = "-5px";
+            // document.getElementById("progress-bar-2").style.top = "2px";
+            // document.getElementById("mProgress2").style.top = "4px";
         }
         prevScrollpos = currentScrollPos;
         }
