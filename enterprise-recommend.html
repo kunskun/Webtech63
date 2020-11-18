@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 </head>
+
 <body>
     <!-- start nav -->
     <link rel="stylesheet" href="files/css/nav/nav.css">
@@ -37,8 +39,7 @@
             <a class="navbar-brand" href="homepage.html" style="margin-left: 18%;" onclick="bar4()">
                 <!-- logo homepage -->
                 <b>android</b>
-                <img src="files/images/nav/Android_symbol_green_RGB.png" alt=""
-                width="3%" style="position: relative;top: -9px;left: -9px;">
+                <img src="files/images/nav/Android_symbol_green_RGB.png" alt="" width="3%" style="position: relative;top: -9px;left: -9px;">
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -47,11 +48,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="android11.html" style="position: relative;left: -155px;" onclick="bar4(2)">Android 11</a>
                 </li>
-                <li class="nav-item" style="position: relative;left: -190px;"> 
+                <li class="nav-item" style="position: relative;left: -190px;">
                     <a class="nav-link" href="phone&tablet.html" onclick="bar4(3)">Phones & Tablets</a>
                 </li>
                 <li class="nav-item " style="position: relative;left: -180px;">
-                    <a class="nav-link" href="enterprise-overview.html"  onclick="bar4(4)">Enterprise</a>
+                    <a class="nav-link" href="enterprise-overview.html" onclick="bar4(4)">Enterprise</a>
                 </li>
                 <li class="nav-item">
                     <a class="navlink" href="#">
@@ -67,7 +68,7 @@
         </nav>
         <div class="progress mt-1 mb-2" style="height: 1px; top: 3px; position: relative; left: -40px;" id="mProgress"></div>
         <div class="progress-bar" id="progress-bar" style="width: 5.8%; left: 988px;"></div>
-        
+
         <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
             <ul class="navbar-nav" style="margin-left: 39%;">
                 <li class="nav-item" style="position: relative;left: 30px;">
@@ -84,7 +85,7 @@
                         <a class="dropdown-item" href="Enterprise-solution-Employee.html">Employees</a>
                     </div>
                 </li>
-                <li class="nav-item" style="position: relative;left: -45px;"> 
+                <li class="nav-item" style="position: relative;left: -45px;">
                     <a class="nav-link" href="enterprise-recommend.html" onclick="bar_en(2)">Recommended</a>
                 </li>
                 <li class="nav-item " style="position: relative;left: -50px;">
@@ -103,7 +104,7 @@
                     <a class="nav-link" href="for-partner.html" onclick="bar_en(5)">For Partners</a>
                 </li>
                 <li class="nav-item " style="position: relative;left: -170px;">
-                    <button class="btn nav-link nav-but" href="#"  onclick="bar_en()">GET STARTED</button>
+                    <button class="btn nav-link nav-but" href="#" onclick="bar_en()">GET STARTED</button>
                 </li>
             </ul>
         </nav>
@@ -111,36 +112,35 @@
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("b").style = "transform: translateY(-6px); transition: 0.5s;";
-            // document.getElementById("progress-bar").style.top = "-5px";
-            // document.getElementById("mProgress").style.top = "-7px";
-            // document.getElementById("progress-bar-2").style.top = "-2px";
-            // document.getElementById("mProgress2").style.top = "-5px";
-        } else {
-            document.getElementById("b").style = "top:-70px; transition: 0.2s;";
-            // document.getElementById("progress-bar").style.top = "2px";
-            // document.getElementById("mProgress").style.top = "-5px";
-            // document.getElementById("progress-bar-2").style.top = "2px";
-            // document.getElementById("mProgress2").style.top = "4px";
-        }
-        prevScrollpos = currentScrollPos;
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("b").style = "transform: translateY(-6px); transition: 0.5s;";
+                // document.getElementById("progress-bar").style.top = "-5px";
+                // document.getElementById("mProgress").style.top = "-7px";
+                // document.getElementById("progress-bar-2").style.top = "-2px";
+                // document.getElementById("mProgress2").style.top = "-5px";
+            } else {
+                document.getElementById("b").style = "top:-70px; transition: 0.2s;";
+                // document.getElementById("progress-bar").style.top = "2px";
+                // document.getElementById("mProgress").style.top = "-5px";
+                // document.getElementById("progress-bar-2").style.top = "2px";
+                // document.getElementById("mProgress2").style.top = "4px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     </script>
     <!-- end nav -->
-    <section class="part1"> 
+    <section class="part1">
         <svg class="svg1" width="2000" height="2000">
             <circle class="c1" cx="-700" cy="1620" r="690" fill="#4285f4" />
         </svg>
         <div class="row w-80">
-            <div class="col-6 cp1"  id="fly-text" style="opacity: 0; transform: translateY(50px);">
+            <div class="col-6 cp1" id="fly-text" style="opacity: 0; transform: translateY(50px);">
                 <h3>Recommended</h3>
                 <h1 class="mt-4" style="color: white;">Google verified devices and services.</h1>
             </div>
-            <div class="col-5" >
-                <img src="files/images/recommend/unnamed.jpg" width="117%" id="warp-img"
-                alt="" style="padding-top: 12%; transform: translateX(-100px); opacity: 0;">
+            <div class="col-5">
+                <img src="files/images/recommend/unnamed.jpg" width="117%" id="warp-img" alt="" style="padding-top: 12%; transform: translateX(-100px); opacity: 0;">
             </div>
         </div>
         <div class="bg-round" id="bg-round-anim" style="transform: translate(3000px,-1150px);"></div>
@@ -149,15 +149,11 @@
         <div class="row">
             <div class="col-3 ml">
                 <h2>Business <br>solutions <br>that earn <br>our seal.</h2>
-                <p class="mt-5">Android Enterprise Recommended. It’s not<br>
-                just a seal of approval. It’s a shortlist of <br>
-                devices and service providers that meet <br>
-                Google’s strict enterprise requirements. So <br>
-                you can feel good about setting your business <br>
-                up on mobile.</p>
+                <p class="mt-5">Android Enterprise Recommended. It’s not<br> just a seal of approval. It’s a shortlist of <br> devices and service providers that meet <br> Google’s strict enterprise requirements. So <br> you can feel good about setting your business
+                    <br> up on mobile.</p>
             </div>
             <div class="col-6">
-                <video class="video" id="video-2s" width="100%" height="240" autoplay style="transform: translate(-90px, 150px);" >
+                <video class="video" id="video-2s" width="100%" height="240" autoplay style="transform: translate(-90px, 150px);">
                     <source src="files/images/recommend/AER_badge 5.mp4" type="video/mp4">
                 </video>
             </div>
@@ -173,15 +169,11 @@
             position: absolute;
             transform: translateX(-230px);"></div>
             <div class="col-6">
-                <img src="files/images/recommend/unnamed.webp" alt=""
-                width="70%" class="ml">
+                <img src="files/images/recommend/unnamed.webp" alt="" width="70%" class="ml">
             </div>
             <div class="col-5 ml-5">
                 <h2>Enterprise-<br>grade <br>features <br>and <br>expertise.</h2>
-                <p class="mt-5">Every device on the list meets strict <br>
-                    requirements for hardware and software. And <br>
-                    every partner we work with are trained and <br>
-                    supported by Google.</p>
+                <p class="mt-5">Every device on the list meets strict <br> requirements for hardware and software. And <br> every partner we work with are trained and <br> supported by Google.</p>
             </div>
         </div>
     </section>
@@ -189,15 +181,10 @@
         <div class="row">
             <div class="col-3 ml">
                 <h2>Consistent <br>ways to <br>manage.</h2>
-                <p class="mt-5">With Android Enterprise Recommended, it’s <br>
-                    easy to scale and support your mobile fleet. <br>
-                    Standardized features let you manage <br>
-                    devices seamlessly. Consistently every time. <br>
-                    No matter how many you deploy.</p>
+                <p class="mt-5">With Android Enterprise Recommended, it’s <br> easy to scale and support your mobile fleet. <br> Standardized features let you manage <br> devices seamlessly. Consistently every time. <br> No matter how many you deploy.</p>
             </div>
             <div class="col-6 ml-5">
-                <img src="files/images/recommend/unnamed (1).webp" alt=""
-                width="30%" style="transform: translate(120px, -80px);">
+                <img src="files/images/recommend/unnamed (1).webp" alt="" width="30%" style="transform: translate(120px, -80px);">
             </div>
             <svg class="svg1" width="2000" height="2000" style="z-index: -1;">
                 <circle class="anim_cir" cx="1230" cy="200" r="200" fill="#4285f4" />
@@ -210,15 +197,11 @@
     <section>
         <div class="row" style="margin-left: 7%;">
             <div class="col-6">
-                <img src="files/images/recommend/unnamed (2).webp" alt=""
-                width="70%" style="float: right;z-index: -1;position: relative;top: 100px;">
+                <img src="files/images/recommend/unnamed (2).webp" alt="" width="70%" style="float: right;z-index: -1;position: relative;top: 100px;">
             </div>
             <div class="col-3 ml-5">
                 <h2>Regular <br>security <br>updates.</h2>
-                <p class="mt-5">Know your company’s devices are up to date. <br>
-                    Android Enterprise Recommended means you <br>
-                    get timely security patches and clear <br>
-                    information about major updates.</p>
+                <p class="mt-5">Know your company’s devices are up to date. <br> Android Enterprise Recommended means you <br> get timely security patches and clear <br> information about major updates.</p>
             </div>
         </div>
         <div class="bg-round" style="
@@ -230,8 +213,7 @@
     </section>
     <section style="position: relative; top: -600px">
         <div class="row p-botright" id="p-botright">
-            <img src="files/images/recommend/big-img1.png" 
-            alt="" class="full-img" id="full-img">
+            <img src="files/images/recommend/big-img1.png" alt="" class="full-img" id="full-img">
         </div>
         <div class="row ml" style="position: relative; top: 101px;">
             <div style="width: 34%; z-index: 1;">
@@ -248,17 +230,21 @@
                 </svg>
                 <h4 class="mt-4">Knowledge worker <br>and rugged devices.</h4>
                 <ul class="mt-4" style="position: relative; left: -20px;">
-                    <li><p>Devices built for work—whether in the office <br>or a construction site.</p></li>
-                    <li><p>No matter what kind, we recommend <br>devices with consistent performance and <br>user experience.</p></li>
-                    <li><p>All come with bulk enrollment options and <br>timely security updates within 90 days.</p></li>
+                    <li>
+                        <p>Devices built for work—whether in the office <br>or a construction site.</p>
+                    </li>
+                    <li>
+                        <p>No matter what kind, we recommend <br>devices with consistent performance and <br>user experience.</p>
+                    </li>
+                    <li>
+                        <p>All come with bulk enrollment options and <br>timely security updates within 90 days.</p>
+                    </li>
                 </ul>
                 <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
                     <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                         <b>Find a device</b>
                     </p>
-                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
-                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
@@ -273,17 +259,21 @@
                 </svg>
                 <h4 class="mt-4">Enterprise mobility <br>management.</h4>
                 <ul class="mt-4" style="position: relative; left: -20px;">
-                    <li><p>Find EMM solutions with the most <br>advanced features management.</p></li>
-                    <li><p>Consistent deployment experience, with <br>admin consoles that simplify set-up.</p></li>
-                    <li><p>Plus, get support from EMM providers with <br>the latest Android training.</p></li>
+                    <li>
+                        <p>Find EMM solutions with the most <br>advanced features management.</p>
+                    </li>
+                    <li>
+                        <p>Consistent deployment experience, with <br>admin consoles that simplify set-up.</p>
+                    </li>
+                    <li>
+                        <p>Plus, get support from EMM providers with <br>the latest Android training.</p>
+                    </li>
                 </ul>
                 <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
                     <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                         <b>Find an EMM sulution</b>
                     </p>
-                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
-                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
@@ -303,16 +293,18 @@
                 </svg>
                 <h4 class="mt-4">Managed service <br>providers.</h4>
                 <ul class="mt-4" style="position: relative; left: -20px;">
-                    <li><p>Work with expert providers for all your <br>mobile needs.</p></li>
-                    <li><p>Recommended MSPs are trained by Google <br>on the latest Android architecture, <br>implementation and tech support.</p></li>
+                    <li>
+                        <p>Work with expert providers for all your <br>mobile needs.</p>
+                    </li>
+                    <li>
+                        <p>Recommended MSPs are trained by Google <br>on the latest Android architecture, <br>implementation and tech support.</p>
+                    </li>
                 </ul>
                 <div class="row learnMore" style="width: 240px;height: 100px;left: 15px;position: relative; top: -15px;">
                     <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                         <b>Find an MSP partner</b>
                     </p>
-                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
-                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
@@ -325,19 +317,17 @@
                 <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                     <b>See all requirements</b>
                 </p>
-                <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 5px;"
-                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 5px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                 </svg>
             </div>
         </center>
     </section>
-    <section  style="position: relative; top: -600px">
+    <section style="position: relative; top: -600px">
         <div class="row" style="top: -20px;">
             <div class="bg-round" style="transform: translate(-250px, -120px); height: 700px;"></div>
-            <div class="col-6" >
+            <div class="col-6">
                 <h1 style="text-align:left; float:right; font-family: Android Euclid;">Learn more <br>about Android <br>Enterprise.</h1>
             </div>
             <div class="col-6">
@@ -346,16 +336,14 @@
                     <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                         <b>See all resources </b>
                     </p>
-                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
-                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
                 </div>
             </div>
         </div>
-        
+
         <div class="row hovf2" style="margin-left: 18%; margin-top: 5%;" id="hovf2">
             <div class="data-box">
                 <div class="img-col">
@@ -367,9 +355,7 @@
                         <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                             <b>Read the datasheet</b>
                         </p>
-                        <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;"
-                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg id="arrow-to-top" style="transform: rotate(45deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                         </svg>
@@ -394,9 +380,7 @@
                         <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                             <b>Watch the video</b>
                         </p>
-                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
-                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                         </svg>
@@ -421,9 +405,7 @@
                         <p class="d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                             <b>Watch the video</b>
                         </p>
-                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;"
-                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-13px;left: 7px;" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                         </svg>
@@ -433,15 +415,10 @@
         </div>
         <div style="transform: translateY(690px);">
             <div class="progress mt-4" style="height: 4px;">
-                <div class="progress-bar progress-bar" 
-                id="progress-bar"
-                role="progressbar"  
-                aria-valuenow="80"
-                aria-valuemin="0" 
-                aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar" id="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-                <div class="button-group">
-                    <button type="button" class="btn btn-outline-light bs" onclick='prevSlide2()'>
+            <div class="button-group">
+                <button type="button" class="btn btn-outline-light bs" onclick='prevSlide2()'>
                         <svg class="vbar1" id="vbar1">
                             <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                             1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
@@ -449,7 +426,7 @@
                             11H5c-.55 0-1 .45-1 1s.45 1 1 1z">
                         </svg>
                     </button>
-                    <button type="button" class="btn btn-outline-light bs" onclick='nextSlide2()'>
+                <button type="button" class="btn btn-outline-light bs" onclick='nextSlide2()'>
                         <svg class="vbar2" id="vbar2">
                             <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                             1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
@@ -457,8 +434,8 @@
                             11H5c-.55 0-1 .45-1 1s.45 1 1 1z">
                         </svg>
                     </button>
-                </div>
             </div>
+        </div>
         </div>
     </section>
     <button hidden onclick="closeVideo()" style="outline: none;" type="button" class="closeButton">
@@ -466,15 +443,293 @@
     </button>
     <div class="d-flex justify-content-center">
         <div hidden class="stageBg"></div>
-        
-        <iframe hidden class="video-content" width="560" height="315" 
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
+
+        <iframe hidden class="video-content" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
+    </div>
+    <section style="margin-top: 300px;">
+        <style>
+            .foot-box {
+                position: relative;
+                left: 22.5rem;
+                display: flex;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .foot-sub-box {
+                width: 13.5%;
+            }
+            
+            .footer {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            .line {
+                width: 85%;
+                height: 1px;
+                background-color: black;
+                opacity: 0.5;
+                margin-top: 5px;
+                margin-bottom: 25px;
+            }
+            
+            .line1 {
+                width: 68%;
+                height: 1px;
+                background-color: black;
+                opacity: 0.5;
+                margin-top: 5rem;
+                margin-bottom: 25px;
+                position: relative;
+                left: 22.5rem;
+            }
+            
+            .footer-text {
+                font-size: 12px;
+                position: relative;
+                left: 22.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 10px
+            }
+            
+            .footer-sec {
+                position: relative;
+                border: none;
+                left: 30rem;
+                top: -2.2rem;
+                width: 100px;
+            }
+            
+            #ico-globe {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                left: 29.8rem;
+                top: -2.3rem;
+            }
+            
+            .social-box {
+                position: relative;
+                left: 90rem;
+                top: -7.2rem;
+                display: flex;
+                margin-left: 20px;
+            }
+            
+            .social-icon {
+                width: 25px;
+                height: 25px;
+            }
+            
+            #ico-arrow-large {
+                width: 20px;
+                height: 20px;
+                transform: rotate(-45deg);
+            }
+        </style>
+        <div class="foot-box">
+            <div class="foot-sub-box">FOR DEVELOPERS
+                <div class="line"></div>
+                <a class="footer" href="">Developer Resources
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">Android Studio and SDK
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">Android Open Source Project
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+
+            </div>
+            <div class="foot-sub-box">FOR ENTERPRISE
+                <div class="line"></div>
+                <a class="footer" href="">Enterprise Overview</a>
+                <a class="footer" href="">Management</a>
+                <a class="footer" href="">Employees</a>
+                <a class="footer" href="">Security</a>
+                <a class="footer" href="">Enrollment</a>
+                <a class="footer" href="">Enterprise Devices</a>
+                <a class="footer" href="">Recommended</a>
+                <a class="footer" href="">Resources</a>
+                <a class="footer" href="">For Partners</a>
+                <a class="footer" href="">Solutions Directory</a>
+
+            </div>
+            <div class="foot-sub-box">FOR THE PRESS
+                <div class="line"></div>
+                <a class="footer" href="">    Android Blog
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">    Enterprise Blog
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">    Press Corner
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">    Android is for everyone</a>
+                <a class="footer" href="">    Contact Press Team
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">    How Google Play works</a>
+            </div>
+            <div class="foot-sub-box">THE ECOSYSTEM
+                <div class="line"></div>
+                <a class="footer" href="">Android Auto</a>
+                <a class="footer" href="">Android TV</a>
+                <a class="footer" href="">Wear OS by Google
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+            </div>
+            <div class="foot-sub-box">SUPPORT
+                <div class="line"></div>
+                <a class="footer" href="">Switch from iOS</a>
+                <a class="footer" href="">Android Help Center
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">Android File Transfer</a>
+                <a class="footer" href="">Find My Device
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+                <a class="footer" href="">Join User Studies
+                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </a>
+            </div>
+
         </div>
-    
-    
+        <div class="line1"></div>
+        <a href="" class="footer" style="position: relative; left: 22.5rem;">Privacy Policy</a>
+        <svg id="ico-globe" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M0 0h24v24H0z"></path>
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z" fill="currentColor"></path>
+                </g>
+              </svg>
+        <select class="footer-sec">
+                <option>Dansk</option>
+                <option>Deutsch</option>
+                <option>English (Australia)</option>
+                <option>English (Canada)</option>
+                <option>English (Hong Kong)</option>
+                <option>English (Ireland)</option>
+                <option>English (India)</option>
+                <option>English (New Zealand)</option>
+                <option>English (United Kingdom)</option>
+                <optionn>English</option>
+                <option>Español</option>
+                <option>Español (México)</option>
+                <option>Français (Canada)</option>
+                <option>Français</option>
+                <option>Indonesia</option>
+                <option>Italiano</option>
+                <option>Nederlands</option>
+                <option>Norsk bokmål</option>
+                <option>Polski</option>
+                <option>Português (Brasil)</option>
+                <option>Svenska</option>
+                <option>Türkçe</option>
+                <option>Русский</option>
+                <option>हिन्दी</option>
+                <option>中文 (简体)</option>
+                <option>中文 (香港)</option>
+                <option>中文 (台灣)</option>
+                <option>日本語</option>
+                <option>한국어</option>
+            </select>
+        <div class="footer-text">Some features and devices may not be available in all countries. Subject to availability.</div>
+        <div class="footer-text">Some features and availability vary by OEM and/or device manufacturer.</div>
+        <div class="social-box-warp" style="display: flex;">
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-twitter" viewBox="0 0 48 48">
+                        <path d="M40.9331436,11.1940288 C42.810084,10.0689342 44.2513785,8.28745345 44.9301304,6.16481389 C43.1737706,7.20644208 41.2282743,7.96298797 39.1576594,8.37075777 C37.4993523,6.6040254 35.1368481,5.5 32.5223241,5.5 C27.501861,5.5 23.4316182,9.57008073 23.4316182,14.5902197 C23.4316182,15.3026824 23.5121673,15.9965069 23.6671068,16.661807 C16.1120205,16.2827237 9.4138018,12.6636857 4.93027879,7.16397957 C4.1478016,8.50657299 3.69951412,10.0681239 3.69951412,11.7340483 C3.69951412,14.8877815 5.30449997,17.6702107 7.74366355,19.3003175 C6.25342374,19.253155 4.85183659,18.8442507 3.62609611,18.1633918 C3.62544783,18.2013163 3.62544783,18.2394029 3.62544783,18.2776516 C3.62544783,22.6820841 6.75892216,26.3562262 10.9174935,27.1912143 C10.1546268,27.3989889 9.35156666,27.5100073 8.52241311,27.5100073 C7.93668971,27.5100073 7.36717338,27.4531205 6.81224341,27.3469642 C7.96894178,30.958547 11.3260736,33.586685 15.3039361,33.660103 C12.1928276,36.0981321 8.27314842,37.5514198 4.01425536,37.5514198 C3.28056144,37.5514198 2.5569159,37.5084711 1.8457498,37.4245184 C5.86866797,40.0037111 10.6469975,41.5085373 15.780586,41.5085373 C32.5010928,41.5085373 41.6444717,27.6568433 41.6444717,15.6443274 C41.6444717,15.2501715 41.6357199,14.8581225 41.6182163,14.4683426 C43.3941867,13.1866877 44.9354788,11.5855916 46.1542502,9.76262068 C44.5239813,10.4856179 42.7719974,10.974261 40.9331436,11.1940288 Z"></path>
+                      </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-instagram" viewBox="0 0 48 48">
+                                <path d="M23.9,7.1c5.5,0,6.1,0,8.3,0.1c2,0.1,3.1,0.4,3.8,0.7c0.9,0.3,1.7,0.9,2.4,1.5c0.7,0.7,1.2,1.5,1.5,2.4 c0.3,0.7,0.6,1.8,0.7,3.8c0.1,2.2,0.1,2.8,0.1,8.3s0,6.1-0.1,8.3c-0.1,2-0.4,3.1-0.7,3.8c-0.7,1.8-2.1,3.2-3.9,3.9 c-0.7,0.3-1.8,0.6-3.8,0.7c-2.2,0.1-2.8,0.1-8.3,0.1s-6.1,0-8.3-0.1c-2-0.1-3.1-0.4-3.8-0.7c-0.9-0.3-1.7-0.9-2.4-1.5 c-0.7-0.7-1.2-1.5-1.5-2.4c-0.3-0.7-0.6-1.8-0.7-3.8c-0.1-2.2-0.1-2.8-0.1-8.3s0-6.1,0.1-8.3c0.1-2,0.4-3.1,0.7-3.8 c0.3-0.9,0.9-1.7,1.5-2.4c0.7-0.7,1.5-1.2,2.4-1.5c0.7-0.3,1.8-0.6,3.8-0.7C17.8,7.1,18.5,7.1,23.9,7.1 M23.9,3.4 c-5.6,0-6.3,0-8.5,0.1c-2.2,0.1-3.7,0.4-5,1C9.1,5,7.9,5.8,6.9,6.8c-1,1-1.9,2.3-2.4,3.6c-0.5,1.3-0.9,2.8-1,5 c-0.1,2.2-0.1,2.9-0.1,8.5s0,6.3,0.1,8.5c0.1,2.2,0.4,3.7,1,5C5,38.7,5.8,40,6.9,41c1,1,2.3,1.9,3.6,2.4c1.3,0.5,2.8,0.9,5,1 c2.2,0.1,2.9,0.1,8.5,0.1s6.3,0,8.5-0.1c2.2-0.1,3.7-0.4,5-1c2.8-1.1,4.9-3.2,6-6c0.5-1.3,0.9-2.8,1-5c0.1-2.2,0.1-2.9,0.1-8.5 s0-6.3-0.1-8.5c-0.1-2.2-0.4-3.7-1-5c-0.5-1.4-1.3-2.6-2.4-3.6c-1-1-2.3-1.9-3.6-2.4c-1.3-0.5-2.8-0.9-5-1 C30.2,3.4,29.5,3.4,23.9,3.4L23.9,3.4L23.9,3.4z"></path>
+                                <path d="M23.9,13.4c-5.8,0-10.5,4.7-10.5,10.5s4.7,10.5,10.5,10.5s10.5-4.7,10.5-10.5l0,0C34.5,18.1,29.8,13.4,23.9,13.4z M23.9,30.8c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8C30.8,27.7,27.7,30.8,23.9,30.8z"></path>
+                                <circle cx="34.9" cy="13" r="2.5"></circle>
+                              </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-youtube" viewBox="0 0 48 48">
+                                <path d="M47.48 13.21s-.46-3.3-1.9-4.74c-1.82-1.92-3.86-1.92-4.8-2.04C34.08 5.94 24 6 24 6s-10.04-.06-16.74.42c-.92.12-2.96.12-4.78 2.04C1.04 9.9.56 13.2.56 13.2S.08 17.09 0 20.96v4.05c.08 3.88.56 7.75.56 7.75s.48 3.3 1.92 4.76c1.82 1.9 4.2 1.84 5.28 2.04 3.76.36 15.82.44 16.24.44 0 0 10.1.02 16.8-.46.92-.12 2.96-.12 4.78-2.04 1.44-1.44 1.92-4.74 1.92-4.74s.48-3.88.5-7.75v-4.05c-.04-3.87-.52-7.75-.52-7.75zM19.14 30V15.98L32 23.26 19.14 30z"></path>
+                                <path fill="none" d="M0 0h47.99v48H0z"></path>
+                              </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-facebook" viewBox="0 0 20 20">
+                                <g fill="none" fill-rule="evenodd">
+                                  <path d="M-2-2h24v24H-2z"></path>
+                                  <path d="M20 10.1c0-5.5-4.5-10-10-10S0 4.5 0 10.1c0 5 3.7 9.1 8.4 9.9v-7H5.9v-2.9h2.5V7.9C8.4 5.4 9.9 4 12.2 4c1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.8h-2.3v7c4.7-.8 8.4-4.9 8.4-9.9z" fill="currentColor"></path>
+                                </g>
+                              </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
 </body>
 <script src="files/js/enterprise/recommend/recommend-script.js"></script>
 <script src="files/js/nav/nav.js"></script>
