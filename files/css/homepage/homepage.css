@@ -1,3 +1,6 @@
+.sec-nav {
+   @import url('files/css/nav/nav.css');
+}
 body{
     overflow-x: hidden;
 }
@@ -14,8 +17,11 @@ body{
 .part1{
     background-color: #f86734;
     width: 100%;
-    height: 730px;
+    height: 850px;
+    top: -100px;
+    position: relative;
     overflow: hidden;
+    
 }
 .part2{
     position: absolute;

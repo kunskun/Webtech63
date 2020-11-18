@@ -12,8 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -23,10 +22,110 @@
     <link rel="stylesheet" href="files/css/enterprise/enrollment.css">
 
     <!-- JS -->
-   
+
 </head>
 
 <body>
+    <!-- start nav -->
+    <link rel="stylesheet" href="files/css/nav/nav.css">
+    <div class="pos-f-t sticky-top" id="b" style="transform: translateY(-6px);">
+        <div class="progress" style="height: 1px; top: -5px; position: relative;" id="mProgress2"></div>
+        <div class="progress-bar-2" id="progress-bar-2" style="width: 4.2%; left: 1428px;"></div>
+        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate">
+            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%;" onclick="bar4()">
+                <!-- logo homepage -->
+                <b>android</b>
+                <img src="files/images/nav/Android_symbol_green_RGB.png" alt="" width="3%" style="position: relative;top: -9px;left: -9px;">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="what-is-final.html" style="position: relative;left: -155px;" onclick="bar4(1)">What is Android</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="android11.html" style="position: relative;left: -155px;" onclick="bar4(2)">Android 11</a>
+                </li>
+                <li class="nav-item" style="position: relative;left: -190px;">
+                    <a class="nav-link" href="phone&tablet.html" onclick="bar4(3)">Phones & Tablets</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -180px;">
+                    <a class="nav-link" href="enterprise-overview.html" onclick="bar4(4)">Enterprise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="#">
+                        <svg id="ico-search" viewBox="0 0 24 24" width="18%" style="position:relative; left: -225px; top: 5px">
+                            <g fill="none" fill-rule="evenodd">
+                            <path d="M0 0h24v24H0z"></path>
+                            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="progress mt-1 mb-2" style="height: 1px; top: 3px; position: relative; left: -40px;" id="mProgress"></div>
+        <div class="progress-bar" id="progress-bar" style="width: 3.7%; left: 890px;"></div>
+
+        <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
+            <ul class="navbar-nav" style="margin-left: 39%;">
+                <li class="nav-item" style="position: relative;left: 30px;">
+                    <a class="nav-link" href="enterprise-overview.html" onclick="bar_en(0)">Overview</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Solution
+                    </a>
+                    <div class="dropdown-menu" onclick="bar_en(1)" aria-labelledby="navbarDropdown1" style="position: absolute; left: -15px; border: none; transition-timing-function: ease;">
+                        <a class="dropdown-item" href="enterprise-security.html">Security</a>
+                        <a class="dropdown-item" href="managment.html">Management</a>
+                        <a class="dropdown-item" href="enterprise-enrollment.html">Enrollment</a>
+                        <a class="dropdown-item" href="Enterprise-solution-Employee.html">Employees</a>
+                    </div>
+                </li>
+                <li class="nav-item" style="position: relative;left: -45px;">
+                    <a class="nav-link" href="enterprise-recommend.html" onclick="bar_en(2)">Recommended</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -50px;">
+                    <a class="nav-link" href="Enterprise-device.html" onclick="bar_en(3)">Devices</a>
+                </li>
+                <li class="nav-item dropdown2" style="position: relative;left: -100px;">
+                    <a class="nav-link" href="#" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                    <div class="dropdown-menu" id="certdropdown" onclick="bar_en(4)" aria-labelledby="navbarDropdown2" style="position: absolute; left: -15px; border: none;">
+                        <a class="dropdown-item" href="#">Resources</a>
+                        <a class="dropdown-item" href="#">Help Center</a>
+                        <a class="dropdown-item" href="#">Solutions Directory</a>
+                        <a class="dropdown-item" href="#">Help Community</a>
+                    </div>
+                </li>
+                <li class="nav-item " style="position: relative;left: -150px;">
+                    <a class="nav-link" href="for-partner.html" onclick="bar_en(5)">For Partners</a>
+                </li>
+                <li class="nav-item " style="position: relative;left: -170px;">
+                    <button class="btn nav-link nav-but" href="#" onclick="bar_en()">GET STARTED</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("b").style = "transform: translateY(-6px); transition: 0.5s;";
+                // document.getElementById("progress-bar").style.top = "-5px";
+                // document.getElementById("mProgress").style.top = "-7px";
+                // document.getElementById("progress-bar-2").style.top = "-2px";
+                // document.getElementById("mProgress2").style.top = "-5px";
+            } else {
+                document.getElementById("b").style = "top:-70px; transition: 0.2s;";
+                // document.getElementById("progress-bar").style.top = "2px";
+                // document.getElementById("mProgress").style.top = "-5px";
+                // document.getElementById("progress-bar-2").style.top = "2px";
+                // document.getElementById("mProgress2").style.top = "4px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!-- end nav -->
     <section class="section stage1">
         <div class="row font-android">
             <div id="text-st1" class="col-4 pl-7" style="margin-top: 200px;">
@@ -38,9 +137,7 @@
 
             </div>
             <div class="col-5" style="margin-top: 70px; z-index: 2;">
-                <img id="img-st1" id="img-st1" style="width: 706px;"
-                    src="https://lh3.googleusercontent.com/TfJhgYP7Q3JyNC5FxLL4uZ9P7ymLI9PRAwMJqGweodcRUePcMCPAUWpljguVhxEqYXNZ8hjvZQBglQMltxVn5FrEKkkFuA03sZYKlJM=w1067-rw-e365-v1"
-                    alt="">
+                <img id="img-st1" id="img-st1" style="width: 706px;" src="https://lh3.googleusercontent.com/TfJhgYP7Q3JyNC5FxLL4uZ9P7ymLI9PRAwMJqGweodcRUePcMCPAUWpljguVhxEqYXNZ8hjvZQBglQMltxVn5FrEKkkFuA03sZYKlJM=w1067-rw-e365-v1" alt="">
             </div>
         </div>
         <div style="z-index:0" class="shape-pills-st1"></div>
@@ -54,10 +151,8 @@
                     <h1 class="mt-2 text-topic font-android mb-5">For any size business.</h1>
                 </div>
                 <div class="col-6" style="margin-top: 120px;">
-                    <p class="text-p font-roboto" style="padding-right: 120px;">Get one new employee ready for work.
-                        Deploy thousands of phones across
-                        offices. Android can easily enroll your company’s devices at scale. Always securely, always the
-                        same way. Choose deployment options from simple QR codes to the latest in zero-touch enrollment.
+                    <p class="text-p font-roboto" style="padding-right: 120px;">Get one new employee ready for work. Deploy thousands of phones across offices. Android can easily enroll your company’s devices at scale. Always securely, always the same way. Choose deployment options from simple QR codes to the
+                        latest in zero-touch enrollment.
                     </p>
                 </div>
             </div>
@@ -65,17 +160,15 @@
     </section>
     <section class="section stage3" style="transform-origin: top right;">
         <div class="container-fluid p-0">
-            <img id="img-st3" class="img-st3" style="width: 100%; position: relative; z-index: 2;"
-                src="https://lh3.googleusercontent.com/ZO7DyjxTXEbxDfWDl9Q2z5gr9on-JyiKerGQ6LOFRpEHJr83RCzAuIUp5nFWDzGmo7Wkh4h9uWeCsUacbU4gqCavOJHYm6DBnfDE=w1920-e365-v1"
-                alt="">
-                <div style="z-index: 1;" class="shape-circle-st4"></div>
+            <img id="img-st3" class="img-st3" style="width: 100%; position: relative; z-index: 2;" src="https://lh3.googleusercontent.com/ZO7DyjxTXEbxDfWDl9Q2z5gr9on-JyiKerGQ6LOFRpEHJr83RCzAuIUp5nFWDzGmo7Wkh4h9uWeCsUacbU4gqCavOJHYm6DBnfDE=w1920-e365-v1" alt="">
+            <div style="z-index: 1;" class="shape-circle-st4"></div>
         </div>
     </section>
-    
+
     <section class="section stage4">
         <div class="container">
             <div class="row pb-5">
-                
+
                 <div class="col-6" style="padding-right: 50px;">
                     <svg id="ico-zero-touch" viewBox="0 0 48 48" style="width: 50px;">
                         <g fill="none">
@@ -91,36 +184,30 @@
                     </svg>
                     <h1 class="mt-2 text-topic font-android">Zero-touch.</h1>
                     <h1 class="mt-2 text-topic font-android pb-5">Zero hassle.</h1>
-                    <p class="text-p font-roboto">With zero-touch enrollment, your IT team can deploy any number of
-                        company-owned devices at once. For employees, that means just power on to get started. All the
-                        apps and configurations they need will be ready for them.</p>
+                    <p class="text-p font-roboto">With zero-touch enrollment, your IT team can deploy any number of company-owned devices at once. For employees, that means just power on to get started. All the apps and configurations they need will be ready for them.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4 d-flex">
-                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="25"
-                        style="margin-right: 10px;position:relative;top:-25px">
+                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="25" style="margin-right: 10px;position:relative;top:-25px">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
                     </svg>
                     <p class="text-p font-android-M" style="padding-right: 80px;">Secured out of the box</p>
                 </div>
                 <div class="col-4 d-flex">
-                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="30"
-                        style="margin-right: 10px;position:relative;top:-25px">
+                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="30" style="margin-right: 10px;position:relative;top:-25px">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
                     </svg>
                     <p class="text-p font-android-M" style="padding-right: 80px;">Deploy fleets of devices instantly</p>
                 </div>
                 <div class="col-4 d-flex">
-                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="30"
-                        style="margin-right: 10px;position:relative;top:-25px">
+                    <svg id="material-done" viewBox="0 0 24 24" fill="#3ddc84" width="30" style="margin-right: 10px;position:relative;top:-25px">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
                     </svg>
-                    <p class="text-p font-android-M font-weight-light" style="padding-right: 10px;">Available on all
-                        Android 9.0+ devices
+                    <p class="text-p font-android-M font-weight-light" style="padding-right: 10px;">Available on all Android 9.0+ devices
                     </p>
                 </div>
             </div>
@@ -131,8 +218,7 @@
             <div class="row mb-5">
                 <div class="card" style="width: 1062px;height: 506px;border: none;">
                     <div style="cursor: pointer;" onclick="openVideo()">
-                        <svg style="z-index: 3;position:absolute; left:500;top:200px" class="modal-opener__play-icon"
-                            width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+                        <svg style="z-index: 3;position:absolute; left:500;top:200px" class="modal-opener__play-icon" width="96" height="96" xmlns="http://www.w3.org/2000/svg">
                             <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
                                 <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
                                 <path class="play-icon"
@@ -140,23 +226,15 @@
                                     fill="#073042" fill-rule="nonzero"></path>
                             </g>
                         </svg>
-                        <img class="card-img-top" width="1062"
-                            src="https://lh3.googleusercontent.com/5yEPNOC-pvWzlVjrd1vl0aA88eAw86oRCXkr0bNXTa0UpcnqRtYycOo432pQ5027g5FwYTnd7BdUYiOSmJo_S1yk69Elv5VPamOg=w1896-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" width="1062" src="https://lh3.googleusercontent.com/5yEPNOC-pvWzlVjrd1vl0aA88eAw86oRCXkr0bNXTa0UpcnqRtYycOo432pQ5027g5FwYTnd7BdUYiOSmJo_S1yk69Elv5VPamOg=w1896-e365-v1" alt="Card image cap">
                     </div>
                     <div class="card-body mt-3 p-0">
-                        <p class="font-android font-weight-bold mt-4" style="font-size: 40px; line-height: 100%;">Watch
-                            how
-                            to get started.</p>
-                        <div onclick="openVideo()" class="row learnMore2"
-                            style="width: 200px;height: 50px;left: 0px;position: relative;top:00px; margin: 50px 0px 0px 0px;">
+                        <p class="font-android font-weight-bold mt-4" style="font-size: 40px; line-height: 100%;">Watch how to get started.</p>
+                        <div onclick="openVideo()" class="row learnMore2" style="width: 200px;height: 50px;left: 0px;position: relative;top:00px; margin: 50px 0px 0px 0px;">
                             <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                 <b>Watch the video</b>
                             </p>
-                            <svg class="mt-5" id="arrow-to-right"
-                                style="transform: rotate(90deg);position:relative;top:-45px" width="30px"
-                                viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="mt-5" id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-45px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                             </svg>
@@ -167,20 +245,14 @@
             <div class="row" style="position: relative; top:150px">
                 <div class="d-flex" style="position: relative;">
                     <div class="card" style="width: 518px;height: 554px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/zG0Dpm4hzrON7ZHpighpQ3GaYaWPnGkZbiknqm2o_DA4BHyKfsk3QsD6xIBdKSOYZ_36_8cNop3kupJGnyyMW9nRzHey-lXtcvzgKhw=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/zG0Dpm4hzrON7ZHpighpQ3GaYaWPnGkZbiknqm2o_DA4BHyKfsk3QsD6xIBdKSOYZ_36_8cNop3kupJGnyyMW9nRzHey-lXtcvzgKhw=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 35px; line-height: 100%;">Find resellers and partners.</p>
-                            <div class="row learnMore"
-                                style="width: 300px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">Find resellers and partners.</p>
+                            <div class="row learnMore" style="width: 300px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
                                 <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                     <b>Visit the Solutions Directory</b>
                                 </p>
-                                <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                                 </svg>
@@ -188,20 +260,14 @@
                         </div>
                     </div>
                     <div class="card" style="width: 518px;height: 554px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/F79z4lD2DMPRsRimwSB3tIapDx5_zb1FR8zZs532z2XouN7Nm2mFYXA0WYJvb0_dcho-l4c1aGRMWbcG-P7ADOQnc08MLEVag49qtJI=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/F79z4lD2DMPRsRimwSB3tIapDx5_zb1FR8zZs532z2XouN7Nm2mFYXA0WYJvb0_dcho-l4c1aGRMWbcG-P7ADOQnc08MLEVag49qtJI=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 30px; line-height: 100%;">Get zero-touch answers.</p>
-                            <div class="row learnMore"
-                                style="width: 250px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 30px; line-height: 100%;">Get zero-touch answers.</p>
+                            <div class="row learnMore" style="width: 250px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
                                 <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                     <b>Visit our Help Center</b>
                                 </p>
-                                <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                                 </svg>
@@ -213,14 +279,12 @@
     </section>
     <section class="section stage6">
         <div class="container">
-            <div  class="row" style="padding-top:50px">
+            <div class="row" style="padding-top:50px">
                 <div class="col-6" style="padding-right: 150px; margin-top: 90px;">
                     <h1 class="mt-2 text-topic font-android mb-5">More ways to enroll</h1>
                 </div>
                 <div class="col-6" style="margin-top: 120px;">
-                    <p class="text-p font-roboto" style="padding-right: 150px;">Zero-touch isn’t the only way to enroll.
-                        If it’s not available where you are, Android offers other simple options to get your devices set
-                        up.
+                    <p class="text-p font-roboto" style="padding-right: 150px;">Zero-touch isn’t the only way to enroll. If it’s not available where you are, Android offers other simple options to get your devices set up.
                     </p>
                 </div>
             </div>
@@ -231,61 +295,42 @@
             <div class="row " style="position: relative; top:150px">
                 <div class="d-flex" style="position: relative;">
                     <div class="card" style="width: 518px;height: 500px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/zdA1enalBCc3boSxn80jmRFtAsrC4tuDtLplH-s9tUcoEJjcWQMA6K9gsqdR1gcupq3g_raAyOgE9PgMTUq7Ue-TT67PIhWj9pnRDXQ=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/zdA1enalBCc3boSxn80jmRFtAsrC4tuDtLplH-s9tUcoEJjcWQMA6K9gsqdR1gcupq3g_raAyOgE9PgMTUq7Ue-TT67PIhWj9pnRDXQ=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 35px; line-height: 100%;">Near-field communication</p>
-                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Set up a new
-                                device by bumping an NFC tag.</p>
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">Near-field communication</p>
+                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Set up a new device by bumping an NFC tag.</p>
                         </div>
                     </div>
                     <div class="card" style="width: 518px;height: 500px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/VagOy-3ndYvALnBr_akELj-MopzE_QYuA5a8kFowBUF9tqQ9uJaSnhurbYDlnG0v8R9v0PfxwpZrwFlxwV9LJAF4-hwNo8g4U1lz7A=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/VagOy-3ndYvALnBr_akELj-MopzE_QYuA5a8kFowBUF9tqQ9uJaSnhurbYDlnG0v8R9v0PfxwpZrwFlxwV9LJAF4-hwNo8g4U1lz7A=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 30px; line-height: 100%;">EMM token</p>
-                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Enter the
-                                unique code provided by your EMM provider.</p>
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 30px; line-height: 100%;">EMM token</p>
+                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Enter the unique code provided by your EMM provider.</p>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex" style="position: relative;">
                     <div class="card" style="width: 518px;height: 500px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/XHg8eRpUwu7lbnmhGMXV4Uxw1NQvCoZTv1W03hPY15hDnEc6hbHTNosFMF35FZy8LmHqVoW3qt07-m-ZacjCD4nocfrKuXNG5NGUqrs=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/XHg8eRpUwu7lbnmhGMXV4Uxw1NQvCoZTv1W03hPY15hDnEc6hbHTNosFMF35FZy8LmHqVoW3qt07-m-ZacjCD4nocfrKuXNG5NGUqrs=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 35px; line-height: 100%;">QR code</p>
-                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Enroll a device
-                                from the setup wizard by easily scanning a QR code.</p>
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">QR code</p>
+                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Enroll a device from the setup wizard by easily scanning a QR code.</p>
                         </div>
                     </div>
                     <div class="card" style="width: 518px;height: 500px;border: none;">
-                        <img class="card-img-top"
-                            src="https://lh3.googleusercontent.com/AfrC_2fq7ilpSHZt6mA67jyxj3am4VGJXrEIBaMWF5gWU9W8pqGP_fqCxSSVLx8J_Cxr10x0NPztEFQ8Qdf0-kbbaBGIqIrMdNmBjg=w766-e365-v1"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="https://lh3.googleusercontent.com/AfrC_2fq7ilpSHZt6mA67jyxj3am4VGJXrEIBaMWF5gWU9W8pqGP_fqCxSSVLx8J_Cxr10x0NPztEFQ8Qdf0-kbbaBGIqIrMdNmBjg=w766-e365-v1" alt="Card image cap">
                         <div class="card-body mt-3 p-0">
-                            <p class="font-android font-weight-bold mb-5 mt-4"
-                                style="font-size: 30px; line-height: 100%;">Enterprise Google account</p>
-                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Simply sign in
-                                to enroll with a work email address on Google Workspace.</p>
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 30px; line-height: 100%;">Enterprise Google account</p>
+                            <p class="font-roboto mb-5 mt-4" style="font-size: 20px; line-height: 100%;">Simply sign in to enroll with a work email address on Google Workspace.</p>
                         </div>
                     </div>
                 </div>
                 <hr style="width: 100%; background-color:rgb(198, 198, 198);">
-                <div class="row learnMore"
-                    style="width: 300px;height: 50px;position: relative;margin: 0px 0px 0px 0px;left: 500px;">
+                <div class="row learnMore" style="width: 300px;height: 50px;position: relative;margin: 0px 0px 0px 0px;left: 500px;">
                     <p class=" d-flex" class="card-text font-android" style="color: #073042;font-size: 1.25rem;">
                         <b>Learn more</b>
                     </p>
-                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px"
-                        viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
@@ -300,18 +345,14 @@
                 </h1>
             </div>
             <div class="col-5" style=" margin-top: 240px;padding-right: 350px;left: 30px;">
-                <p class="text-p font-roboto mb-5">Dig into zero-touch features. Read up on which Android device is
-                    right for
-                    you. Find it all in our resource center.
+                <p class="text-p font-roboto mb-5">Dig into zero-touch features. Read up on which Android device is right for you. Find it all in our resource center.
                 </p>
                 <div class="row learnMore2" style="width: 200px;height: 50px;left: 15px;position: relative;top:00px">
                     <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                         <b>See all resources
                         </b>
                     </p>
-                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-7px" width="30px"
-                        viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-7px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                     </svg>
@@ -321,20 +362,14 @@
         <div class="row">
             <div id="album-st7" class="d-flex" style="position: relative;left: 280px;top:50px">
                 <div class="card" style="width: 518px;height: 554px;border: none;">
-                    <img class="card-img-top"
-                        src="https://lh3.googleusercontent.com/ebuJW1M1DfXoUDuTGzpZ1BUkRdLWzGAS2CHRS3cWuL7qzl4IV1g1FPoGVZYLArnVtxuBn47iB-riKnPEDVdyfgLPGCFUzMkr0XzpMw=w766-e365-v1"
-                        alt="Card image cap">
+                    <img class="card-img-top" src="https://lh3.googleusercontent.com/ebuJW1M1DfXoUDuTGzpZ1BUkRdLWzGAS2CHRS3cWuL7qzl4IV1g1FPoGVZYLArnVtxuBn47iB-riKnPEDVdyfgLPGCFUzMkr0XzpMw=w766-e365-v1" alt="Card image cap">
                     <div class="card-body mt-4 p-0">
-                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android
-                            zero-touch enrollment</p>
-                        <div class="row learnMore"
-                            style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
+                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android zero-touch enrollment</p>
+                        <div class="row learnMore" style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
                             <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                 <b>Read the datasheet</b>
                             </p>
-                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                             </svg>
@@ -342,20 +377,14 @@
                     </div>
                 </div>
                 <div class="card" style="width: 518px;height: 554px;border: none;">
-                    <img class="card-img-top"
-                        src="https://lh3.googleusercontent.com/OujyUr91hauu5O8I7TiQLapfhTsLQw57Di_lL4vFv1ZuX-aNJwfFeGk3K0QViBG6QTeSIxIlOtKJI-6lD5G3Vtz-QSzA8NkXtWFC8g=w766-e365-v1"
-                        alt="Card image cap">
+                    <img class="card-img-top" src="https://lh3.googleusercontent.com/OujyUr91hauu5O8I7TiQLapfhTsLQw57Di_lL4vFv1ZuX-aNJwfFeGk3K0QViBG6QTeSIxIlOtKJI-6lD5G3Vtz-QSzA8NkXtWFC8g=w766-e365-v1" alt="Card image cap">
                     <div class="card-body mt-4 p-0">
-                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android
-                            zero-touch enrollment</p>
-                        <div class="row learnMore"
-                            style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
+                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android zero-touch enrollment</p>
+                        <div class="row learnMore" style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
                             <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                 <b>Read the datasheet</b>
                             </p>
-                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                             </svg>
@@ -363,33 +392,25 @@
                     </div>
                 </div>
                 <div class="card" style="width: 518px;height: 554px;border: none;">
-                    <img class="card-img-top"
-                        src="https://lh3.googleusercontent.com/CEha25RPOVbRah1ssMoXPB5qQ2b-Ym1C_E2DTpRrwGK5MGQovvH32TTjjjEYlm_odTNawGsWHTDKdhGXIYXkrgpXrlXxHo49cO6i=w766-e365-v1"
-                        alt="Card image cap">
+                    <img class="card-img-top" src="https://lh3.googleusercontent.com/CEha25RPOVbRah1ssMoXPB5qQ2b-Ym1C_E2DTpRrwGK5MGQovvH32TTjjjEYlm_odTNawGsWHTDKdhGXIYXkrgpXrlXxHo49cO6i=w766-e365-v1" alt="Card image cap">
                     <div class="card-body mt-4 p-0">
-                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android
-                            zero-touch enrollment</p>
-                        <div class="row learnMore"
-                            style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
+                        <p class="font-android font-weight-bold" style="font-size: 56px; line-height: 100%;">Android zero-touch enrollment</p>
+                        <div class="row learnMore" style="width: 220px;height: 50px;left: 0px;position: relative;margin: 100px 0px 0px 0px;">
                             <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
                                 <b>Read the datasheet</b>
                             </p>
-                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
                             </svg>
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
-            <div class="progress"
-                style="height: 5px; position: relative; top: 100px; z-index: 10; width: 1300px; left: 300px;">
-                <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #404040"
-                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress" style="height: 5px; position: relative; top: 100px; z-index: 10; width: 1300px; left: 300px;">
+                <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #404040" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
         <div class="row">
@@ -419,13 +440,293 @@
     <div class="d-flex justify-content-center">
         <div hidden class="stageBg"></div>
 
-        <iframe src="https://www.youtube.com/embed/CMzpljLcwFk" hidden class="video-content" width="560" height="315"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
+        <iframe src="https://www.youtube.com/embed/CMzpljLcwFk" hidden class="video-content" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
     </div>
+    <section style="margin-top: 300px;">
+        <style>
+            .foot-box {
+                position: relative;
+                left: 22.5rem;
+                display: flex;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .foot-sub-box {
+                width: 13.5%;
+            }
+            
+            .footer {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            .line {
+                width: 85%;
+                height: 1px;
+                background-color: black;
+                opacity: 0.5;
+                margin-top: 5px;
+                margin-bottom: 25px;
+            }
+            
+            .line1 {
+                width: 68%;
+                height: 1px;
+                background-color: black;
+                opacity: 0.5;
+                margin-top: 5rem;
+                margin-bottom: 25px;
+                position: relative;
+                left: 22.5rem;
+            }
+            
+            .footer-text {
+                font-size: 12px;
+                position: relative;
+                left: 22.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 10px
+            }
+            
+            .footer-sec {
+                position: relative;
+                border: none;
+                left: 30rem;
+                top: -2.2rem;
+                width: 100px;
+            }
+            
+            #ico-globe {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                left: 29.8rem;
+                top: -2.3rem;
+            }
+            
+            .social-box {
+                position: relative;
+                left: 90rem;
+                top: -7.2rem;
+                display: flex;
+                margin-left: 20px;
+            }
+            
+            .social-icon {
+                width: 25px;
+                height: 25px;
+            }
+            
+            #ico-arrow-large {
+                width: 20px;
+                height: 20px;
+                transform: rotate(-45deg);
+            }
+        </style>
+        <div class="foot-box">
+            <div class="foot-sub-box">FOR DEVELOPERS
+                <div class="line"></div>
+                <a class="footer" href="">Developer Resources
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">Android Studio and SDK
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">Android Open Source Project
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+
+            </div>
+            <div class="foot-sub-box">FOR ENTERPRISE
+                <div class="line"></div>
+                <a class="footer" href="">Enterprise Overview</a>
+                <a class="footer" href="">Management</a>
+                <a class="footer" href="">Employees</a>
+                <a class="footer" href="">Security</a>
+                <a class="footer" href="">Enrollment</a>
+                <a class="footer" href="">Enterprise Devices</a>
+                <a class="footer" href="">Recommended</a>
+                <a class="footer" href="">Resources</a>
+                <a class="footer" href="">For Partners</a>
+                <a class="footer" href="">Solutions Directory</a>
+
+            </div>
+            <div class="foot-sub-box">FOR THE PRESS
+                <div class="line"></div>
+                <a class="footer" href="">    Android Blog
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">    Enterprise Blog
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">    Press Corner
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">    Android is for everyone</a>
+                <a class="footer" href="">    Contact Press Team
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">    How Google Play works</a>
+            </div>
+            <div class="foot-sub-box">THE ECOSYSTEM
+                <div class="line"></div>
+                <a class="footer" href="">Android Auto</a>
+                <a class="footer" href="">Android TV</a>
+                <a class="footer" href="">Wear OS by Google
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+            </div>
+            <div class="foot-sub-box">SUPPORT
+                <div class="line"></div>
+                <a class="footer" href="">Switch from iOS</a>
+                <a class="footer" href="">Android Help Center
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">Android File Transfer</a>
+                <a class="footer" href="">Find My Device
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+                <a class="footer" href="">Join User Studies
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                </a>
+            </div>
+
+        </div>
+        <div class="line1"></div>
+        <a href="" class="footer" style="position: relative; left: 22.5rem;">Privacy Policy</a>
+        <svg id="ico-globe" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M0 0h24v24H0z"></path>
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z" fill="currentColor"></path>
+            </g>
+          </svg>
+        <select class="footer-sec">
+            <option>Dansk</option>
+            <option>Deutsch</option>
+            <option>English (Australia)</option>
+            <option>English (Canada)</option>
+            <option>English (Hong Kong)</option>
+            <option>English (Ireland)</option>
+            <option>English (India)</option>
+            <option>English (New Zealand)</option>
+            <option>English (United Kingdom)</option>
+            <optionn>English</option>
+            <option>Español</option>
+            <option>Español (México)</option>
+            <option>Français (Canada)</option>
+            <option>Français</option>
+            <option>Indonesia</option>
+            <option>Italiano</option>
+            <option>Nederlands</option>
+            <option>Norsk bokmål</option>
+            <option>Polski</option>
+            <option>Português (Brasil)</option>
+            <option>Svenska</option>
+            <option>Türkçe</option>
+            <option>Русский</option>
+            <option>हिन्दी</option>
+            <option>中文 (简体)</option>
+            <option>中文 (香港)</option>
+            <option>中文 (台灣)</option>
+            <option>日本語</option>
+            <option>한국어</option>
+        </select>
+        <div class="footer-text">Some features and devices may not be available in all countries. Subject to availability.</div>
+        <div class="footer-text">Some features and availability vary by OEM and/or device manufacturer.</div>
+        <div class="social-box-warp" style="display: flex;">
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-twitter" viewBox="0 0 48 48">
+                    <path d="M40.9331436,11.1940288 C42.810084,10.0689342 44.2513785,8.28745345 44.9301304,6.16481389 C43.1737706,7.20644208 41.2282743,7.96298797 39.1576594,8.37075777 C37.4993523,6.6040254 35.1368481,5.5 32.5223241,5.5 C27.501861,5.5 23.4316182,9.57008073 23.4316182,14.5902197 C23.4316182,15.3026824 23.5121673,15.9965069 23.6671068,16.661807 C16.1120205,16.2827237 9.4138018,12.6636857 4.93027879,7.16397957 C4.1478016,8.50657299 3.69951412,10.0681239 3.69951412,11.7340483 C3.69951412,14.8877815 5.30449997,17.6702107 7.74366355,19.3003175 C6.25342374,19.253155 4.85183659,18.8442507 3.62609611,18.1633918 C3.62544783,18.2013163 3.62544783,18.2394029 3.62544783,18.2776516 C3.62544783,22.6820841 6.75892216,26.3562262 10.9174935,27.1912143 C10.1546268,27.3989889 9.35156666,27.5100073 8.52241311,27.5100073 C7.93668971,27.5100073 7.36717338,27.4531205 6.81224341,27.3469642 C7.96894178,30.958547 11.3260736,33.586685 15.3039361,33.660103 C12.1928276,36.0981321 8.27314842,37.5514198 4.01425536,37.5514198 C3.28056144,37.5514198 2.5569159,37.5084711 1.8457498,37.4245184 C5.86866797,40.0037111 10.6469975,41.5085373 15.780586,41.5085373 C32.5010928,41.5085373 41.6444717,27.6568433 41.6444717,15.6443274 C41.6444717,15.2501715 41.6357199,14.8581225 41.6182163,14.4683426 C43.3941867,13.1866877 44.9354788,11.5855916 46.1542502,9.76262068 C44.5239813,10.4856179 42.7719974,10.974261 40.9331436,11.1940288 Z"></path>
+                  </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-instagram" viewBox="0 0 48 48">
+                            <path d="M23.9,7.1c5.5,0,6.1,0,8.3,0.1c2,0.1,3.1,0.4,3.8,0.7c0.9,0.3,1.7,0.9,2.4,1.5c0.7,0.7,1.2,1.5,1.5,2.4 c0.3,0.7,0.6,1.8,0.7,3.8c0.1,2.2,0.1,2.8,0.1,8.3s0,6.1-0.1,8.3c-0.1,2-0.4,3.1-0.7,3.8c-0.7,1.8-2.1,3.2-3.9,3.9 c-0.7,0.3-1.8,0.6-3.8,0.7c-2.2,0.1-2.8,0.1-8.3,0.1s-6.1,0-8.3-0.1c-2-0.1-3.1-0.4-3.8-0.7c-0.9-0.3-1.7-0.9-2.4-1.5 c-0.7-0.7-1.2-1.5-1.5-2.4c-0.3-0.7-0.6-1.8-0.7-3.8c-0.1-2.2-0.1-2.8-0.1-8.3s0-6.1,0.1-8.3c0.1-2,0.4-3.1,0.7-3.8 c0.3-0.9,0.9-1.7,1.5-2.4c0.7-0.7,1.5-1.2,2.4-1.5c0.7-0.3,1.8-0.6,3.8-0.7C17.8,7.1,18.5,7.1,23.9,7.1 M23.9,3.4 c-5.6,0-6.3,0-8.5,0.1c-2.2,0.1-3.7,0.4-5,1C9.1,5,7.9,5.8,6.9,6.8c-1,1-1.9,2.3-2.4,3.6c-0.5,1.3-0.9,2.8-1,5 c-0.1,2.2-0.1,2.9-0.1,8.5s0,6.3,0.1,8.5c0.1,2.2,0.4,3.7,1,5C5,38.7,5.8,40,6.9,41c1,1,2.3,1.9,3.6,2.4c1.3,0.5,2.8,0.9,5,1 c2.2,0.1,2.9,0.1,8.5,0.1s6.3,0,8.5-0.1c2.2-0.1,3.7-0.4,5-1c2.8-1.1,4.9-3.2,6-6c0.5-1.3,0.9-2.8,1-5c0.1-2.2,0.1-2.9,0.1-8.5 s0-6.3-0.1-8.5c-0.1-2.2-0.4-3.7-1-5c-0.5-1.4-1.3-2.6-2.4-3.6c-1-1-2.3-1.9-3.6-2.4c-1.3-0.5-2.8-0.9-5-1 C30.2,3.4,29.5,3.4,23.9,3.4L23.9,3.4L23.9,3.4z"></path>
+                            <path d="M23.9,13.4c-5.8,0-10.5,4.7-10.5,10.5s4.7,10.5,10.5,10.5s10.5-4.7,10.5-10.5l0,0C34.5,18.1,29.8,13.4,23.9,13.4z M23.9,30.8c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8C30.8,27.7,27.7,30.8,23.9,30.8z"></path>
+                            <circle cx="34.9" cy="13" r="2.5"></circle>
+                          </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-youtube" viewBox="0 0 48 48">
+                            <path d="M47.48 13.21s-.46-3.3-1.9-4.74c-1.82-1.92-3.86-1.92-4.8-2.04C34.08 5.94 24 6 24 6s-10.04-.06-16.74.42c-.92.12-2.96.12-4.78 2.04C1.04 9.9.56 13.2.56 13.2S.08 17.09 0 20.96v4.05c.08 3.88.56 7.75.56 7.75s.48 3.3 1.92 4.76c1.82 1.9 4.2 1.84 5.28 2.04 3.76.36 15.82.44 16.24.44 0 0 10.1.02 16.8-.46.92-.12 2.96-.12 4.78-2.04 1.44-1.44 1.92-4.74 1.92-4.74s.48-3.88.5-7.75v-4.05c-.04-3.87-.52-7.75-.52-7.75zM19.14 30V15.98L32 23.26 19.14 30z"></path>
+                            <path fill="none" d="M0 0h47.99v48H0z"></path>
+                          </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="social-box">
+                <a href="">
+                    <div class="social-icon">
+                        <svg id="social-facebook" viewBox="0 0 20 20">
+                            <g fill="none" fill-rule="evenodd">
+                              <path d="M-2-2h24v24H-2z"></path>
+                              <path d="M20 10.1c0-5.5-4.5-10-10-10S0 4.5 0 10.1c0 5 3.7 9.1 8.4 9.9v-7H5.9v-2.9h2.5V7.9C8.4 5.4 9.9 4 12.2 4c1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9h2.8l-.4 2.8h-2.3v7c4.7-.8 8.4-4.9 8.4-9.9z" fill="currentColor"></path>
+                            </g>
+                          </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
     <script src="files/js/enterprise/enrollment.js"></script>
+    <script src="files/js/nav/nav.js"></script>
 
 </body>
 

@@ -188,15 +188,18 @@ function animate(tag, dur, tween) {
         .addTo(controller)
         .addIndicators()
 }
+document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
+document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
 
 function res() {
-    document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem';
+    document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
     document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
     document.getElementById("eiei1").style = 'position: relative;left:75rem;transition-duration: 1s;'
 }
 
 function res1() {
-    document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem';
+    document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
     document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
     document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
 

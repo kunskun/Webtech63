@@ -18,6 +18,16 @@ section {
     margin-bottom: 100px;
 }
 
+.eiei {
+    width: 55%;
+    height: 1px;
+    background-color: black;
+    opacity: 0.3;
+    position: relative;
+    left: 27rem;
+    top: -10rem;
+}
+
 
 /* first section */
 
