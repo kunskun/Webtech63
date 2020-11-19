@@ -186,7 +186,6 @@ function animate(tag, dur, tween) {
         })
         .setTween(tween)
         .addTo(controller)
-        .addIndicators()
 }
 document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
 document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';

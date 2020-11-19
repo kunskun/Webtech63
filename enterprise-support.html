@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- GSAP link-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="files/css/enterprise/support.css">
+
+    <!-- JS -->
+
+</head>
+
+<body>
+    <section class="section stage1" style="padding-top: 400px;">
+        <div class="container">
+            <div id="move-st1" class="font-android position-absolute"
+                style="font-size: 27rem;top:100px; color:#d7effe; left: 400px;">
+                Resource</div>
+            <div class="row ">
+                <div class="col-6 " style="padding-right: 120px; margin-top: 120px; left: 100px;">
+                    <h5>Resources</h5>
+                    <h1 class="mt-2 text-topic font-android mb-5">The info you need. In one place.</h1>
+                </div>
+                <div class="col-6" style="margin-top: 300px; left: 100px;">
+                    <p class="text-p font-roboto" style="padding-right: 120px; ">Take a deep dive into Android
+                        Enterprise
+                        and find resources for anything you’re looking for. From datasheets about devices to videos
+                        about security and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stage2">
+        <div class="container-fluid" style="padding: 0px 300px;">
+            <div class="shape-circle-st2"></div>
+            <div class="row" style="padding-top:50px">
+                <div class="col-6" style="padding-right: 50px; margin-top: 90px;">
+                    <h1 class="mt-2 text-topic font-android mb-5">Popular topics</h1>
+                </div>
+            </div>
+            <div class="d-flex" style="position: relative;">
+                <div class="card m-0 mr-2" style="width: 700px;height: 700px;border: none;">
+                    <img class="card-img-top"
+                        src="https://lh3.googleusercontent.com/q2ngf5EN4xLM5un7QF9ztsPhkG5NflecR0FmtLLeU898d1AyQT_WkMaMHNUiH4RyZWLsBC4gHXWEVUwKHtR8uC0HAXou9p_sFgiR=w927-e365-v1"
+                        alt="Card image cap">
+                    <div class="card-body mt-3" style="padding:0px 100px 0px 0px">
+                        <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 56px; line-height: 100%;">
+                            User Adoption Kit</p>
+                        <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">This
+                            guide is
+                            designed to help your IT team communicate the features and benefits of Android Enterprise to
+                            new users across your organization. Use the contents of the kit to accelerate deployment,
+                            increase user satisfaction, and enhance your communication plan.</p>
+                        <div class="row learnMore"
+                            style="width: 150px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                <b>Read more</b>
+                            </p>
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-0 ml-2" style="width: 700px;height: 700px;border: none;">
+                    <img class="card-img-top"
+                        src="https://lh3.googleusercontent.com/ljIQ5CCWjapyOW8yxRGDvg5efiWMVfJL5XJ5KrYmsQmeASR5nqnttnvH7sV_XAosZIdHokDpiTp6dY9TDUFO2db92WsBxPl7GKX7XQ=w927-e365-v1"
+                        alt="Card image cap">
+                    <div class="card-body mt-3" style="padding:0px 100px 0px 0px">
+                        <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 56px; line-height: 100%;">
+                            A unique approach to BYOD</p>
+                        <p class="font-roboto mt-4 " style="font-size: 20px; line-height: 100%;padding-bottom: 60px;">
+                            The work profile keeps your employees’ business data secure and their personal data private.
+                        </p>
+                        <div class="row learnMore" style="width: 150px;position: relative;margin: 0px 0px 0px 0px;">
+                            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                <b>Read more</b>
+                            </p>
+                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stage3" style="padding-top: 100px;">
+
+        <div class="container" style="margin-bottom: 100px;">
+            <div class="shape-pills-st3"></div>
+            <div class="row ">
+                <div class="col-7 " style="margin-top: 120px; left: 50px">
+                    <h1 class="mt-2 text-topic font-android mb-5">Find more of what you’re looking for.</h1>
+                </div>
+                <div class="row">
+                    <div style="display: flex;position: relative; left: 70px;">
+                        <div id="1-bt-st3" class="btSelect button-sec3 button-sec3-select" onclick="changBG(0)"
+                            style="cursor: pointer;z-index: 10;">ALL TOPICS</div>
+                        <div id="2-bt-st3" class="btSelect button-sec3" onclick="changBG(1)"
+                            style="cursor: pointer;z-index: 10;">
+                            MANAGEMENT</div>
+                        <div id="3-bt-st3" class="btSelect button-sec3" onclick="changBG(2)"
+                            style="cursor: pointer;z-index: 10;">
+                            SECURITY</div>
+                        <div id="4-bt-st3" class="btSelect button-sec3" onclick="changBG(3)"
+                            style="cursor: pointer;z-index: 10;">
+                            DEVICES</div>
+                        <div id="5-bt-st3" class="btSelect button-sec3" onclick="changBG(4)"
+                            style="cursor: pointer;z-index: 10;">
+                            EMPLOYEES</div>
+                    </div>
+                    <div class="dropdown" style="position: relative; right: -250px;width: 150px;">
+                        <a id="drop-main" style="border-radius: 32px;width: 200px; border: 1px solid #073042;height: 46px; padding-top: 10px;" class="btn dropdown-toggle btSelect"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            CONTENT TYPES
+                        </a>
+                        <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #073042;padding:0px;">
+                            <a id="ttt" value="0" class="drop dropdown-item" style="cursor: pointer;padding-left: 20px;font-size: 14px;color:white">CONTENT TYPES</a>
+                            <a value="1" class="drop dropdown-item" style="cursor: pointer;padding-left: 20px;font-size: 14px;color:white">VIDEO</a>
+                            <a value="2" class="drop dropdown-item" style="cursor: pointer;padding-left: 20px;font-size: 14px;color:white">DATASHEET</a>
+                            <a value="3" class="drop dropdown-item" style="cursor: pointer;padding-left: 20px;font-size: 14px;color:white">REPORT/PDF</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div onload="myFunction()" class="row mt-5" style="position: relative; left: 80px; width: 1061px;">
+                <div id="body-st3" class="row">
+                    
+                    <!-- <div class="card m-0 mr-2" style="border: none;">
+                        <img class="card-img-top"
+                            src="https://lh3.googleusercontent.com/q2ngf5EN4xLM5un7QF9ztsPhkG5NflecR0FmtLLeU898d1AyQT_WkMaMHNUiH4RyZWLsBC4gHXWEVUwKHtR8uC0HAXou9p_sFgiR=w927-e365-v1"
+                            alt="Card image cap">
+                        <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
+                            <p class="font-android-M " style="font-size: 20px;">Management · Report/PDF</p>
+                            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
+                                Android Enterprise eBook: Every Worker. Every Use Case.</p>
+                            <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">Android Enterprise is built to help employees work smarter without sacrificing privacy or controls. Learn more about the key benefits of Android Enterprise for your business by downloading our new eBook.</p>
+                            <div class="row learnMore"
+                                style="width: 150px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                    <b>Read more</b>
+                                </p>
+                                <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="p-0 mr-3" style="width: 48%;">
+                        <div class="card m-0" style="border: none;">
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/q2ngf5EN4xLM5un7QF9ztsPhkG5NflecR0FmtLLeU898d1AyQT_WkMaMHNUiH4RyZWLsBC4gHXWEVUwKHtR8uC0HAXou9p_sFgiR=w927-e365-v1"
+                                alt="Card image cap">
+                            <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
+                                <p class="font-android-M " style="font-size: 20px;">Management · Report/PDF</p>
+                                <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
+                                    Android Enterprise eBook: Every Worker. Every Use Case.</p>
+                                <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">Android Enterprise is built to help employees work smarter without sacrificing privacy or controls. Learn more about the key benefits of Android Enterprise for your business by downloading our new eBook.</p>
+                                <div class="row learnMore"
+                                    style="width: 150px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                    <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                        <b>Read more</b>
+                                    </p>
+                                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 ml-3" style="width: 48%;">
+                        <div class="card m-0" style="border: none;">
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/q2ngf5EN4xLM5un7QF9ztsPhkG5NflecR0FmtLLeU898d1AyQT_WkMaMHNUiH4RyZWLsBC4gHXWEVUwKHtR8uC0HAXou9p_sFgiR=w927-e365-v1"
+                                alt="Card image cap">
+                            <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
+                                <p class="font-android-M " style="font-size: 20px;">Management · Report/PDF</p>
+                                <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
+                                    Android Enterprise eBook: Every Worker. Every Use Case.</p>
+                                <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">Android Enterprise is built to help employees work smarter without sacrificing privacy or controls. Learn more about the key benefits of Android Enterprise for your business by downloading our new eBook.</p>
+                                <div class="row learnMore"
+                                    style="width: 150px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                    <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                        <b>Read more</b>
+                                    </p>
+                                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 mr-3" style="width: 48%;">
+                        <div class="card m-0" style="border: none;">
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/q2ngf5EN4xLM5un7QF9ztsPhkG5NflecR0FmtLLeU898d1AyQT_WkMaMHNUiH4RyZWLsBC4gHXWEVUwKHtR8uC0HAXou9p_sFgiR=w927-e365-v1"
+                                alt="Card image cap">
+                            <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
+                                <p class="font-android-M " style="font-size: 20px;">Management · Report/PDF</p>
+                                <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
+                                    Android Enterprise eBook: Every Worker. Every Use Case.</p>
+                                <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">Android Enterprise is built to help employees work smarter without sacrificing privacy or controls. Learn more about the key benefits of Android Enterprise for your business by downloading our new eBook.</p>
+                                <div class="row learnMore"
+                                    style="width: 150px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                    <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                        <b>Read more</b>
+                                    </p>
+                                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+                <div id="containSeeMore" class="row" style="width:100%; margin-top: 100px;">
+                    <hr style="width: 100%; background-color:rgb(198, 198, 198);">
+                    <div class="row"
+                        style="width: 300px;height: 50px;position: relative;margin: 0px 0px 0px 0px;left: 500px;">
+                        <p id="seeMore" class="learnMore d-flex" class="card-text font-android"
+                            style="color: #073042;font-size: 1.25rem;">
+                            <b>see more</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center" style="position: relative;top:300px;">
+        </div>
+        </div>
+    </section>
+
+    <section class="section stage4">
+        <div class="container-fluid" style="padding: 0px 300px;">
+            <div class="row" style="padding-top:50px">
+                <div class="col-8" style="padding-right: 50px; margin-top: 90px;">
+                    <h1 class="mt-2 text-topic font-android mb-5">Android guides for developers.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section stage5">
+        <div class="container-fluid" style="padding: 0px 300px;">
+            <div class="row " style="position: absolute; top:-150p;">
+                <div class="row" style="position: relative;">
+                    <div class="col-6">
+                        <div class="card m-0 mr-2" style="width: 700px;height: 700px;border: none;">
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/Y4SJ6d5RZLbbH-zAetzrLAxM8--YdRdGib5Mt3vffup4UYCX0lC9ulxAYPL62iKYyrYEQ05KVi9uOpvtd4VTuruw62PhncdyivBi=w1252-rw-e365-v1"
+                                alt="Card image cap">
+                            <div class="card-body mt-3" style="padding:0px 100px 0px 0px">
+                                <p class="font-android font-weight-bold mb-5 mt-4"
+                                    style="font-size: 56px; line-height: 100%;">
+                                    App developers</p>
+                                <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">
+                                    Our developer guides will show you how to create apps on the Android platform, build
+                                    responsive designs, and more.</p>
+                                <div class="row learnMore"
+                                    style="width: 180px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                    <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                        <b>Read the guide</b>
+                                    </p>
+                                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card m-0 ml-2" style="width: 700px;height: 700px;border: none;">
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/KR-kNnP3EEcFgQEbIJY5Ac1Xhj3Xds4rhLhxpEYI8Jb9q64y3b5Q8nItEtwZxuC7GrPKniEqUyO-f0Drd6zm1ZXLbbzwAYPCuQw=w1252-rw-e365-v1"
+                                alt="Card image cap">
+                            <div class="card-body mt-3" style="padding:0px 100px 0px 0px">
+                                <p class="font-android font-weight-bold mb-5 mt-4"
+                                    style="font-size: 56px; line-height: 100%;">
+                                    EMM developers</p>
+                                <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">
+                                    Learn how to build enterprise mobility management solutions that make the most of our
+                                    features.</p>
+                                <div class="row learnMore"
+                                    style="width: 180px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                                    <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                        <b>Read the guide</b>
+                                    </p>
+                                    <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                        width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="section stage6">
+        <div class="container-fluid" style="padding: 0px 300px;">
+            <div class="row" style="padding-top:50px">
+                <div class="col-7" style="padding-right: 50px; margin-top: 90px;">
+                    <h1 class="mt-2 text-topic font-android mb-5">Need support? We’re here to help.</h1>
+                    <div class="row learnMore"
+                        style="width: 250px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                        <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Visit our Help Center</b>
+                        </p>
+                        <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px"
+                            viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-5" style="padding-right: 50px; margin-top: 90px;">
+                    <h1 class="mt-2 text-topic font-android mb-5" style="font-size: 32px;">Common topics</h1>
+                    <div class="row learnMore"
+                        style="width: 270px;height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                        <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>What is a work profile?</b>
+                        </p>
+                        <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px" width="30px"
+                            viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                    <div class="row learnMore"
+                        style="width: 310px;height: 50px;position: relative;margin: 0px 0px 0px 0px;top:10px">
+                        <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Android’s enterprise terminology</b>
+                        </p>
+                        <svg id="arrow-to-top"
+                            style="transform: rotate(30deg);position:relative;top:-45px; left: 120px;" width="30px"
+                            viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                    <div class="row learnMore"
+                        style="width: 280px;height: 50px;position: relative;margin: 0px 0px 0px 0px; top:40px">
+                        <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>Setting up VPN on Android devices</b>
+                        </p>
+                        <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-45px; left: 70px;"
+                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    </div>
+                    <div style="z-index: 1;" class="shape-circle-st6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stage7" style="padding-top: 100px;">
+        <div class="shape-circle-st7"></div>
+        <div class="row">
+            <div class="col-5 pl-7" style=" margin-top: 110px;padding-right: 140px;">
+                <h1 class="mt-2 text-topic font-android" style="font-size: 88px;">The best stories are worth sharing.
+                </h1>
+            </div>
+            <div class="col-5" style=" margin-top: 350px;padding-right: 250px;left: -50px;">
+                <p class="text-p font-roboto mb-5">See how businesses like yours use Android to grow their business.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="album-st7" class="d-flex" style="position: relative;left: 280px;top:50px">
+                <!-- <div class="p-0 d-flex" style="width: 100%;">
+                    <div class="card" style="width: 626px;border: none;">
+                        <div style="cursor: pointer;" onclick="openVideo()">
+                            <svg style="z-index: 3;position:absolute; left:260;top:140px" class="modal-opener__play-icon"
+                                width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+                                    <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+                                    <path class="play-icon"
+                                        d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
+                                        fill="#073042" fill-rule="nonzero"></path>
+                                </g>
+                            </svg>
+                            <img class="card-img-top"
+                                src="https://lh3.googleusercontent.com/q7GA8_6RdFf2WeReYEI73qphEsvZG_SPTiOH-aCdAmfezpyOuDMajpjUAzzhcQf1rosEqTQ8JE6YuHb3S3-TcNH29hRhEf3vcMNQ=w933-e365-v1"
+                                alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="card-body mt-4"
+                        style="width: 500px; padding: 0px 80px 0px 0px;position: relative; margin: 0px 100px;">
+                        <img class="mb-5" style="width: 35%;" src="https://lh3.googleusercontent.com/-A3PyTqcdPy-VJKiNvRo32b4I3idWx-w81gt5VUGR762ZhtBZodrt7JHgBYwBBvRy_TqV5lnt3zQLGeLhmxUTJ2RXeQ11j4RiKy93A=w200-e365-v1" alt="">
+                        <p class="font-android font-weight-bold mb-5" style="font-size: 32px; line-height: 100%;">Walmart
+                            turned to Android for more accuracy and better productivity.</p>
+                        <p class="font-android mb-4" style="font-size: 20px;">“There were so many frameworks for developers
+                            that it was an easy pick for us.”</p>
+                        <p class="font-roboto" style="font-size: 16px;">Travis Folck, Head of Design Systems, Walmart</p>
+                    </div>
+                </div> -->
+
+
+            </div>
+            <div class="progress"
+                style="height: 5px; position: relative; top: 100px; z-index: 10; width: 1300px; left: 300px;">
+                <div class="progress-bar" role="progressbar" style="width: 10%; background-color: #404040"
+                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div style="position: relative; left: 1540px; top:110px">
+                <button id="bt-left" class="" width="100px" style="border: none;
+                background: none;outline: none; opacity: 0.2;">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg></button>
+                <button id="bt-right" style="border: none;
+            background: none;outline: none;">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <button hidden onclick="closeVideo()" style="outline: none;" type="button" class="closeButton">
+        <span class="icon-x"></span>
+    </button>
+    <div class="d-flex justify-content-center">
+        <div hidden class="stageBg"></div>
+
+        <iframe src="" hidden class="video-content" width="560" height="315" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <script src="files/js/enterprise/support.js"></script>
+
+</body>
+
+</html>
