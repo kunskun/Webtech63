@@ -404,3 +404,7 @@ h2 {
         transform: scale(1.0);
     }
 }
+
+button:focus{
+    outline: none;
+}
