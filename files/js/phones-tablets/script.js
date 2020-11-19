@@ -4,7 +4,7 @@ TweenLite.defaultEase = Linear.easeNone;
 titles = document.querySelectorAll(".visually-hidden");
 var tl = new TimelineMax();
 
-tl.to(".visually-hidden", 1, { yPercent: -50 }, "label1");
+tl.to(".visually-hidden", 1, { yPercent: -20 }, "label1");
 tl.from(titles[1], 0.5, { opacity: 1 }, "label1+=0.5");
 tl.to(".visually-hidden", 1, { yPercent: 100 }, "label2");
 tl.from(titles[2], 0.5, { opacity: 1 }, "label2+=0.5");
@@ -135,6 +135,7 @@ function test4(obj) {
 document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
 document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
 document.getElementById("eiei1").style = 'position: relative;transition-duration: 1s;margin-top:500px;margin-left: 800px;'
+
 function res() {
     document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
     document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
