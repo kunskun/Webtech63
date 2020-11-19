@@ -8,6 +8,10 @@
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 
+button:focus{
+    outline: none;
+}
+
 .arrow-move-left {
     animation: 1s moveLeft;
     animation-fill-mode: forwards;
