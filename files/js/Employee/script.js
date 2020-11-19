@@ -73,3 +73,15 @@ function toRight(obj){
     let x = obj.id
     document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-right')
 }
+
+function toDiagonalTop(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-top')
+    document.getElementById(`ddd`).setAttribute('style', 'transform:rotate(-45deg)')
+}
+
+function toDiagonalDown(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-down')
+    document.getElementById(`ddd`).setAttribute('style', 'transform:rotate(-45deg)')
+}
