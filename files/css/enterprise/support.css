@@ -1,3 +1,6 @@
+body {
+	overflow-x: hidden;
+}
 .section {
 	width: 100%;
     overflow: hidden;
@@ -12,7 +15,7 @@
 .stage2 {
     color: black;
     background-color: white;
-	height: 1000px;
+	height: 1050px;
 	justify-content: center;
 }
 .stage3 {
@@ -28,14 +31,16 @@
 	justify-content: center;
 }
 .stage5 {
+	
 	top:-200px;
 	z-index: 5;
     color: black;
     background-color: none;
-	height: 500px;
+	height: 700px;
 	justify-content: center;
 }
 .stage6 {
+	top:-200px;
     z-index: 1;
     color: black;
     background-color: none;
@@ -43,6 +48,7 @@
 	justify-content: center;
 }
 .stage7 {
+	top:-400px;
     z-index: 1;
     color: black;
     background-color: none;
@@ -97,14 +103,24 @@
 }
 
 .shape-pills-st3 {
-    left: -100px;
-    top:60px;
+    left: -50px;
+    top:100px;
     border-radius: 500px;
-    width: 1350px;
+    width: 1400px;
     height: 548px;
     background-color:none;
     border: 20px solid #3ddc84;
     position: absolute;
+}
+
+.noResults {
+	width: 1062px;
+	height: 488px;
+	padding: 160px 190px;
+	border-bottom-left-radius: 40px 40px;
+	border-bottom-right-radius: 40px 40px;
+	color: white;
+	background-color: #4285f4;
 }
 
 /* section5 */

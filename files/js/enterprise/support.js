@@ -7,8 +7,15 @@ var moveSt1 = gsap.to("#move-st1", {
     ease: Linear.easeNon,
 });
 myScene(moveSt1, 1500, "#move-st1")
-// section2
 
+
+// section2
+var moveSt2 = gsap.from(".shape-circle-st2", {
+    top: 100,
+    ease: Linear.easeNon,
+});
+
+myScene(moveSt2, 1000, ".shape-circle-st2")
 
 //learn more
 gsap.registerEffect({
@@ -72,7 +79,7 @@ gsap.registerEffect({
 // section3
 
 var moveSt3 = gsap.from(".shape-pills-st3", {
-    top: 150,
+    top: 200,
     ease: Linear.easeNon,
 });
 
@@ -167,9 +174,20 @@ document.querySelectorAll(".button-sec3").forEach(function (box) {
 
 
 // section6
+var moveSt6 = gsap.from(".shape-circle-st6", {
+    top: -100,
+    ease: Linear.easeNon,
+});
 
+myScene(moveSt6, 1000, ".shape-circle-st6")
 
 // section7
+var moveSt7 = gsap.from(".shape-circle-st7", {
+    top: 200,
+    ease: Linear.easeNon,
+});
+
+myScene(moveSt7, 1000, ".shape-circle-st7")
 
 //section8
 
@@ -400,7 +418,8 @@ for (let i = 0; i < jsonSt7.length; i++) {
                 `
 }
 
-let jsonSt3 = [{
+let jsonSt3 = [
+    {
         "allTopic": {
             "main": {
                 "video": false,
@@ -725,7 +744,7 @@ let jsonSt3 = [{
             }]
 
         },
-        "Empolyees": {
+        "Employees": {
             "main": {
                 "video": false,
                 "pic": "https://lh3.googleusercontent.com/oQpGs99ipcf6v-LDVURnaEPK62rx__m_7Nzl698yHlMqTpPxKjIzO277ybeCBWnKeRIxFCZQ0N-N4UvI_ZbwZSo9GtaGPb0rcXEbaw=w1334-rw-e365-v1",
@@ -743,7 +762,7 @@ let jsonSt3 = [{
         "allTopic": {
             "main": {
                 "video": "1DXpuIbHmRk",
-                "pic": "https://lh3.googleusercontent.com/xg-hyQXHQG6IgHthW3povj68xPhkmIQAPEhGOSQHaFcZpm8WlLWcs4xlarzmgXGws6laxQ3AWW-7TIJe00mqT3FRH9xSCBE02OPT=w667-e365-v1",
+                "pic": "https://lh3.googleusercontent.com/xg-hyQXHQG6IgHthW3povj68xPhkmIQAPEhGOSQHaFcZpm8WlLWcs4xlarzmgXGws6laxQ3AWW-7TIJe00mqT3FRH9xSCBE02OPT=w1334-e365-v1",
                 "topic": "The Android Work Profile overview video",
                 "subText": "Management · Video",
                 "body": "The Android work profile separates work and personal apps on a single device -- here's how.",
@@ -820,7 +839,7 @@ let jsonSt3 = [{
         "Management": {
             "main": {
                 "video": "1DXpuIbHmRk",
-                "pic": "https://lh3.googleusercontent.com/xg-hyQXHQG6IgHthW3povj68xPhkmIQAPEhGOSQHaFcZpm8WlLWcs4xlarzmgXGws6laxQ3AWW-7TIJe00mqT3FRH9xSCBE02OPT=w667-e365-v1",
+                "pic": "https://lh3.googleusercontent.com/xg-hyQXHQG6IgHthW3povj68xPhkmIQAPEhGOSQHaFcZpm8WlLWcs4xlarzmgXGws6laxQ3AWW-7TIJe00mqT3FRH9xSCBE02OPT=w1334-e365-v1",
                 "topic": "The Android Work Profile overview video",
                 "subText": "Management · Video",
                 "body": "The Android work profile separates work and personal apps on a single device -- here's how.",
@@ -897,7 +916,7 @@ let jsonSt3 = [{
         "Security": {
             "main": {
                 "video": "Cb3yx070mRc",
-                "pic": "https://lh3.googleusercontent.com/r7Tip12TI2h806TMLgLg6rV3qF5tAO8ChzWEATt-MAY6qkWH4vBvd1XWcTrvfUuuGF4ZfDnRSSd33D0t1d7z0qxIUhCehDFmpoil6w=w667-rw-e365-v1",
+                "pic": "https://lh3.googleusercontent.com/r7Tip12TI2h806TMLgLg6rV3qF5tAO8ChzWEATt-MAY6qkWH4vBvd1XWcTrvfUuuGF4ZfDnRSSd33D0t1d7z0qxIUhCehDFmpoil6w=w1334-e365-v1",
                 "topic": "Android Enterprise: security overview",
                 "subText": "Security · Video",
                 "body": "With multi-layered security protections built in, Android Enterprise works to keep company data safe and personal data private on all mobile devices.",
@@ -958,7 +977,7 @@ let jsonSt3 = [{
         "Device": {
             "main": {
                 "video": "EDsQHDSw2Go",
-                "pic": "https://lh3.googleusercontent.com/1kPVxOm_SFErwPOOWto1B9WCpxiyL8-Re3ll_BdsOFnNXMpT7PyrFUH5_Fe-m535PQ-VuC2yrMTDjPw0YJDXNFqJCXnUMsmYEj8VYA=w667-rw-e365-v1",
+                "pic": "https://lh3.googleusercontent.com/1kPVxOm_SFErwPOOWto1B9WCpxiyL8-Re3ll_BdsOFnNXMpT7PyrFUH5_Fe-m535PQ-VuC2yrMTDjPw0YJDXNFqJCXnUMsmYEj8VYA=w1334-e365-v1 ",
                 "topic": "Android Enterprise: flexibility and choice",
                 "subText": "Device · Video",
                 "body": "Android provides the greatest flexibility, security and ease in managing your devices.",
@@ -1155,7 +1174,7 @@ let jsonSt3 = [{
             }]
 
         },
-        "Empolyees": {
+        "Employees": {
             "main": {
                 "video": false,
                 "pic": "https://lh3.googleusercontent.com/oQpGs99ipcf6v-LDVURnaEPK62rx__m_7Nzl698yHlMqTpPxKjIzO277ybeCBWnKeRIxFCZQ0N-N4UvI_ZbwZSo9GtaGPb0rcXEbaw=w667-rw-e365-v1",
@@ -1294,7 +1313,7 @@ let arraySelect = {
     "2-bt-st3": "Management",
     "3-bt-st3": "Security",
     "4-bt-st3": "Device",
-    "5-bt-st3": "Empolyees"
+    "5-bt-st3": "Employees"
 }
 
 let arrayButton = ["1-bt-st3", "2-bt-st3", "3-bt-st3", "4-bt-st3", "5-bt-st3", ]
@@ -1305,7 +1324,8 @@ let seeMore = document.querySelector("#containSeeMore")
 
 document.querySelectorAll(".btSelect").forEach(function (box) {
     box.addEventListener("click", function () {
-        
+        //console.log("state -> "+jsonSt3[state],arraySelect[arrayButton[currentId]])
+        //console.log(jsonSt3[state][arraySelect[arrayButton[currentId]]])
         otherLen = jsonSt3[state][arraySelect[arrayButton[currentId]]]["other"] == false ? 0 : jsonSt3[state][arraySelect[arrayButton[currentId]]]["other"].length
         countRun = otherLen < 4 ? otherLen : 4
         if (jsonSt3[state][arraySelect[arrayButton[currentId]]]["other"] == false || otherLen <= 4) {
@@ -1335,146 +1355,156 @@ function mySelect(id, num) {
     let idMain = jsonSt3[state][id]["main"]
     let isOther = jsonSt3[state][id]["other"]
     let bodySt3 = document.querySelector("#body-st3")
-    bodySt3.innerHTML = `<div class="card m-0 mr-2" style="border: none;">`
-    if (idMain.video != false) {
-        bodySt3.innerHTML += ` <div id="${'https://www.youtube.com/embed/'+idMain.video}" style="cursor: pointer;" onclick="openVideo(this)">
-        <svg style="z-index: 3;position:absolute; left:480;top:250px" class="modal-opener__play-icon"
-            width="96" height="96" xmlns="http://www.w3.org/2000/svg">
-            <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-                <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
-                <path class="play-icon"
-                    d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
-                    fill="#073042" fill-rule="nonzero"></path>
-            </g>
-        </svg>
-        <img class="card-img-top"
-            src="${idMain.pic}"
-            alt="Card image cap">
-    </div>`
+    console.log(idMain)
+    
+    if(idMain == false) {
+        bodySt3.innerHTML = `<div class="noResults mb-5">
+            <p class="font-android" style="font-size:88px">No Results.</p>
+            <p class="font-roboto" style="font-size:20px">Sorry, no results matched your criteria.</p>
+        </div> `;
     } else {
-        bodySt3.innerHTML += ` <img class="card-img-top"
-        src="${idMain.pic}"
-        alt="Card image cap"></img> `
-    }
-    bodySt3.innerHTML += `
-    <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
-        <p class="font-android-M " style="font-size: 20px;">${idMain.subText}/PDF</p>
-        <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
-        ${idMain.topic}</p>
-        <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">${idMain.body}</p>
-        <div class="row ${idMain.arrow == "top"? "learnMore": "learnMore2"}"
-            style="width: ${idMain.arrow == "top"? "150px": "200px"};height: 50px;position: relative;margin: 0px 0px 0px 0px;">
-            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
-                <b>${idMain.linkName}</b>
-            </p>
-            <svg id="arrow-to-top" style="transform: rotate(${idMain.arrow == "top"? "30deg": "90deg"});position:relative;top:-10px"
-                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        bodySt3.innerHTML = `<div class="card m-0 mr-2 mb-5" style="border: none;">`
+        if (idMain.video != false) {
+            bodySt3.innerHTML += ` <div id="${'https://www.youtube.com/embed/'+idMain.video}" style="cursor: pointer;" onclick="openVideo(this)">
+            <svg style="z-index: 3;position:absolute; left:480;top:250px" class="modal-opener__play-icon"
+                width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+                    <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+                    <path class="play-icon"
+                        d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
+                        fill="#073042" fill-rule="nonzero"></path>
+                </g>
             </svg>
+            <img class="card-img-top"
+                src="${idMain.pic}"
+                alt="Card image cap">
+        </div>`
+        } else {
+            bodySt3.innerHTML += ` <img class="card-img-top"
+            src="${idMain.pic}"
+            alt="Card image cap"></img> `
+        }
+        bodySt3.innerHTML += `
+        <div class="card-body mt-3" style="padding:0px 0px 0px 0px">
+            <p class="font-android-M " style="font-size: 20px;">${idMain.subText}/PDF</p>
+            <p class="font-android font-weight-bold mb-5 mt-4" style="font-size: 35px; line-height: 100%;">
+            ${idMain.topic}</p>
+            <p class="font-roboto mt-4" style="font-size: 20px; line-height: 30px; padding-right:20px">${idMain.body}</p>
+            <div class="row ${idMain.arrow == "top"? "learnMore": "learnMore2"}"
+                style="width: ${idMain.arrow == "top"? "150px": "200px"};height: 50px;position: relative;margin: 0px 0px 0px 0px;">
+                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                    <b>${idMain.linkName}</b>
+                </p>
+                <svg id="arrow-to-top" style="transform: rotate(${idMain.arrow == "top"? "30deg": "90deg"});position:relative;top:-10px"
+                    width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                </svg>
+            </div>
         </div>
-    </div>
-     </div>`
-    // 0 + steppRun jsonSt3[0][id]["other"].length
-    for (let i = 0; i < num; i++) {
-
-        let card = document.createElement("div")
-        let cardBody = document.createElement("div")
-        let learnMore = document.createElement("div")
-        let cardImg = document.createElement("img")
-        let topicText = document.createElement("p");
-        let subText = document.createElement("p");
-        let bodyText = document.createElement("p");
-        //setting card
-        card.classList = (i % 2 == 0) ? "card m-0 mr-2 mb-3" : "card m-0 ml-3 mb-3"
-        //card.setAttribute("class", "card m-0 mr-2")
-        card.style.border = "none"
-        card.style.width = "48%"
-
-        if (isOther[i].video != false) {
-
-            card.innerHTML = ` <div id="${'https://www.youtube.com/embed/'+isOther[i].video}" style="cursor: pointer;" onclick="openVideo(this)">
-                                <svg style="z-index: 3;position:absolute; left:210;top:100px" class="modal-opener__play-icon"
-                                    width="96" height="96" xmlns="http://www.w3.org/2000/svg">
-                                    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-                                        <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
-                                        <path class="play-icon"
-                                            d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
-                                            fill="#073042" fill-rule="nonzero"></path>
-                                    </g>
-                                </svg>
-                                <img class="card-img-top"
-                                    src="${isOther[i].pic}"
-                                    alt="Card image cap">
-                            </div>`
-        } else {
-            //setting img
-            cardImg.classList.add("card-img-top")
-            cardImg.setAttribute("src", isOther[i].pic)
+         </div>`
+        // 0 + steppRun jsonSt3[0][id]["other"].length
+        for (let i = 0; i < num; i++) {
+    
+            let card = document.createElement("div")
+            let cardBody = document.createElement("div")
+            let learnMore = document.createElement("div")
+            let cardImg = document.createElement("img")
+            let topicText = document.createElement("p");
+            let subText = document.createElement("p");
+            let bodyText = document.createElement("p");
+            //setting card
+            card.classList = (i % 2 == 0) ? "card m-0 mr-2 mb-3" : "card m-0 ml-3 mb-3"
+            //card.setAttribute("class", "card m-0 mr-2")
+            card.style.border = "none"
+            card.style.width = "48%"
+    
+            if (isOther[i].video != false) {
+    
+                card.innerHTML = ` <div id="${'https://www.youtube.com/embed/'+isOther[i].video}" style="cursor: pointer;" onclick="openVideo(this)">
+                                    <svg style="z-index: 3;position:absolute; left:210;top:100px" class="modal-opener__play-icon"
+                                        width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+                                            <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+                                            <path class="play-icon"
+                                                d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
+                                                fill="#073042" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                    <img class="card-img-top"
+                                        src="${isOther[i].pic}"
+                                        alt="Card image cap">
+                                </div>`
+            } else {
+                //setting img
+                cardImg.classList.add("card-img-top")
+                cardImg.setAttribute("src", isOther[i].pic)
+            }
+    
+            //setting card body
+            cardBody.classList.add("card-body", "mt-3", "p-0")
+    
+            //setting text
+            subText.classList.add("font-android-M")
+            subText.style.fontSize = "20px"
+            subText.innerText = isOther[i].subText
+    
+            topicText.classList.add("font-android", "font-weight-bold", "mb-5", "mt-4")
+            topicText.style.fontSize = "35px";
+            topicText.lineHeight = "100%";
+            topicText.innerText = (isOther[i].topic)
+    
+            bodyText.classList.add("font-roboto", "mt-4")
+            bodyText.style.fontSize = "20px"
+            bodyText.style.lineHeight = "30px"
+            bodyText.style.paddingRight = "20px"
+            bodyText.innerText = (isOther[i].body)
+    
+            // learnMore.classList = "row learnMore m-0"
+    
+            if (isOther[i].arrow == "top") {
+                learnMore.setAttribute("class", "row learnMore m-0")
+                learnMore.style.width = "150px"
+                learnMore.style.height = "50px"
+                learnMore.style.position = "relative"
+                learnMore.innerHTML = `
+                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                                                <b> ${isOther[i].linkName} </b>
+                                            </p>
+                                            <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
+                                                width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                                            </svg>
+                    `
+            } else {
+                learnMore.setAttribute("class", "row learnMore2 m-0")
+                learnMore.style.width = "200px"
+                learnMore.style.height = "50px"
+                learnMore.style.position = "relative"
+                learnMore.innerHTML = `
+                <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
+                            <b>${isOther[i].linkName}</b>
+                        </p>
+                        <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-10px" width="30px"
+                            viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                        </svg>
+                    `
+            }
+            cardBody.appendChild(subText)
+            cardBody.appendChild(topicText)
+            cardBody.appendChild(bodyText)
+            cardBody.appendChild(learnMore)
+            card.appendChild(cardImg)
+            card.appendChild(cardBody)
+            bodySt3.appendChild(card)
         }
 
-        //setting card body
-        cardBody.classList.add("card-body", "mt-3", "p-0")
-
-        //setting text
-        subText.classList.add("font-android-M")
-        subText.style.fontSize = "20px"
-        subText.innerText = isOther[i].subText
-
-        topicText.classList.add("font-android", "font-weight-bold", "mb-5", "mt-4")
-        topicText.style.fontSize = "35px";
-        topicText.lineHeight = "100%";
-        topicText.innerText = (isOther[i].topic)
-
-        bodyText.classList.add("font-roboto", "mt-4")
-        bodyText.style.fontSize = "20px"
-        bodyText.style.lineHeight = "30px"
-        bodyText.style.paddingRight = "20px"
-        bodyText.innerText = (isOther[i].body)
-
-        // learnMore.classList = "row learnMore m-0"
-
-        if (isOther[i].arrow == "top") {
-            learnMore.setAttribute("class", "row learnMore m-0")
-            learnMore.style.width = "150px"
-            learnMore.style.height = "50px"
-            learnMore.style.position = "relative"
-            learnMore.innerHTML = `
-            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
-                                            <b> ${isOther[i].linkName} </b>
-                                        </p>
-                                        <svg id="arrow-to-top" style="transform: rotate(30deg);position:relative;top:-10px"
-                                            width="30px" viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill=" #073042"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
-                                        </svg>
-                `
-        } else {
-            learnMore.setAttribute("class", "row learnMore2 m-0")
-            learnMore.style.width = "200px"
-            learnMore.style.height = "50px"
-            learnMore.style.position = "relative"
-            learnMore.innerHTML = `
-            <p class=" d-flex" class="card-text" style="color: #073042;font-size: 1.25rem;">
-                        <b>${isOther[i].linkName}</b>
-                    </p>
-                    <svg id="arrow-to-right" style="transform: rotate(90deg);position:relative;top:-10px" width="30px"
-                        viewBox="0 0 16 16" class="bi bi-arrow-up-short" fill="#073042"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
-                    </svg>
-                `
-        }
-        cardBody.appendChild(subText)
-        cardBody.appendChild(topicText)
-        cardBody.appendChild(bodyText)
-        cardBody.appendChild(learnMore)
-        card.appendChild(cardImg)
-        card.appendChild(cardBody)
-        bodySt3.appendChild(card)
     }
     document.querySelectorAll(".learnMore").forEach(function (box) {
         box.addEventListener("mouseenter", function () {
