@@ -384,6 +384,26 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.read-more-svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 7rem;
+    top: -1.75rem;
+}
+
+.read-less-svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 7rem;
+    top: -1.75rem;
+}
+
+#less {
+    transform: rotate(180deg);
+}
+
 .less {
     position: relative;
     top: -21rem;
