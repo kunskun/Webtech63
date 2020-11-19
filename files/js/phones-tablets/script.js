@@ -1,3 +1,21 @@
+var controller = new ScrollMagic.Controller();
+TweenLite.defaultEase = Linear.easeNone;
+
+titles = document.querySelectorAll(".visually-hidden");
+var tl = new TimelineMax();
+
+tl.to(".visually-hidden", 1, { yPercent: -50 }, "label1");
+tl.from(titles[1], 0.5, { opacity: 1 }, "label1+=0.5");
+tl.to(".visually-hidden", 1, { yPercent: 100 }, "label2");
+tl.from(titles[2], 0.5, { opacity: 1 }, "label2+=0.5");
+
+new ScrollMagic.Scene({
+        triggerHook: "onLeave",
+        duration: "400%"
+    })
+    .setTween(tl)
+    .addTo(controller);
+
 function showBar() {
     if (document.getElementById('show').value === "0") {
         document.getElementById('show').setAttribute('value', '1')
