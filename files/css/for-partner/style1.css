@@ -412,7 +412,8 @@ section {
     width: 1260px;
     height: 730px;
     background-color: #3ddc84;
-    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     transform: translateX(319px);
     overflow: hidden;
 }

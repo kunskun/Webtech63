@@ -8,6 +8,10 @@
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 
+button {
+    outline: none;
+}
+
 .all {
     font-family: Android Euclid;
     opacity: 0;
@@ -301,7 +305,8 @@
 .bot-box {
     width: 1260px;
     height: 730px;
-    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: #4285f4;
     transform: translateX(319px);
     overflow: hidden;
@@ -416,6 +421,17 @@ section {
 
 .head-text-info {
     font-size: 20px;
+}
+
+.bg-wave {
+    z-index: 10;
+    opacity: 0;
+    top: -1000px;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    border: 3px solid #3ddc84;
+    position: absolute;
 }
 
 .first-nav {

@@ -372,7 +372,8 @@ section {
 .bot-box {
     width: 1260px;
     height: 630px;
-    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: #d7effe;
     transform: translateX(319px);
     overflow: hidden;
@@ -388,6 +389,7 @@ section {
     height: 50px;
     background-color: #073042;
     color: white;
+    outline: none;
 }
 
 
