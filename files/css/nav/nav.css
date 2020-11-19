@@ -23,8 +23,7 @@ nav, .nav-link, a{
 #a ul,#b ul{
     margin-left: 0px!important;
     position: relative;
-    left: 732px;
-    
+    left: 746.5px;
 }
 a:hover {
     text-decoration: none;
@@ -66,7 +65,7 @@ a:hover {
 }
 #subnav {
     position: relative;
-    top: 0; 
+    top: -70px; 
     transition: top 0.3s; 
 }
   
@@ -81,25 +80,28 @@ a:hover {
     margin-left: 20.5%;
     position: relative;
     transition: top 0.3s;
+    top: -45px;
+    z-index: 1;
 }
 #progress-bar{
     background-color: black;
     width: 0%;
     height: 4px;
-    top: -6px;
+    top: -53px;
     left: 2000px;
     position: relative;
     transition: top 0.3s;
+    z-index: 1;
 }
 #progress-bar-2{
     background-color: black;
     width: 0%;
     left: 2000px;
     height: 4px;
-    top: 4px;
+    top: -40px;
     position: relative;
     transition: top 0.3s;
+    z-index: 3;
 }
-#b{
-    background-color: white;
-}
+
+
