@@ -204,3 +204,13 @@ function res1() {
     document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
 
 }
+
+function more(id1, id2) {
+    document.getElementById(id1).style = "opacity:0; transition-duration: 1s;"
+    document.getElementById(id2).style = "opacity:1; transition-duration: 1s;"
+}
+
+function less(id1, id2) {
+    document.getElementById(id1).style = "opacity:1; transition-duration: 1s;"
+    document.getElementById(id2).style = "opacity:0; transition-duration: 1s;"
+}

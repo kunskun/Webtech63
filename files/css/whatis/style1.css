@@ -379,6 +379,25 @@ section {
     opacity: 1;
 }
 
+.card-text-info {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.less {
+    position: relative;
+    top: -21rem;
+    opacity: 0;
+}
+
+.more {
+    opacity: 1;
+}
+
+.head-text-info {
+    font-size: 20px;
+}
+
 .first-nav {
     width: 25%;
     height: 5px;
@@ -484,11 +503,12 @@ button {
 }
 
 .read-more1 {
-    width: 100px;
-    height: 20px;
+    width: 120px;
+    height: 50px;
     border: none;
     background-color: white;
     position: relative;
+    font-size: 18px;
 }
 
 .read-more {
