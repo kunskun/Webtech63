@@ -23,9 +23,11 @@ section {
 
 .box {
     width: 100%;
-    height: 820px;
+    height: 890px;
     background-color: #073042;
     overflow: hidden;
+    top: -65px;
+    position: relative;
 }
 
 .circle2 {
@@ -34,6 +36,7 @@ section {
     background-color: #4285f4;
     border-radius: 70%;
     position: relative;
+    top: 70px;
 }
 
 .circle3 {
@@ -57,7 +60,7 @@ section {
     width: 700px;
     height: auto;
     left: 62.5rem;
-    top: 5rem;
+    top: 10rem;
     z-index: 2;
     opacity: 0;
 }
