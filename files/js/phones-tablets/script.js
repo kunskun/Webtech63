@@ -106,20 +106,27 @@ function test2(obj) {
     document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-2')
 }
 
-var controller = new ScrollMagic.Controller();
-TweenLite.defaultEase = Linear.easeNone;
+function test3(obj) {
+    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-3')
+}
 
-titles = document.querySelectorAll(".visually-hidden");
-var tl = new TimelineMax();
+function test4(obj) {
+    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-4')
+}
 
-tl.to(".visually-hidden", 1, {yPercent: -200}, "label1");
-tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
-tl.to(".visually-hidden", 1, {yPercent: 1500}, "label2");
-tl.from(titles[2], 0.5, {opacity:0}, "label2+=0.5");
+document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
+document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+document.getElementById("eiei1").style = 'position: relative;transition-duration: 1s;margin-top:500px;margin-left: 800px;'
+function res() {
+    document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
+    document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
+    document.getElementById("eiei1").style = 'position: relative;transition-duration: 1s;margin-top:500px;margin-left: 1200px;'
+    
+}
 
-new ScrollMagic.Scene({
-  triggerHook: "onLeave",
-  duration: "400%"
-})
-  .setTween(tl)
-  .addTo(controller);
+function res1() {
+    document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
+    document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+    document.getElementById("eiei1").style = 'position: relative;transition-duration: 1s;margin-top:500px;margin-left: 800px;'
+
+}
