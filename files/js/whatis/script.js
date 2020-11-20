@@ -41,6 +41,7 @@ function go_lefttop(n) {
     switch (number1 + n) {
         case 0:
             var wid = "25%";
+
             break;
         case 1:
             var wid = "50%";
@@ -230,4 +231,20 @@ function less(id1, id2) {
     document.getElementById(id1).style = "opacity:1; transition-duration: 0.25s;"
     document.getElementById(id2).style = "opacity:0; transition-duration: 0.25s;top:-18rem"
 
+}
+
+function moveabit(id) {
+    if (id == "am") {
+        document.getElementById(id).style = "transform: translate(10px, -10px); transition-duration: 0.25s"
+    } else {
+        document.getElementById(id).style = "transform: translateX(10px); transition-duration: 0.25s"
+    }
+}
+
+function outabit(id) {
+    if (id == "am") {
+        document.getElementById(id).style = "transform: translateX(0px, 0px); transition-duration: 0.25s"
+    } else {
+        document.getElementById(id).style = "transform: translateX(0px); transition-duration: 0.25s"
+    }
 }

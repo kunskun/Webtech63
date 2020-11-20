@@ -148,3 +148,11 @@ let gsapBgWave = gsap.timeline().from(".bg-wave", {
 
     ease: Power1.easeOut,
 })
+
+function moveabit(id) {
+    document.getElementById(id).style = "transform: translate(10px, -10px); transition-duration: 0.25s"
+}
+
+function backabit(id) {
+    document.getElementById(id).style = "transform: translate(0px, 0px); transition-duration: 0.25s"
+}

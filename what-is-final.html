@@ -24,7 +24,7 @@
     <div class="pos-f-t sticky-top" id="b">
         <div class="sticky-top" id="mProgress2"></div>
         <div class="sticky-top" id="nav-point-2" style="width: 6.3%; left: 1029px;"></div>
-        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">  
+        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">
             <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 45px; position: relative;" onclick="bar4()">
                 <!-- logo homepage -->
                 <svg style="position:absolute;width:120px;margin-top:-65px">
@@ -122,7 +122,7 @@
                 // document.getElementById("mProgress").style.top = "-43px";
                 document.getElementById("nav-point-2").style.top = "-45px";
                 document.getElementById("mProgress2").style.top = "-43px";
-            }    
+            }
             prevScrollpos = currentScrollPos;
         }
     </script>
@@ -155,8 +155,8 @@
                 <div class="img-text">
                     <div class="moving-box-text"> Phone & Tablet.</div>
                 </div>
-                <button style="outline: none;" class="button1">See all
-                    <svg class="learn-arrow">
+                <button style="outline: none;" class="button1" onmouseenter="moveabit('arro1');" onmouseout="outabit('arro1')">See all
+                    <svg class="learn-arrow" id = "arro1">
                         <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
             1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
             0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
@@ -168,8 +168,8 @@
                 <div class="img-text">
                     <div class="moving-box-text">Wear OS by Google.</div>
                 </div>
-                <button style="outline: none;" class="button1">See all
-                    <svg class="learn-arrow">
+                <button style="outline: none;" class="button1" onmouseenter="moveabit('arro2');" onmouseout="outabit('arro2')">See all
+                    <svg class="learn-arrow" id = "arro2">
                         <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
             1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
             0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
@@ -181,8 +181,8 @@
                 <div class="img-text">
                     <div class="moving-box-text">Android Auto.</div>
                 </div>
-                <button style="outline: none;" class="button1">See all
-                    <svg class="learn-arrow">
+                <button style="outline: none;" class="button1" onmouseenter="moveabit('arro3');" onmouseout="outabit('arro3')">See all
+                    <svg class="learn-arrow" id = "arro3">
                         <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
                 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
@@ -195,8 +195,8 @@
                 <div class="img-text">
                     <div class="moving-box-text"> Android TV.</div>
                 </div>
-                <button style="outline: none;" class="button1">See all
-                    <svg class="learn-arrow">
+                <button style="outline: none;" class="button1" onmouseenter="moveabit('arro4');" onmouseout="outabit('arro4')">See all
+                    <svg class="learn-arrow" id = "arro4">
 
                         <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
@@ -213,7 +213,7 @@
         <div class="wrap-button">
             <button style="outline: none;  position: relative; left: 94rem;" class="move1" onclick="go_righttop(-1)">
                 <div class="aro-box">
-                    <svg class="flip" id="ic1" viewBox="0 0 13 13">
+                    <svg class="flip" id="ic1" viewBox="0 0 13 13" style="opacity: 0.2;" id="righ1">
                         <path
                             d="M.8 7.4h9.3L6 11.6c-.3.3-.3.9 0 1.2.3.3.9.3 1.2 0l5.5-5.6c.3-.3.3-.9 0-1.2L7.3.3C7 0 6.4 0 6.1.3s-.3.9 0 1.2l4.1 4.2H.8c-.4-.1-.8.3-.8.8s.4.9.8.9z"
                             fill="currentColor"></path>
@@ -222,7 +222,7 @@
             </button>
             <button style="outline: none;  position: relative; left: 94rem;" class="move1" onclick="go_lefttop(1)">
                 <div class="aro-box">
-                    <svg id="ico-arrow-external" viewBox="0 0 13 13">
+                    <svg id="ico-arrow-external" viewBox="0 0 13 13" id="left1">
                         <path
                             d="M.8 7.4h9.3L6 11.6c-.3.3-.3.9 0 1.2.3.3.9.3 1.2 0l5.5-5.6c.3-.3.3-.9 0-1.2L7.3.3C7 0 6.4 0 6.1.3s-.3.9 0 1.2l4.1 4.2H.8c-.4-.1-.8.3-.8.8s.4.9.8.9z"
                             fill="currentColor"></path>
@@ -342,14 +342,14 @@
             <div class="left-text med-len">Your phone stays safe with built-in security.</div>
             <div class="right-text med info-text sec-error">When you have Android, you have security that’s right there out of the box and never stops working. Google Play Protect scans all your apps, the software gets regular security updates and the platform is always improving. It’s like a security
                 guard that never takes a break, a nap or a vacation.</div>
-            <a class="learn-button secur-move">Learn more
-                <svg class="learn-arrow1">
+            <button class="learn-button secur-move" onmouseenter="moveabit('arro6');" onmouseout="outabit('arro6')">Learn more
+                <svg class="learn-arrow1" id = "arro6">
                     <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                     1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
                     0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
                     11H5c-.55 0-1 .45-1 1s.45 1 1 1z">
                 </svg>
-            </a>
+            </button>
         </div>
 
     </section>
@@ -361,8 +361,8 @@
             <div class="left-text med-len">You stay in control of your data.</div>
             <div class="left-text info-text control-error">On Android, you get to decide when and if your data is shared, like your Web & App Activity or Location History. If an app accesses your location while you are not using it, you’ll get a notification. And if you ever want to change permissions,
                 all your Privacy settings are in one place. It’s privacy, with you in the driver’s seat.</div>
-            <button style="outline: none;left: 22.5rem; top: 7rem;" class="learn-button move-balance">Learn more
-                <div class="svg-button" style="left: 6.5rem;">
+            <button style="outline: none;left: 22.5rem; top: 7rem;" class="learn-button move-balance" onmouseenter="moveabit('am');" onmouseout="outabit('am')">Learn more
+                <div class="svg-button" id="am" >
                     <svg id="ico-arrow-large" viewBox="0 0 24 24">
                         <g fill="none" fill-rule="evenodd">
                             <path
@@ -385,8 +385,8 @@
                 <img style="width: 450px;height: auto; " src="static/images/what-is/11.jpg" alt="">
             </div>
             <div class="info-text fam-text">The dashboard is a great example. It gives you a snapshot of your screen time, notifications, how often you unlock your phone and more. And it’s just one of the many tools you get with Digital Wellbeing.</div>
-            <button style="outline: none;" class="learn-button move-balance">Learn more
-                <svg class="learn-arrow1">
+            <button style="outline: none;" class="learn-button move-balance" onmouseenter="moveabit('arro7');" onmouseout="outabit('arro7')">Learn more
+                <svg class="learn-arrow1" id="arro7">
                     <path d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 
                 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 
                 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 
