@@ -14,6 +14,7 @@ nav, .nav-link, a{
     font-size: 22px;
     font-weight: 400;
     color: black;
+    opacity: 0;
 }
 .nav-item{
     width: 140px;
