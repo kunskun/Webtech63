@@ -331,12 +331,13 @@ document.querySelectorAll(".button-sec6").forEach(function(box) {
 });
 
 //section7
-function openVideo() {
+function openVideo(link) {
     let body = document.querySelector("body")
     body.style.overflowY = "hidden"
     let stageBg = document.querySelector(".stageBg")
     let video = document.querySelector(".video-content")
     let button = document.querySelector(".closeButton")
+    video.setAttribute("src", link)
     button.removeAttribute("hidden")
     video.removeAttribute("hidden")
     stageBg.removeAttribute("hidden")
@@ -348,6 +349,7 @@ function closeVideo() {
     let stageBg = document.querySelector(".stageBg")
     let video = document.querySelector(".video-content")
     let button = document.querySelector(".closeButton")
+    video.removeAttribute("src")
     video.setAttribute("hidden", true)
     stageBg.setAttribute("hidden", true)
     button.setAttribute("hidden", true)
