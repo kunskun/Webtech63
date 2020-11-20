@@ -283,13 +283,18 @@ body {
     border: none;
 }
 .vbar1{
-    transform: translate(-260px, -126.5px) rotate(180deg);
+    
+    height:40px;
+    width: 50px;
+    transform: translate(-10px, -16.5px) rotate(180deg);
     fill:  #EAECEE;
 }
 .vbar2{
+    
     fill: black;
 }
 .button-group{
     transform: translate(1550px, 520px);
 }
+
 
