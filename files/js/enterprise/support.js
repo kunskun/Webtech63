@@ -323,101 +323,101 @@ function closeVideo() {
 
 
 
-let jsonSt7 = [{
-    "video": "OIvnz7fb0p0",
-    "img": "https://lh3.googleusercontent.com/q7GA8_6RdFf2WeReYEI73qphEsvZG_SPTiOH-aCdAmfezpyOuDMajpjUAzzhcQf1rosEqTQ8JE6YuHb3S3-TcNH29hRhEf3vcMNQ=w933-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/-A3PyTqcdPy-VJKiNvRo32b4I3idWx-w81gt5VUGR762ZhtBZodrt7JHgBYwBBvRy_TqV5lnt3zQLGeLhmxUTJ2RXeQ11j4RiKy93A=w200-e365-v1",
-    "headText": "Walmart turned to Android for more accuracy and better productivity.",
-    "quote": "“There were so many frameworks for developers that it was an easy pick for us.”",
-    "subText": "Travis Folck, Head of Design Systems, Walmart"
-}, {
-    "video": "oCw3zhHGU5I",
-    "img": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
-    "headText": "SNCF partners with Android for more mobile agility.",
-    "quote": "“For the business CIO, the value of Android Enterprise is to give them much more agility and opportunities in their mobility infrastructure management.”",
-    "subText": "Antoine Houllgatte, Digital Workplace Project Deployment Manager, SNCF"
-}, {
-    "video": "LNEYdxi9ygM",
-    "img": "https://lh3.googleusercontent.com/LXYCimidv7prkjdDyB4gwvJjfRJJFI22-HMI2ZUUOcP0ehYiWmAn816Zl-bGMOrY8vE73aL7b63W532bQivoRpOqsyiM8fKziEh0kg=w200-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
-    "headText": "Driving product innovation at Pitney Bowes.",
-    "quote": "“The Android platform is probably one of the most exciting things we’ve added to our products in a long, long time, because the possibilities are endless.”",
-    "subText": "Chris Giles, VP, Global Product Management, Pitney Bowes"
-}, {
-    "video": "KdkBcq0o6Ic",
-    "img": "https://lh3.googleusercontent.com/BO0d7yw5eR303fBe0HSYliNNQim-DH4EYSk1ISM7UxDCX4dhz3SlrozeoG06ndmD1G4Tb41qBIInUHpHlJ1jazp6G61ehm_kjRii5Eg=w933-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/UJRRgPZXZ9RQ9jkZs3l9qpAyezkNNpzXs2OInc7qiKp6gTllippJOPTCuAZyhJ0z0WYbpexIu6xa6sG5ZmJq9DKjYcEKhVHJnulBlA=w200-rw-e365-v1",
-    "headText": "Safelite Autoglass empowers their field techs to work smarter and more efficiently.",
-    "quote": "“Anything that we could build into this functionality to make it easy for techs to use was important, and the very flexible framework that Android gave us allowed us to get this down to one click.”",
-    "subText": "Nate Beckman, Field Systems Business Analyst, Safelite AutoGlass"
-}, {
-    "video": "UAhH21YfLP4",
-    "img": "https://lh3.googleusercontent.com/ntAWsKrKcHV6uIRCmcGwa-e274LAdLw3v1jXya-t4HFqkkG6spzeU-RsIYlSJjUCiB1G731b8dlqnu8Kzy6pKKytv8ONZkZ5XQc-ww=w933-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/775oFkHCS4Eay_jq9IHQvhhwC-mGBziPVnf4pmV2SXckJ4p-bsHTNQj5gZB9il3Bsj89cRR49upnw6-erGVbep-Um3ME8GwQ7IH1=w200-rw-e365-v1",
-    "headText": "Marks & Spencer used the Android platform to solve key retail challenges.",
-    "quote": "“The implementation was really smooth. We surprised a lot of people by rolling out 9,000 devices in six months.”",
-    "subText": "Andrew Bull, IT Business Solution Manager, Marks & Spencer"
-}, {
-    "video": "gHDP4CTfFP8",
-    "img": "https://lh3.googleusercontent.com/Sqzy_L26gmH7KhCxUtI86bwDJQBImsAPJVLLwTnlhCnOPXqFGcok6yksk-csN9TqKS9RePVSCzuPa7vKzl6x_d1IfEw0Pb2cfj-9Ww=w820-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/hQqWNokqANpQAHU5CGjrwZIyaEhdSe8xyo9gq2s3TnHTUjQsdpvKiTY32IcK0sThRjl5Ncm2-nLLOLmAH1jY1eDwqnI7f6KL_CD15Q=w176-rw-e365-v1",
-    "headText": "With Android, Guardian Life boosts productivity.",
-    "quote": "“The Android platform creates a lot of opportunity around productivity tools. In addition to that, we also have an opportunity to deploy applications.”",
-    "subText": "Daniel Johnson, CTO, Guardian Life Insurance"
-}, {
-    "video": "GWmz4QiZeQs",
-    "img": "https://lh3.googleusercontent.com/S0AetUIeTRSQhZX2u6sAqlWMkwYV5tdV3SKk2Ce8NjW-6eRNf4BrgEMajat4x7c46IicFLBtl-Z6EB5MzPeIy5sm1Y4Y7DCM_xeoDz0=w820-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/8mQI5sbTTLtIcbnTpAzoTdYBRT1D690wDJW3Ma3vF-0qoJC23g5K27W3KwIDTfj3BN-4Op4rXIs4w8Qg6WGzZBNyMsE62-TKhm5e=w176-rw-e365-v1",
-    "headText": "Transforming the guest experience at The Peninsula Hotels.",
-    "quote": "“Android is definitely a flexible tool for us to go above and beyond what our guests require, and above and beyond what we’d like our technology and devices to become.”",
-    "subText": "Christopher Chan, Senior Manager, R&D, The Hongkong and Shanghai Hotels, Limited"
-}, {
-    "video": "oHMLI_CALLk",
-    "img": "https://lh3.googleusercontent.com/bsQ7sbg9uRqb0i60sZnitf7u-aAWQ2kIwThWzalX9DVXh--AAmSv9CERsEEVqc4tOKUwpuuDLFTLKSLsUX5wIj4m1FMWwiOdF3er=w820-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/CyPZu-kgdzq7yP_mYluNDQYfiibwglK3D1rOWhbvBw6g_CNXa4MCKI5vkCbOgso7ok80oA41SUA-q79UwOQlh7naBznx0qs_9wS1FA=w176-rw-e365-v1",
-    "headText": "Android helps MiCab manage devices and protect data.",
-    "quote": "“We're actually managing all of our devices via the cloud, remotely, instead of individually managing it.”",
-    "subText": "Eddie Ybañez, Co-founder, MiCab"
-}, {
-    "video": "2kuGv9GNbTQ",
-    "img": "https://lh3.googleusercontent.com/5yMP-Ay_B-oU3pM-CyfTrG7au413b5bINcSScVsBAOx3b-IXS90quB6bn57Mmi-JkFT6odpio04DtEgNT8064_zoyWsi6Kq_mAHaadI=w820-rw-e365-v1",
-    "logo": "https://lh3.googleusercontent.com/RyCdOpLuIRf8lN0f3nxmU94ScnwS1QuZC_mCCRu5FB70KWjbsyS_PV_0xqaYOoxNcwZd4ANIwztp1M9pZKJHAyJqu5YdYQ8DzVqx1w=w176-rw-e365-v1",
-    "headText": "Timely deliveries and satisfied customers at Chronopost.",
-    "quote": "“Chronopost chose Android Enterprise to benefit from this solution in terms of data security, oversight of mobile devices and management of applications via Google Play.”",
-    "subText": "Chams Fathallah, Director of IT Systems for Transport, Chronopost"
-}, ]
+// let jsonSt7 = [{
+//     "video": "OIvnz7fb0p0",
+//     "img": "https://lh3.googleusercontent.com/q7GA8_6RdFf2WeReYEI73qphEsvZG_SPTiOH-aCdAmfezpyOuDMajpjUAzzhcQf1rosEqTQ8JE6YuHb3S3-TcNH29hRhEf3vcMNQ=w933-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/-A3PyTqcdPy-VJKiNvRo32b4I3idWx-w81gt5VUGR762ZhtBZodrt7JHgBYwBBvRy_TqV5lnt3zQLGeLhmxUTJ2RXeQ11j4RiKy93A=w200-e365-v1",
+//     "headText": "Walmart turned to Android for more accuracy and better productivity.",
+//     "quote": "“There were so many frameworks for developers that it was an easy pick for us.”",
+//     "subText": "Travis Folck, Head of Design Systems, Walmart"
+// }, {
+//     "video": "oCw3zhHGU5I",
+//     "img": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
+//     "headText": "SNCF partners with Android for more mobile agility.",
+//     "quote": "“For the business CIO, the value of Android Enterprise is to give them much more agility and opportunities in their mobility infrastructure management.”",
+//     "subText": "Antoine Houllgatte, Digital Workplace Project Deployment Manager, SNCF"
+// }, {
+//     "video": "LNEYdxi9ygM",
+//     "img": "https://lh3.googleusercontent.com/LXYCimidv7prkjdDyB4gwvJjfRJJFI22-HMI2ZUUOcP0ehYiWmAn816Zl-bGMOrY8vE73aL7b63W532bQivoRpOqsyiM8fKziEh0kg=w200-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/UBr4WXTZtrnsKLFBuWsO6MD8R5tKWfbdAijP6MVxrUti4QVUABZfFJ26ugdsGPPCrd2PGMNPbHGezJLvfU1VlIccHBR62rGZxplJDg=w200-rw-e365-v1",
+//     "headText": "Driving product innovation at Pitney Bowes.",
+//     "quote": "“The Android platform is probably one of the most exciting things we’ve added to our products in a long, long time, because the possibilities are endless.”",
+//     "subText": "Chris Giles, VP, Global Product Management, Pitney Bowes"
+// }, {
+//     "video": "KdkBcq0o6Ic",
+//     "img": "https://lh3.googleusercontent.com/BO0d7yw5eR303fBe0HSYliNNQim-DH4EYSk1ISM7UxDCX4dhz3SlrozeoG06ndmD1G4Tb41qBIInUHpHlJ1jazp6G61ehm_kjRii5Eg=w933-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/UJRRgPZXZ9RQ9jkZs3l9qpAyezkNNpzXs2OInc7qiKp6gTllippJOPTCuAZyhJ0z0WYbpexIu6xa6sG5ZmJq9DKjYcEKhVHJnulBlA=w200-rw-e365-v1",
+//     "headText": "Safelite Autoglass empowers their field techs to work smarter and more efficiently.",
+//     "quote": "“Anything that we could build into this functionality to make it easy for techs to use was important, and the very flexible framework that Android gave us allowed us to get this down to one click.”",
+//     "subText": "Nate Beckman, Field Systems Business Analyst, Safelite AutoGlass"
+// }, {
+//     "video": "UAhH21YfLP4",
+//     "img": "https://lh3.googleusercontent.com/ntAWsKrKcHV6uIRCmcGwa-e274LAdLw3v1jXya-t4HFqkkG6spzeU-RsIYlSJjUCiB1G731b8dlqnu8Kzy6pKKytv8ONZkZ5XQc-ww=w933-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/775oFkHCS4Eay_jq9IHQvhhwC-mGBziPVnf4pmV2SXckJ4p-bsHTNQj5gZB9il3Bsj89cRR49upnw6-erGVbep-Um3ME8GwQ7IH1=w200-rw-e365-v1",
+//     "headText": "Marks & Spencer used the Android platform to solve key retail challenges.",
+//     "quote": "“The implementation was really smooth. We surprised a lot of people by rolling out 9,000 devices in six months.”",
+//     "subText": "Andrew Bull, IT Business Solution Manager, Marks & Spencer"
+// }, {
+//     "video": "gHDP4CTfFP8",
+//     "img": "https://lh3.googleusercontent.com/Sqzy_L26gmH7KhCxUtI86bwDJQBImsAPJVLLwTnlhCnOPXqFGcok6yksk-csN9TqKS9RePVSCzuPa7vKzl6x_d1IfEw0Pb2cfj-9Ww=w820-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/hQqWNokqANpQAHU5CGjrwZIyaEhdSe8xyo9gq2s3TnHTUjQsdpvKiTY32IcK0sThRjl5Ncm2-nLLOLmAH1jY1eDwqnI7f6KL_CD15Q=w176-rw-e365-v1",
+//     "headText": "With Android, Guardian Life boosts productivity.",
+//     "quote": "“The Android platform creates a lot of opportunity around productivity tools. In addition to that, we also have an opportunity to deploy applications.”",
+//     "subText": "Daniel Johnson, CTO, Guardian Life Insurance"
+// }, {
+//     "video": "GWmz4QiZeQs",
+//     "img": "https://lh3.googleusercontent.com/S0AetUIeTRSQhZX2u6sAqlWMkwYV5tdV3SKk2Ce8NjW-6eRNf4BrgEMajat4x7c46IicFLBtl-Z6EB5MzPeIy5sm1Y4Y7DCM_xeoDz0=w820-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/8mQI5sbTTLtIcbnTpAzoTdYBRT1D690wDJW3Ma3vF-0qoJC23g5K27W3KwIDTfj3BN-4Op4rXIs4w8Qg6WGzZBNyMsE62-TKhm5e=w176-rw-e365-v1",
+//     "headText": "Transforming the guest experience at The Peninsula Hotels.",
+//     "quote": "“Android is definitely a flexible tool for us to go above and beyond what our guests require, and above and beyond what we’d like our technology and devices to become.”",
+//     "subText": "Christopher Chan, Senior Manager, R&D, The Hongkong and Shanghai Hotels, Limited"
+// }, {
+//     "video": "oHMLI_CALLk",
+//     "img": "https://lh3.googleusercontent.com/bsQ7sbg9uRqb0i60sZnitf7u-aAWQ2kIwThWzalX9DVXh--AAmSv9CERsEEVqc4tOKUwpuuDLFTLKSLsUX5wIj4m1FMWwiOdF3er=w820-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/CyPZu-kgdzq7yP_mYluNDQYfiibwglK3D1rOWhbvBw6g_CNXa4MCKI5vkCbOgso7ok80oA41SUA-q79UwOQlh7naBznx0qs_9wS1FA=w176-rw-e365-v1",
+//     "headText": "Android helps MiCab manage devices and protect data.",
+//     "quote": "“We're actually managing all of our devices via the cloud, remotely, instead of individually managing it.”",
+//     "subText": "Eddie Ybañez, Co-founder, MiCab"
+// }, {
+//     "video": "2kuGv9GNbTQ",
+//     "img": "https://lh3.googleusercontent.com/5yMP-Ay_B-oU3pM-CyfTrG7au413b5bINcSScVsBAOx3b-IXS90quB6bn57Mmi-JkFT6odpio04DtEgNT8064_zoyWsi6Kq_mAHaadI=w820-rw-e365-v1",
+//     "logo": "https://lh3.googleusercontent.com/RyCdOpLuIRf8lN0f3nxmU94ScnwS1QuZC_mCCRu5FB70KWjbsyS_PV_0xqaYOoxNcwZd4ANIwztp1M9pZKJHAyJqu5YdYQ8DzVqx1w=w176-rw-e365-v1",
+//     "headText": "Timely deliveries and satisfied customers at Chronopost.",
+//     "quote": "“Chronopost chose Android Enterprise to benefit from this solution in terms of data security, oversight of mobile devices and management of applications via Google Play.”",
+//     "subText": "Chams Fathallah, Director of IT Systems for Transport, Chronopost"
+// }, ]
 
-let albumSt7 = document.querySelector("#album-st7");
-for (let i = 0; i < jsonSt7.length; i++) {
-    albumSt7.innerHTML += `
-                    <div class="p-0 d-flex" style="width: 100%;">
-                        <div class="card" style="width: 626px;border: none;">
-                            <div id="${'https://www.youtube.com/embed/'+jsonSt7[i].video}" style="cursor: pointer;" onclick="openVideo(this)">
-                                <svg style="z-index: 3;position:absolute; left:260;top:140px" class="modal-opener__play-icon"
-                                    width="96" height="96" xmlns="http://www.w3.org/2000/svg">
-                                    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-                                        <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
-                                        <path class="play-icon"
-                                            d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
-                                            fill="#073042" fill-rule="nonzero"></path>
-                                    </g>
-                                </svg>
-                                <img class="card-img-top"
-                                    src="${jsonSt7[i].img}"
-                                    alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="card-body mt-4"
-                            style="width: 500px; padding: 0px 80px 0px 0px;position: relative; margin: 0px 100px;">
-                            <img class="mb-5" style="width: 35%;" src="${jsonSt7[i].logo}" alt="">
-                            <p class="font-android font-weight-bold mb-5" style="font-size: 32px; line-height: 100%;">${jsonSt7[i].headText}</p>
-                            <p class="font-android mb-4" style="font-size: 20px;">${jsonSt7[i].quote}</p>
-                            <p class="font-roboto" style="font-size: 16px;">${jsonSt7[i].subText}</p>
-                        </div>
-                    </div>
-                `
-}
+// let albumSt7 = document.querySelector("#album-st7");
+// for (let i = 0; i < jsonSt7.length; i++) {
+//     albumSt7.innerHTML += `
+//                     <div class="p-0 d-flex" style="width: 100%;">
+//                         <div class="card" style="width: 626px;border: none;">
+//                             <div id="${'https://www.youtube.com/embed/'+jsonSt7[i].video}" style="cursor: pointer;" onclick="openVideo(this)">
+//                                 <svg style="z-index: 3;position:absolute; left:260;top:140px" class="modal-opener__play-icon"
+//                                     width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+//                                     <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+//                                         <circle stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="47" cy="47" r="47"></circle>
+//                                         <path class="play-icon"
+//                                             d="M44 42.8v10.4c0 .8.9 1.3 1.5.8l8.1-5.2c.6-.4.6-1.3 0-1.7L45.5 42c-.6-.4-1.5 0-1.5.8z"
+//                                             fill="#073042" fill-rule="nonzero"></path>
+//                                     </g>
+//                                 </svg>
+//                                 <img class="card-img-top"
+//                                     src="${jsonSt7[i].img}"
+//                                     alt="Card image cap">
+//                             </div>
+//                         </div>
+//                         <div class="card-body mt-4"
+//                             style="width: 500px; padding: 0px 80px 0px 0px;position: relative; margin: 0px 100px;">
+//                             <img class="mb-5" style="width: 35%;" src="${jsonSt7[i].logo}" alt="">
+//                             <p class="font-android font-weight-bold mb-5" style="font-size: 32px; line-height: 100%;">${jsonSt7[i].headText}</p>
+//                             <p class="font-android mb-4" style="font-size: 20px;">${jsonSt7[i].quote}</p>
+//                             <p class="font-roboto" style="font-size: 16px;">${jsonSt7[i].subText}</p>
+//                         </div>
+//                     </div>
+//                 `
+// }
 
 let jsonSt3 = [
     {
