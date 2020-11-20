@@ -8,6 +8,10 @@
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 
+button {
+    outline: none;
+}
+
 .all {
     font-family: Android Euclid;
     opacity: 0;
@@ -163,6 +167,9 @@
     position: relative;
     top: -7.5rem;
     left: 27rem;
+    -webkit-box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
+    box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
 }
 
 .error {
@@ -301,7 +308,8 @@
 .bot-box {
     width: 1260px;
     height: 730px;
-    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     background-color: #4285f4;
     transform: translateX(319px);
     overflow: hidden;
@@ -374,7 +382,8 @@ section {
     position: relative;
     left: 23rem;
     top: -20rem;
-    background-color: gray;
+    background-color: #DCDCDC;
+    opacity: 0.2;
     z-index: 1;
     opacity: 1;
 }
@@ -406,7 +415,7 @@ section {
 
 .less {
     position: relative;
-    top: -21rem;
+    top: -18rem;
     opacity: 0;
 }
 
@@ -415,7 +424,18 @@ section {
 }
 
 .head-text-info {
-    font-size: 20px;
+    font-size: 28px;
+}
+
+.bg-wave {
+    z-index: 10;
+    opacity: 0;
+    top: -1000px;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    border: 3px solid #3ddc84;
+    position: absolute;
 }
 
 .first-nav {

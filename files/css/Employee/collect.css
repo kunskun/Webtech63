@@ -8,6 +8,68 @@
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
 
+button:focus{
+    outline: none;
+}
+
+.arrow-move-left {
+    animation: 1s moveLeft;
+    animation-fill-mode: forwards;
+}
+
+.arrow-move-right {
+    animation: 1s moveRight;
+    animation-fill-mode: forwards;
+}
+
+.arrow-move-top{
+    transform: rotate(45deg);
+    animation: 1s moveTop;
+    animation-fill-mode: forwards;
+}
+
+.arrow-move-down {
+    transform: rotate(45deg);
+    animation: 1s moveDown;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        margin-left: 1%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: 1%;
+    }
+}
+
+@keyframes moveTop {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+    100% {
+        transform: translatex(5px) translatey(-5px);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translatex(5px) translatey(-5px)
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+    }
+}
+
 a {
     text-decoration: underline none;
     color: #000;

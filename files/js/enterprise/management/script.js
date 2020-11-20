@@ -100,12 +100,51 @@ document.getElementById("eiei1").style = 'position: relative;left:50rem;transiti
 function res() {
     document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
     document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
+    document.getElementById("last-but").style = "color:#3ddc84;transition-duration: 1s;";
     document.getElementById("eiei1").style = 'position: relative;left:75rem;transition-duration: 1s;'
 }
 
 function res1() {
     document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
     document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+    document.getElementById("last-but").style = "color:white;transition-duration: 1s;";
     document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
 
 }
+
+function openVideo() {
+    let body = document.querySelector("body")
+    body.style.overflowY = "hidden"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    button.removeAttribute("hidden")
+    video.removeAttribute("hidden")
+    stageBg.removeAttribute("hidden")
+}
+
+function closeVideo() {
+    let body = document.querySelector("body")
+    body.style.overflowY = "scroll"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    video.setAttribute("hidden", true)
+    stageBg.setAttribute("hidden", true)
+    button.setAttribute("hidden", true)
+}
+
+let gsapBgWave = gsap.timeline().from(".bg-wave", {
+    repeat: -1,
+    opacity: 1,
+    scale: 0,
+    duration: 5,
+    stagger: {
+        each: 0.6,
+        opacity: 0,
+        from: "center",
+        yoyo: true,
+    },
+
+    ease: Power1.easeOut,
+})
