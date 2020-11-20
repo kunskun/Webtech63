@@ -56,7 +56,9 @@ a:hover {
     position: relative; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
   
   /* Style the nav-animate links */
 #nav-animate a {
@@ -83,7 +85,7 @@ a:hover {
     top: -45px;
     z-index: 1;
 }
-#progress-bar{
+#nav-point-1{
     background-color: black;
     width: 0%;
     height: 4px;
@@ -93,7 +95,7 @@ a:hover {
     transition: top 0.3s;
     z-index: 1;
 }
-#progress-bar-2{
+#nav-point-2{
     background-color: black;
     width: 0%;
     left: 2000px;

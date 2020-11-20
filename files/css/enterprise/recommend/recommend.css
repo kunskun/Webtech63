@@ -90,14 +90,14 @@ h4{
     font-weight: 7000;
     line-height: 40px;
 }
-.learnMore {
+.learnMore, .learnMore2 {
 	cursor: pointer;
 }
 b{
     font-family: Android Euclid;
 }
 .progress{
-    background-color: #D6DBDF;
+    background-color: white;
     width: 64%;
     height: 2px;
     margin-left: 18%;
@@ -105,11 +105,11 @@ b{
 }
 .progress-bar{
     background-color: black;
-    width: 90%;
+    width: 80%;
 }
 h5{
     font-family: Android Euclid;
-    font-size: 46px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 56px;
 }
@@ -122,6 +122,10 @@ h5{
     width: 50px;
     height: 40px;
 }
+.bs:hover{
+    background-color: white;
+    border: none;
+}
 .vbar1{
     transform: translate(-260px, -126.5px) rotate(180deg);
     fill:  #EAECEE;
@@ -130,7 +134,7 @@ h5{
     transform: translate(1470px, 20px);
 }
 .data-box{
-    width: 580px;
+    width: 520px;
     position: absolute;
     display: inline-block;
 }

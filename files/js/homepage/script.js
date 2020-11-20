@@ -1,10 +1,31 @@
 gsap.to(".hid", {y: -1, opacity: 1, duration: 0.5, delay: 1});
-gsap.to(".img1", {x: 40, y: 0, duration: 1.3});
-gsap.to(".img2", {x: 260, y: -60, duration: 1});
-gsap.to(".img3", {x: -40, y: 170, duration: 1.5});
-gsap.to(".img4", {x: 50, y: -90, duration: 1.7});
-gsap.to(".c1", {scale: 4.2, duration: 1.8});
-gsap.to(".c2", {x: -1340, y: -680, duration: 1.5});
+gsap.to(".imgb", {x: -100, opacity: 1, duration: 0.3, delay: 1.2});
+gsap.to(".c1", {scale: 4.2, duration: 1.5});
+
+var controller = new ScrollMagic.Controller();
+TweenLite.defaultEase = Linear.easeNone;
+
+var titles = document.querySelectorAll(".first-sec-box");
+var tl = new TimelineMax();
+tl.to(".first-sec-box", 1, {width: '120%'}, "label1");
+tl.from(titles[1], 0.5, {opacity:0}, "label1+=0.5");
+new ScrollMagic.Scene({
+  triggerHook: "onLeave",
+  duration: "400%"
+})
+  .setTween(tl)
+  .addTo(controller);
+
+var titleC = document.querySelectorAll(".c1");
+var tc = new TimelineMax();
+tc.to(".c1", 1, {y: 300}, "label1");
+tc.from(titleC[1], 0.5, {opacity:0}, "label1+=0.5");
+new ScrollMagic.Scene({
+    triggerHook: "onLeave",
+    duration: "400%"
+  })
+    .setTween(tc)
+    .addTo(controller);
   
 gsap.utils.toArray(".d1").forEach(dhov => {
     const c = document.querySelector(".c3");
@@ -87,17 +108,17 @@ gsap.utils.toArray(".pa").forEach(vec => {
 
 
 function nextSlide(){
-    document.getElementById('hovf').style = 'margin-left:6.5%; transition-duration: 0.5s;'
-    document.getElementById('progress-bar').style = 'width: 100%; transition-duration: 0.5s;'
-    document.getElementById('vbar1').style = 'fill: black; transition-duration: 0.5s;'
-    document.getElementById('vbar2').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+    document.getElementById('hovf').style = 'margin-left:6.5%; transition-duration: 0.2s;'
+    document.getElementById('progress-bar').style = 'width: 100%; transition-duration: 0.2s;'
+    document.getElementById('vbar1').style = 'fill: black; transition-duration: 0.2s;'
+    document.getElementById('vbar2').style = 'fill: #EAECEE; transition-duration: 0.2s;delay: 1.2s'
 }
 
 function prevSlide(){
-    document.getElementById('hovf').style = 'margin-left:20%; transition-duration: 0.5s;'
-    document.getElementById('progress-bar').style = 'width: 90%; transition-duration: 0.5s;'
-    document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
-    document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
+    document.getElementById('hovf').style = 'margin-left:20%; transition-duration: 0.4s;'
+    document.getElementById('progress-bar').style = 'width: 80%; transition-duration: 0.4s;'
+    document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.4s;delay: 1.4s'
+    document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.4s;'
 }
 
 //learn more

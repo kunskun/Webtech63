@@ -49,7 +49,7 @@ function bar_en(num){
     }
 }
 // main menu=bar move
-gsap.to(".navbar-brand", {y: -45, duration: 0.5});
+gsap.to(".navbar-brand", {y: -55, duration: 0.5});
 gsap.to("#nav1", {y: 45, duration: 0.5, delay: 0.1});
 gsap.to("#nav2", {y: 45, duration: 0.5, delay: 0.2});
 gsap.to("#nav3", {y: 45, duration: 0.5, delay: 0.3});
@@ -58,7 +58,7 @@ gsap.to("#nav5", {y: 45, duration: 0.5, delay: 0.5});
 
 // pointer main menu-bar move
 gsap.to("#mProgress2", {y: 45, duration: 0.5, delay: 0.4});
-gsap.to("#progress-bar-2", {y: 45, duration: 0.5, delay: 0.4});
+gsap.to("#nav-point-2", {y: 45, duration: 0.5, delay: 0.4});
 
 // sub menu=bar move
 gsap.to("#sub1", {y: 25, duration: 0.5, delay: 0.6});
@@ -71,6 +71,6 @@ gsap.to("#sub7", {y: 25, duration: 0.5, delay: 1.2});
 
 // pointer sub menu-bar move
 gsap.to("#mProgress", {y: 45, duration: 0.5, delay: 0.6});
-gsap.to("#progress-bar", {y: 45, duration: 0.5, delay: 0.6});
+gsap.to("#nav-point-1", {y: 45, duration: 0.5, delay: 0.6});
 
 gsap.to("#bg-nav", {y: 85, duration: 0.5, delay: 0.6});

@@ -185,17 +185,17 @@ function prevSlide(){
 }
 
 function nextSlide2(){
-  document.getElementById('hovf2').style = 'margin-left:0%; transition-duration: 0.5s;'
-  document.getElementById('progress-bar-2').style = 'width: 100%; transition-duration: 0.5s;'
-  document.getElementById('vbar3').style = 'fill: black; transition-duration: 0.5s;'
-  document.getElementById('vbar4').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+  document.getElementById('hovf2').style = 'margin-left:0%; transition-duration: 0.2s;'
+  document.getElementById('progress-bar-2').style = 'width: 100%; transition-duration: 0.2s;'
+  document.getElementById('vbar3').style = 'fill: black; transition-duration: 0.2s;'
+  document.getElementById('vbar4').style = 'fill: #EAECEE; transition-duration: 0.2s; delay: 1.2s'
 }
 
 function prevSlide2(){
-  document.getElementById('hovf2').style = 'margin-left:16%; transition-duration: 0.5s;'
-  document.getElementById('progress-bar-2').style = 'width: 90%; transition-duration: 0.5s;'
-  document.getElementById('vbar3').style = 'fill: #EAECEE; transition-duration: 0.5s;'
-  document.getElementById('vbar4').style = 'fill: black; transition-duration: 0.5s;'
+  document.getElementById('hovf2').style = 'margin-left:16%; transition-duration: 0.4s;'
+  document.getElementById('progress-bar-2').style = 'width: 80%; transition-duration: 0.4s;'
+  document.getElementById('vbar3').style = 'fill: #EAECEE; transition-duration: 0.4s; delay: 1.4s'
+  document.getElementById('vbar4').style = 'fill: black; transition-duration: 0.4s;'
 }
 
 gsap.utils.toArray(".d1").forEach(dhov => {

@@ -34,10 +34,10 @@
     <link rel="stylesheet" href="files/css/nav/nav.css">
     <div class="pos-f-t sticky-top" id="b" style="transform: translateY(-6px);">
         <div class="sticky-top" style="height: 1px; top: -45px; position: relative; z-index: 3;" id="mProgress2"></div>
-        <div class="sticky-top" id="progress-bar-2" style="width: 4.2%; left: 1428px;"></div>
+        <div class="sticky-top" id="nav-point-2" style="width: 4.2%; left: 1428px;"></div>
         <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2; background-color: white;">
             
-            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 45px; position: relative;"
+            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 55px; position: relative;"
                 onclick="bar4()">
                 <!-- logo homepage -->
                 <svg style="position:absolute;width:120px;;margin-top:-65px">
@@ -75,7 +75,7 @@
             </ul>
         </nav>
         <div class="mt-1 mb-2" style="height: 1px; position: relative; left: -40px;" id="mProgress"></div>
-        <div id="progress-bar" style="width: 4%;    left: 780px;"></div>
+        <div id="nav-point-1" style="width: 4%;    left: 780px;"></div>
 
         <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
             <div id="bg-nav" style="width: 100%; height: 80px; background-color: white; position: absolute; left: 0px;"> 
@@ -125,15 +125,15 @@
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("b").style = "top:-6px; transition: 0.5s;";
-                document.getElementById("progress-bar").style.top = "-53px";
+                document.getElementById("nav-point-1").style.top = "-53px";
                 document.getElementById("mProgress").style.top = "-45px";
-                document.getElementById("progress-bar-2").style.top = "-40px";
+                document.getElementById("nav-point-2").style.top = "-40px";
                 document.getElementById("mProgress2").style.top = "-45px";
             } else {
-                document.getElementById("b").style = "top:-78px; transition: 0.2s;";
-                document.getElementById("progress-bar").style.top = "-43px";
+                document.getElementById("b").style = "top:-85px; transition: 0.2s;";
+                document.getElementById("nav-point-1").style.top = "-50px";
                 document.getElementById("mProgress").style.top = "-43px";
-                document.getElementById("progress-bar-2").style.top = "-45px";
+                document.getElementById("nav-point-2").style.top = "-45px";
                 document.getElementById("mProgress2").style.top = "-43px";
             }
             prevScrollpos = currentScrollPos;
@@ -285,7 +285,7 @@
             </div>
             <div class="col-6">
                 <img src="files/images/enterprise/unnamed (3).webp" alt="" width="90%" style=" border-radius: 10px;
-                        transform: translate(-80px,-235px);">
+                        transform: translate(-80px,-235px); box-shadow:  0 15px 30px 0 rgba(0, 0, 0, 0.12);">
             </div>
             <div class="col-6" style="margin-top: 7%;">
                 <h2>Manage <br>your mobile <br>fleet.</h2>

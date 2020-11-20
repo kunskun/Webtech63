@@ -88,17 +88,17 @@ gsap.registerEffect({
     });
   });
   function nextSlide2(){
-    document.getElementById('hovf2').style = 'margin-left:-14.5%; margin-top: 5%; transition-duration: 0.5s;'
-    document.getElementById('progress-bar').style = 'width: 100%; transition-duration: 0.5s;'
-    document.getElementById('vbar1').style = 'fill: black; transition-duration: 0.5s;'
-    document.getElementById('vbar2').style = 'fill: #EAECEE; transition-duration: 0.5s;'
+    document.getElementById('hovf2').style = 'margin-left:0%; margin-top: 5%; transition-duration: 0.2s;'
+    document.getElementById('progress-bar').style = 'width: 100%; transition-duration: 0.2s;'
+    document.getElementById('vbar1').style = 'fill: black; transition-duration: 0.2s;'
+    document.getElementById('vbar2').style = 'fill: #EAECEE; transition-duration: 0.2s; delay: 1.2s;'
   }
   
   function prevSlide2(){
-    document.getElementById('hovf2').style = 'margin-left:18%; margin-top: 5%; transition-duration: 0.5s;'
-    document.getElementById('progress-bar').style = 'width: 90%; transition-duration: 0.5s;'
-    document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.5s;'
-    document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.5s;'
+    document.getElementById('hovf2').style = 'margin-left:18%; margin-top: 5%; transition-duration: 0.4s;'
+    document.getElementById('progress-bar').style = 'width: 80%; transition-duration: 0.4s;'
+    document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.4s; delay: 1.4s;'
+    document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.4s;'
   }
 
     var play = true;
@@ -167,27 +167,32 @@ let gsapBgWave2 = gsap.timeline().from(".bg-wave2", {
 let isVideo = ["https://www.youtube.com/embed/Vd2iUYm8PuY", "https://www.youtube.com/embed/Cb3yx070mRc"]
 
 function openVideo(index){
-  let body = document.querySelector("body")
-  body.style.overflowY = "hidden"
-  let stageBg = document.querySelector(".stageBg")
-  let video = document.querySelector(".video-content")
-  let button = document.querySelector(".closeButton")
-  video.setAttribute("src", isVideo[index])
-  button.removeAttribute("hidden")
-  video.removeAttribute("hidden")
-  stageBg.removeAttribute("hidden")
+    document.querySelector(".pos-f-t").setAttribute("style","bisibility:hidden;")
+    let body = document.querySelector("body")
+    body.style.overflowY = "hidden"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    let nav = document.querySelector(".pos-f-t")
+    video.setAttribute("src", isVideo[index])
+    button.removeAttribute("hidden")
+    video.removeAttribute("hidden")
+    stageBg.removeAttribute("hidden")
+    nav.setAttribute("hidden", true)
 }
 
 function closeVideo() {
-  let body = document.querySelector("body")
-  body.style.overflowY = "scroll"
-  let stageBg = document.querySelector(".stageBg")
-  let video = document.querySelector(".video-content")
-  let button = document.querySelector(".closeButton")
-  
-  video.setAttribute("hidden", true)
-  stageBg.setAttribute("hidden", true)
-  button.setAttribute("hidden", true)
+    let body = document.querySelector("body")
+    body.style.overflowY = "scroll"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    let nav = document.querySelector(".pos-f-t")
+    video.setAttribute("hidden", true)
+    stageBg.setAttribute("hidden", true)
+    button.setAttribute("hidden", true)
+    video.removeAttribute("src")
+    nav.removeAttribute("hidden")
 }
 
                     
