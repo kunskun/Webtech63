@@ -71,7 +71,9 @@ a:hover {
     top: -70px; 
     transition: top 0.3s; 
 }
-  
+#sub1, #sub2, #sub3, #sub4, #sub5, #sub6, #sub7{
+    top: -50px;
+}  
 #subnav a {
     display: block;
     text-decoration: none;

@@ -49,7 +49,7 @@ function bar_en(num){
     }
 }
 // main menu=bar move
-gsap.to(".navbar-brand", {y: -55, duration: 0.2, delay: 0.5, opacity: 1});
+gsap.to(".navbar-brand", {y: -55, duration: 1.0, delay: 0.5, opacity: 1});
 gsap.to("#nav1", {y: 45, duration: 0.5, delay: 0.6});
 gsap.to("#nav2", {y: 45, duration: 0.5, delay: 0.7});
 gsap.to("#nav3", {y: 45, duration: 0.5, delay: 0.8});
@@ -61,13 +61,13 @@ gsap.to("#mProgress2", {y: 45, duration: 0.5, delay: 0.9});
 gsap.to("#nav-point-2", {y: 45, duration: 0.5, delay: 0.9});
 
 // sub menu=bar move
-gsap.to("#sub1", {y: 25, duration: 0.5, delay: 1.1});
-gsap.to("#sub2", {y: 25, duration: 0.5, delay: 1.2});
-gsap.to("#sub3", {y: 25, duration: 0.5, delay: 1.3});
-gsap.to("#sub4", {y: 25, duration: 0.5, delay: 1.4});
-gsap.to("#sub5", {y: 25, duration: 0.5, delay: 1.5});
-gsap.to("#sub6", {y: 25, duration: 0.5, delay: 1.6});
-gsap.to("#sub7", {y: 25, duration: 0.5, delay: 1.7});
+gsap.to("#sub1", {y: 70, duration: 0.5, delay: 1.1});
+gsap.to("#sub2", {y: 70, duration: 0.5, delay: 1.2});
+gsap.to("#sub3", {y: 70, duration: 0.5, delay: 1.3});
+gsap.to("#sub4", {y: 70, duration: 0.5, delay: 1.4});
+gsap.to("#sub5", {y: 70, duration: 0.5, delay: 1.5});
+gsap.to("#sub6", {y: 70, duration: 0.5, delay: 1.6});
+gsap.to("#sub7", {y: 70, duration: 0.5, delay: 1.7});
 
 // pointer sub menu-bar move
 gsap.to("#mProgress", {y: 45, duration: 0.5, delay: 1.0});
