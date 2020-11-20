@@ -229,8 +229,8 @@
                 </div>
                 <div class="right-text small-font" style="color: white;">No deployment is too big—or small. Whether you need to set up hundreds of devices automatically, or a single device manually. Android has enrollment options that work for you.
                 </div>
-                <button style="outline: none; background-color: transparent;" class="device-button">Learn more
-                    <div class="svg-button">
+                <button style="outline: none; background-color: transparent;" class="device-button" onmouseenter="moveabit('mm3')" onmouseout="backabit('mm3')">Learn more
+                    <div class="svg-button" id="mm3">
                         <svg id="ico-arrow-large" viewBox="0 0 24 24">
                             <g fill="none" fill-rule="evenodd">
                                 <path
@@ -310,16 +310,18 @@
             </div>
         </div>
         <div class="eiei"></div>
-        <button style="outline: none;border: none; background-color: transparent; position: relative; left: 55rem;top:-5rem">Learn
+        <button style="outline: none;border: none; background-color: transparent; position: relative; left: 55rem;top:-5rem" onmouseenter="moveabit('mm4')" onmouseout="backabit('mm4')">Learn
             more
-            <div class="svg-button" style="left: 6.5rem;">
-                <svg id="ico-arrow-large" viewBox="0 0 24 24">
-                    <g fill="none" fill-rule="evenodd">
-                        <path
-                            d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
-                            fill="currentColor"></path>
-                    </g>
-                </svg>
+            <div id="mm4">
+                <div class="svg-button" style="left: 6.5rem;">
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
+                                fill="currentColor"></path>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </button>
     </section>
@@ -344,16 +346,18 @@
 
         <div class="left-text big-font" style="width: 600px; left: 22.5rem;">Learn more about Android Enterprise.</div>
         <div class="right-text" style="font-family: Arial, Helvetica, sans-serif; top: -12rem; font-size: 20px;">Watch a video about Android’s management solutions for business. Read about how Android supports employee-owned and company-owned devices. Find it all in our resource center.</div>
-        <button style="outline: none;border: none; background-color: white; font-size: 20px; position: relative; top: -10rem; left: 66.5rem;">See
+        <button style="outline: none;border: none; background-color: white; font-size: 20px; position: relative; top: -10rem; left: 66.5rem;" onmouseenter="moveabit('nn')" onmouseout="backabit('nn')">See
             all resuourse
-            <div class="svg-button" style="top: -1.9rem; left: 11rem;transform: rotate(45deg);">
-                <svg id="ico-arrow-large" viewBox="0 0 24 24">
-                    <g fill="none" fill-rule="evenodd">
-                        <path
-                            d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
-                            fill="currentColor"></path>
-                    </g>
-                </svg>
+            <div id="nn">
+                <div class="svg-button" style="top: -1.9rem; left: 11rem;transform: rotate(45deg);">
+                    <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
+                                fill="currentColor"></path>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </button>
         <div class="card-warpper" id="wapper-card">
@@ -361,14 +365,16 @@
                 <img class="card-imgg" src="static/images/management/6.jpg" alt="">
                 <div class="card-text">Case study: supporting frontline work</div>
                 <button style="outline: none;" class="read-more1">Read the case study
-                    <div class="svg-button aro1">
-                        <svg id="ico-arrow-large" viewBox="0 0 24 24">
-                            <g fill="none" fill-rule="evenodd">
-                                <path
-                                    d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
-                                    fill="currentColor"></path>
-                            </g>
-                        </svg>
+                    <div id="nn2">
+                        <div class="svg-button aro1">
+                            <svg id="ico-arrow-large" viewBox="0 0 24 24">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path
+                                        d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41l-6.58-6.6a.996.996 0 1 0-1.41 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"
+                                        fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </div>
                     </div>
                 </button>
             </div>
