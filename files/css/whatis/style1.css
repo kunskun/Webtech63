@@ -167,6 +167,9 @@ button {
     position: relative;
     top: -7.5rem;
     left: 27rem;
+    -webkit-box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
+    box-shadow: 6px 10px 15px 0px rgba(50, 50, 50, 0.56);
 }
 
 .error {
@@ -379,7 +382,8 @@ section {
     position: relative;
     left: 23rem;
     top: -20rem;
-    background-color: gray;
+    background-color: #DCDCDC;
+    opacity: 0.2;
     z-index: 1;
     opacity: 1;
 }
@@ -411,7 +415,7 @@ section {
 
 .less {
     position: relative;
-    top: -21rem;
+    top: -18rem;
     opacity: 0;
 }
 
@@ -420,7 +424,7 @@ section {
 }
 
 .head-text-info {
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .bg-wave {

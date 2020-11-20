@@ -63,3 +63,11 @@ function res1() {
     document.getElementById("last-but").style = "color:white;transition-duration: 1s;";
 
 }
+
+function jang() {
+    document.getElementById("be-bot").style = 'opacity: 0.5; transition-duration: 0.3s';
+}
+
+function chad() {
+    document.getElementById("be-bot").style = 'opacity: 1; transition-duration:0.3s';
+}

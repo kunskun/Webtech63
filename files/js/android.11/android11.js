@@ -145,14 +145,14 @@ gsap.registerEffect({
     }
 })
 
-document.querySelectorAll(".hightlight-box").forEach(function (box) {
-    box.addEventListener("mouseenter", function () {
+document.querySelectorAll(".hightlight-box").forEach(function(box) {
+    box.addEventListener("mouseenter", function() {
         gsap.effects.boxEnter(this);
     });
 });
 
-document.querySelectorAll(".hightlight-box").forEach(function (box) {
-    box.addEventListener("mouseleave", function () {
+document.querySelectorAll(".hightlight-box").forEach(function(box) {
+    box.addEventListener("mouseleave", function() {
         gsap.effects.boxOut(this);
     });
 });
@@ -246,7 +246,7 @@ function changBG(id) {
                 card.setAttribute("hidden", "true");
                 let phone = document.querySelector(arrayPhone[i]);
                 phone.setAttribute("hidden", "true");
-                
+
                 gsap.to(arrayPhone[i], {
                     duration: 1,
                     opacity: 0
@@ -314,15 +314,15 @@ gsap.registerEffect({
     }
 })
 
-document.querySelectorAll(".button-sec6").forEach(function (box) {
-    box.addEventListener("mouseover", function () {
+document.querySelectorAll(".button-sec6").forEach(function(box) {
+    box.addEventListener("mouseover", function() {
         gsap.effects.buttonEnter(this);
     });
 });
 
-document.querySelectorAll(".button-sec6").forEach(function (box) {
+document.querySelectorAll(".button-sec6").forEach(function(box) {
     let arrayButton = ["smartReply", "appSugges", "smartFolders"]
-    box.addEventListener("mouseout", function () {
+    box.addEventListener("mouseout", function() {
         console.log(box.id)
         if (box.id != arrayButton[currentId]) {
             gsap.effects.buttonOut(this);
@@ -331,7 +331,7 @@ document.querySelectorAll(".button-sec6").forEach(function (box) {
 });
 
 //section7
-function openVideo(){
+function openVideo() {
     let body = document.querySelector("body")
     body.style.overflowY = "hidden"
     let stageBg = document.querySelector(".stageBg")
@@ -356,22 +356,22 @@ function closeVideo() {
 //section8-1
 var tlPhone4 = gsap.timeline({
     scrollTrigger: {
-        markers:false,
+        markers: false,
         trigger: "#gifPhone4",
         toggleActions: "restart restart restart restart",
         onToggle: () => {
-            
+
             let phone = document.querySelector("#gifPhone4")
             phone.load()
         },
-        
+
     },
-    onComplete: () => {console.log('2222')}
+    onComplete: () => { console.log('2222') }
 })
 tlPhone4.to("#bg-sec8-2", {
-    delay:5,
-    duration:5,
-    opacity:0,
+    delay: 5,
+    duration: 5,
+    opacity: 0,
     //backgroundImage: 'url("https://lh3.googleusercontent.com/KnHPBdPPbwCLYpnpto2o_my-AgcQa4y84dRqxJ-zaPr8X5w3JgdiaJKCXPguOpy83q8kY2QA313OcCmN7jMQdDWjlZbsdUtpYlJQ=w937-rw-e365-v1")'
 })
 
@@ -387,7 +387,7 @@ let scrollSec8_2 = gsap.timeline({
         onToggle: () => {
             console.log("Phone5")
             let phone = document.querySelector("#gifPhone5")
-            // phone.currentTime = 0
+                // phone.currentTime = 0
             phone.load()
             console.log(phone.currentTime)
         },
@@ -422,17 +422,17 @@ scrollSec8_3.from(["#popup-auto", "#popup-onetime"], {
 
 var tlVideoSec8 = gsap.timeline({
     scrollTrigger: {
-        markers:false,
+        markers: false,
         trigger: "#video-sec8",
         toggleActions: "restart restart restart restart",
         onToggle: () => {
-            
+
             let phone = document.querySelector("#video-sec8")
             phone.load()
         },
-        
+
     },
-    onComplete: () => {console.log('2222')}
+    onComplete: () => { console.log('2222') }
 })
 
 //section9 
@@ -494,8 +494,8 @@ let jsonHeight = {
     "#st11-stage8": 800,
 }
 
-document.querySelectorAll(".drop-head").forEach(function (box) {
-    box.addEventListener("click", function () {
+document.querySelectorAll(".drop-head").forEach(function(box) {
+    box.addEventListener("click", function() {
         let target = document.querySelector(this.getAttribute("value"))
         console.log(target.offsetHeight)
         if (target.offsetHeight == 0) {
@@ -523,12 +523,12 @@ document.querySelectorAll(".drop-head").forEach(function (box) {
 gsap.registerEffect({
     name: "arrowMoveTop",
     defaults: {
-        duration:0.2,
+        duration: 0.2,
     }, //defaults get applied to the "config" object passed to the effect below
     effect: (targets, config) => {
         return gsap.to(targets, {
             duration: config.duration,
-            top:-40,
+            top: -40,
             ease: Linear.easeNone,
         });
     }
@@ -536,12 +536,12 @@ gsap.registerEffect({
 gsap.registerEffect({
     name: "arrowMoveRight",
     defaults: {
-        duration:0.2,
+        duration: 0.2,
     }, //defaults get applied to the "config" object passed to the effect below
     effect: (targets, config) => {
         return gsap.to(targets, {
             duration: config.duration,
-            left:10,
+            left: 10,
             ease: Linear.easeNone,
         });
     }
@@ -554,42 +554,42 @@ gsap.registerEffect({
     effect: (targets, config) => {
         return gsap.to(targets, {
             duration: config.duration,
-            top:-35,
+            top: -35,
             ease: Linear.easeNone,
         });
     }
 })
 gsap.registerEffect({
-    name: "arrowMoveOut2",
-    defaults: {
-        duration: 0.2,
-    }, //defaults get applied to the "config" object passed to the effect below
-    effect: (targets, config) => {
-        return gsap.to(targets, {
-            duration: config.duration,
-            left:0,
-            ease: Linear.easeNone,
-        });
-    }
-})
-// arrow-to-top
-document.querySelectorAll(".learnMore").forEach(function (box) {
-    box.addEventListener("mouseenter", function () {
+        name: "arrowMoveOut2",
+        defaults: {
+            duration: 0.2,
+        }, //defaults get applied to the "config" object passed to the effect below
+        effect: (targets, config) => {
+            return gsap.to(targets, {
+                duration: config.duration,
+                left: 0,
+                ease: Linear.easeNone,
+            });
+        }
+    })
+    // arrow-to-top
+document.querySelectorAll(".learnMore").forEach(function(box) {
+    box.addEventListener("mouseenter", function() {
         gsap.effects.arrowMoveTop(this.children[1]);
     });
 });
-document.querySelectorAll(".learnMore").forEach(function (box) {
-    box.addEventListener("mouseleave", function () {
+document.querySelectorAll(".learnMore").forEach(function(box) {
+    box.addEventListener("mouseleave", function() {
         gsap.effects.arrowMoveOut(this.children[1]);
     });
 });
-document.querySelectorAll(".learnMore2").forEach(function (box) {
-    box.addEventListener("mouseenter", function () {
+document.querySelectorAll(".learnMore2").forEach(function(box) {
+    box.addEventListener("mouseenter", function() {
         gsap.effects.arrowMoveRight(this.children[1]);
     });
 });
-document.querySelectorAll(".learnMore2").forEach(function (box) {
-    box.addEventListener("mouseleave", function () {
+document.querySelectorAll(".learnMore2").forEach(function(box) {
+    box.addEventListener("mouseleave", function() {
         gsap.effects.arrowMoveOut2(this.children[1]);
     });
 });

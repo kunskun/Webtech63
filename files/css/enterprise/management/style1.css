@@ -79,6 +79,38 @@ section {
     opacity: 0;
 }
 
+.bg-st9 {
+    position: relative;
+    background-color: #073042;
+    z-index: 1;
+    height: 53rem;
+}
+
+.bg-wave {
+    z-index: 10;
+    opacity: 0;
+    top: -1000px;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    border: 3px solid #3ddc84;
+    position: absolute;
+}
+
+.is2 {
+    font-weight: 1000;
+    margin-bottom: 16px;
+}
+
+.learnMore2 {
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
 .circle {
     width: 1300px;
     height: 600px;
@@ -317,7 +349,7 @@ section {
     position: relative;
     left: 23rem;
     top: -20rem;
-    background-color: gray;
+    background-color: #DCDCDC;
     z-index: 1;
     opacity: 1;
 }
@@ -331,8 +363,8 @@ section {
 }
 
 .aro-box {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 
 .flip {
@@ -349,7 +381,9 @@ section {
 }
 
 .aro1 {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+    position: relative;
+    left: 12rem;
 }
 
 .sec-nav {

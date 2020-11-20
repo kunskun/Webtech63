@@ -111,3 +111,40 @@ function res1() {
     document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
 
 }
+
+function openVideo() {
+    let body = document.querySelector("body")
+    body.style.overflowY = "hidden"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    button.removeAttribute("hidden")
+    video.removeAttribute("hidden")
+    stageBg.removeAttribute("hidden")
+}
+
+function closeVideo() {
+    let body = document.querySelector("body")
+    body.style.overflowY = "scroll"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    video.setAttribute("hidden", true)
+    stageBg.setAttribute("hidden", true)
+    button.setAttribute("hidden", true)
+}
+
+let gsapBgWave = gsap.timeline().from(".bg-wave", {
+    repeat: -1,
+    opacity: 1,
+    scale: 0,
+    duration: 5,
+    stagger: {
+        each: 0.6,
+        opacity: 0,
+        from: "center",
+        yoyo: true,
+    },
+
+    ease: Power1.easeOut,
+})
