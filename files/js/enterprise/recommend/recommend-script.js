@@ -96,7 +96,7 @@ gsap.registerEffect({
   
   function prevSlide2(){
     document.getElementById('hovf2').style = 'margin-left:18%; margin-top: 5%; transition-duration: 0.4s;'
-    document.getElementById('progress-bar').style = 'width: 80%; transition-duration: 0.4s;'
+    document.getElementById('progress-bar').style = 'width: 85%; transition-duration: 0.4s;'
     document.getElementById('vbar1').style = 'fill: #EAECEE; transition-duration: 0.4s; delay: 1.4s;'
     document.getElementById('vbar2').style = 'fill: black; transition-duration: 0.4s;'
   }
@@ -111,11 +111,11 @@ gsap.registerEffect({
                 // Get current browser top and bottom
                 var scrollTop = $(window).scrollTop() + tolerancePixel;
                 var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
-                console.log("t="+scrollTop, "b="+scrollBottom)
+                // console.log("t="+scrollTop, "b="+scrollBottom)
                 media.each(function(index, el) {
                     var yTopMedia = $(this).offset().top;
                     var yBottomMedia = $(this).height() + yTopMedia;
-                    console.log("tm="+yTopMedia, "bm="+yBottomMedia)
+                    // console.log("tm="+yTopMedia, "bm="+yBottomMedia)
                     if(scrollTop > yBottomMedia || scrollBottom < yTopMedia){ //view explaination in `In brief` section above
                         play = true;
                     } else {
