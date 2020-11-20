@@ -118,16 +118,16 @@ gsap.registerEffect({
 // arrow-to-top
 document.querySelectorAll("#bt-right").forEach(function (box) {
     box.addEventListener("click", function () {
-        let bar = document.querySelector(".progress-bar")
+        let bar = document.querySelector(".progress-bar-line")
         gsap.effects.moveRight(bar)
-        gsap.to("#bt-right", {
-            duration: 0.1,
-            opacity: 0.2
-        })
-        gsap.to("#bt-left", {
-            duration: 0.1,
-            opacity: 1
-        })
+        // gsap.to("#bt-right", {
+        //     duration: 0.1,
+        //     opacity: 0.2
+        // })
+        // gsap.to("#bt-left", {
+        //     duration: 0.1,
+        //     opacity: 1
+        // })
         gsap.to("#album-st7", {
             duration: 0.3,
             left: -60
@@ -137,16 +137,16 @@ document.querySelectorAll("#bt-right").forEach(function (box) {
 });
 document.querySelectorAll("#bt-left").forEach(function (box) {
     box.addEventListener("click", function () {
-        let bar = document.querySelector(".progress-bar")
+        let bar = document.querySelector(".progress-bar-line")
         gsap.effects.moveLeft(bar)
-        gsap.to("#bt-left", {
-            duration: 0.1,
-            opacity: 0.2
-        })
-        gsap.to("#bt-right", {
-            duration: 0.1,
-            opacity: 1
-        })
+        // gsap.to("#bt-left", {
+        //     duration: 0.1,
+        //     opacity: 0.2
+        // })
+        // gsap.to("#bt-right", {
+        //     duration: 0.1,
+        //     opacity: 1
+        // })
         gsap.to("#album-st7", {
             duration: 0.3,
             left: 280
@@ -156,12 +156,13 @@ document.querySelectorAll("#bt-left").forEach(function (box) {
 });
 
 // video
-function openVideo() {
+function openVideo(link) {
     let body = document.querySelector("body")
     body.style.overflowY = "hidden"
     let stageBg = document.querySelector(".stageBg")
     let video = document.querySelector(".video-content")
     let button = document.querySelector(".closeButton")
+    video.setAttribute('src', link)
     button.removeAttribute("hidden")
     video.removeAttribute("hidden")
     stageBg.removeAttribute("hidden")
@@ -173,7 +174,7 @@ function closeVideo() {
     let stageBg = document.querySelector(".stageBg")
     let video = document.querySelector(".video-content")
     let button = document.querySelector(".closeButton")
-
+    video.removeAttribute('src')
     video.setAttribute("hidden", true)
     stageBg.setAttribute("hidden", true)
     button.setAttribute("hidden", true)
