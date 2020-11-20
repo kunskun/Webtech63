@@ -1,26 +1,29 @@
-body{
+body {
     overflow-x: hidden;
 }
-.box1{
-    margin: 9% 0% 0% 18%; 
+
+.box1 {
+    margin: 9% 0% 0% 18%;
     color: black;
-    position: relative; 
+    position: relative;
     z-index: 10;
 }
-.hid{
+
+.hid {
     opacity: 0;
-    top: 80px; 
+    top: 80px;
     margin-right: 1%;
 }
-.part1{
+
+.part1 {
     width: 100%;
     height: 850px;
     top: -100px;
     position: relative;
     overflow: hidden;
-    
 }
-.part2{
+
+.part2 {
     position: absolute;
     width: 100%;
     height: 600px;
@@ -28,14 +31,17 @@ body{
     z-index: 1;
     overflow: hidden;
 }
-.part3{
+
+.part3 {
     margin-top: 10%;
     margin-bottom: 5%;
 }
-.z2{
+
+.z2 {
     z-index: 2;
 }
-.ir{
+
+.ir {
     position: absolute;
     padding-left: 25%;
     background-color: white;
@@ -47,23 +53,28 @@ body{
     z-index: -1;
     opacity: 0.2;
 }
-.het{
+
+.het {
     z-index: 2;
     transform: translate(500px, 130px);
 }
-.tx{
+
+.tx {
     width: 70%;
     transform: translateY(130px);
 }
-@font-face{
-    font-family: Android Euclid; 
+
+@font-face {
+    font-family: Android Euclid;
     src: url(../../fonts/AndroidEuclid-Bold.otf);
 }
-@font-face{
-    font-family: Android Euclid M; 
+
+@font-face {
+    font-family: Android Euclid M;
     src: url(../../fonts/AndroidEuclid-Medium.otf);
 }
-h1{
+
+h1 {
     font-family: Android Euclid;
     display: block;
     font-size: 76px;
@@ -71,8 +82,10 @@ h1{
     font-weight: 700;
     z-index: 10;
 }
-p{  
-    font-family: 'Roboto', sans-serif;;
+
+p {
+    font-family: 'Roboto', sans-serif;
+    ;
     display: block;
     font-size: 18px;
     line-height: 28px;
@@ -83,7 +96,8 @@ p{
     margin-inline-end: 0px;
     z-index: 10;
 }
-.bu{
+
+.bu {
     font-family: Android Euclid;
     background-color: #073042;
     border-radius: 100px;
@@ -99,88 +113,106 @@ p{
     text-transform: uppercase;
     transition: color .2s linear;
     cursor: pointer;
+    z-index: 3;
 }
-.bu:hover{
-    color:#3ddc84 !important;
+
+.bu:hover {
+    color: #3ddc84 !important;
 }
-.img1{
+
+.img1 {
     width: 200px;
     transform: translate(-460px, 500px) rotate(45deg);
     z-index: 1;
 }
-.img2{
+
+.img2 {
     width: 200px;
     transform: translate(760px, 440px) rotate(315deg);
     z-index: 1;
 }
-.img3{
+
+.img3 {
     width: 200px;
     transform: translate(440px, 670px) rotate(315deg);
     z-index: 1;
 }
-.img4{
+
+.img4 {
     width: 200px;
     transform: translate(-450px, 490px) rotate(45deg);
     z-index: 1;
 }
-.android11_img{
+
+.android11_img {
     width: 570px;
     float: right;
     transform: translate(-50px, -180px);
 }
 
-.txb{
+.txb {
     width: 70%;
 }
-.imgb{
+
+.imgb {
     float: right;
     justify-content: right;
     justify-items: right;
     z-index: -2;
 }
-.svg1{
+
+.svg1 {
     position: absolute;
     display: flex;
     z-index: 0;
 }
-.svg2{
+
+.svg2 {
     position: absolute;
     display: flex;
     z-index: 0;
 }
-h6{
+
+h6 {
     font-family: Android Euclid;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
 }
-h3{
+
+h3 {
     font-family: Android Euclid;
     font-size: 64px;
     font-weight: 700;
     line-height: 72px;
 }
-.box2{
+
+.box2 {
     margin-left: 1%;
 }
-b{
+
+b {
     font-family: Android Euclid;
-    color:#073042;
+    color: #073042;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
 }
-h3.card-text{
+
+h3.card-text {
     font-size: 52px;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 20%;
 }
-p.rl{
+
+p.rl {
     margin-left: 10%;
     width: 50%;
 }
-.dhov{
+
+.dhov {
     width: 450px;
     height: 450px;
     display: inline-block;
@@ -189,48 +221,58 @@ p.rl{
     margin: 1%;
     z-index: 2;
     background-color: white;
-    box-shadow: 4px 20px 47px 0 rgba(0,0,0,0.1);;
+    box-shadow: 4px 20px 47px 0 rgba(0, 0, 0, 0.1);
+    ;
     cursor: pointer;
 }
-h3.dh{
+
+h3.dh {
     font-size: 52px;
     line-height: 56px;
     font-weight: 700;
     z-index: 1;
     position: relative;
 }
-.patx{
+
+.patx {
     padding: 6% 8%;
 }
-.pa{
+
+.pa {
     transform: translate(205px, -140px) rotate(315deg);
 }
-.read-l{
+
+.read-l {
     position: relative;
     top: 190px;
 }
-.read-ln{
+
+.read-ln {
     position: relative;
     top: 80px;
 }
-.hovf{
+
+.hovf {
     float: left;
     width: 100%;
     height: 500px;
     /* overflow-x: scroll; */
     margin-top: 4%;
 }
-.plat{
+
+.plat {
     background-color: #3ddc84;
     border-radius: 500px;
     height: 320px;
     transform: translateY(150px);
     margin-left: 4%;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 15%;
 }
-.bl{
+
+.bl {
     background-color: #eff7cf;
     width: 1500px;
     height: 700px;
@@ -239,48 +281,58 @@ h3.dh{
     z-index: -1;
     position: absolute;
 }
-.c3{
+
+.c3 {
     z-index: -1;
     position: absolute;
 }
-.svgC3{
+
+.svgC3 {
     position: absolute;
 }
-.labelp{
+
+.labelp {
     position: static;
 }
-.progress{
+
+.progress {
     background-color: white;
     width: 60%;
     height: 5px;
     margin-left: 21%;
 }
-.progress-bar{
+
+.progress-bar {
     background-color: black;
     width: 80%;
 }
-.bs{
+
+.bs {
     background-color: white;
     border: none;
     width: 50px;
     height: 40px;
 }
-.bs:hover{
-    background-color: white; 
+
+.bs:hover {
+    background-color: white;
     border: none;
 }
-.vbar1{
+
+.vbar1 {
     transform: translate(-260px, -126.5px) rotate(180deg);
-    fill:  #EAECEE;
+    fill: #EAECEE;
 }
-.vbar2{
+
+.vbar2 {
     fill: black;
 }
-.button-group{
+
+.button-group {
     transform: translate(-90px, 40px);
 }
-.learnMore, .learnMore2{
-	cursor: pointer;
+
+.learnMore,
+.learnMore2 {
+    cursor: pointer;
 }
-
-
