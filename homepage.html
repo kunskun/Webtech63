@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-
+    
     <!-- GSAP link-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -38,17 +38,20 @@
     <div class="pos-f-t sticky-top" id="b">
         <div class="sticky-top" id="mProgress2"></div>
         <div class="sticky-top" id="nav-point-2" style="width: 0%; left: 1428px;"></div>
-        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">
-            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 45px; position: relative;" onclick="bar4()">
-                <!-- logo homepage -->
-                <svg style="position:absolute;width:120px;margin-top:-65px">
-                    <use xlink:href="#android-logo"></use>
-                </svg>
-                <svg style="position:absolute;width:120px;fill:#3dda84;margin-top:-65px">
-                    <use xlink:href="#andy"></use>
-                </svg>
-            </a>
-            <ul class="navbar-nav" style="left: 809px;">
+        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">  
+            <div style="height: 40px; width: 200px; overflow: hidden; position: relative; left: 16%;" >
+                <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 55px; position: relative;"
+                    onclick="bar4()">
+                    <!-- logo homepage -->
+                    <svg style="position:absolute;width:120px;;margin-top:-65px">
+                        <use xlink:href="#android-logo"></use>
+                    </svg>
+                    <svg style="position:absolute;width:120px;fill:#3dda84;margin-top:-65px">
+                        <use xlink:href="#andy"></use>
+                    </svg>
+                </a>
+            </div>
+            <ul class="navbar-nav" style="left: 960px;">
                 <li class="nav-item" id="nav1" style="top: -45px; position: relative;">
                     <a class="nav-link" href="what-is-final.html" style="position: relative;left: -155px;" onclick="bar4(1)">What is Android</a>
                 </li>
@@ -136,7 +139,7 @@
                 // document.getElementById("mProgress").style.top = "-43px";
                 document.getElementById("nav-point-2").style.top = "-45px";
                 document.getElementById("mProgress2").style.top = "-43px";
-            }
+            }    
             prevScrollpos = currentScrollPos;
         }
     </script>
@@ -144,7 +147,7 @@
     <!-- end nav -->
 
     <!--start coding-->
-    <div class="row part1" style="z-index: 0;">
+    <div class="row part1" style="z-index: 1;">
         <div class="first-sec-box" style="width: 55%; height: 850px; position: absolute; background-color: #4285f4;"></div>
         <svg class="svg1" width="2000" height="2000">
             <circle class="c1" style="z-index: 10; padding-top: 5%;" 
@@ -158,7 +161,6 @@
                     Meet people using Android to change what's possible in daily life. Watch and read stories about creative, driven people discovering how to make their world more colorful and connected. With Android by their side.
                 </p>
                 <button class="btn bu" id="bu">explore stories</button>
-
             </div>
             <div class="col-6 imgb" style="left: 100px; opacity: 0;">
                 <img src="files/images/homepage/unnamed.webp" alt="" width="90%">
