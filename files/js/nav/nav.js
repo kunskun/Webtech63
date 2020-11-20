@@ -37,7 +37,7 @@ function bar_en(num){
                 document.getElementById("progress-bar").style.left = "1129px";
                 break;
         case 4: document.getElementById("progress-bar").style.width = "3.3%";
-                document.getElementById("progress-bar").style.left = "1217px";
+                document.getElementById("progress-bar").style.left = "1220px";
                 break;
         case 5: document.getElementById("progress-bar").style.width = "4.5%";
                 document.getElementById("progress-bar").style.left = "1315px";
