@@ -19,13 +19,12 @@
     <!-- start nav -->
     <link rel="stylesheet" href="files/css/nav/nav.css">
     <div class="pos-f-t sticky-top" id="b">
-        <div class="sticky-top" style="height: 1px; top: -45px; position: relative; z-index: 3;" id="mProgress2"></div>
-        <div class="sticky-top" id="progress-bar-2" style="width: 0%; left: 1428px;"></div>
-        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">
-            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 45px; position: relative;"
-                onclick="bar4()">
+        <div class="sticky-top" id="mProgress2"></div>
+        <div class="sticky-top" id="nav-point-2" style="width: 06.4%; left: 1278px;"></div>
+        <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">  
+            <a class="navbar-brand" href="homepage.html" style="margin-left: 18%; top: 45px; position: relative;" onclick="bar4()">
                 <!-- logo homepage -->
-                <svg style="position:absolute;width:120px;;margin-top:-65px">
+                <svg style="position:absolute;width:120px;margin-top:-65px">
                     <use xlink:href="#android-logo"></use>
                 </svg>
                 <svg style="position:absolute;width:120px;fill:#3dda84;margin-top:-65px">
@@ -34,12 +33,10 @@
             </a>
             <ul class="navbar-nav" style="left: 809px;">
                 <li class="nav-item" id="nav1" style="top: -45px; position: relative;">
-                    <a class="nav-link" href="what-is-final.html" style="position: relative;left: -155px;"
-                        onclick="bar4(1)">What is Android</a>
+                    <a class="nav-link" href="what-is-final.html" style="position: relative;left: -155px;" onclick="bar4(1)">What is Android</a>
                 </li>
                 <li class="nav-item" id="nav2">
-                    <a class="nav-link" href="android11.html" style="position: relative;top: -45px ;left: -155px;"
-                        onclick="bar4(2)">Android 11</a>
+                    <a class="nav-link" href="android11.html" style="position: relative;top: -45px ;left: -155px;" onclick="bar4(2)">Android 11</a>
                 </li>
                 <li class="nav-item" id="nav3" style="position: relative;left: -190px;top: -45px;">
                     <a class="nav-link" href="phone&tablet.html" onclick="bar4(3)">Phones & Tablets</a>
@@ -49,13 +46,10 @@
                 </li>
                 <li class="nav-item" id="nav5" style="top: -45px; position: relative;">
                     <a class="navlink" href="#">
-                        <svg id="ico-search" viewBox="0 0 24 24" width="18%"
-                            style="position:relative; left: -225px; top: 5px">
+                        <svg id="ico-search" viewBox="0 0 24 24" width="18%" style="position:relative; left: -225px; top: 5px">
                             <g fill="none" fill-rule="evenodd">
-                                <path d="M0 0h24v24H0z"></path>
-                                <path
-                                    d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                    fill="currentColor"></path>
+                            <path d="M0 0h24v24H0z"></path>
+                            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"></path>
                             </g>
                         </svg>
                     </a>
@@ -63,7 +57,7 @@
             </ul>
         </nav>
         <!-- <div class="mt-1 mb-2" style="height: 1px; position: relative; left: -40px;" id="mProgress"></div>
-        <div id="progress-bar" style="width: 4%;    left: 780px;"></div> -->
+        <div id="nav-point-1" style="width: 4%;    left: 780px;"></div> -->
 
         <!-- <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
             <div id="bg-nav" style="width: 100%; height: 80px; background-color: white; position: absolute; left: 0px;"> 
@@ -109,31 +103,32 @@
     </div>
     <script>
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
+        window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
             if (currentScrollPos == 0) {
                 document.getElementById("b").style = 'background-color :transparent; transition: 0.5s;';
             } else if (prevScrollpos > currentScrollPos) {
                 document.getElementById("b").style = "top:-6px; transition: 0.5s; background-color :white;";
-                // document.getElementById("progress-bar").style.top = "-53px";
+                // document.getElementById("nav-point-1").style.top = "-53px";
                 // document.getElementById("mProgress").style.top = "-45px";
-                document.getElementById("progress-bar-2").style.top = "-40px";
+                document.getElementById("nav-point-2").style.top = "-40px";
                 document.getElementById("mProgress2").style.top = "-45px";
             } else {
                 document.getElementById("b").style = "top:-78px; transition: 0.2s;";
-                // document.getElementById("progress-bar").style.top = "-43px";
+                // document.getElementById("nav-point-1").style.top = "-43px";
                 // document.getElementById("mProgress").style.top = "-43px";
-                document.getElementById("progress-bar-2").style.top = "-45px";
+                document.getElementById("nav-point-2").style.top = "-45px";
                 document.getElementById("mProgress2").style.top = "-43px";
-            }
+            }    
             prevScrollpos = currentScrollPos;
         }
     </script>
+    <script src="files/js/nav/nav.js"></script>
     <!-- end nav -->
 
     <!--Section 1-->
     <section id=""
-        style="background-color: #4285f4; height: 1300px ;overflow: hidden; z-index: 0; top: -65px;position: relative;">
+        style="background-color: #4285f4; height: 1300px ;overflow: hidden; z-index: 0; top: -80px;position: relative;">
         <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="row" style="padding: 12% 0% 0% 18%;">
@@ -155,7 +150,7 @@
     <!--End Section 1 ยังไม่เสร็จ ภาพแตก + font-->
 
     <!--Section 2-->
-    <section style="overflow: hidden; top: -65px;position: relative;">
+    <section style="overflow: hidden; top: -80px;position: relative;">
         <div style="overflow: hidden;" class="bg-transparent">
             <!--รูปนี้ภาพแตก--><img style="margin-top: -100px;" class="w-100" src="files/images/phone&tablets/2.jpg">
         </div>

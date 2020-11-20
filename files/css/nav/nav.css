@@ -85,6 +85,12 @@ a:hover {
     top: -45px;
     z-index: 1;
 }
+#mProgress2{
+    height: 1px; 
+    top: -45px; 
+    position: relative; 
+    z-index: 3;
+}
 #nav-point-1{
     background-color: black;
     width: 0%;

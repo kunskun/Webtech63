@@ -244,5 +244,52 @@ body {
 .learnMore2 {
 	cursor: pointer;
 }
+.video-col{
+    width: 50%;
+    position: relative;
+}
+.text-col{
+    width: 50%;
+    position: relative;
+    margin-left: 47%;
 
+}
+.box-video{
+    width: 80%;
+    display: inline-block;
+	position: absolute;
+	z-index: 10;
+}
+.progress{
+    background-color: #D6DBDF;
+    width: 70%;
+    height: 5px;
+    margin-left: 16%;
+    transform: translateY(500px);
+    position: static;
+}
+.progress-bar{
+    background-color: black;
+    width: 20%;
+}
+.bs{
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 40px;
+}
+.bs:hover{
+    background-color: white;
+    border: none;
+}
+.vbar1{
+    transform: translate(-260px, -126.5px) rotate(180deg);
+    fill:  #EAECEE;
+}
+.vbar2{
+    fill: black;
+}
+.button-group{
+    transform: translate(1550px, 520px);
+}
 
