@@ -267,10 +267,12 @@ function openVideo(index){
   let stageBg = document.querySelector(".stageBg")
   let video = document.querySelector(".video-content")
   let button = document.querySelector(".closeButton")
+  let nav = document.querySelector(".pos-f-t")
   video.setAttribute("src", isVideo[index])
   button.removeAttribute("hidden")
   video.removeAttribute("hidden")
   stageBg.removeAttribute("hidden")
+  nav.setAttribute("hidden", true)
 }
 
 function closeVideo() {
@@ -279,11 +281,12 @@ function closeVideo() {
   let stageBg = document.querySelector(".stageBg")
   let video = document.querySelector(".video-content")
   let button = document.querySelector(".closeButton")
-  
+  let nav = document.querySelector(".pos-f-t")
   video.setAttribute("hidden", true)
   stageBg.setAttribute("hidden", true)
   button.setAttribute("hidden", true)
   video.removeAttribute("src")
+  nav.removeAttribute("hidden")
 }
 
 //learn more

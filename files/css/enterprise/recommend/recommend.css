@@ -105,7 +105,7 @@ b{
 }
 .progress-bar{
     background-color: black;
-    width: 80%;
+    width: 85%;
 }
 h5{
     font-family: Android Euclid;
@@ -117,14 +117,9 @@ h5{
     margin-right: 3%;
 }
 .bs{
-    background-color: white;
     border: none;
     width: 50px;
     height: 40px;
-}
-.bs:hover{
-    background-color: white;
-    border: none;
 }
 .vbar1{
     transform: translate(-260px, -126.5px) rotate(180deg);
