@@ -165,3 +165,15 @@ function backabit(id) {
         document.getElementById(id).style = "transform: translate(0px, 0px); transition-duration: 0.25s"
     }
 }
+var tester = gsap.to("#am", 2000, {
+    x: 2000
+});
+// animate("#am", 2000, tester)
+
+// function animate1(tag, tween) {
+//     var sceen1 = new ScrollMagic.Scene({
+//             triggerElement: tag,
+//         })
+//         .setTween(tween)
+//         .addTo(controller)
+// }

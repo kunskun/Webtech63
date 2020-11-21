@@ -73,7 +73,7 @@ function chad() {
 }
 
 function moveabit(id) {
-    document.getElementById(id).style = "transform: translate(20px, -10px); transition-duration: 0.25s"
+    document.getElementById(id).style = "transform: translate(10px, -10px); transition-duration: 0.25s"
 }
 
 function backabit(id) {
