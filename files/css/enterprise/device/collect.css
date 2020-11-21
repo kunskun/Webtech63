@@ -142,7 +142,7 @@ h2 {
     width: 0px;
     height: 0px;
     z-index: -1;
-    animation: anim--1 1s;
+    animation: anim--1 0.3s;
     background-color:#3ddc84;
     animation-fill-mode: forwards;
 }
@@ -154,7 +154,7 @@ h2 {
     width: 0px;
     height: 0px;
     z-index: -1;
-    animation: anim--2 1s;
+    animation: anim--2 0.3s;
     background-color:#3ddc84;
 }
 
