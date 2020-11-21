@@ -71,3 +71,11 @@ function jang() {
 function chad() {
     document.getElementById("be-bot").style = 'opacity: 1; transition-duration:0.3s';
 }
+
+function moveabit(id) {
+    document.getElementById(id).style = "transform: translate(20px, -10px); transition-duration: 0.25s"
+}
+
+function backabit(id) {
+    document.getElementById(id).style = "transform: translate(0px, 0px); transition-duration: 0.25s"
+}

@@ -431,12 +431,24 @@ section {
 
 .last-but1 {
     color: #073042;
-    background-color: #3ddc84;
+    background-color: transparent;
     border: none;
     font-size: 1.2rem;
     position: relative;
     top: -30rem;
     left: 28rem;
+}
+
+.eieiei {
+    position: relative;
+    top: -2rem;
+    left: 3rem;
+}
+
+.aaaa {
+    position: relative;
+    left: 7.5rem;
+    top: -2rem;
 }
 
 
