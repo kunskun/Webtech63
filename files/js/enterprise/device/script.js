@@ -1,14 +1,5 @@
  let x = 3;
  let count = 0;
- window.addEventListener('wheel', function(event) {
-     if (event.deltaY < 0) {
-         console.log('scrolling up');
-         document.getElementById('eiei').setAttribute('style', `margin-top:${+x}px`)
-     } else if (event.deltaY > 0) {
-         console.log('scrolling down');
-         document.getElementById('eiei').style.marginTop -= x;
-     }
- });
 
  var controller = new ScrollMagic.Controller();
  TweenLite.defaultEase = Linear.easeNone;
@@ -91,3 +82,18 @@
  function test2(obj) {
      document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-2')
  }
+
+
+
+
+ function toDiagonalTop(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-top')
+    document.getElementById(`ddd`).setAttribute('style', 'transform:rotate(-45deg)')
+}
+
+function toDiagonalDown(obj){
+    let x = obj.id
+    document.getElementById(`arrow${x}`).setAttribute('class', 'arrow-move-down')
+    document.getElementById(`ddd`).setAttribute('style', 'transform:rotate(-45deg)')
+}
