@@ -70,47 +70,55 @@ function go_left1(n) {
 
 }
 
-function go_right1(n) {
-    switch (number2 + n) {
-        case 0:
-            var wid = "70%";
-            document.getElementById('wapper-card').style = 'left:22.5rem; transition-duration: 1s;'
-
-            number2 = number2 + n;
-            break;
-        case 1:
-            var wid = "85%";
-            document.getElementById('wapper-card').style = 'left:-10rem; transition-duration: 1s;'
-            number2 = number2 + n;
-            break;
-        case 2:
-            var wid = "100%";
-            document.getElementById('wapper-card').style = 'left:-45rem; transition-duration: 1s;'
-            number2 = number2 + n;
-            break;
-    }
-    gsap.to(".sec-nav", 0.5, {
-        width: wid
+function calltm() {
+    var tm1 = new TimelineMax({});
+    var tm2 = new TimelineMax({});
+    var tm22 = new TimelineMax({ delay: 2.5 });
+    var tm3 = new TimelineMax({});
+    var tm4 = new TimelineMax({});
+    var tm5 = new TimelineMax({});
+    tm1.to("#am", 2, {
+        left: "70rem",
+        top: "-30rem"
     });
-}
-document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
-document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
-document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
+    tm2.to(".box-box1", 1.5, {
+        left: "85rem",
+        top: "-70rem",
 
-function res() {
-    document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
-    document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
-    document.getElementById("last-but").style = "color:#3ddc84;transition-duration: 1s;";
-    document.getElementById("eiei1").style = 'position: relative;left:75rem;transition-duration: 1s;'
-}
+    });
+    tm22.to(".box-box11", 0.5, {
+        width: '80px',
+        height: '80px',
+        visibility: 'visible'
+    });
+    tm3.to(".box-box2", 1.5, {
+        top: '-60rem',
+        left: '70rem',
+    });
+    tm4.to(".box-box3", 1.5, {
+        top: '-85rem',
+        left: '95rem'
+    });
+    tm5.to(".box-box4", 1.5, {
+        top: '-84rem',
+        left: '103rem'
+    })
 
-function res1() {
-    document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
-    document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
-    document.getElementById("last-but").style = "color:white;transition-duration: 1s;";
-    document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
-
+    tm22.to(".box-box22", 0.5, {
+        width: '100px',
+        height: '100px',
+    })
+    tm22.to(".box-box33", 0.5, {
+        width: '80px',
+        height: '80px',
+        opacity: 1,
+    })
+    tm22.to(".box-box44", 0.5, {
+        width: '60px',
+        height: '60px',
+    })
 }
+calltm();
 
 function openVideo() {
     let body = document.querySelector("body")
@@ -168,6 +176,51 @@ function backabit(id) {
 var tester = gsap.to("#am", 2000, {
     x: 2000
 });
+
+function go_right1(n) {
+    switch (number2 + n) {
+        case 0:
+            var wid = "70%";
+            document.getElementById('wapper-card').style = 'left:22.5rem; transition-duration: 1s;'
+
+            number2 = number2 + n;
+            break;
+        case 1:
+            var wid = "85%";
+            document.getElementById('wapper-card').style = 'left:-10rem; transition-duration: 1s;'
+            number2 = number2 + n;
+            break;
+        case 2:
+            var wid = "100%";
+            document.getElementById('wapper-card').style = 'left:-45rem; transition-duration: 1s;'
+            number2 = number2 + n;
+            break;
+    }
+    gsap.to(".sec-nav", 0.5, {
+        width: wid
+    });
+}
+document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
+document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+document.getElementById("last-but").style = "color:white;transition-duration: 1s;";
+document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
+
+function res() {
+    document.getElementById("bot-box").style = 'position:relative; height:850px; width:120%; transition-duration: 1s; left:-25rem;';
+    document.getElementById("warp-text-2").style = 'position: relative; top:-120px;transition-duration: 1s;';
+    document.getElementById("last-but").style = "color:#3ddc84;transition-duration: 1s;";
+    document.getElementById("eiei1").style = 'position: relative;left:75rem;transition-duration: 1s;'
+}
+
+function res1() {
+    document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem;';
+    document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
+    document.getElementById("last-but").style = "color:white;transition-duration: 1s;";
+    document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
+
+}
+
+
 // animate("#am", 2000, tester)
 
 // function animate1(tag, tween) {

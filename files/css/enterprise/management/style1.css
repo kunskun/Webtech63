@@ -84,8 +84,8 @@ section {
     height: 200px;
     border-radius: 150px;
     position: relative;
-    top: -70rem;
-    left: 85rem;
+    top: -55rem;
+    left: 105rem;
     background-color: white;
     -webkit-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
     -moz-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
@@ -97,8 +97,8 @@ section {
     height: 300px;
     border-radius: 250px;
     position: relative;
-    top: -60rem;
-    left: 70rem;
+    top: -70rem;
+    left: 105rem;
     background-color: white;
     -webkit-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
     -moz-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
@@ -111,7 +111,7 @@ section {
     border-radius: 150px;
     position: relative;
     top: -85rem;
-    left: 95rem;
+    left: 105rem;
     background-color: #ffcc4e;
     -webkit-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
     -moz-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
@@ -124,7 +124,7 @@ section {
     height: 140px;
     border-radius: 150px;
     position: relative;
-    top: -84rem;
+    top: -93rem;
     left: 103rem;
     background-color: #0078c7;
     -webkit-box-shadow: 0px 20px 12px 0px rgba(50, 50, 50, 0.24);
@@ -134,11 +134,12 @@ section {
 }
 
 .box-box11 {
-    width: 80px;
-    height: 80px;
+    width: 0px;
+    height: 0px;
     left: 8rem;
     top: -4rem;
     border-radius: 60px;
+    visibility: hidden;
     position: relative;
     background-color: white;
     -webkit-box-shadow: -2px -2px 12px 0px rgba(50, 50, 50, 0.24);
@@ -147,8 +148,8 @@ section {
 }
 
 .box-box22 {
-    width: 80px;
-    height: 80px;
+    width: 0px;
+    height: 0px;
     left: 13rem;
     top: -4rem;
     border-radius: 60px;
@@ -162,6 +163,7 @@ section {
 .box-box33 {
     width: 80px;
     height: 80px;
+    opacity: 0;
     top: -88rem;
     left: 102rem;
     border-radius: 60px;
@@ -173,8 +175,8 @@ section {
 }
 
 .box-box44 {
-    width: 50px;
-    height: 50px;
+    width: 0px;
+    height: 0px;
     top: -86rem;
     left: 109rem;
     border-radius: 60px;
