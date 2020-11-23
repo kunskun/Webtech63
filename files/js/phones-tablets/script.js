@@ -124,13 +124,13 @@ function test2(obj) {
     document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-2')
 }
 
-function test3(obj) {
-    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-3')
-}
+// function test3(obj) {
+//     document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-3')
+// }
 
-function test4(obj) {
-    document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-4')
-}
+// function test4(obj) {
+//     document.getElementById(`circle${+obj}`).setAttribute('class', 'circle-4')
+// }
 
 document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
 document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
@@ -149,3 +149,20 @@ function res1() {
     document.getElementById("eiei1").style = 'position: relative;transition-duration: 1s;margin-top:500px;margin-left: 800px;'
 
 }
+
+document.querySelectorAll(".box").forEach(function (box) {
+    box.addEventListener("mouseenter", function () {
+        gsap.to(this.children[0], {
+            scale:5,
+            transformOrigin: 'center center'
+        })
+    });
+});
+document.querySelectorAll(".box").forEach(function (box) {
+    box.addEventListener("mouseleave", function () {
+        gsap.to(this.children[0], {
+            scale:0,
+            transformOrigin: 'center center'
+        })
+    });
+});
