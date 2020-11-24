@@ -23,7 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" type="application/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" type="application/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" type="application/javascript"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
 
 </head>
@@ -72,38 +72,40 @@
                 </li>
             </ul>
         </nav>
-        <div class="mt-1 mb-2" style="height: 1px; position: relative; left: -40px;" id="mProgress"></div>
-        
-
-        <nav class="navbar navbar-expand-sm sticky-top" id="subnav" style="z-index: 0;">
+        <div class="spy-line sticky-top mt-2" id="mProgress3"></div>
+        <nav class="navbar navbar-expand-sm sticky-top spynav" id="subnav" style="z-index: -5; opacity: 0;">
             <div id="bg-nav" style="width: 100%; height: 80px; background-color: white; position: absolute; left: 0px;"> 
-                <ul class="navbar-nav">
-                    <li class="nav-item nav-item2" id="sub1" style="position: relative;left: -70px;width: 120px;">
+                <ul class="navbar-nav" style="left: 335px;">
+                    <li class="nav-item nav-item2" id="sub0" style="position: relative;left: 5px;width: 180px;top: 20px;margin-right: 12%;">
+                        <a class="nav-link" href="#" >Android 11 Hightlights</a>
+                    </li>
+                    <li class="nav-item nav-item2" id="sub1" style="position: relative;left: 5px;width: 120px;">
                         <div id="hr1" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="#section2" >Conversation</a>
+                        <a class="nav-link" href="#section3" >Conversation</a>
                     </li>
-                    <li class="nav-item nav-item2" id="sub2" style="position: relative;left: -65px;">
+                    <li class="nav-item nav-item2" id="sub2" style="position: relative;left: 0px;">
                         <div id="hr2" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="#section5" onclick="bar_en(0)">Content Capture</a>
+                        <a class="nav-link" href="#section5">Content Capture</a>
                     </li>
-                    <li class="nav-item nav-item2" id="sub3" style="position: relative;left: -60px;">
+                    <li class="nav-item nav-item2" id="sub3" style="position: relative;left: 0px;">
                         <div id="hr3" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="enterprise-recommend.html" onclick="bar_en(2)">Predictive Tools</a>
+                        <a class="nav-link" href="#section6">Predictive Tools</a>
                     </li>
-                    <li class="nav-item nav-item2" id="sub4" style="position: relative;left: -55px;width: 120px;">
+                    <li class="nav-item nav-item2" id="sub4" style="position: relative;left: -5px;width: 120px;">
                         <div id="hr4" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="Enterprise-device.html" onclick="bar_en(3)">Accessibility</a>
+                        <a class="nav-link" href="#section7">Accessibility</a>
                     </li>
-                    <li class="nav-item nav-item2" id="sub5" style="position: relative;left: -50px;">
+                    <li class="nav-item nav-item2" id="sub5" style="position: relative;left: -10px;">
                         <div id="hr5" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="Enterprise-device.html" onclick="bar_en(3)">Device Controls</a>
+                        <a class="nav-link" href="#section8">Device Controls</a>
                     </li>
-                    <li class="nav-item nav-item2" id="sub6" style="position: relative;left: -45px;width:150px">
+                    <li class="nav-item nav-item2" id="sub6" style="position: relative;left: -10px;width:150px">
                         <div id="hr6" class="nav-point-android" style="width: 90%;z-index: 1000;position: absolute;"></div>
-                        <a class="nav-link" href="for-partner.html" onclick="bar_en(5)">Privacy & Security</a>
+                        <a class="nav-link" href="#section8-2">Privacy & Security</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
         
         <!-- <div class="mt-1 mb-2" style="height: 1px; position: relative; left: -40px;" id="mProgress"></div>
         <div id="nav-point-1" style="width: 4%;    left: 780px;"></div> -->
@@ -163,12 +165,14 @@
                 // document.getElementById("mProgress").style.top = "-45px";
                 document.getElementById("nav-point-2").style.top = "-40px";
                 document.getElementById("mProgress2").style.top = "-45px";
+                document.getElementById("mProgress3").style.top = "-15px";
             } else {
-                document.getElementById("b").style = "top:-78px; transition: 0.2s;";
+                document.getElementById("b").style = "top:-71px; transition: 0.2s;";
                 // document.getElementById("nav-point-1").style.top = "-43px";
                 // document.getElementById("mProgress").style.top = "-43px";
                 document.getElementById("nav-point-2").style.top = "-45px";
                 document.getElementById("mProgress2").style.top = "-43px";
+                document.getElementById("mProgress3").style.top = "-15px";
             }    
             prevScrollpos = currentScrollPos;
         }
@@ -176,7 +180,7 @@
     <script src="files/js/nav/nav.js"></script>
     <!-- end nav -->
 
-    <section id="step1" class="setSection bg-st1" style="padding-top:10%; top: -80px; position: relative;">
+    <section id="step1" class="setSection bg-st1" style="padding-top:10%; top: -100px; position: relative;">
         <div class="container container-fluid">
             <div class="row pl-3" style="left: 1000px">
                 <h1 class="is1 font-android-M" style="font-size:20px;">Android 11</h1>
@@ -317,7 +321,7 @@
                     </a>
                 </div>
             </div>
-            <div style="position: relative;height: 10px;width: 100vw;">
+            <div style="position: relative;height: 10px;width: 100vw;" id="section9">
                 <h2 class="hightlight-android11 font-android" style="font-size: 88px;">Android 11<br>Highlights</h2>
                 <div id="bg-shape-hightlight" class="bg-shape">
                 </div>

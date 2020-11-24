@@ -272,6 +272,45 @@ gsap.timeline({
     }
 })
 
+$(document).ready(function() {
+    // Get media - with autoplay disabled (audio or video)
+    var media = $('#section3');
+    var media2 = $('#section5').height();
+    var media3 = $('#section6').height();
+    var media4 = $('#section7').height();
+    var media5 = $('#section8').height();
+    var media6 = $('#section8-1').height();
+    var media7 = $('#section8-3').height();
+    var media8 = $('#section8-2').height();
+    var media9 = $('#section9');
+    var sum = media2+media3+media4+media5+media6+media7+media8+media9.offset().top;
+    var subnav = document.querySelector(".spynav");
+    var line = document.querySelector(".spy-line");
+    var tolerancePixel = 2000;
+
+    function checkMedia(){
+        // Get current browser top and bottom
+        var scrollTop = $(window).scrollTop();
+        var scrollBottom = $(window).scrollTop() + $(window).height();
+        console.log("t="+scrollTop, "b="+scrollBottom)
+        media.each(function(index, el) {
+            var yTopMedia = $(this).offset().top;
+            var yBottomMedia = $(this).height() + yTopMedia + sum + 100;
+            console.log("tm="+yTopMedia,"bm="+yBottomMedia  ,"sum="+(sum+yTopMedia))
+            if(scrollTop >= yTopMedia && scrollBottom <= yBottomMedia){
+                subnav.style = "opacity: 1;top:-78px; transition: 0.5s; "
+                line.style = "opacity: 1; top:-78px; transition: 0.2s; "
+            } else {
+                subnav.style = "opacity: 0;top:-230px; transition: 0.2s;"
+                line.style = "opacity: 0; top:-230px; transition: 0.2s; "
+            }
+        });
+
+        //}
+    }
+    $(document).on('scroll', checkMedia);
+});
+
     function navFade(target) {
         document.querySelectorAll(".nav-point-android").forEach(function(box) {
             if (!(box.id == target)) {
