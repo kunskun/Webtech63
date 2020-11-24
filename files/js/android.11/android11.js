@@ -164,7 +164,7 @@ gsap.timeline({
         scrollTrigger: {
                 start: "top center",
                 end: "700px top",
-                markers: true,
+                markers: false,
                 trigger: "#section3",
                 onToggle: () => {
                     navFade("hr1")
