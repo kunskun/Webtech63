@@ -21,6 +21,13 @@ nav, .nav-link, a{
     margin: 1px;
 }
 
+.nav-item2{
+    text-align: center;
+    width: 140px;
+    margin: 1px;
+}
+
+
 #a ul,#b ul{
     margin-left: 0px!important;
     position: relative;
@@ -113,6 +120,17 @@ a:hover {
     position: relative;
     transition: top 0.3s;
     z-index: 3;
+}
+
+.nav-point-android {
+    background-color: black;
+    width: 0%;
+    height: 4px;
+    top: -12px;
+    transition: top 0.3s;
+    z-index: 1;
+    align-items: center;
+    left: 5%;
 }
 
 

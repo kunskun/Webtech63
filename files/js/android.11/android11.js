@@ -160,6 +160,137 @@ document.querySelectorAll(".hightlight-box").forEach(function(box) {
 //section5
 let currentId = 0;
 
+gsap.timeline({
+        scrollTrigger: {
+                start: "top center",
+                end: "700px top",
+                markers: true,
+                trigger: "#section3",
+                onToggle: () => {
+                    navFade("hr1")
+                },
+                toggleActions: "restart restart restart restart"
+        }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section5",
+            onToggle: () => {
+
+                navFade("hr2")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section6",
+            onToggle: () => {
+
+                navFade("hr3")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section7",
+            onToggle: () => {
+
+                navFade("hr4")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8-1",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8-3",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8-2",
+            onToggle: () => {
+
+                navFade("hr6")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+    function navFade(target) {
+        document.querySelectorAll(".nav-point-android").forEach(function(box) {
+            if (!(box.id == target)) {
+                gsap.to(box, {
+                    opacity: 0,
+                    duration: 0.5
+                })
+                //box.style.opacity = "0"
+            } else {
+                gsap.to(box, {
+                    opacity: 1,
+                    duration: 0.5
+                })
+                //box.style.opacity = "1"
+            }
+        });
+    }
+//section6
+
 let gsapBg1 = gsap.timeline({
     scrollTrigger: {
         start: "-350px center",
