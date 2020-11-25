@@ -61,6 +61,7 @@ gsap.to("#mProgress2", {y: 45, duration: 0.5, delay: 0.9});
 gsap.to("#nav-point-2", {y: 45, duration: 0.5, delay: 0.9});
 
 // sub menu=bar move
+gsap.to("#sub1", {y: 70, duration: 0.5, delay: 1.05});
 gsap.to("#sub1", {y: 70, duration: 0.5, delay: 1.1});
 gsap.to("#sub2", {y: 70, duration: 0.5, delay: 1.2});
 gsap.to("#sub3", {y: 70, duration: 0.5, delay: 1.3});
@@ -74,3 +75,14 @@ gsap.to("#mProgress", {y: 45, duration: 0.5, delay: 1.0});
 gsap.to("#nav-point-1", {y: 45, duration: 0.5, delay: 1.0});
 
 gsap.to("#bg-nav", {y: 85, duration: 0.5, delay: 0.9});
+
+// let triggerSec5  = gsap.timeline({
+//         scrollTrigger: {
+//                 start:"cenetr center",
+//                 end:"cenetr center",
+//                 markers: true,
+//                 trigger: "#section5",
+//                 onEnter: ({progress, direction, isActive}) => console.log(progress, direction, isActive),
+//                 toggleActions: "restart restart restart restart"
+//         }
+//     })

@@ -160,6 +160,194 @@ document.querySelectorAll(".hightlight-box").forEach(function(box) {
 //section5
 let currentId = 0;
 
+gsap.timeline({
+        scrollTrigger: {
+                start: "top center",
+                end: "700px top",
+                markers: false,
+                trigger: "#section3",
+                onToggle: () => {
+                    navFade("hr1")
+                },
+                toggleActions: "restart restart restart restart"
+        }
+})
+
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "top center",
+            end: "500px top",
+            markers: true,
+            trigger: "#section4",
+            onToggle: () => {
+                navFade("hr1")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section5",
+            onToggle: () => {
+
+                navFade("hr2")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section6",
+            onToggle: () => {
+
+                navFade("hr3")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section7",
+            onToggle: () => {
+
+                navFade("hr4")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "700px top",
+            markers: false,
+            trigger: "#section8-1",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "500px top",
+            markers: false,
+            trigger: "#section8-3",
+            onToggle: () => {
+
+                navFade("hr5")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "100px center",
+            end: "2000px top",
+            markers: false,
+            trigger: "#section8-2",
+            onToggle: () => {
+
+                navFade("hr6")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
+
+
+
+$(document).ready(function() {
+    // Get media - with autoplay disabled (audio or video)
+    var media = $('#section3');
+    var media2 = $('#section5').height();
+    var media3 = $('#section6').height();
+    var media4 = $('#section7').height();
+    var media5 = $('#section8').height();
+    var media6 = $('#section8-1').height();
+    var media7 = $('#section8-3').height();
+    var media8 = $('#section8-2').height();
+    var media9 = $('#section9');
+    var sum = media2+media3+media4+media5+media6+media7+media8+media9.offset().top;
+    var subnav = document.querySelector(".spynav");
+    var line = document.querySelector(".spy-line");
+    var tolerancePixel = 2000;
+
+    function checkMedia(){
+        // Get current browser top and bottom
+        var scrollTop = $(window).scrollTop();
+        var scrollBottom = $(window).scrollTop() + $(window).height();
+        console.log("t="+scrollTop, "b="+scrollBottom)
+        media.each(function(index, el) {
+            var yTopMedia = $(this).offset().top;
+            var yBottomMedia = $(this).height() + yTopMedia + sum + 100;
+            console.log("tm="+yTopMedia,"bm="+yBottomMedia  ,"sum="+(sum+yTopMedia))
+            if(scrollTop >= yTopMedia && scrollBottom <= yBottomMedia){
+                subnav.style = "opacity: 1;top:-78px; transition: 0.5s; "
+                line.style = "opacity: 1; top:-78px; transition: 0.2s; "
+            } else {
+                subnav.style = "opacity: 0;top:-230px; transition: 0.2s;"
+                line.style = "opacity: 0; top:-230px; transition: 0.2s; "
+            }
+        });
+
+        //}
+    }
+    $(document).on('scroll', checkMedia);
+});
+
+    function navFade(target) {
+        document.querySelectorAll(".nav-point-android").forEach(function(box) {
+            if (!(box.id == target)) {
+                gsap.to(box, {
+                    opacity: 0,
+                    duration: 0.5
+                })
+                //box.style.opacity = "0"
+            } else {
+                gsap.to(box, {
+                    opacity: 1,
+                    duration: 0.5
+                })
+                //box.style.opacity = "1"
+            }
+        });
+    }
+//section6
+
 let gsapBg1 = gsap.timeline({
     scrollTrigger: {
         start: "-350px center",
