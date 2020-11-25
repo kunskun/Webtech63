@@ -1,3 +1,11 @@
+
+@media screen and (max-width: 1919px) and (max-height: 1079px) {
+body {
+    
+    zoom: 80%;   
+}
+}
+
 @font-face{
     font-family: Android Euclid nav;
     src: url(../../fonts/AndroidEuclid-Medium.otf);
