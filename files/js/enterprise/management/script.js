@@ -71,12 +71,12 @@ function go_left1(n) {
 }
 
 function calltm() {
-    var tm1 = new TimelineMax({ delay: 3 });
-    var tm2 = new TimelineMax({ delay: 3 });
-    var tm22 = new TimelineMax({ delay: 5.5 });
-    var tm3 = new TimelineMax({ delay: 3 });
-    var tm4 = new TimelineMax({ delay: 3 });
-    var tm5 = new TimelineMax({ delay: 3 });
+    var tm1 = new TimelineMax({});
+    var tm2 = new TimelineMax({});
+    var tm22 = new TimelineMax({ delay: 2.5 });
+    var tm3 = new TimelineMax({});
+    var tm4 = new TimelineMax({});
+    var tm5 = new TimelineMax({});
     tm1.to("#am", 2, {
         left: "70rem",
         top: "-30rem"
@@ -118,15 +118,28 @@ function calltm() {
         height: '60px',
     })
 }
-calltm()
-    // var tlVideoSec8 = gsap.timeline({
-    //     scrollTrigger: {
-    //         markers: false,
-    //         trigger: "#animation-timeline",
-    //         toggleActions: "restart restart restart restart",
-    //         onToggle: () => {
-    //             calltm();
-    //         },
+gsap.timeline({
+    scrollTrigger: {
+        start: "-1300px center",
+        end: "0px top",
+        markers: false,
+        trigger: "#animamate",
+        onToggle: () => {
+
+            calltm()
+        },
+        toggleActions: "restart restart restart restart"
+    }
+})
+
+// var tlVideoSec8 = gsap.timeline({
+//     scrollTrigger: {
+//         markers: false,
+//         trigger: "#animation-timeline",
+//         toggleActions: "restart restart restart restart",
+//         onToggle: () => {
+//             calltm();
+//         },
 
 //     },
 //     onComplete: () => { console.log('2222') }
