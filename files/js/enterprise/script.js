@@ -1,6 +1,11 @@
 var controller = new ScrollMagic.Controller();
 TweenLite.defaultEase = Linear.easeNone;
 
+
+gsap.to(".c1", {x: 1000, y: 500,opacity: 1, duration: 0.7, delay: 0.5});
+gsap.to(".cp1",{y: '-100px', opacity: 1,duration: 0.5, delay: 0.8})
+gsap.to(".img1",{x: '-100px', opacity: 1,duration: 0.5, delay: 0.9})
+
 var titles = document.querySelectorAll(".c1");
 var tl = new TimelineMax();
 
