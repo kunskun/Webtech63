@@ -86,3 +86,13 @@ gsap.to("#bg-nav", {y: 85, duration: 0.5, delay: 0.9});
 //                 toggleActions: "restart restart restart restart"
 //         }
 //     })
+
+window.onload = function() {
+        if(window.screen.height != 1080 || window.screen.width != 1920){
+                // document.body.innerHTML = '<div style="text-align: center; margin-top: 10%; font-size: 10rem; color: red; opacity: 0.2; font-weight: bold;">UNSUPPORTED</div>'
+                // document.body.style = "background-color: black;"
+                document.body.innerHTML += '<marquee class="sticky-top" scrollamount="12" direction="left" \
+                style="z-index: 10000;color: red;font-family: roboto; font-size:2.5rem;position: absolute; display: flex;">\
+                Please Change Display Resolution to 1920*1080 Scale 100% and refresh</marquee>'
+        }
+      };
