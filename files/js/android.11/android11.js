@@ -177,8 +177,8 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
             start: "top center",
-            end: "700px top",
-            markers: false,
+            end: "500px top",
+            markers: true,
             trigger: "#section4",
             onToggle: () => {
                 navFade("hr1")
@@ -262,7 +262,7 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
             start: "100px center",
-            end: "700px top",
+            end: "500px top",
             markers: false,
             trigger: "#section8-3",
             onToggle: () => {
@@ -277,7 +277,7 @@ gsap.timeline({
     scrollTrigger: {
             start: "100px center",
             end: "2000px top",
-            markers: true,
+            markers: false,
             trigger: "#section8-2",
             onToggle: () => {
 
