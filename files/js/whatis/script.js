@@ -45,6 +45,7 @@ function go_lefttop(n) {
             break;
         case 1:
             var wid = "50%";
+            document.getElementById("ic1").style.opacity = '1'
             document.getElementById('warpper-box').style = 'left:-30rem; transition-duration: 1s;'
             number1 = number1 + n;
             break;
@@ -55,6 +56,7 @@ function go_lefttop(n) {
             break;
         case 3:
             var wid = "100%";
+            document.getElementById("left1").style.opacity = "0.2"
             document.getElementById('warpper-box').style = 'left:-170rem; transition-duration: 1s;'
             number1 = number1 + n;
             break;
@@ -69,6 +71,7 @@ function go_righttop(n) {
     switch (number1 + n) {
         case 0:
             var wid = "25%";
+            document.getElementById("ic1").style = 'opacity: 0.2'
             document.getElementById('warpper-box').style = 'left:40rem; transition-duration: 1s;'
             document.getElementById('right1')
             number1 = number1 + n;
