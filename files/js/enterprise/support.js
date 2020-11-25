@@ -320,6 +320,36 @@ function closeVideo() {
     button.setAttribute("hidden", true)
 }
 
+//last video
+let isVideo = ["https://www.youtube.com/embed/OIvnz7fb0p0", "https://www.youtube.com/embed/oCw3zhHGU5I", "https://www.youtube.com/embed/LNEYdxi9ygM", "https://www.youtube.com/embed/KdkBcq0o6Ic", "https://www.youtube.com/embed/UAhH21YfLP4", "https://www.youtube.com/embed/gHDP4CTfFP8", "https://www.youtube.com/embed/GWmz4QiZeQs", "https://www.youtube.com/embed/oHMLI_CALLk", "https://www.youtube.com/embed/2kuGv9GNbTQ"]
+
+function openVideo2(index2){
+    let body = document.querySelector("body")
+    body.style.overflowY = "hidden"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    let nav = document.querySelector(".pos-f-t")
+    video.setAttribute("src", isVideo[index2])
+    button.removeAttribute("hidden")
+    video.removeAttribute("hidden")
+    stageBg.removeAttribute("hidden")
+    nav.setAttribute("hidden", true)
+  }
+  
+  function closeVideo() {
+    let body = document.querySelector("body")
+    body.style.overflowY = "scroll"
+    let stageBg = document.querySelector(".stageBg")
+    let video = document.querySelector(".video-content")
+    let button = document.querySelector(".closeButton")
+    let nav = document.querySelector(".pos-f-t")
+    video.setAttribute("hidden", true)
+    stageBg.setAttribute("hidden", true)
+    button.setAttribute("hidden", true)
+    video.removeAttribute("src")
+    nav.removeAttribute("hidden")
+  }
 
 
 
