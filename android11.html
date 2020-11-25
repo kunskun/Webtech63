@@ -24,14 +24,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" type="application/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" type="application/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
+    <style>
+        .sticky-top {
+            z-index: 10;
+        }
+    </style>
 
 </head>
 
 <body style="color:black;overflow-x: hidden;" data-spy="scroll" data-target=".navbar" data-offset="1">
     <!-- start nav -->
     <link rel="stylesheet" href="files/css/nav/nav.css">
-    <div class="pos-f-t sticky-top" id="b">
+    <div class="pos-f-t sticky-top" id="b" style="z-index: 10;">
         <div class="sticky-top" id="mProgress2"></div>
         <div class="sticky-top" id="nav-point-2" style="width: 4.3%; left: 1167px;"></div>
         <nav class="navbar navbar-expand-sm sticky-top nav-animate" id="nav-animate" style="z-index: 2;">  
@@ -196,7 +200,7 @@
 
             <div class="row justify-content-center">
                 <div class="mt-5" style="position: relative; z-index: 3;transform: translateX(-40px);">
-                    <img id="phone1" src="https://lh3.googleusercontent.com/0Nw9C6rWEAarFstdUGMtbDmYLAeSU1rmEr6U2eTzdcbAV_2Ky22SehwMHtUQDTlBZ9VVDlC0DZSpKdHGcNGUTbEDsKjJlOdA7fcGXQ" width="408">
+                    <img id="phone1" src="files/images/android11/st1-phone-1.png" width="408">
                 </div>
                 <div id="bg11" class="bg-circle-content-11 text-center" style="top:-100px">
                     <p>11</p>
@@ -205,13 +209,13 @@
                 </div>
             </div>
             <div id="phone2" class="mt-5" style="top:0px; left:120px ;position: relative; z-index: 3;transform: translateX(-40px);">
-                <img src="https://lh3.googleusercontent.com/pwQUgZvgbhrrseI_WoDxn-pYSRY1RAhfLZTRqaH32JDtOPF46Xn6pdrHJfTLfYuU4d9je3BO99_i_325euhy_i26ywfCotdNNvxqrQ" width="408">
+                <img src="files/images/android11/st1-phone-2.png" width="408">
             </div>
             <div id="phone3" class="mt-5" style="top:900px; right:350px ;position: absolute; z-index: 3;transform: translateX(-40px);">
-                <img src="https://lh3.googleusercontent.com/eHfSKcUS9uweT-nbnBEG8f2aefgPLjM_v9gVjpuncUYfWhWf3kmWiBKvKVKcAUW0MGDzmTp_ebLUtFqnX5fI1Y4lwCS9p1fnz_PLuw" width="408">
+                <img src="files/images/android11/st1-phone-3.png" width="408">
             </div>
             <div id="phone4" class="mt-5" style="top:50px; left:300px ;position: relative; z-index: 3;transform: translateX(-40px);">
-                <img src="https://lh3.googleusercontent.com/LBkCNN2MwDHTzoL3rQlFrCq7fld-zZUmuJyQ-7dmqRzbjFqMyO4V4fAXJVWm5orNRY-3J_0zaPl_itD1LsLXNKOM2jlzM7NOj7OemA=w435-rw-e365-v1" width="408">
+                <img src="files/images/android11/st1-phone-4.webp" width="408">
             </div>
 
         </div>
@@ -346,7 +350,7 @@
                     <div style="position: relative;">
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;" class="d-flex justify-content-center">
-                                <img src="https://www.android.com/static/images/frames/frame-default.svg" width="296" height="618" style="z-index: 5;position: absolute;">
+                                <img src="files/images/android11/frame-default-phone.svg" width="296" height="618" style="z-index: 5;position: absolute;">
                                 <div style="top:10px;position: relative;width: 275px;height: 590px; overflow:hidden;">
                                     <video id="gifPhone1" autoplay style="position: absolute; left: -660px; width: 1100px;" src="files/images/moving/gifst3.mp4"></video>
                                 </div>
@@ -364,14 +368,14 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st4 " style="padding-top: 200px;">
+    <section id="section4" class="setSection bg-st4 " style="padding-top: 200px;">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;" class="d-flex justify-content-center">
-                                <img src="https://www.android.com/static/images/frames/frame-default.svg" style="z-index: 5;width:500px;height:618px;">
+                                <img src="files/images/android11/frame-default-phone.svg" style="z-index: 5;width:500px;height:618px;">
                                 <div style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
                                     <video id="gifPhone2" autoplay style="position: absolute;left: -235px; width: 1200px;" src="files/images/moving/gifst4.mp4"></video>
                                 </div>
@@ -424,14 +428,14 @@
             <div class="row d-flex justify-content-center" style="position: relative;top:300px;">
                 <div style="display: flex;z-index: 10;">
                     <div class=" card" style="width: 517px;border: 0;">
-                        <img class="card-img-top" src="https://lh3.googleusercontent.com/3kKQ0YQDZCqeIQLjnXvIgiP12iHXgWmPaxwuBHBiNbjZR_CHz_FQY7TtpWwIwLXsp85K0MMaI9GfLbaP-j2EHxiwz4jBOdLP86fwrQ=w1378-rw-e365-v1" alt="Card image cap">
+                        <img class="card-img-top" src="files/images/android11/st5-bg-1.webp" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Built-in screen recording. Finally.</h5>
                             <p class="card-text">Screen recording lets you capture what’s happening on your phone. And it’s built right into Android 11, so you don’t need an extra app. Record with sound from your mic, your device or both.</p>
                         </div>
                     </div>
                     <div class="card" style="width: 517px;border: 0;">
-                        <img class="card-img-top" src="https://lh3.googleusercontent.com/1uRegoFT5SBnvTgV_tI8rZ8vjlieVOl7W3RIhvzI3OGQQ8R4uVSah7u2g_3EYNP5p50QMIhqTNPylV0NX8AYKkp9G4koMXodVCT1EA=w669-rw-e365-v1" alt="Card image cap">
+                        <img class="card-img-top" src="files/images/android11/st5-bg-2.webp" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Select and share just got easier.</h5>
                             <p class="card-text">Select text from your apps. Grab images too. On Pixel devices1, you can easily copy, save and share info between many apps. Like your browser, your delivery app or from the news.</p>
@@ -478,7 +482,7 @@
                         <div>
 
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;top:180px;" class="d-flex justify-content-center">
-                                <img src="https://www.android.com/static/images/frames/frame-default.svg" width="296" height="618" style="z-index: 3;">
+                                <img src="files/images/android11/frame-default-phone.svg" width="296" height="618" style="z-index: 3;">
                                 <div id="phone-1" style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
                                     <video id="gifPhone3" autoplay style="position: absolute;left: -435px; width: 1200px;" src="files/images/moving/gifst5.mp4"></video>
                                 </div>
@@ -637,7 +641,7 @@
                     <div style="position: relative;">
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:45%; padding-top: 7%;" class="d-flex justify-content-center">
-                                <img src="https://www.android.com/static/images/frames/frame-default.svg" width="296" height="618" style="z-index: 3;">
+                                <img src="files/images/android11/frame-default-phone.svg" width="296" height="618" style="z-index: 3;">
                                 <div style="top:60px;position: absolute;left:254px;width: 274px;height: 575px; overflow:hidden;">
                                     <video id="gifPhone4" autoplay style="position: absolute; left: -455px; width: 1200px;" src="files/images/moving/gifst6.mp4"></video>
                                 </div>
@@ -645,7 +649,7 @@
                             </div>
 
                             <div id="bg-sec8" style="position: absolute; top:-100px;width: 744px; height: 437px;" alt=""> </div>
-                            <img id="bg-sec8-2" style="position: absolute; top:-100px;width: 744px; height: 437px;" src="https://lh3.googleusercontent.com/KnHPBdPPbwCLYpnpto2o_my-AgcQa4y84dRqxJ-zaPr8X5w3JgdiaJKCXPguOpy83q8kY2QA313OcCmN7jMQdDWjlZbsdUtpYlJQ=w852-rw-e365-v1" alt="">
+                            <img id="bg-sec8-2" style="position: absolute; top:-100px;width: 744px; height: 437px;" src="files/images/android11/st8-bg-1.webp" alt="">
                         </div>
 
                     </div>
@@ -660,7 +664,7 @@
                     <div style="position: relative;">
                         <div>
                             <div style="z-index: 1;position: relative; padding-left:15%; padding-top: 7%;" class="d-flex justify-content-center">
-                                <img src="https://www.android.com/static/images/frames/frame-default.svg" width="296" height="618" style="z-index: 3;">
+                                <img src="files/images/android11/frame-default-phone.svg" width="296" height="618" style="z-index: 3;">
                                 <div style="left:174px;top:50px;position: absolute;width: 273px;height: 570px; overflow:hidden;">
                                     <video id="gifPhone5" autoplay style="position: absolute;left: -370px; width: 1100px;" src="files/images/moving/gifst7.mp4"></video>
                                 </div>
@@ -713,7 +717,7 @@
                 <div class="col-6">
                     <div style="position: relative;">
                         <div>
-                            <video id="video-sec8" playsinline preload="true" autoplay style="width: 802px; height: 802px;" src="https://kstatic.googleusercontent.com/files/ee1c86d9b7a6e1808a3489e68c3bd1ad7d6aeb396e2b6bb38de9ae7602c939d0030e3b3fc5368bee71f4a28736ff949bac77c2c608d2c4a385501960ecd5366a"></video>
+                            <video id="video-sec8" playsinline preload="true" autoplay style="width: 802px; height: 802px;" src="files/images/moving/Android_Auto_Module_v2_MidRes.mp4"></video>
                         </div>
 
                     </div>
@@ -752,18 +756,18 @@
             <div class="row d-flex justify-content-center" style="position: relative;top:300px;">
                 <div style="display: flex;z-index: 10;">
                     <div class=" card" style="width: 517px;border: 0;">
-                        <img id="popup-onetime" style="position: absolute; width:300px; height:254px; left:110px; top:25px" src="https://lh3.googleusercontent.com/flCcv6zDaRchuWWL0tMwsKHMIf5CZmDF-kFIP_2GWpsGVStXGFtpPm5ZH_9bYhNhamM9aP66Vxeshva6yCH6xak5n2YJFYemVBrF=w453-rw-e365-v1 "
+                        <img id="popup-onetime" style="position: absolute; width:300px; height:254px; left:110px; top:25px" src="files/images/android11/st8-2-bg-1.webp"
                             alt="">
-                        <img class="card-img-top" src="https://lh3.googleusercontent.com/fcqotHrUktRMP_q8xiFTzzARJy2QgfUrTtGuQpNB4q49sYdTpQbGNx4e8kb-2VNm7LCvCi-gFQ3SE58VEa3TzRWZF790iiTMrRRHCA=w689-rw-e365-v1" alt="Card image cap">
+                        <img class="card-img-top" src="files/images/android11/st8-2-bg-2.webp" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">One‑time permissions</h5>
                             <p class="card-text">Give one-time permissions to apps that need your mic, camera or location. The next time the app needs access, it must ask for permission again.</p>
                         </div>
                     </div>
                     <div class="card" style="width: 517px;border: 0;">
-                        <img id="popup-auto" style="position: absolute; width:300px; height:86px; left:110px; top:105px" src="https://lh3.googleusercontent.com/PO0r54TjhSOxPMd4yE9955g4glmhz8QU8U-dziC_GuUb83xcFtLxDk6x1II6adSniknLsVYiDubyW01W515ltcqnwqMdY7UBgMpZ5LY=w453-rw-e365-v1"
+                        <img id="popup-auto" style="position: absolute; width:300px; height:86px; left:110px; top:105px" src="files/images/android11/st8-2-bg-3.webp"
                             alt="">
-                        <img class="card-img-top" src="https://lh3.googleusercontent.com/WZqD5F1prrIcuJ-SwUSKKnT9kKHyUWZsPQ8nfdTj1ak88DUTGziG7KgqcsNCDiDcI0CYl-rKhch1u3_UPY-eM-MeKSuiU_wyx9KWQw" alt="Card image cap">
+                        <img class="card-img-top" src="files/images/android11/st8-2-bg-4.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Permissions auto‑reset</h5>
                             <p class="card-text">If you haven't used an app in a while, you may not want it to keep accessing your data. So Android will reset permissions for your unused apps. You can always turn permissions back on.</p>
@@ -773,7 +777,7 @@
             </div>
         </div>
     </section>
-    <section class="setSection bg-st9 " style="padding-top: 200px;">
+    <section id="section9" class="setSection bg-st9 " style="padding-top: 200px;">
         <div class="container container-fluid">
             <div class="d-flex justify-content-center" style="position: relative;;z-index: -1;">
                 <div class="bg-wave"></div>
@@ -808,7 +812,7 @@
 
             </div>
             <div class="row justify-content-center" style="position: relative;top:70px;left: -50px;">
-                <img style="width: 438px; height: 285px;" src="https://lh3.googleusercontent.com/z7fFr8WGT6BYwFrbLUythHHm0RMr7Y7KTGCxQRcQx5RuewSunSrcLvnMQS1BkFF-AZ92JNhjRVNpmd9v-qCaH94btaqLtqhwPm85URQ=w381-rw-e365-v1" alt="">
+                <img style="width: 438px; height: 285px;" src="files/images/android11/st8-2-bg-5.webp" alt="">
             </div>
         </div>
     </section>
@@ -1127,7 +1131,7 @@
             </div>
         </div>
     </section>
-    <section style="margin-top: 300px;">
+    <section style="margin-top: 10%;">
         <style>
             .foot-box {
                 position: relative;

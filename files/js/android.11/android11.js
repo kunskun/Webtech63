@@ -164,7 +164,7 @@ gsap.timeline({
         scrollTrigger: {
                 start: "top center",
                 end: "700px top",
-                markers: true,
+                markers: false,
                 trigger: "#section3",
                 onToggle: () => {
                     navFade("hr1")
@@ -172,6 +172,21 @@ gsap.timeline({
                 toggleActions: "restart restart restart restart"
         }
 })
+
+
+gsap.timeline({
+    scrollTrigger: {
+            start: "top center",
+            end: "500px top",
+            markers: true,
+            trigger: "#section4",
+            onToggle: () => {
+                navFade("hr1")
+            },
+            toggleActions: "restart restart restart restart"
+    }
+})
+
 
 gsap.timeline({
     scrollTrigger: {
@@ -247,7 +262,7 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
             start: "100px center",
-            end: "700px top",
+            end: "500px top",
             markers: false,
             trigger: "#section8-3",
             onToggle: () => {
@@ -261,7 +276,7 @@ gsap.timeline({
 gsap.timeline({
     scrollTrigger: {
             start: "100px center",
-            end: "700px top",
+            end: "2000px top",
             markers: false,
             trigger: "#section8-2",
             onToggle: () => {
@@ -271,6 +286,9 @@ gsap.timeline({
             toggleActions: "restart restart restart restart"
     }
 })
+
+
+
 
 $(document).ready(function() {
     // Get media - with autoplay disabled (audio or video)
