@@ -2,6 +2,7 @@ var timeline = new TimelineMax({});
 var timeline1 = new TimelineMax({});
 var timeline2 = new TimelineMax({});
 var timeline3 = new TimelineMax({});
+
 timeline.to(".all", 1, {
     opacity: 1
 });
@@ -41,7 +42,6 @@ function go_lefttop(n) {
     switch (number1 + n) {
         case 0:
             var wid = "25%";
-
             break;
         case 1:
             var wid = "50%";
@@ -203,6 +203,13 @@ function animate(tag, dur, tween) {
         .setTween(tween)
         .addTo(controller)
 }
+
+
+
+
+
+
+
 document.getElementById("bot-box").style = 'position:relative;height:730px;width:1260px;transition-duration: 1s; left:0rem; top:-2rem';
 document.getElementById("warp-text-2").style = 'position: relative; top:0px;transition-duration: 1s;';
 document.getElementById("eiei1").style = 'position: relative;left:50rem;transition-duration: 1s;'
