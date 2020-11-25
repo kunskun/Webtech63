@@ -70,6 +70,7 @@ function go_righttop(n) {
         case 0:
             var wid = "25%";
             document.getElementById('warpper-box').style = 'left:40rem; transition-duration: 1s;'
+            document.getElementById('right1')
             number1 = number1 + n;
             break;
         case 1:
