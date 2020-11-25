@@ -61,6 +61,10 @@ button {
     font-weight: 700;
 }
 
+#right1 {
+    fill: red;
+}
+
 .transf {
     transform: translateY(30rem);
 }
